@@ -5,11 +5,32 @@ import { useState } from 'react'
 export default function LeadMagnet() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (email) {
-      setSubmitted(true)
+    setError('')
+    setLoading(true)
+
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await res.json()
+
+      if (!res.ok) {
+        setError(data.error || 'Noe gikk galt. Prøv igjen.')
+      } else {
+        setSubmitted(true)
+      }
+    } catch {
+      setError('Noe gikk galt. Prøv igjen.')
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -43,7 +64,7 @@ export default function LeadMagnet() {
         </div>
       </div>
       <p className="text-primary-100 mb-6 leading-relaxed">
-        Få vår populære budsjettmal for Google Sheets — brukt av over 2.000 nordmenn. 
+        Få vår populære budsjettmal for Google Sheets — brukt av over 2.000 nordmenn.
         Kategorisert, ferdigformatert, og klar til bruk med en gang.
       </p>
       <form onSubmit={handleSubmit} className="space-y-3">
@@ -55,11 +76,15 @@ export default function LeadMagnet() {
           required
           className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white/50 lead-magnet-input"
         />
+        {error && (
+          <p className="text-red-200 text-sm text-center">{error}</p>
+        )}
         <button
           type="submit"
-          className="w-full bg-white text-primary-600 font-semibold py-3 px-6 rounded-xl hover:bg-primary-50 transition-colors shadow-lg"
+          disabled={loading}
+          className="w-full bg-white text-primary-600 font-semibold py-3 px-6 rounded-xl hover:bg-primary-50 transition-colors shadow-lg disabled:opacity-60"
         >
-          Last ned gratis budsjettmal →
+          {loading ? 'Sender...' : 'Last ned gratis budsjettmal →'}
         </button>
         <p className="text-xs text-primary-200 text-center">
           Ingen spam. Avslutt når som helst.
