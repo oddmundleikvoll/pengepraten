@@ -77,7 +77,7 @@ export default function BudsjettPage() {
               </ul>
             </div>
 
-            <div className="bg-amber-50 rounded-xl p-6">
+            <div className="bg-amber-50 rounded-xl p-6 mb-8">
               <h3 className="font-bold text-norsk-dark mb-2">Hvordan fungerer det?</h3>
               <ol className="space-y-2 text-sm text-gray-700 list-decimal list-inside">
                 <li>Fyll inn e-postadressen din i skjemaet</li>
@@ -85,6 +85,35 @@ export default function BudsjettPage() {
                 <li>Kopier malen til din egen Google Drive</li>
                 <li>Fyll inn dine tall og se budsjettet oppdatere seg automatisk</li>
               </ol>
+            </div>
+
+            <h2 className="text-2xl font-bold text-norsk-dark mb-4">
+              Artikler om budsjett
+            </h2>
+            <div className="grid gap-4">
+              <Link href="/budsjett/kom-i-gang-med-budsjett" className="group">
+                <article className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-amber-200 transition-all duration-200 overflow-hidden">
+                  <div className="px-5 pt-5 pb-0">
+                    <span className="inline-block px-3 py-1 text-xs font-medium bg-amber-50 text-amber-700 rounded-full">
+                      Budsjett
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-norsk-dark group-hover:text-amber-600 transition-colors mb-2">
+                      Kom i gang med budsjett: En komplett guide for nordmenn
+                    </h3>
+                    <p className="text-sm text-gray-500 line-clamp-3">
+                      Lær hvordan du lager et budsjett som fungerer. Vi guider deg gjennom 50/30/20-regelen, faste vs variable utgifter, og gir deg en gratis mal å starte med.
+                    </p>
+                    <div className="mt-4 flex items-center text-sm text-amber-600 font-medium">
+                      <span>Les mer</span>
+                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </article>
+              </Link>
             </div>
           </div>
 

@@ -48,6 +48,52 @@ export default function LanPage() {
               {articles.map((article) => (
                 <ArticleCard key={article.slug} article={article} />
               ))}
+              <Link href="/lan/hvor-mye-boliglan-kan-jeg-fa" className="group">
+                <article className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-primary-200 transition-all duration-200 overflow-hidden">
+                  <div className="px-5 pt-5 pb-0">
+                    <span className="inline-block px-3 py-1 text-xs font-medium bg-primary-50 text-primary-700 rounded-full">
+                      Lån
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-norsk-dark group-hover:text-primary-600 transition-colors mb-2">
+                      Hvor mye boliglån kan jeg få?
+                    </h3>
+                    <p className="text-sm text-gray-500 line-clamp-3">
+                      Lær hvor mye boliglån du kan få basert på inntekt, gjeld og egenkapital. Vi forklarer finanstilsynets regler og gir deg en enkel formel.
+                    </p>
+                    <div className="mt-4 flex items-center text-sm text-primary-600 font-medium">
+                      <span>Les mer</span>
+                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/lan/nar-lonner-refinansiering" className="group">
+                <article className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-primary-200 transition-all duration-200 overflow-hidden">
+                  <div className="px-5 pt-5 pb-0">
+                    <span className="inline-block px-3 py-1 text-xs font-medium bg-primary-50 text-primary-700 rounded-full">
+                      Lån
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-norsk-dark group-hover:text-primary-600 transition-colors mb-2">
+                      Når lønner det seg å refinansiere?
+                    </h3>
+                    <p className="text-sm text-gray-500 line-clamp-3">
+                      Lær når refinansiering er lønnsomt og når det ikke er det. Vi forklarer regnestykket og viser deg hvor mye du kan spare på å samle gjelden.
+                    </p>
+                    <div className="mt-4 flex items-center text-sm text-primary-600 font-medium">
+                      <span>Les mer</span>
+                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </article>
+              </Link>
             </div>
           </div>
 
