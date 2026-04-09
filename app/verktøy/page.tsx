@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const tools = [
   {
+    href: '/verktøy/boliglånskalkulator',
+    title: 'Boliglånskalkulator',
+    description: 'Beregn månedlig kostnad, total lånekostnad og effektiv rente for boliglån. Oppdatert med dagens renter fra norske banker.',
+    icon: '🏠',
+    color: 'bg-green-50',
+    textColor: 'text-green-600',
+  },
+  {
     href: '/verktøy/lånekalkulator',
     title: 'Lånekalkulator',
     description: 'Beregn månedlig kostnad, total rente og effektiv rente for forbrukslån.',
