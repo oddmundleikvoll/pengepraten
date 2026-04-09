@@ -93,7 +93,7 @@ export const articles: Article[] = [
   },
 ]
 
-export const latestArticles = articles.slice(0, 4)
+export const latestArticles = [...articles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 4)
 
 export function getArticlesByPillar(pillar: string): Article[] {
   return articles.filter(a => a.pillar === pillar)

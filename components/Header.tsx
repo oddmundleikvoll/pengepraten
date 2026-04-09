@@ -5,7 +5,7 @@ const navItems = [
   { href: '/lan', label: 'Lån' },
   { href: '/sparing', label: 'Sparing' },
   { href: '/budsjett', label: 'Budsjett' },
-  { href: '/verktøy/lånekalkulator', label: 'Verktøy' },
+  { href: '/verktøy', label: 'Verktøy' },
 ]
 
 export default function Header() {

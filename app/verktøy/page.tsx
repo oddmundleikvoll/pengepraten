@@ -17,7 +17,7 @@ const tools = [
   },
   {
     href: '/verktøy/lånekalkulator',
-    title: 'Lånekalkulator',
+    title: 'Forbrukslånskalkulator',
     description: 'Beregn månedlig kostnad, total rente og effektiv rente for forbrukslån.',
     icon: '🧮',
     color: 'bg-primary-50',
