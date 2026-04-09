@@ -51,6 +51,18 @@ export default function RootLayout({
     <html lang="nb">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHXXSHTYRH" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RHXXSHTYRH');
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col bg-white">
         <Header />
