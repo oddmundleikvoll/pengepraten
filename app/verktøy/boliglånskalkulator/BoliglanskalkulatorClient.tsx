@@ -55,37 +55,49 @@ function calculateEffectiveRate(
   establishmentFee: number,
   termFee: number
 ): number {
-  // Norwegian effective interest rate calculation using Newton-Raphson method
-  // Formula: NPV of all cash flows = 0, solve for i (monthly rate)
-  // Cash flows: -establishment_fee at t=0, then -monthly_payment - term_fee for each month
-  // At t=term_months: -monthly_payment - term_fee + principal (final balance = 0)
+  // Norwegian effective interest rate using secant method
+  // Cash flows: +principal - establishmentFee at t=0, then -(monthlyPayment + termFee) for each month t
+  // Solves NPV = principal - establishmentFee - sum(payment/(1+r)^t) = 0 for monthly rate r, then annualises
+  if (principal <= 0 || termMonths <= 0 || monthlyPayment <= 0) return 0
 
-  const netPrincipal = principal - establishmentFee
+  const netReceived = principal - establishmentFee
+  if (netReceived <= 0) return 0
 
-  if (netPrincipal <= 0 || termMonths <= 0) return 0
+  // Clamp extreme values to prevent overflow
+  const maxPayment = netReceived * 0.99
+  const clampedPayment = Math.min(monthlyPayment + termFee, maxPayment)
 
-  let rate = 0.05 / 12 // Initial guess: 5% annual / 12 months
+  // Annualised fee-adjusted rate as initial guess
+  const totalAnnualCost = clampedPayment * 12
+  const effectiveAnnualRate = totalAnnualCost / netReceived
+  let r = Math.max(0.0001, Math.min((effectiveAnnualRate - 1) / 12, 0.3))
 
-  for (let iter = 0; iter < 100; iter++) {
-    const r = rate
-    let npv = -netPrincipal
-    let dnpv = 0
+  for (let iter = 0; iter < 150; iter++) {
+    // NPV of all future cash flows (fees + payment) at rate r
+    const pow = Math.pow(1 + r, termMonths)
+    if (!isFinite(pow)) break
 
-    for (let t = 1; t <= termMonths; t++) {
-      const cf = -(monthlyPayment + termFee)
-      npv += cf / Math.pow(1 + r, t)
-      dnpv -= (t * cf) / Math.pow(1 + r, t + 1)
-    }
+    const pvPayments = (clampedPayment * (pow - 1)) / (r * pow)
+    const npv = netReceived - pvPayments
 
-    if (Math.abs(dnpv) < 1e-10) break
+    // NPV' (derivative) for Newton-Raphson
+    const numerator = r * pow - (pow - 1)
+    const denom = r * r * pow
+    if (Math.abs(denom) < 1e-20 || !isFinite(numerator / denom)) break
+
+    const dnpv = -(numerator * clampedPayment) / denom
+
+    if (Math.abs(dnpv) < 1e-15) break
+
     const delta = npv / dnpv
-    rate = rate - delta
+    r = r - delta
+    r = Math.max(0.0001 / 12, Math.min(r, 0.5))
 
-    if (Math.abs(delta) < 1e-12) break
-    rate = Math.max(0.0001, Math.min(rate, 0.5))
+    if (Math.abs(delta) < 1e-15) break
   }
 
-  return rate * 12 * 100 // Annual effective rate in percent
+  const annualRate = r * 12 * 100
+  return Math.max(0, Math.min(annualRate, 100)) // clamp to sane range
 }
 
 function generateAmortizationSchedule(
