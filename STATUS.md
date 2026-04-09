@@ -94,20 +94,32 @@ Vi bygger et norsk personlig økonomi-nettsted som:
 
 - [x] Modell: Verktøy + digitalt produkt + affiliate
 - [x] Nisje: Norsk personlig økonomi
-- [ ] ** Domenenavn — ODDMUND MÅ VELGE**
-- [x] Topic clusters — klare (se RESEARCH/seo-research.md)
-- [x] Digitale produkter — struktur klar (se PROJECT_PLAN.md)
+- [x] Domenenavn: pengepraten.no ✅
+- [x] Nettside: Live på pengepraten.no ✅
+- [x] E-postliste: Resend + LeadMagnet ✅
+- [x] Første mal: Budsjettmal (.xlsx) ✅
+- [ ] ** Første ekte artikler (erstatt lorem ipsum)
+- [ ] Søk om affiliate-programmer (Bank Norwegian, Arcadia Finans)
+- [ ] Flere digitale maler
 
 ## Plan
 
 - `PROJECT_PLAN.md` — Full bygge- og skaleringplan
 - `RESEARCH/seo-research.md` — Søkeord, konkurrenter, topic clusters
+- `PRODUCTS/XLSX_COMPATIBILITY.md` — Regler for xlsx-mal-produksjon
+
+## Oppdatert 2026-04-09
+
+- pengepraten.no live med Next.js + Vercel
+- E-postpåmelding fungerer (Resend API)
+- Budsjettmal lastes ned (XML-fiks dokumentert)
+- 5 eksempelartikler (må erstattes med ekte content)
 
 ## Neste steg
 
-1. **Oddmund velger domene** ← BLokkerer alt annet
-2. Neo setter opp nettside + hosting
-3. Clio produserer første artikler
+1. Clio: Erstatt lorem ipsum-artikler med ekte artikler fra seo-research
+2. Søk om affiliate-programmer (Adtraction)
+3. Lag flere maler (Gjeldsbrems, Spareplan)
 
 ---
 
