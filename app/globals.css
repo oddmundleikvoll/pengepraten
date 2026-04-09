@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --norsk-blue: #002772;
+  --norsk-light-blue: #0066cc;
+  --norsk-green: #00843d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1a1a2e;
+  background: #ffffff;
+}
+
+.font-heading {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Article content styles */
+.article-content h2 {
+  @apply text-2xl font-bold text-norsk-dark mt-8 mb-4;
+}
+
+.article-content h3 {
+  @apply text-xl font-semibold text-norsk-dark mt-6 mb-3;
+}
+
+.article-content p {
+  @apply text-gray-700 leading-relaxed mb-4;
+}
+
+.article-content ul {
+  @apply list-disc list-inside mb-4 text-gray-700 space-y-1;
+}
+
+.article-content ol {
+  @apply list-decimal list-inside mb-4 text-gray-700 space-y-1;
+}
+
+.article-content a {
+  @apply text-accent-600 hover:text-accent-700 underline;
+}
+
+.article-content strong {
+  @apply font-semibold text-norsk-dark;
+}
+
+/* Lead magnet form */
+.lead-magnet-input:focus {
+  @apply outline-none ring-2 ring-primary-500 border-transparent;
+}
