@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import LeadMagnet from '@/components/LeadMagnet'
 import ArticleCard from '@/components/ArticleCard'
@@ -45,6 +46,17 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-norsk-dark via-norsk-blue to-accent-700 text-white overflow-hidden">
+        {/* Hero background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/hero-control.png"
+            alt="Ta kontroll på økonomien din"
+            fill
+            className="object-cover object-center opacity-20"
+            priority
+          />
+        </div>
+
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />

@@ -1,139 +1,70 @@
-# Norsk Penger — Prosjektstatus
+# Pengepraten.no — Prosjektstatus
 
 **Opprettet:** 2026-04-08
-**Mål:** Tjene penger på norsk personlig økonomi-innhold drevet av AI-agenter
-**Modell:** Gratis verktøy + digitalt produkt + affiliate
+**Sist oppdatert:** 2026-04-09
+**Mål:** 50.000–100.000 kr/år innen 18 mnd
 
 ---
 
-## Kortversjon
+## Statusrapport 2026-04-09
 
-Vi bygger et norsk personlig økonomi-nettsted som:
-1. Samler trafikk via SEO + gratis verktøy
-2. Konverterer via e-postliste + digitale produkter
-3. Skalerer via AI-agent-drevet content
+### ✅ Fullført
 
-**Mål:** 50.000-100.000 kr/år innen 18 mnd
+| Del | Status | Merknad |
+|-----|--------|---------|
+| Domene + hosting | ✅ | pengepraten.no på Vercel |
+| Nettside (Next.js) | ✅ | Live, responsiv, mobilmeny |
+| E-postliste | ✅ | Resend + LeadMagnet |
+| GA4-tracking | ✅ | Property ID 532272471 |
+| Forbrukslånskalkulator | ✅ | Verktøy-side |
+| **Boliglånskalkulator** | ✅ | Med effektiv rente + nedbetalingsplan |
+| SEO-artikler (5 stk) | ✅ | 1500–1700 ord hver, E-E-A-T |
+| UX-rydding | ✅ | Duplikater, sortering, navn |
+| Mobilmeny | ✅ | Hamburger-meny fungerer |
+| Budsjettmal (.xlsx) | ✅ | Gratis nedlasting |
+| **Google Search Console** | ✅ | Indeksert www.pengepraten.no (2026-04-10) |
 
----
+### 📋 Gjenstår
 
-## Forretningsmodell
-
-### Inntekststrømmer (i prioritert rekkefølge)
-
-**Fase 1 — Nettside + trafikk (mnd 1-6)**
-- Nettside med AI-drevet content
-- SEO-fokus: norske søkeord med lav konkurranse
-- Mål: 5.000-10.000 besøkende/måned innen mnd 6
-
-**Fase 2 — Digitale produkter (mnd 3-9)**
-- Excel-maler for budsjett/sparing (gratis + premium)
-- Lånekalkulator (gratis verktøy på nettsiden)
-- Mini-kurs om personlig økonomi
-
-**Fase 3 — Affiliate (mnd 6-12)**
-- Kredittkort-sammenligning (Adtraction: Bank Norwegian, Arcadia Finans, Axo Finans)
-- Forbrukslån-anbefalinger
-- Forsikring (sekundært)
-
-**Fase 4 — Abonnement (mnd 12+)**
-- Premium medlemskap med verktøy + veiledning
-- Mål: 50-100 betalende abonnenter
+- [ ] Søk om affiliate-programmer (Bank Norwegian, Arcadia Finans, Axo Finans via Adtraction)
+- [ ] Flere digitale maler (Gjeldsbrems, Spareplan)
+- [ ] Flere SEO-artikler (mål: 30+)
+- [ ] Fiks SSL-sertifikat: legg til `www.pengepraten.no` i SAN (Subject Alternative Name)
 
 ---
 
-## Innholdstyper (i prioritert rekkefølge)
+## Nettstedstruktur
 
-1. **Guider** — "Slik bygger du kredittscore", "Bør du refinansiere?"
-2. **Sammenligninger** — "Beste kredittkort for deg under 30"
-3. **Kalkulatorer/verktøy** — Lånekalkulator, budsjettmal
-4. **Eposter** — "Før du tar opp lån"-serie til liste
-5. **Produktanmeldelser** — Norske banker og finansprodukter
-
----
-
-## Trafikkstrategi
-
-### SEO-fokus
-- Long-tail søkeord: "beste forbrukslån 2026", "hvordan bygge kredittscore norge"
-- Norsk språk, norske forhold
-- E-E-A-T: Forfatternavn, kildehenvisninger, oppdateringsdatoer
-
-### Kilder
-1. **Organisk søk (SEO)** — Hovedfokus
-2. **E-postliste** — Deler artikler, bygger relasjon
-3. **Sosiale medier** — Distribuerer innhold (Facebook, Instagram)
-4. **Direkte** — Merkevare over tid
+```
+FORTSIDE
+├── /verktøy
+│   ├── /verktøy/lånekalkulator        (forbrukslån)
+│   └── /verktøy/boliglånskalkulator   (boliglån) ←Ny
+├── /kredittkort
+│   └── /kredittkort/beste-kredittkort-norge-2026  ←Ny
+├── /lan
+│   ├── /lan/hvor-mye-boliglan-kan-jeg-fa          ←Ny
+│   └── /lan/nar-lonner-refinansiering             ←Ny
+├── /sparing
+│   └── /sparing/spareplan-guide                   ←Ny
+└── /budsjett
+    └── /budsjett/kom-i-gang-med-budsjett           ←Ny
+```
 
 ---
 
-## Agentfordeling
+## Teknisk info
 
-| Agent | Oppgaver |
-|-------|---------|
-| **Clio** | Research, søkeord, artikler, konkurrentanalyse |
-| **Neo** | Nettside, verktøy, tekniske løsninger |
-| **Walt** | visuelle elementer, thumbnails, sosiale medier-bilder |
-| **Vera (meg)** | Strategi, koordinering, kvalitetskontroll |
-| **Oddmund** | Kvalitetskontroll, beslutninger, regnskap |
+- **Hosting:** Vercel (auto-deploy fra GitHub)
+- **Repo:** github.com/oddmundleikvoll/pengepraten
+- **GA4:** Property 532272471 (G-RHXXSHTYRH)
+- **E-post:** Resend API (audience: a10229b8-660a-44da-8080-ece3e973d3ff)
 
 ---
-
-## Milepæler
-
-- [ ] **Mnd 1:** Domene + nettside + 30 artikler
-- [ ] **Mnd 3:** E-postliste i gang + 60 artikler
-- [ ] **Mnd 4:** Første digitale produkt (Excel-mal)
-- [ ] **Mnd 6:** 5.000 besøkende/måned + første salg
-- [ ] **Mnd 9:** Affiliate-programmer på plass
-- [ ] **Mnd 12:** 10.000 besøkende/måned + stabil inntekt
-
----
-
-## Hva gjenstår å bestemme
-
-- [x] Modell: Verktøy + digitalt produkt + affiliate
-- [x] Nisje: Norsk personlig økonomi
-- [x] Domenenavn: pengepraten.no ✅
-- [x] Nettside: Live på pengepraten.no ✅
-- [x] E-postliste: Resend + LeadMagnet ✅
-- [x] Første mal: Budsjettmal (.xlsx) ✅
-- [ ] ** Første ekte artikler (erstatt lorem ipsum)
-- [ ] Søk om affiliate-programmer (Bank Norwegian, Arcadia Finans)
-- [ ] Flere digitale maler
-
-## Plan
-
-- `PROJECT_PLAN.md` — Full bygge- og skaleringplan
-- `RESEARCH/seo-research.md` — Søkeord, konkurrenter, topic clusters
-- `PRODUCTS/XLSX_COMPATIBILITY.md` — Regler for xlsx-mal-produksjon
-
-## Oppdatert 2026-04-09
-
-- pengepraten.no live med Next.js + Vercel
-- E-postpåmelding fungerer (Resend API)
-- Budsjettmal lastes ned (XML-fiks dokumentert)
-- 5 eksempelartikler (må erstattes med ekte content)
 
 ## Neste steg
 
-1. Clio: Erstatt lorem ipsum-artikler med ekte artikler fra seo-research
-2. Søk om affiliate-programmer (Adtraction)
-3. Lag flere maler (Gjeldsbrems, Spareplan)
-
----
-
-## Relaterte filer
-
-- `RESEARCH/` — Clio sine research-dokumenter
-- `CONTENT/` — Artikler og innhold
-- `PRODUCTS/` — Digitale produkt-utkast
-
----
-
-##Neste steg
-
-1. Velg domene
-2. Clio: Søkeord-research + topic clusters
-3. Neo: Sett opp nettside (WordPress + grunnleggende struktur)
-4. Neo + Clio: Produser første 30 artikler
+1. **Kort sikt:** Koble Google Search Console → starte SEO-crawling
+2. **Kort sikt:** Søk affiliate-avtaler via Adtraction (tar 1-4 uker)
+3. **Middels sikt:** 25+ flere artikler (lang tail SEO)
+4. **Middels sikt:** Flere digitale maler (Gjeldsbrems, Spareplan)
