@@ -2,6 +2,33 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/sparing/slik-bygger-du-spareseddel',
+    title: 'Slik bygger du en spareseddel du faktisk følger',
+    excerpt: 'Lær hvordan du bygger en spareseddel som faktisk fungerer. 7 konkrete steg, BSU-tips, og en sammenligning av beste sparekontoer i Norge.',
+    category: 'Sparing',
+    date: '2026-04-11',
+    readTime: '7 min',
+    pillar: 'sparing',
+  },
+  {
+    slug: '/lan/nar-lonner-refinansiering-seg',
+    title: 'Refinansiering for folk flest: Når det lønner seg og når det ikke gjør det',
+    excerpt: 'Alt du trenger å vite om refinansiering. Før/etter-tabell, forhandlingsscript, gebyr-advarsel og en enkel sjekkliste.',
+    category: 'Lån',
+    date: '2026-04-11',
+    readTime: '8 min',
+    pillar: 'lan',
+  },
+  {
+    slug: '/kredittkort/slik-fungerer-kredittscore-norge',
+    title: 'Kredittscore i Norge: Slik fungerer det og slik forbedrer du den',
+    excerpt: 'Forstå kredittscore, se hvordan du scorer på de 6 viktigste faktorene, og lær 7 konkrete tips for å forbedre din score i 2026.',
+    category: 'Kredittkort',
+    date: '2026-04-11',
+    readTime: '9 min',
+    pillar: 'kredittkort',
+  },
+  {
     slug: '/kredittkort/beste-kredittkort-2026',
     title: 'Beste kredittkort i Norge 2026 — vår komplette guide',
     excerpt: 'Vi har testet og sammenlignet alle de mest populære kredittkortene i Norge. Oppdag hvilket kort som passer best for deg, med cashback, reiseforsikring og null årsavgift.',
