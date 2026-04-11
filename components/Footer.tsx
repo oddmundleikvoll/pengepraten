@@ -1,14 +1,17 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const footerLinks = {
   produkter: [
     { href: '/kredittkort', label: 'Kredittkort' },
     { href: '/lan', label: 'Forbrukslån' },
+    { href: '/boliglan', label: 'Boliglån' },
     { href: '/sparing', label: 'Sparekonto' },
     { href: '/budsjett', label: 'Budsjett' },
   ],
   verktøy: [
-    { href: '/verktøy/lånekalkulator', label: 'Lånekalkulator' },
+    { href: '/verktøy/lånekalkulator', label: 'Forbrukslånskalkulator' },
+    { href: '/verktøy/boliglånskalkulator', label: 'Boliglånskalkulator' },
     { href: '/verktøy', label: 'Alle verktøy' },
   ],
   selskapet: [
@@ -25,12 +28,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">P</span>
-              </div>
-              <span className="font-bold text-xl text-white">Pengepraten</span>
-            </div>
+            <Link href="/" className="flex items-center">
+              <Image src="/logo.png" alt="Pengepraten" width={480} height={120} className="h-20 md:h-24 w-auto brightness-0 invert" />
+            </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
               Norges beste nettside for personlig økonomi. Vi hjelper deg å ta smartere økonomiske beslutninger.
             </p>

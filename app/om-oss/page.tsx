@@ -51,7 +51,7 @@ export default function OmOssPage() {
           Pengepraten tilbyr:
         </p>
         <ul>
-          <li>Gratis verktøy som lånekalkulator og budsjettmaler</li>
+          <li>Gratis verktøy som forbrukslånskalkulator, boliglånskalkulator og budsjettmaler</li>
           <li>Grundige guider om kredittkort, lån og sparing</li>
           <li>Sammenligninger av banker og finansprodukter</li>
           <li>Tips for personlig økonomi</li>

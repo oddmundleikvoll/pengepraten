@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: 'Pengepraten — Norges beste guide til personlig økonomi',
     template: '%s | Pengepraten',
   },
-  description: 'Få kontroll på økonomien din med våre gratis verktøy, guider og sammenligninger. Lånekalkulator, budsjettmal og tips om kredittkort, lån og sparing.',
+  description: 'Få kontroll på økonomien din med våre gratis verktøy, guider og sammenligninger. Forbrukslånskalkulator, boliglånskalkulator, budsjettmal og tips om kredittkort, lån og sparing.',
   keywords: ['personlig økonomi', 'kredittkort', 'forbrukslån', 'sparing', 'budsjett', 'Norge'],
   authors: [{ name: 'Pengepraten' }],
   creator: 'Pengepraten',

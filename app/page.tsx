@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Pengepraten — Få kontroll på pengene dine',
-  description: 'Norges beste nettside for personlig økonomi. Lånekalkulator, budsjettmal, guider om kredittkort, lån og sparing. Helt gratis.',
+  description: 'Norges beste nettside for personlig økonomi. Forbrukslånskalkulator, boliglånskalkulator, budsjettmal, guider om kredittkort, lån og sparing. Helt gratis.',
 }
 
 const categoryLinks = [
@@ -45,34 +45,33 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-norsk-dark via-norsk-blue to-accent-700 text-white overflow-hidden">
-        {/* Hero background image */}
+      <section className="relative bg-norsk-blue text-white overflow-hidden">
+        {/* Hero background image - full bleed */}
         <div className="absolute inset-0">
           <Image
             src="/hero-control.png"
             alt="Ta kontroll på økonomien din"
             fill
-            className="object-cover object-center opacity-20"
+            className="object-cover object-center"
             priority
           />
         </div>
 
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-10">
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#002772]/70 to-[#002772]/60" />
+
+
+        {/* Subtle glow accents */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-20 w-96 h-96 bg-primary-300 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur rounded-full text-sm mb-6">
-              <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse" />
-              <span>Oppdatert for 2026</span>
-            </div>
-
             <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6">
               Få kontroll på{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-accent-300">
+              <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                 pengene dine
               </span>
             </h1>
@@ -95,9 +94,15 @@ export default function HomePage() {
               </a>
               <Link
                 href="/verktøy/lånekalkulator"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-semibold py-4 px-8 rounded-xl hover:bg-white/10 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-primary-500 text-white font-semibold py-4 px-6 rounded-xl hover:bg-primary-600 transition-colors text-sm"
               >
-                Prøv lånekalkulatoren →
+                Forbrukslånskalkulator →
+              </Link>
+              <Link
+                href="/verktøy/boliglånskalkulator"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-semibold py-4 px-6 rounded-xl hover:bg-white/10 transition-colors text-sm"
+              >
+                Boliglånskalkulator →
               </Link>
             </div>
           </div>
@@ -216,23 +221,44 @@ export default function HomePage() {
       {/* Loan Calculator CTA */}
       <section className="bg-gradient-to-br from-norsk-dark to-norsk-blue py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-1 text-white">
-              <h2 className="text-3xl font-bold mb-4">Usikker på hvor mye lånet koster?</h2>
-              <p className="text-gray-300 leading-relaxed">
-                Bruk vår lånekalkulator for å se nøyaktig hvor mye du vil betale 
-                i måneden — med alle renter og gebyrer. Helt gratis, uten registrering.
-              </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Forbrukslån */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 bg-white/10 backdrop-blur rounded-xl p-6">
+              <div className="flex-1 text-white">
+                <h2 className="text-xl font-bold mb-2">Forbrukslån</h2>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Beregn månedlig kostnad for usikret lån — med alle renter og gebyrer.
+                </p>
+              </div>
+              <Link
+                href="/verktøy/lånekalkulator"
+                className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-norsk-blue font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors shadow-lg text-sm"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                Forbrukslånskalkulator
+              </Link>
             </div>
-            <Link
-              href="/verktøy/lånekalkulator"
-              className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-norsk-blue font-bold py-4 px-8 rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
-              Åpne lånekalkulator
-            </Link>
+
+            {/* Boliglån */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 bg-white/10 backdrop-blur rounded-xl p-6">
+              <div className="flex-1 text-white">
+                <h2 className="text-xl font-bold mb-2">Boliglån</h2>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Beregn månedlig kostnad og effektiv rente for boliglån med nedbetalingsplan.
+                </p>
+              </div>
+              <Link
+                href="/verktøy/boliglånskalkulator"
+                className="flex-shrink-0 inline-flex items-center gap-2 bg-primary-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-primary-600 transition-colors shadow-lg text-sm"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                Boliglånskalkulator
+              </Link>
+            </div>
           </div>
         </div>
       </section>

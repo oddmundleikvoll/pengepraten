@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Verktøy — Gratis kalkulatorer og maler',
-  description: 'Gratis verktøy for personlig økonomi. Lånekalkulator, budsjettmal og mer. Helt gratis og uten registrering.',
+  description: 'Gratis verktøy for personlig økonomi. Forbrukslånskalkulator, boliglånskalkulator, budsjettmal og mer. Helt gratis og uten registrering.',
 }
 
 const tools = [

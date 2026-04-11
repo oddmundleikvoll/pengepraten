@@ -57,10 +57,10 @@ export default function LanekalkulatorClient() {
             <span className="mx-2">/</span>
             <Link href="/verktøy" className="hover:text-white">Verktøy</Link>
             <span className="mx-2">/</span>
-            <span>Lånekalkulator</span>
+            <span>Forbrukslånskalkulator</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">
-            Lånekalkulator
+            Forbrukslånskalkulator
           </h1>
           <p className="text-gray-300 text-lg">
             Beregn nøyaktig hvor mye et lån vil koste deg. Se månedlig kostnad, 

@@ -1,12 +1,46 @@
+'use client'
+
 import Link from 'next/link'
+import { useState } from 'react'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Kontakt — Ta kontakt med Pengepraten',
-  description: 'Har du spørsmål eller tilbakemeldinger? Ta kontakt med oss på kontakt@pengepraten.no.',
-}
-
 export default function KontaktPage() {
+  const [formState, setFormState] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [message, setMessage] = useState('')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setFormState('loading')
+    setMessage('')
+
+    const form = e.currentTarget
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value
+    const messageText = (form.elements.namedItem('message') as HTMLTextAreaElement).value
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message: messageText }),
+      })
+
+      const data = await res.json()
+
+      if (res.ok) {
+        setFormState('success')
+        setMessage('Melding sendt! Vi svarer vanligvis innen 24-48 timer.')
+        form.reset()
+      } else {
+        setFormState('error')
+        setMessage(data.error || 'Noe gikk galt. Prøv igjen.')
+      }
+    } catch {
+      setFormState('error')
+      setMessage('Noe gikk galt. Prøv igjen.')
+    }
+  }
+
   return (
     <>
       <section className="bg-gradient-to-br from-norsk-dark via-norsk-blue to-accent-700 text-white py-16">
@@ -61,11 +95,13 @@ export default function KontaktPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-norsk-dark mb-6">Send oss en melding</h2>
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Navn</label>
                 <input
                   type="text"
+                  name="name"
+                  required
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
                   placeholder="Ditt navn"
                 />
@@ -74,6 +110,8 @@ export default function KontaktPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">E-post</label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
                   placeholder="din@epost.no"
                 />
@@ -81,6 +119,8 @@ export default function KontaktPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Melding</label>
                 <textarea
+                  name="message"
+                  required
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
                   placeholder="Hva kan vi hjelpe deg med?"
@@ -88,15 +128,18 @@ export default function KontaktPage() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors"
+                disabled={formState === 'loading'}
+                className="w-full bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50"
               >
-                Send melding
+                {formState === 'loading' ? 'Sender...' : 'Send melding'}
               </button>
             </form>
-            <p className="text-sm text-gray-500 mt-4">
-              Skjemaet er foreløpig ikke koblet til backend. Send e-post direkte 
-              til kontakt@pengepraten.no for å nå oss.
-            </p>
+
+            {message && (
+              <p className={`text-sm mt-4 ${formState === 'success' ? 'text-green-600' : 'text-red-500'}`}>
+                {message}
+              </p>
+            )}
           </div>
         </div>
       </section>
