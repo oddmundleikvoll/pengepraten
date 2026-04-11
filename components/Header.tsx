@@ -14,6 +14,7 @@ const verktøyDropdown = [
   { href: '/verktøy', label: 'Alle verktøy' },
   { href: '/verktøy/lånekalkulator', label: 'Forbrukslånskalkulator' },
   { href: '/verktøy/boliglånskalkulator', label: 'Boliglånskalkulator' },
+  { href: '/min-boliglån', label: 'Min boliglånsrente' },
 ]
 
 const lanDropdown = [
@@ -98,7 +99,7 @@ export default function Header() {
               </button>
               {verktøyOpen && (
                 <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
-                  <div className="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">Kalkulatorer</div>
+                  <div className="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">Verktøy</div>
                   {verktøyDropdown.map((item) => (
                     <Link key={item.href} href={item.href} onClick={() => setVerktøyOpen(false)}
                       className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
