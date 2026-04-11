@@ -186,7 +186,7 @@ export default function SlikByggerDuSpareddel() {
             <li>☐ Lag mat fra bunnen flere netter i uka</li>
             <li>☐ Sett et fast matbudsjett og track det</li>
             <li>☐ Kutt take-away med 50% (spesialkveld = lov)</li>
-            <li>☐ Kjøp nødvendigvis，但不是 dyreste</li>
+            <li>☐ Kjøp nødvendigvis, men ikke dyreste</li>
           </ul>
         </div>
 
