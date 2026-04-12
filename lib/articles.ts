@@ -118,6 +118,24 @@ export const articles: Article[] = [
     readTime: '13 min',
     pillar: 'budsjett',
   },
+  {
+    slug: '/sparing/bsu-guide',
+    title: 'BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom',
+    excerpt: 'BSU er Norges beste spareform for unge under 34. Få opptil 26% effektiv avkastning med skattefradraget. Full guide til BSU i 2026.',
+    category: 'Sparing',
+    date: '2026-04-12',
+    readTime: '10 min',
+    pillar: 'sparing',
+  },
+  {
+    slug: '/kredittkort/cashback-kredittkort',
+    title: 'Cashback Kredittkort: Få opptil 4% tilbake på alt du handler i 2026',
+    excerpt: 'Lær alt om cashback kredittkort i Norge. Hvordan de fungerer, hvilke som gir mest tilbake, og hvordan du maksimerer cashback i 2026.',
+    category: 'Kredittkort',
+    date: '2026-04-12',
+    readTime: '9 min',
+    pillar: 'kredittkort',
+  },
 ]
 
 export const latestArticles = [...articles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 4)
