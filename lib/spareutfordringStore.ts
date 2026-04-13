@@ -7,10 +7,10 @@ export type ChallengeProgress = ChallengeProgressData
 
 const STORAGE_KEY = 'pengepraten_spareutfordring'
 
-// Week amounts: classic escalating — week n = 100*n kr
-// Week 1: 100 kr, Week 52: 5,200 kr → Total: ~137,800 kr
+// Week amounts: classic escalating — week n = 50*n kr
+// Week 1: 50 kr, Week 52: 2,600 kr → Total: ~68,900 kr
 export function getWeekAmount(week: number): number {
-  return week * 100
+  return week * 50
 }
 
 // Total for a given week (cumulative)

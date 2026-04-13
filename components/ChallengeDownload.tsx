@@ -38,12 +38,12 @@ function generatePDFHtml(): string {
 </head>
 <body>
   <h1>💚 52-ukers Spareutfordring</h1>
-  <p class="subtitle">Pengepraten.no — Spar 137 800 kr på 52 uker</p>
+  <p class="subtitle">Pengepraten.no — Spar 68 900 kr på 52 uker</p>
 
   <div class="summary">
-    <p><strong>Slik fungerer det:</strong> Hver uke setter du av et beløp som øker med 100 kr.</p>
-    <p>Uke 1 = 100 kr → Uke 52 = 5 200 kr → <strong>Total: 137 800 kr</strong></p>
-    <p style="color:#15803d;font-weight:700;margin-top:8px;">🎯 Etter 52 uker har du spart over 137 000 kr — uten å tømme lommeboken!</p>
+    <p><strong>Slik fungerer det:</strong> Hver uke setter du av et beløp som øker med 50 kr.</p>
+    <p>Uke 1 = 50 kr → Uke 52 = 2 600 kr → <strong>Total: 68 900 kr</strong></p>
+    <p style="color:#15803d;font-weight:700;margin-top:8px;">🎯 Etter 52 uker har du spart over 68 000 kr — uten å tømme lommeboken!</p>
   </div>
 
   <table>

@@ -5,8 +5,8 @@ import ChallengeDownload from '@/components/ChallengeDownload'
 import { TOTAL_CHALLENGE, getWeekAmount, getTotalUpTo } from '@/lib/spareutfordringStore'
 
 export const metadata: Metadata = {
-  title: '52-ukers Spareutfordring — Spar 137 800 kr på ett år | Pengepraten',
-  description: 'Bli med på 52-ukers spareutfordringen og spar 137 800 kr på ett år. Start på 100 kr i uka, øk med 100 kr hver uke. Du merker knapt at pengene forsvinner!',
+  title: '52-ukers Spareutfordring — Spar 68 900 kr på ett år | Pengepraten',
+  description: 'Bli med på 52-ukers spareutfordringen og spar 68 900 kr på ett år. Start på 50 kr i uka, øk med 50 kr hver uke. Du merker knapt at pengene forsvinner!',
 }
 
 export default function SpareutfordringPage() {
@@ -49,7 +49,7 @@ export default function SpareutfordringPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-green-100 leading-relaxed mb-8 max-w-lg">
-                Metoden er enkel: start på 100 kr i uka, øk med 100 kr hver uke.
+                Metoden er enkel: start på 50 kr i uka, øk med 50 kr hver uke.
                 Etter 52 uker har du spart{' '}
                 <strong className="text-white">{totalDisplay} kr</strong> — uten å
                 tømme lommeboken.
@@ -124,20 +124,20 @@ export default function SpareutfordringPage() {
             {
               step: '01',
               emoji: '💰',
-              title: 'Start på 100 kr',
-              desc: 'Uke 1: Sett av 100 kr. Det er like mye som to kaffekopper. Knapt merkbar på budsjettet.',
+              title: 'Start på 50 kr',
+              desc: 'Uke 1: Sett av 50 kr. Det er like mye som én kaffekopp. Knapt merkbar på budsjettet.',
             },
             {
               step: '02',
               emoji: '📈',
               title: 'Øk gradvis',
-              desc: 'Hver uke øker du med 100 kr. Uke 2 = 200 kr, uke 4 = 400 kr, uke 13 = 1.300 kr.',
+              desc: 'Hver uke øker du med 50 kr. Uke 2 = 100 kr, uke 4 = 200 kr, uke 13 = 650 kr.',
             },
             {
               step: '03',
               emoji: '🏆',
-              title: 'Samle 137 800 kr',
-              desc: 'Etter 52 uker har du spart totalt 137 800 kr — uten å ha kjent det særlig på forbruket.',
+              title: 'Samle 68 900 kr',
+              desc: 'Etter 52 uker har du spart totalt 68 900 kr — uten å ha kjent det særlig på forbruket.',
             },
           ].map(item => (
             <div key={item.step} className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-md hover:border-green-200 transition-all">
@@ -157,7 +157,7 @@ export default function SpareutfordringPage() {
         <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm mb-16">
           <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
             <h3 className="font-bold text-gray-900">Uke-fordeling (de første 13 ukene)</h3>
-            <span className="text-xs text-gray-400 font-medium">Beløpene øker med 100 kr per uke</span>
+            <span className="text-xs text-gray-400 font-medium">Beløpene øker med 50 kr per uke</span>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -182,7 +182,7 @@ export default function SpareutfordringPage() {
                 ))}
                 <tr className="bg-green-50 border-t-2 border-green-200">
                   <td className="px-6 py-3 font-bold text-gray-800">... og 39 uker til</td>
-                  <td className="px-6 py-3 text-right font-bold text-green-700">opptil 5 200 kr</td>
+                  <td className="px-6 py-3 text-right font-bold text-green-700">opptil 2 600 kr</td>
                   <td className="px-6 py-3 text-right font-black text-green-700">{totalDisplay} kr</td>
                 </tr>
               </tbody>
@@ -214,8 +214,8 @@ export default function SpareutfordringPage() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-100">
               {[
-                { value: '137 800 kr', label: 'Mulig å spare', color: 'text-green-600' },
-                { value: '100 kr', label: 'Start-beløp', color: 'text-gray-900' },
+                { value: '68 900 kr', label: 'Mulig å spare', color: 'text-green-600' },
+                { value: '50 kr', label: 'Start-beløp', color: 'text-gray-900' },
                 { value: '52 uker', label: 'Tidsramme', color: 'text-gray-900' },
               ].map(stat => (
                 <div key={stat.label} className="text-center">
@@ -267,11 +267,11 @@ export default function SpareutfordringPage() {
           {[
             {
               q: 'Hvorfor fungerer 52-ukers utfordringen så gode?',
-              a: 'Hemmeligheten er at du venner deg til å spare før du riktig merker at beløpene øker. Starten er så lav som 100 kr at du ikke kjenner det på budsjettet. Når du har kommet til uke 26 (der du sparer 2.600 kr i uka), har du allerede dannet vanen — og halvparten av jobben er gjort.',
+              a: 'Hemmeligheten er at du venner deg til å spare før du riktig merker at beløpene øker. Starten er så lav som 50 kr at du ikke kjenner det på budsjettet. Når du har kommet til uke 26 (der du sparer 1.300 kr i uka), har du allerede dannet vanen — og halvparten av jobben er gjort.',
             },
             {
               q: 'Kan jeg bruke en annen valuta enn norske kroner?',
-              a: 'Absolutt. 52-ukers utfordringen er et konsept, ikke en norsk spesifikk ting. Bytt bare ut 100 kr med et beløp som passer ditt budsjett. En vanlig internasjonal versjon bruker $1 i starten og øker med $1 per uke.',
+              a: 'Absolutt. 52-ukers utfordringen er et konsept, ikke en norsk spesifikk ting. Bytt bare ut 50 kr med et beløp som passer ditt budsjett. En vanlig internasjonal versjon bruker $1 i starten og øker med $1 per uke.',
             },
             {
               q: 'Hva om jeg hopper over en uke?',
