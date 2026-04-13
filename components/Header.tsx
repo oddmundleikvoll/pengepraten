@@ -6,8 +6,12 @@ import { useState, useRef, useEffect } from 'react'
 
 const navItems = [
   { href: '/kredittkort', label: 'Kredittkort' },
-  { href: '/sparing', label: 'Sparing' },
   { href: '/budsjett', label: 'Budsjett' },
+]
+
+const sparingDropdown = [
+  { href: '/sparing', label: 'Alle sparingstips' },
+  { href: '/spareutfordring', label: '🎯 52-ukers Spareutfordring' },
 ]
 
 const verktøyDropdown = [
@@ -25,14 +29,19 @@ const lanDropdown = [
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [lanOpen, setLanOpen] = useState(false)
+  const [sparingOpen, setSparingOpen] = useState(false)
   const [verktøyOpen, setVerktøyOpen] = useState(false)
   const lanRef = useRef<HTMLDivElement>(null)
+  const sparingRef = useRef<HTMLDivElement>(null)
   const verktøyRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (lanRef.current && !lanRef.current.contains(event.target as Node)) {
         setLanOpen(false)
+      }
+      if (sparingRef.current && !sparingRef.current.contains(event.target as Node)) {
+        setSparingOpen(false)
       }
       if (verktøyRef.current && !verktøyRef.current.contains(event.target as Node)) {
         setVerktøyOpen(false)
@@ -62,6 +71,30 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+
+            {/* Sparing dropdown */}
+            <div className="relative" ref={sparingRef}>
+              <button
+                onClick={() => setSparingOpen(!sparingOpen)}
+                className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all"
+              >
+                Sparing
+                <svg className={`w-4 h-4 transition-transform ${sparingOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {sparingOpen && (
+                <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
+                  <div className="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">Sparing</div>
+                  {sparingDropdown.map((item) => (
+                    <Link key={item.href} href={item.href} onClick={() => setSparingOpen(false)}
+                      className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {/* Lån dropdown */}
             <div className="relative" ref={lanRef}>
@@ -135,6 +168,13 @@ export default function Header() {
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} onClick={() => setMobileOpen(false)}
                 className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all">
+                {item.label}
+              </Link>
+            ))}
+            <div className="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">Sparing</div>
+            {sparingDropdown.map((item) => (
+              <Link key={item.href} href={item.href} onClick={() => setMobileOpen(false)}
+                className="block px-6 py-3 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all">
                 {item.label}
               </Link>
             ))}
