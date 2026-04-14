@@ -2,18 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pengepraten.no/</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://pengepraten.no/kredittkort</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pengepraten.no/kredittkort/beste-kredittkort-2026</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/kredittkort/beste-kredittkort-norge-2026</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/kredittkort/cashback-kredittkort</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -25,8 +37,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pengepraten.no/lan</loc>
+    <loc>https://pengepraten.no/kredittkort/slik-fungerer-kredittscore-norge</loc>
     <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/lan</loc>
+    <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -43,6 +61,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pengepraten.no/lan/hvor-mye-boliglan-kan-jeg-fa</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/lan/nar-lonner-refinansiering</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/lan/nar-lonner-refinansiering-seg</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://pengepraten.no/lan/refinansiering-spar-paa-gjelden</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -50,13 +86,13 @@
   </url>
   <url>
     <loc>https://pengepraten.no/sparing</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pengepraten.no/spareutfordring</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -67,21 +103,57 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pengepraten.no/budsjett</loc>
+    <loc>https://pengepraten.no/sparing/bsu-guide</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pengepraten.no/verktoy</loc>
+    <loc>https://pengepraten.no/sparing/slik-bygger-du-spareseddel</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/sparing/spareplan-guide</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/budsjett</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pengepraten.no/verktoy/lanekalkulator</loc>
+    <loc>https://pengepraten.no/budsjett/kom-i-gang-med-budsjett</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/verktøy</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/verktøy/boliglånskalkulator</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/verktøy/lånekalkulator</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/min-boliglån</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
