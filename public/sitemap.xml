@@ -121,6 +121,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pengepraten.no/sparing/hoyrentekonto</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/sparing/indeksfond-nybegynnere</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/sparing/ips-individuell-pensjonssparing</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/budsjett/budsjett-app</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pengepraten.no/bank/bytte-bank</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://pengepraten.no/budsjett</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
