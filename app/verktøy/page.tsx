@@ -16,6 +16,14 @@ const tools = [
     textColor: 'text-green-600',
   },
   {
+    href: '/sparing/hoyrentekonto-sammenligning',
+    title: 'Høyrentekonto-sammenligning',
+    description: 'Sammenlign renter fra 8 norske banker på én side. Sbanken, Hygga, Nordnet og flere. Oppdatert april 2026.',
+    icon: '📈',
+    color: 'bg-yellow-50',
+    textColor: 'text-yellow-600',
+  },
+  {
     href: '/verktøy/sparekalkulator',
     title: 'Sparekalkulator',
     description: 'Beregn hvor lenge det tar å nå sparemålet ditt med en høyrentekonto. Sett inn sparemål, ønsket beløp og månedlig sparing.',
