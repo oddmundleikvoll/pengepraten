@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import SpareutfordringApp from '@/components/SpareutfordringApp'
 import ChallengeDownload from '@/components/ChallengeDownload'
+import EmailCapture from '@/components/EmailCapture'
 import { TOTAL_CHALLENGE, getWeekAmount, getTotalUpTo } from '@/lib/spareutfordringStore'
 
 export const metadata: Metadata = {
@@ -256,6 +257,15 @@ export default function SpareutfordringPage() {
           </div>
           <ChallengeDownload />
         </div>
+      </section>
+
+      {/* Email capture */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+        <EmailCapture
+          variant="card"
+          title="Få ukentlig renteoppdatering rett i innboksen din"
+          description="Melde deg på vårt nyhetsbrev og få beskjed når rentene på høyrentekontoer endrer seg — slik at du alltid får best avkastning på sparingen din."
+        />
       </section>
 
       {/* FAQ */}

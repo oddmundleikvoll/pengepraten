@@ -1,0 +1,2879 @@
+{
+  "text": " Hei, du der! Ja, akkurat du! Hvis du du kan spare 68.900 kroner på bare et år, ved jeg startet med kun 50 kroner juka, det er 52 ukes spare utfordringen. Du starter med 50 kroner først juka. Så dobbler du beløpe hver juke. 5-0 1-0-0 2-0-0 4-0-0 Fortsert slike 52 uker, og plutselig har du spart 68.900 kroner. Tænkte jeg at du prøver jette hvor mye 50 kroner dobbler hver juke blir til på et år. De fleste tenker kanskje et par tusen napper, eller kanskje 10.000, men det er exponensiell vekst. Og denne gangen jobber den i din favor. Se for det dette, etter bare 5 uker har du spart 1.600 kroner. Etter 10 uker, 25.600 kroner. Det er firme undersmatbudset på konto, bare ved å doble et liten beløp. Halv veis, ykage 26 har du basert 32.000 kroner. Og de siste 13 ukerne alene, de legger til 36.900 kroner. Det er nesten halvparten av hele pote, bare i løp av de siste tre månedene. Men her er greia, dette er ikke bare en tabell du printer ut og glenner. Pengepraten enn å ha et verktei, da du kan lage hvor langt du er, yke får yke. Følg progression din i samtid. Det er lettere å holde motivationen når du ser hvor nærmed du er. Yke 52. Du har spart 68.900 kroner. 22 uker med hva en viktig ekonomisk vekstsennere står det der med en solid sum. Det eneste du trenger er 50 kroner, litt vilige styrke og et sted å lage hvor langt du er. Klar får utfordringen? Følg meg, hit linken i bio og las sparsammen. 52.000 kroner. 68.900 kroner. Du starter i dag.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 1.26,
+      "text": " Hei, du der!",
+      "tokens": [
+        50364,
+        634,
+        72,
+        11,
+        1581,
+        1163,
+        0,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " Hei,",
+          "start": 0.0,
+          "end": 0.52,
+          "probability": 0.6059608906507492
+        },
+        {
+          "word": " du",
+          "start": 0.86,
+          "end": 1.0,
+          "probability": 0.9772999286651611
+        },
+        {
+          "word": " der!",
+          "start": 1.0,
+          "end": 1.26,
+          "probability": 0.8542445302009583
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 2.44,
+      "end": 3.66,
+      "text": " Ja, akkurat du!",
+      "tokens": [
+        50464,
+        3530,
+        11,
+        9308,
+        33503,
+        267,
+        1581,
+        0,
+        50564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " Ja,",
+          "start": 2.44,
+          "end": 2.6,
+          "probability": 0.9320041537284851
+        },
+        {
+          "word": " akkurat",
+          "start": 2.98,
+          "end": 3.46,
+          "probability": 0.8616501887639364
+        },
+        {
+          "word": " du!",
+          "start": 3.46,
+          "end": 3.66,
+          "probability": 0.9715791940689087
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.78,
+      "end": 10.26,
+      "text": " Hvis du du kan spare 68.900 kroner på bare et år, ved jeg startet med kun 50 kroner juka,",
+      "tokens": [
+        50564,
+        389,
+        4938,
+        1581,
+        1581,
+        4608,
+        13798,
+        23317,
+        13,
+        23943,
+        350,
+        2044,
+        260,
+        4170,
+        6949,
+        1030,
+        19525,
+        11,
+        14267,
+        10610,
+        722,
+        302,
+        1205,
+        8215,
+        2625,
+        350,
+        2044,
+        260,
+        361,
+        13599,
+        11,
+        50914
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " Hvis",
+          "start": 4.78,
+          "end": 4.84,
+          "probability": 0.5926824435591698
+        },
+        {
+          "word": " du",
+          "start": 4.84,
+          "end": 5.04,
+          "probability": 0.9955009818077087
+        },
+        {
+          "word": " du",
+          "start": 5.04,
+          "end": 5.12,
+          "probability": 0.864966630935669
+        },
+        {
+          "word": " kan",
+          "start": 5.12,
+          "end": 5.42,
+          "probability": 0.320268839597702
+        },
+        {
+          "word": " spare",
+          "start": 5.42,
+          "end": 5.66,
+          "probability": 0.5147514939308167
+        },
+        {
+          "word": " 68",
+          "start": 5.66,
+          "end": 6.36,
+          "probability": 0.96662837266922
+        },
+        {
+          "word": ".900",
+          "start": 6.36,
+          "end": 7.0,
+          "probability": 0.7608507871627808
+        },
+        {
+          "word": " kroner",
+          "start": 7.0,
+          "end": 7.42,
+          "probability": 0.7995899418989817
+        },
+        {
+          "word": " på",
+          "start": 7.42,
+          "end": 7.58,
+          "probability": 0.9905168414115906
+        },
+        {
+          "word": " bare",
+          "start": 7.58,
+          "end": 7.78,
+          "probability": 0.8836100101470947
+        },
+        {
+          "word": " et",
+          "start": 7.78,
+          "end": 8.0,
+          "probability": 0.7220731377601624
+        },
+        {
+          "word": " år,",
+          "start": 8.0,
+          "end": 8.22,
+          "probability": 0.5561382174491882
+        },
+        {
+          "word": " ved",
+          "start": 8.62,
+          "end": 8.72,
+          "probability": 0.7540490627288818
+        },
+        {
+          "word": " jeg",
+          "start": 8.72,
+          "end": 8.84,
+          "probability": 0.9220991730690002
+        },
+        {
+          "word": " startet",
+          "start": 8.84,
+          "end": 9.1,
+          "probability": 0.5766471326351166
+        },
+        {
+          "word": " med",
+          "start": 9.1,
+          "end": 9.16,
+          "probability": 0.958669126033783
+        },
+        {
+          "word": " kun",
+          "start": 9.16,
+          "end": 9.32,
+          "probability": 0.8090539574623108
+        },
+        {
+          "word": " 50",
+          "start": 9.32,
+          "end": 9.64,
+          "probability": 0.9736928343772888
+        },
+        {
+          "word": " kroner",
+          "start": 9.64,
+          "end": 10.04,
+          "probability": 0.9847698211669922
+        },
+        {
+          "word": " juka,",
+          "start": 10.04,
+          "end": 10.26,
+          "probability": 0.6165601164102554
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 11.26,
+      "end": 13.7,
+      "text": " det er 52 ukes spare utfordringen.",
+      "tokens": [
+        50914,
+        1141,
+        1189,
+        18079,
+        344,
+        5993,
+        13798,
+        2839,
+        7404,
+        2937,
+        268,
+        13,
+        51064
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " det",
+          "start": 11.26,
+          "end": 11.52,
+          "probability": 0.9029388427734375
+        },
+        {
+          "word": " er",
+          "start": 11.52,
+          "end": 11.68,
+          "probability": 0.9762504696846008
+        },
+        {
+          "word": " 52",
+          "start": 11.68,
+          "end": 12.14,
+          "probability": 0.9812222123146057
+        },
+        {
+          "word": " ukes",
+          "start": 12.14,
+          "end": 12.6,
+          "probability": 0.4940890371799469
+        },
+        {
+          "word": " spare",
+          "start": 12.6,
+          "end": 12.94,
+          "probability": 0.31005558371543884
+        },
+        {
+          "word": " utfordringen.",
+          "start": 12.94,
+          "end": 13.7,
+          "probability": 0.8395611941814423
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 14.64,
+      "end": 16.88,
+      "text": " Du starter med 50 kroner først juka.",
+      "tokens": [
+        51064,
+        5153,
+        22465,
+        1205,
+        2625,
+        350,
+        2044,
+        260,
+        40314,
+        372,
+        361,
+        13599,
+        13,
+        51214
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " Du",
+          "start": 14.64,
+          "end": 14.88,
+          "probability": 0.9909743666648865
+        },
+        {
+          "word": " starter",
+          "start": 14.88,
+          "end": 15.28,
+          "probability": 0.6952704787254333
+        },
+        {
+          "word": " med",
+          "start": 15.28,
+          "end": 15.48,
+          "probability": 0.9899987578392029
+        },
+        {
+          "word": " 50",
+          "start": 15.48,
+          "end": 15.8,
+          "probability": 0.9822737574577332
+        },
+        {
+          "word": " kroner",
+          "start": 15.8,
+          "end": 16.24,
+          "probability": 0.9947938124338785
+        },
+        {
+          "word": " først",
+          "start": 16.24,
+          "end": 16.64,
+          "probability": 0.7290922999382019
+        },
+        {
+          "word": " juka.",
+          "start": 16.64,
+          "end": 16.88,
+          "probability": 0.7891406416893005
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 18.08,
+      "end": 19.7,
+      "text": " Så dobbler du beløpe hver juke.",
+      "tokens": [
+        51214,
+        12728,
+        360,
+        6692,
+        1918,
+        1581,
+        989,
+        6715,
+        494,
+        276,
+        331,
+        361,
+        15420,
+        13,
+        51364
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " Så",
+          "start": 18.08,
+          "end": 18.22,
+          "probability": 0.9406211376190186
+        },
+        {
+          "word": " dobbler",
+          "start": 18.22,
+          "end": 18.54,
+          "probability": 0.4892509529987971
+        },
+        {
+          "word": " du",
+          "start": 18.54,
+          "end": 18.64,
+          "probability": 0.9900381565093994
+        },
+        {
+          "word": " beløpe",
+          "start": 18.64,
+          "end": 19.02,
+          "probability": 0.5946042637030283
+        },
+        {
+          "word": " hver",
+          "start": 19.02,
+          "end": 19.32,
+          "probability": 0.5432587414979935
+        },
+        {
+          "word": " juke.",
+          "start": 19.32,
+          "end": 19.7,
+          "probability": 0.5246060788631439
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 20.74,
+      "end": 21.44,
+      "text": " 5-0",
+      "tokens": [
+        51364,
+        1025,
+        12,
+        15,
+        51464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " 5",
+          "start": 20.74,
+          "end": 21.04,
+          "probability": 0.5847674012184143
+        },
+        {
+          "word": "-0",
+          "start": 21.04,
+          "end": 21.44,
+          "probability": 0.5694816783070564
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 22.0,
+      "end": 23.46,
+      "text": " 1-0-0",
+      "tokens": [
+        51464,
+        502,
+        12,
+        15,
+        12,
+        15,
+        51564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " 1",
+          "start": 22.0,
+          "end": 22.7,
+          "probability": 0.37039628624916077
+        },
+        {
+          "word": "-0",
+          "start": 22.7,
+          "end": 23.14,
+          "probability": 0.9593239426612854
+        },
+        {
+          "word": "-0",
+          "start": 23.14,
+          "end": 23.46,
+          "probability": 0.902027815580368
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 24.0,
+      "end": 25.54,
+      "text": " 2-0-0",
+      "tokens": [
+        51564,
+        568,
+        12,
+        15,
+        12,
+        15,
+        51664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " 2",
+          "start": 24.0,
+          "end": 24.66,
+          "probability": 0.8278872966766357
+        },
+        {
+          "word": "-0",
+          "start": 24.66,
+          "end": 25.08,
+          "probability": 0.9943141639232635
+        },
+        {
+          "word": "-0",
+          "start": 25.08,
+          "end": 25.54,
+          "probability": 0.9685947000980377
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 25.54,
+      "end": 28.44,
+      "text": " 4-0-0",
+      "tokens": [
+        51664,
+        1017,
+        12,
+        15,
+        12,
+        15,
+        51764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30641950078371194,
+      "compression_ratio": 1.4067796610169492,
+      "no_speech_prob": 0.03665141388773918,
+      "words": [
+        {
+          "word": " 4",
+          "start": 25.54,
+          "end": 26.68,
+          "probability": 0.9794403910636902
+        },
+        {
+          "word": "-0",
+          "start": 26.68,
+          "end": 27.12,
+          "probability": 0.8587087690830231
+        },
+        {
+          "word": "-0",
+          "start": 27.12,
+          "end": 28.44,
+          "probability": 0.9911047518253326
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 2844,
+      "start": 28.44,
+      "end": 33.26,
+      "text": " Fortsert slike 52 uker, og plutselig har du spart 68.900 kroner.",
+      "tokens": [
+        50364,
+        479,
+        3299,
+        911,
+        1061,
+        1123,
+        18079,
+        344,
+        5767,
+        11,
+        5360,
+        499,
+        3648,
+        338,
+        328,
+        2233,
+        1581,
+        637,
+        446,
+        23317,
+        13,
+        23943,
+        350,
+        2044,
+        260,
+        13,
+        50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.262434973232988,
+      "compression_ratio": 1.495798319327731,
+      "no_speech_prob": 2.6831576178665273e-05,
+      "words": [
+        {
+          "word": " Fortsert",
+          "start": 28.44,
+          "end": 28.96,
+          "probability": 0.40365531543890637
+        },
+        {
+          "word": " slike",
+          "start": 28.96,
+          "end": 29.3,
+          "probability": 0.4777267277240753
+        },
+        {
+          "word": " 52",
+          "start": 29.3,
+          "end": 29.76,
+          "probability": 0.8536758422851562
+        },
+        {
+          "word": " uker,",
+          "start": 29.76,
+          "end": 30.14,
+          "probability": 0.6772110611200333
+        },
+        {
+          "word": " og",
+          "start": 30.44,
+          "end": 30.56,
+          "probability": 0.9073222279548645
+        },
+        {
+          "word": " plutselig",
+          "start": 30.56,
+          "end": 30.96,
+          "probability": 0.396570535376668
+        },
+        {
+          "word": " har",
+          "start": 30.96,
+          "end": 31.1,
+          "probability": 0.9802641868591309
+        },
+        {
+          "word": " du",
+          "start": 31.1,
+          "end": 31.2,
+          "probability": 0.9044503569602966
+        },
+        {
+          "word": " spart",
+          "start": 31.2,
+          "end": 31.46,
+          "probability": 0.8763625621795654
+        },
+        {
+          "word": " 68",
+          "start": 31.46,
+          "end": 32.02,
+          "probability": 0.985690176486969
+        },
+        {
+          "word": ".900",
+          "start": 32.02,
+          "end": 32.68,
+          "probability": 0.6214307248592377
+        },
+        {
+          "word": " kroner.",
+          "start": 32.68,
+          "end": 33.26,
+          "probability": 0.7470463017622629
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 2844,
+      "start": 34.12,
+      "end": 38.32,
+      "text": " Tænkte jeg at du prøver jette hvor mye 50 kroner dobbler hver juke blir til på et år.",
+      "tokens": [
+        50614,
+        314,
+        7303,
+        77,
+        18844,
+        10610,
+        412,
+        1581,
+        582,
+        6715,
+        331,
+        361,
+        3007,
+        31459,
+        452,
+        68,
+        2625,
+        350,
+        2044,
+        260,
+        360,
+        6692,
+        1918,
+        276,
+        331,
+        361,
+        15420,
+        19504,
+        8440,
+        4170,
+        1030,
+        19525,
+        13,
+        50864
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.262434973232988,
+      "compression_ratio": 1.495798319327731,
+      "no_speech_prob": 2.6831576178665273e-05,
+      "words": [
+        {
+          "word": " Tænkte",
+          "start": 34.12,
+          "end": 34.5,
+          "probability": 0.6490160524845123
+        },
+        {
+          "word": " jeg",
+          "start": 34.5,
+          "end": 34.62,
+          "probability": 0.9627547264099121
+        },
+        {
+          "word": " at",
+          "start": 34.62,
+          "end": 34.76,
+          "probability": 0.8651685118675232
+        },
+        {
+          "word": " du",
+          "start": 34.76,
+          "end": 34.84,
+          "probability": 0.9244239926338196
+        },
+        {
+          "word": " prøver",
+          "start": 34.84,
+          "end": 35.1,
+          "probability": 0.8565290768941244
+        },
+        {
+          "word": " jette",
+          "start": 35.1,
+          "end": 35.34,
+          "probability": 0.32310567796230316
+        },
+        {
+          "word": " hvor",
+          "start": 35.34,
+          "end": 35.5,
+          "probability": 0.4851944148540497
+        },
+        {
+          "word": " mye",
+          "start": 35.5,
+          "end": 35.74,
+          "probability": 0.9098410904407501
+        },
+        {
+          "word": " 50",
+          "start": 35.74,
+          "end": 36.04,
+          "probability": 0.9785990715026855
+        },
+        {
+          "word": " kroner",
+          "start": 36.04,
+          "end": 36.48,
+          "probability": 0.9864253203074137
+        },
+        {
+          "word": " dobbler",
+          "start": 36.48,
+          "end": 36.8,
+          "probability": 0.4875697195529938
+        },
+        {
+          "word": " hver",
+          "start": 36.8,
+          "end": 37.02,
+          "probability": 0.5409280955791473
+        },
+        {
+          "word": " juke",
+          "start": 37.02,
+          "end": 37.38,
+          "probability": 0.09335278649814427
+        },
+        {
+          "word": " blir",
+          "start": 37.38,
+          "end": 37.56,
+          "probability": 0.6385098695755005
+        },
+        {
+          "word": " til",
+          "start": 37.56,
+          "end": 37.74,
+          "probability": 0.8747590780258179
+        },
+        {
+          "word": " på",
+          "start": 37.74,
+          "end": 37.98,
+          "probability": 0.9154444336891174
+        },
+        {
+          "word": " et",
+          "start": 37.98,
+          "end": 38.14,
+          "probability": 0.4395314157009125
+        },
+        {
+          "word": " år.",
+          "start": 38.14,
+          "end": 38.32,
+          "probability": 0.8601630926132202
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 2844,
+      "start": 39.42,
+      "end": 44.22,
+      "text": " De fleste tenker kanskje et par tusen napper, eller kanskje 10.000,",
+      "tokens": [
+        50864,
+        1346,
+        932,
+        8887,
+        2064,
+        5767,
+        16030,
+        74,
+        2884,
+        1030,
+        971,
+        20647,
+        268,
+        297,
+        34456,
+        11,
+        12519,
+        16030,
+        74,
+        2884,
+        1266,
+        13,
+        1360,
+        11,
+        51164
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.262434973232988,
+      "compression_ratio": 1.495798319327731,
+      "no_speech_prob": 2.6831576178665273e-05,
+      "words": [
+        {
+          "word": " De",
+          "start": 39.42,
+          "end": 39.6,
+          "probability": 0.8984427452087402
+        },
+        {
+          "word": " fleste",
+          "start": 39.6,
+          "end": 39.98,
+          "probability": 0.9757082164287567
+        },
+        {
+          "word": " tenker",
+          "start": 39.98,
+          "end": 40.3,
+          "probability": 0.5783085525035858
+        },
+        {
+          "word": " kanskje",
+          "start": 40.3,
+          "end": 40.72,
+          "probability": 0.931938370068868
+        },
+        {
+          "word": " et",
+          "start": 40.72,
+          "end": 41.14,
+          "probability": 0.5144155025482178
+        },
+        {
+          "word": " par",
+          "start": 41.14,
+          "end": 41.38,
+          "probability": 0.9546183943748474
+        },
+        {
+          "word": " tusen",
+          "start": 41.38,
+          "end": 41.84,
+          "probability": 0.8316990435123444
+        },
+        {
+          "word": " napper,",
+          "start": 41.84,
+          "end": 42.04,
+          "probability": 0.5166643895208836
+        },
+        {
+          "word": " eller",
+          "start": 42.52,
+          "end": 42.86,
+          "probability": 0.974692702293396
+        },
+        {
+          "word": " kanskje",
+          "start": 42.86,
+          "end": 43.66,
+          "probability": 0.9613568782806396
+        },
+        {
+          "word": " 10",
+          "start": 43.66,
+          "end": 43.86,
+          "probability": 0.8998527526855469
+        },
+        {
+          "word": ".000,",
+          "start": 43.86,
+          "end": 44.22,
+          "probability": 0.8227827250957489
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 2844,
+      "start": 44.92,
+      "end": 47.1,
+      "text": " men det er exponensiell vekst.",
+      "tokens": [
+        51164,
+        1706,
+        1141,
+        1189,
+        12680,
+        694,
+        32562,
+        1241,
+        74,
+        372,
+        13,
+        51314
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.262434973232988,
+      "compression_ratio": 1.495798319327731,
+      "no_speech_prob": 2.6831576178665273e-05,
+      "words": [
+        {
+          "word": " men",
+          "start": 44.92,
+          "end": 45.5,
+          "probability": 0.9782895445823669
+        },
+        {
+          "word": " det",
+          "start": 45.5,
+          "end": 45.66,
+          "probability": 0.9431325197219849
+        },
+        {
+          "word": " er",
+          "start": 45.66,
+          "end": 45.84,
+          "probability": 0.9787929654121399
+        },
+        {
+          "word": " exponensiell",
+          "start": 45.84,
+          "end": 46.56,
+          "probability": 0.49008122086524963
+        },
+        {
+          "word": " vekst.",
+          "start": 46.56,
+          "end": 47.1,
+          "probability": 0.7749486962954203
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 2844,
+      "start": 48.1,
+      "end": 49.62,
+      "text": " Og denne gangen jobber den i din favor.",
+      "tokens": [
+        51314,
+        14883,
+        1441,
+        716,
+        10145,
+        268,
+        1691,
+        607,
+        1441,
+        741,
+        3791,
+        2294,
+        13,
+        51464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.262434973232988,
+      "compression_ratio": 1.495798319327731,
+      "no_speech_prob": 2.6831576178665273e-05,
+      "words": [
+        {
+          "word": " Og",
+          "start": 48.1,
+          "end": 48.22,
+          "probability": 0.8382642269134521
+        },
+        {
+          "word": " denne",
+          "start": 48.22,
+          "end": 48.48,
+          "probability": 0.9732190370559692
+        },
+        {
+          "word": " gangen",
+          "start": 48.48,
+          "end": 48.8,
+          "probability": 0.7738553881645203
+        },
+        {
+          "word": " jobber",
+          "start": 48.8,
+          "end": 49.1,
+          "probability": 0.918725848197937
+        },
+        {
+          "word": " den",
+          "start": 49.1,
+          "end": 49.22,
+          "probability": 0.903201162815094
+        },
+        {
+          "word": " i",
+          "start": 49.22,
+          "end": 49.32,
+          "probability": 0.9404790997505188
+        },
+        {
+          "word": " din",
+          "start": 49.32,
+          "end": 49.44,
+          "probability": 0.7556380033493042
+        },
+        {
+          "word": " favor.",
+          "start": 49.44,
+          "end": 49.62,
+          "probability": 0.704103946685791
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 2844,
+      "start": 50.74,
+      "end": 55.02,
+      "text": " Se for det dette, etter bare 5 uker har du spart 1.600 kroner.",
+      "tokens": [
+        51464,
+        1100,
+        337,
+        1141,
+        47126,
+        11,
+        1030,
+        391,
+        6949,
+        1025,
+        344,
+        5767,
+        2233,
+        1581,
+        637,
+        446,
+        502,
+        13,
+        15707,
+        350,
+        2044,
+        260,
+        13,
+        51714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.262434973232988,
+      "compression_ratio": 1.495798319327731,
+      "no_speech_prob": 2.6831576178665273e-05,
+      "words": [
+        {
+          "word": " Se",
+          "start": 50.74,
+          "end": 51.16,
+          "probability": 0.7588664889335632
+        },
+        {
+          "word": " for",
+          "start": 51.16,
+          "end": 51.34,
+          "probability": 0.8847418427467346
+        },
+        {
+          "word": " det",
+          "start": 51.34,
+          "end": 51.44,
+          "probability": 0.3251150846481323
+        },
+        {
+          "word": " dette,",
+          "start": 51.44,
+          "end": 51.68,
+          "probability": 0.9652673006057739
+        },
+        {
+          "word": " etter",
+          "start": 52.1,
+          "end": 52.28,
+          "probability": 0.9176873862743378
+        },
+        {
+          "word": " bare",
+          "start": 52.28,
+          "end": 52.38,
+          "probability": 0.44343191385269165
+        },
+        {
+          "word": " 5",
+          "start": 52.38,
+          "end": 52.62,
+          "probability": 0.4712387025356293
+        },
+        {
+          "word": " uker",
+          "start": 52.62,
+          "end": 52.96,
+          "probability": 0.8825075328350067
+        },
+        {
+          "word": " har",
+          "start": 52.96,
+          "end": 53.16,
+          "probability": 0.9816903471946716
+        },
+        {
+          "word": " du",
+          "start": 53.16,
+          "end": 53.26,
+          "probability": 0.9972636699676514
+        },
+        {
+          "word": " spart",
+          "start": 53.26,
+          "end": 53.56,
+          "probability": 0.9727616310119629
+        },
+        {
+          "word": " 1",
+          "start": 53.56,
+          "end": 53.84,
+          "probability": 0.4186466932296753
+        },
+        {
+          "word": ".600",
+          "start": 53.84,
+          "end": 54.42,
+          "probability": 0.9657001197338104
+        },
+        {
+          "word": " kroner.",
+          "start": 54.42,
+          "end": 55.02,
+          "probability": 0.9886470437049866
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 5502,
+      "start": 55.68,
+      "end": 59.98,
+      "text": " Etter 10 uker, 25.600 kroner.",
+      "tokens": [
+        50364,
+        3790,
+        391,
+        1266,
+        344,
+        5767,
+        11,
+        3552,
+        13,
+        15707,
+        350,
+        2044,
+        260,
+        13,
+        50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.29743407944501454,
+      "compression_ratio": 1.467005076142132,
+      "no_speech_prob": 0.7785906195640564,
+      "words": [
+        {
+          "word": " Etter",
+          "start": 55.68,
+          "end": 56.32,
+          "probability": 0.571688175201416
+        },
+        {
+          "word": " 10",
+          "start": 56.32,
+          "end": 56.64,
+          "probability": 0.518696665763855
+        },
+        {
+          "word": " uker,",
+          "start": 56.64,
+          "end": 57.0,
+          "probability": 0.7505767047405243
+        },
+        {
+          "word": " 25",
+          "start": 57.6,
+          "end": 58.54,
+          "probability": 0.9646444320678711
+        },
+        {
+          "word": ".600",
+          "start": 58.54,
+          "end": 59.36,
+          "probability": 0.8642649352550507
+        },
+        {
+          "word": " kroner.",
+          "start": 59.36,
+          "end": 59.98,
+          "probability": 0.8462130626042684
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5502,
+      "start": 60.86,
+      "end": 64.88,
+      "text": " Det er firme undersmatbudset på konto, bare ved å doble et liten beløp.",
+      "tokens": [
+        50614,
+        4237,
+        1189,
+        12159,
+        1398,
+        16692,
+        15677,
+        18281,
+        3854,
+        4170,
+        350,
+        7556,
+        11,
+        6949,
+        14267,
+        8841,
+        360,
+        638,
+        1030,
+        287,
+        6009,
+        989,
+        6715,
+        79,
+        13,
+        50864
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.29743407944501454,
+      "compression_ratio": 1.467005076142132,
+      "no_speech_prob": 0.7785906195640564,
+      "words": [
+        {
+          "word": " Det",
+          "start": 60.86,
+          "end": 61.16,
+          "probability": 0.6665448546409607
+        },
+        {
+          "word": " er",
+          "start": 61.16,
+          "end": 61.26,
+          "probability": 0.8841869831085205
+        },
+        {
+          "word": " firme",
+          "start": 61.26,
+          "end": 61.7,
+          "probability": 0.22419308125972748
+        },
+        {
+          "word": " undersmatbudset",
+          "start": 61.7,
+          "end": 62.52,
+          "probability": 0.39892908930778503
+        },
+        {
+          "word": " på",
+          "start": 62.52,
+          "end": 62.74,
+          "probability": 0.9846088886260986
+        },
+        {
+          "word": " konto,",
+          "start": 62.74,
+          "end": 63.04,
+          "probability": 0.6726317852735519
+        },
+        {
+          "word": " bare",
+          "start": 63.42,
+          "end": 63.56,
+          "probability": 0.9378636479377747
+        },
+        {
+          "word": " ved",
+          "start": 63.56,
+          "end": 63.74,
+          "probability": 0.6015396118164062
+        },
+        {
+          "word": " å",
+          "start": 63.74,
+          "end": 63.88,
+          "probability": 0.883762001991272
+        },
+        {
+          "word": " doble",
+          "start": 63.88,
+          "end": 64.1,
+          "probability": 0.5290376842021942
+        },
+        {
+          "word": " et",
+          "start": 64.1,
+          "end": 64.22,
+          "probability": 0.8192963600158691
+        },
+        {
+          "word": " liten",
+          "start": 64.22,
+          "end": 64.46,
+          "probability": 0.5869867205619812
+        },
+        {
+          "word": " beløp.",
+          "start": 64.46,
+          "end": 64.88,
+          "probability": 0.7085591604312261
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 5502,
+      "start": 65.8,
+      "end": 69.98,
+      "text": " Halv veis, ykage 26 har du basert 32.000 kroner.",
+      "tokens": [
+        50864,
+        13896,
+        85,
+        1241,
+        271,
+        11,
+        288,
+        74,
+        609,
+        7551,
+        2233,
+        1581,
+        987,
+        911,
+        8858,
+        13,
+        1360,
+        350,
+        2044,
+        260,
+        13,
+        51114
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.29743407944501454,
+      "compression_ratio": 1.467005076142132,
+      "no_speech_prob": 0.7785906195640564,
+      "words": [
+        {
+          "word": " Halv",
+          "start": 65.8,
+          "end": 66.26,
+          "probability": 0.7370299100875854
+        },
+        {
+          "word": " veis,",
+          "start": 66.26,
+          "end": 66.54,
+          "probability": 0.508226290345192
+        },
+        {
+          "word": " ykage",
+          "start": 66.86,
+          "end": 67.16,
+          "probability": 0.2383417785167694
+        },
+        {
+          "word": " 26",
+          "start": 67.16,
+          "end": 67.62,
+          "probability": 0.9224130511283875
+        },
+        {
+          "word": " har",
+          "start": 67.62,
+          "end": 68.2,
+          "probability": 0.4361472427845001
+        },
+        {
+          "word": " du",
+          "start": 68.2,
+          "end": 68.28,
+          "probability": 0.2686632573604584
+        },
+        {
+          "word": " basert",
+          "start": 68.28,
+          "end": 68.6,
+          "probability": 0.7312937378883362
+        },
+        {
+          "word": " 32",
+          "start": 68.6,
+          "end": 69.0,
+          "probability": 0.4685037434101105
+        },
+        {
+          "word": ".000",
+          "start": 69.0,
+          "end": 69.54,
+          "probability": 0.979967474937439
+        },
+        {
+          "word": " kroner.",
+          "start": 69.54,
+          "end": 69.98,
+          "probability": 0.9894944628079733
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 5502,
+      "start": 70.72,
+      "end": 76.36,
+      "text": " Og de siste 13 ukerne alene, de legger til 36.900 kroner.",
+      "tokens": [
+        51114,
+        14883,
+        368,
+        262,
+        8375,
+        3705,
+        344,
+        5767,
+        716,
+        419,
+        1450,
+        11,
+        368,
+        1676,
+        1321,
+        8440,
+        8652,
+        13,
+        23943,
+        350,
+        2044,
+        260,
+        13,
+        51414
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.29743407944501454,
+      "compression_ratio": 1.467005076142132,
+      "no_speech_prob": 0.7785906195640564,
+      "words": [
+        {
+          "word": " Og",
+          "start": 70.72,
+          "end": 71.0,
+          "probability": 0.7492473125457764
+        },
+        {
+          "word": " de",
+          "start": 71.0,
+          "end": 71.12,
+          "probability": 0.8803326487541199
+        },
+        {
+          "word": " siste",
+          "start": 71.12,
+          "end": 71.44,
+          "probability": 0.9157305061817169
+        },
+        {
+          "word": " 13",
+          "start": 71.44,
+          "end": 71.64,
+          "probability": 0.7636030316352844
+        },
+        {
+          "word": " ukerne",
+          "start": 71.64,
+          "end": 72.3,
+          "probability": 0.5377438217401505
+        },
+        {
+          "word": " alene,",
+          "start": 72.3,
+          "end": 72.54,
+          "probability": 0.8593303859233856
+        },
+        {
+          "word": " de",
+          "start": 73.62,
+          "end": 73.9,
+          "probability": 0.9098435044288635
+        },
+        {
+          "word": " legger",
+          "start": 73.9,
+          "end": 74.22,
+          "probability": 0.7250686287879944
+        },
+        {
+          "word": " til",
+          "start": 74.22,
+          "end": 74.4,
+          "probability": 0.8282362818717957
+        },
+        {
+          "word": " 36",
+          "start": 74.4,
+          "end": 74.94,
+          "probability": 0.9661466479301453
+        },
+        {
+          "word": ".900",
+          "start": 74.94,
+          "end": 75.68,
+          "probability": 0.9055297374725342
+        },
+        {
+          "word": " kroner.",
+          "start": 75.68,
+          "end": 76.36,
+          "probability": 0.9898690183957418
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "seek": 5502,
+      "start": 77.24,
+      "end": 81.14,
+      "text": " Det er nesten halvparten av hele pote, bare i løp av de siste tre månedene.",
+      "tokens": [
+        51414,
+        4237,
+        1189,
+        15646,
+        268,
+        7523,
+        85,
+        6971,
+        268,
+        1305,
+        16812,
+        280,
+        1370,
+        11,
+        6949,
+        741,
+        287,
+        6715,
+        79,
+        1305,
+        368,
+        262,
+        8375,
+        2192,
+        10254,
+        9232,
+        1450,
+        13,
+        51664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.29743407944501454,
+      "compression_ratio": 1.467005076142132,
+      "no_speech_prob": 0.7785906195640564,
+      "words": [
+        {
+          "word": " Det",
+          "start": 77.24,
+          "end": 77.5,
+          "probability": 0.5809374451637268
+        },
+        {
+          "word": " er",
+          "start": 77.5,
+          "end": 77.58,
+          "probability": 0.9352250695228577
+        },
+        {
+          "word": " nesten",
+          "start": 77.58,
+          "end": 77.86,
+          "probability": 0.7408243119716644
+        },
+        {
+          "word": " halvparten",
+          "start": 77.86,
+          "end": 78.32,
+          "probability": 0.8088106215000153
+        },
+        {
+          "word": " av",
+          "start": 78.32,
+          "end": 78.46,
+          "probability": 0.9802632927894592
+        },
+        {
+          "word": " hele",
+          "start": 78.46,
+          "end": 78.7,
+          "probability": 0.8910881876945496
+        },
+        {
+          "word": " pote,",
+          "start": 78.7,
+          "end": 78.98,
+          "probability": 0.25382301956415176
+        },
+        {
+          "word": " bare",
+          "start": 79.42,
+          "end": 79.56,
+          "probability": 0.9720938205718994
+        },
+        {
+          "word": " i",
+          "start": 79.56,
+          "end": 79.72,
+          "probability": 0.903397798538208
+        },
+        {
+          "word": " løp",
+          "start": 79.72,
+          "end": 79.92,
+          "probability": 0.7649935483932495
+        },
+        {
+          "word": " av",
+          "start": 79.92,
+          "end": 79.98,
+          "probability": 0.9890811443328857
+        },
+        {
+          "word": " de",
+          "start": 79.98,
+          "end": 80.08,
+          "probability": 0.9951373934745789
+        },
+        {
+          "word": " siste",
+          "start": 80.08,
+          "end": 80.36,
+          "probability": 0.9946203231811523
+        },
+        {
+          "word": " tre",
+          "start": 80.36,
+          "end": 80.66,
+          "probability": 0.6540095210075378
+        },
+        {
+          "word": " månedene.",
+          "start": 80.66,
+          "end": 81.14,
+          "probability": 0.9364447792371114
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 8114,
+      "start": 81.86,
+      "end": 85.48,
+      "text": " Men her er greia, dette er ikke bare en tabell du printer ut og glenner.",
+      "tokens": [
+        50414,
+        6685,
+        720,
+        1189,
+        6066,
+        654,
+        11,
+        47126,
+        1189,
+        13076,
+        6949,
+        465,
+        4421,
+        898,
+        1581,
+        582,
+        5106,
+        2839,
+        5360,
+        1563,
+        1857,
+        260,
+        13,
+        50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.32123433943275065,
+      "compression_ratio": 1.4722222222222223,
+      "no_speech_prob": 0.5369284152984619,
+      "words": [
+        {
+          "word": " Men",
+          "start": 81.86,
+          "end": 82.34,
+          "probability": 0.5941693782806396
+        },
+        {
+          "word": " her",
+          "start": 82.34,
+          "end": 82.58,
+          "probability": 0.8782187104225159
+        },
+        {
+          "word": " er",
+          "start": 82.58,
+          "end": 82.72,
+          "probability": 0.28289589285850525
+        },
+        {
+          "word": " greia,",
+          "start": 82.72,
+          "end": 83.08,
+          "probability": 0.8385767638683319
+        },
+        {
+          "word": " dette",
+          "start": 83.5,
+          "end": 83.62,
+          "probability": 0.8857888579368591
+        },
+        {
+          "word": " er",
+          "start": 83.62,
+          "end": 83.78,
+          "probability": 0.7050004005432129
+        },
+        {
+          "word": " ikke",
+          "start": 83.78,
+          "end": 83.88,
+          "probability": 0.9601922035217285
+        },
+        {
+          "word": " bare",
+          "start": 83.88,
+          "end": 84.0,
+          "probability": 0.854693591594696
+        },
+        {
+          "word": " en",
+          "start": 84.0,
+          "end": 84.14,
+          "probability": 0.9333174824714661
+        },
+        {
+          "word": " tabell",
+          "start": 84.14,
+          "end": 84.46,
+          "probability": 0.7595734298229218
+        },
+        {
+          "word": " du",
+          "start": 84.46,
+          "end": 84.62,
+          "probability": 0.9649621248245239
+        },
+        {
+          "word": " printer",
+          "start": 84.62,
+          "end": 84.88,
+          "probability": 0.3982805907726288
+        },
+        {
+          "word": " ut",
+          "start": 84.88,
+          "end": 85.04,
+          "probability": 0.7296350002288818
+        },
+        {
+          "word": " og",
+          "start": 85.04,
+          "end": 85.14,
+          "probability": 0.6703540682792664
+        },
+        {
+          "word": " glenner.",
+          "start": 85.14,
+          "end": 85.48,
+          "probability": 0.3766520619392395
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "seek": 8114,
+      "start": 86.54,
+      "end": 90.52,
+      "text": " Pengepraten enn å ha et verktei, da du kan lage hvor langt du er, yke får yke.",
+      "tokens": [
+        50614,
+        430,
+        3032,
+        1424,
+        7186,
+        465,
+        77,
+        8841,
+        324,
+        1030,
+        22328,
+        975,
+        72,
+        11,
+        1120,
+        1581,
+        4608,
+        287,
+        609,
+        31459,
+        2265,
+        83,
+        1581,
+        1189,
+        11,
+        288,
+        330,
+        14865,
+        288,
+        330,
+        13,
+        50864
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.32123433943275065,
+      "compression_ratio": 1.4722222222222223,
+      "no_speech_prob": 0.5369284152984619,
+      "words": [
+        {
+          "word": " Pengepraten",
+          "start": 86.54,
+          "end": 87.02,
+          "probability": 0.6091813519597054
+        },
+        {
+          "word": " enn",
+          "start": 87.02,
+          "end": 87.38,
+          "probability": 0.5671818405389786
+        },
+        {
+          "word": " å",
+          "start": 87.38,
+          "end": 87.46,
+          "probability": 0.2910255491733551
+        },
+        {
+          "word": " ha",
+          "start": 87.46,
+          "end": 87.62,
+          "probability": 0.8202570676803589
+        },
+        {
+          "word": " et",
+          "start": 87.62,
+          "end": 87.74,
+          "probability": 0.6685034036636353
+        },
+        {
+          "word": " verktei,",
+          "start": 87.74,
+          "end": 88.24,
+          "probability": 0.36023101458946866
+        },
+        {
+          "word": " da",
+          "start": 88.3,
+          "end": 88.36,
+          "probability": 0.4402993619441986
+        },
+        {
+          "word": " du",
+          "start": 88.36,
+          "end": 88.44,
+          "probability": 0.9886481165885925
+        },
+        {
+          "word": " kan",
+          "start": 88.44,
+          "end": 88.56,
+          "probability": 0.9922329187393188
+        },
+        {
+          "word": " lage",
+          "start": 88.56,
+          "end": 88.78,
+          "probability": 0.5908738672733307
+        },
+        {
+          "word": " hvor",
+          "start": 88.78,
+          "end": 88.96,
+          "probability": 0.7588725686073303
+        },
+        {
+          "word": " langt",
+          "start": 88.96,
+          "end": 89.26,
+          "probability": 0.8764567077159882
+        },
+        {
+          "word": " du",
+          "start": 89.26,
+          "end": 89.32,
+          "probability": 0.9862574934959412
+        },
+        {
+          "word": " er,",
+          "start": 89.32,
+          "end": 89.46,
+          "probability": 0.9938657879829407
+        },
+        {
+          "word": " yke",
+          "start": 89.78,
+          "end": 90.02,
+          "probability": 0.5692001581192017
+        },
+        {
+          "word": " får",
+          "start": 90.02,
+          "end": 90.18,
+          "probability": 0.43394073843955994
+        },
+        {
+          "word": " yke.",
+          "start": 90.18,
+          "end": 90.52,
+          "probability": 0.9158572256565094
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "seek": 8114,
+      "start": 91.46,
+      "end": 93.12,
+      "text": " Følg progression din i samtid.",
+      "tokens": [
+        50864,
+        479,
+        6715,
+        75,
+        70,
+        18733,
+        3791,
+        741,
+        3247,
+        83,
+        327,
+        13,
+        51014
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.32123433943275065,
+      "compression_ratio": 1.4722222222222223,
+      "no_speech_prob": 0.5369284152984619,
+      "words": [
+        {
+          "word": " Følg",
+          "start": 91.46,
+          "end": 91.94,
+          "probability": 0.6675869673490524
+        },
+        {
+          "word": " progression",
+          "start": 91.94,
+          "end": 92.2,
+          "probability": 0.47595542669296265
+        },
+        {
+          "word": " din",
+          "start": 92.2,
+          "end": 92.6,
+          "probability": 0.5561054348945618
+        },
+        {
+          "word": " i",
+          "start": 92.6,
+          "end": 92.76,
+          "probability": 0.7492144703865051
+        },
+        {
+          "word": " samtid.",
+          "start": 92.76,
+          "end": 93.12,
+          "probability": 0.7831281920274099
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "seek": 8114,
+      "start": 94.26,
+      "end": 97.08,
+      "text": " Det er lettere å holde motivationen når du ser hvor nærmed du er.",
+      "tokens": [
+        51014,
+        4237,
+        1189,
+        20689,
+        323,
+        8841,
+        1797,
+        68,
+        12335,
+        268,
+        36522,
+        1581,
+        816,
+        31459,
+        297,
+        32011,
+        1912,
+        1581,
+        1189,
+        13,
+        51214
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.32123433943275065,
+      "compression_ratio": 1.4722222222222223,
+      "no_speech_prob": 0.5369284152984619,
+      "words": [
+        {
+          "word": " Det",
+          "start": 94.26,
+          "end": 94.48,
+          "probability": 0.8939642906188965
+        },
+        {
+          "word": " er",
+          "start": 94.48,
+          "end": 94.56,
+          "probability": 0.9640687704086304
+        },
+        {
+          "word": " lettere",
+          "start": 94.56,
+          "end": 94.88,
+          "probability": 0.9425092041492462
+        },
+        {
+          "word": " å",
+          "start": 94.88,
+          "end": 95.02,
+          "probability": 0.9304749965667725
+        },
+        {
+          "word": " holde",
+          "start": 95.02,
+          "end": 95.22,
+          "probability": 0.9444656670093536
+        },
+        {
+          "word": " motivationen",
+          "start": 95.22,
+          "end": 95.96,
+          "probability": 0.7638894319534302
+        },
+        {
+          "word": " når",
+          "start": 95.96,
+          "end": 96.04,
+          "probability": 0.7718071341514587
+        },
+        {
+          "word": " du",
+          "start": 96.04,
+          "end": 96.14,
+          "probability": 0.9986904263496399
+        },
+        {
+          "word": " ser",
+          "start": 96.14,
+          "end": 96.32,
+          "probability": 0.9501155018806458
+        },
+        {
+          "word": " hvor",
+          "start": 96.32,
+          "end": 96.5,
+          "probability": 0.5905471444129944
+        },
+        {
+          "word": " nærmed",
+          "start": 96.5,
+          "end": 96.84,
+          "probability": 0.7472183803717295
+        },
+        {
+          "word": " du",
+          "start": 96.84,
+          "end": 96.96,
+          "probability": 0.9952536821365356
+        },
+        {
+          "word": " er.",
+          "start": 96.96,
+          "end": 97.08,
+          "probability": 0.9965670108795166
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "seek": 8114,
+      "start": 98.24,
+      "end": 99.1,
+      "text": " Yke 52.",
+      "tokens": [
+        51214,
+        398,
+        330,
+        18079,
+        13,
+        51314
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.32123433943275065,
+      "compression_ratio": 1.4722222222222223,
+      "no_speech_prob": 0.5369284152984619,
+      "words": [
+        {
+          "word": " Yke",
+          "start": 98.24,
+          "end": 98.58,
+          "probability": 0.6037376374006271
+        },
+        {
+          "word": " 52.",
+          "start": 98.58,
+          "end": 99.1,
+          "probability": 0.9113421440124512
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "seek": 8114,
+      "start": 100.38,
+      "end": 102.94,
+      "text": " Du har spart 68.900 kroner.",
+      "tokens": [
+        51314,
+        5153,
+        2233,
+        637,
+        446,
+        23317,
+        13,
+        23943,
+        350,
+        2044,
+        260,
+        13,
+        51514
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.32123433943275065,
+      "compression_ratio": 1.4722222222222223,
+      "no_speech_prob": 0.5369284152984619,
+      "words": [
+        {
+          "word": " Du",
+          "start": 100.38,
+          "end": 100.62,
+          "probability": 0.9588064551353455
+        },
+        {
+          "word": " har",
+          "start": 100.62,
+          "end": 100.74,
+          "probability": 0.9608615040779114
+        },
+        {
+          "word": " spart",
+          "start": 100.74,
+          "end": 101.06,
+          "probability": 0.8180944919586182
+        },
+        {
+          "word": " 68",
+          "start": 101.06,
+          "end": 101.68,
+          "probability": 0.9763437509536743
+        },
+        {
+          "word": ".900",
+          "start": 101.68,
+          "end": 102.36,
+          "probability": 0.7546792924404144
+        },
+        {
+          "word": " kroner.",
+          "start": 102.36,
+          "end": 102.94,
+          "probability": 0.8296924432118734
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "seek": 8114,
+      "start": 103.76,
+      "end": 108.0,
+      "text": " 22 uker med hva en viktig ekonomisk vekstsennere står det der med en solid sum.",
+      "tokens": [
+        51514,
+        5853,
+        344,
+        5767,
+        1205,
+        276,
+        2757,
+        465,
+        49706,
+        13359,
+        12481,
+        7797,
+        1241,
+        74,
+        372,
+        82,
+        1857,
+        323,
+        37019,
+        1141,
+        1163,
+        1205,
+        465,
+        1404,
+        327,
+        2408,
+        13,
+        51764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.32123433943275065,
+      "compression_ratio": 1.4722222222222223,
+      "no_speech_prob": 0.5369284152984619,
+      "words": [
+        {
+          "word": " 22",
+          "start": 103.76,
+          "end": 104.22,
+          "probability": 0.8954320549964905
+        },
+        {
+          "word": " uker",
+          "start": 104.22,
+          "end": 104.72,
+          "probability": 0.5320475921034813
+        },
+        {
+          "word": " med",
+          "start": 104.72,
+          "end": 104.96,
+          "probability": 0.7552636861801147
+        },
+        {
+          "word": " hva",
+          "start": 104.96,
+          "end": 105.12,
+          "probability": 0.2856003940105438
+        },
+        {
+          "word": " en",
+          "start": 105.12,
+          "end": 105.2,
+          "probability": 0.6875959634780884
+        },
+        {
+          "word": " viktig",
+          "start": 105.2,
+          "end": 105.46,
+          "probability": 0.9668825268745422
+        },
+        {
+          "word": " ekonomisk",
+          "start": 105.46,
+          "end": 106.06,
+          "probability": 0.8989643057187399
+        },
+        {
+          "word": " vekstsennere",
+          "start": 106.06,
+          "end": 106.72,
+          "probability": 0.5065471827983856
+        },
+        {
+          "word": " står",
+          "start": 106.72,
+          "end": 106.98,
+          "probability": 0.964652419090271
+        },
+        {
+          "word": " det",
+          "start": 106.98,
+          "end": 107.08,
+          "probability": 0.3785020112991333
+        },
+        {
+          "word": " der",
+          "start": 107.08,
+          "end": 107.2,
+          "probability": 0.8103764653205872
+        },
+        {
+          "word": " med",
+          "start": 107.2,
+          "end": 107.32,
+          "probability": 0.9184896349906921
+        },
+        {
+          "word": " en",
+          "start": 107.32,
+          "end": 107.42,
+          "probability": 0.9546659588813782
+        },
+        {
+          "word": " solid",
+          "start": 107.42,
+          "end": 107.78,
+          "probability": 0.6305803656578064
+        },
+        {
+          "word": " sum.",
+          "start": 107.78,
+          "end": 108.0,
+          "probability": 0.20281118154525757
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "seek": 10800,
+      "start": 109.0,
+      "end": 113.86,
+      "text": " Det eneste du trenger er 50 kroner, litt vilige styrke og et sted å lage hvor langt du er.",
+      "tokens": [
+        50414,
+        4237,
+        465,
+        8887,
+        1581,
+        504,
+        10210,
+        1189,
+        2625,
+        350,
+        2044,
+        260,
+        11,
+        30267,
+        15349,
+        3969,
+        342,
+        6016,
+        330,
+        5360,
+        1030,
+        342,
+        292,
+        8841,
+        287,
+        609,
+        31459,
+        2265,
+        83,
+        1581,
+        1189,
+        13,
+        50664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30249992283907806,
+      "compression_ratio": 1.2883435582822085,
+      "no_speech_prob": 0.035498011857271194,
+      "words": [
+        {
+          "word": " Det",
+          "start": 108.89999999999999,
+          "end": 109.24,
+          "probability": 0.7979174256324768
+        },
+        {
+          "word": " eneste",
+          "start": 109.24,
+          "end": 109.64,
+          "probability": 0.7165098190307617
+        },
+        {
+          "word": " du",
+          "start": 109.64,
+          "end": 109.74,
+          "probability": 0.6807523965835571
+        },
+        {
+          "word": " trenger",
+          "start": 109.74,
+          "end": 109.98,
+          "probability": 0.3097812086343765
+        },
+        {
+          "word": " er",
+          "start": 109.98,
+          "end": 110.26,
+          "probability": 0.9809226393699646
+        },
+        {
+          "word": " 50",
+          "start": 110.26,
+          "end": 110.6,
+          "probability": 0.9541110992431641
+        },
+        {
+          "word": " kroner,",
+          "start": 110.6,
+          "end": 110.98,
+          "probability": 0.8217562635739645
+        },
+        {
+          "word": " litt",
+          "start": 111.36,
+          "end": 111.52,
+          "probability": 0.8891520500183105
+        },
+        {
+          "word": " vilige",
+          "start": 111.52,
+          "end": 111.82,
+          "probability": 0.39684324711561203
+        },
+        {
+          "word": " styrke",
+          "start": 111.82,
+          "end": 112.16,
+          "probability": 0.7765591939290365
+        },
+        {
+          "word": " og",
+          "start": 112.16,
+          "end": 112.58,
+          "probability": 0.586665689945221
+        },
+        {
+          "word": " et",
+          "start": 112.58,
+          "end": 112.7,
+          "probability": 0.537050724029541
+        },
+        {
+          "word": " sted",
+          "start": 112.7,
+          "end": 112.92,
+          "probability": 0.944177120923996
+        },
+        {
+          "word": " å",
+          "start": 112.92,
+          "end": 113.1,
+          "probability": 0.6386166214942932
+        },
+        {
+          "word": " lage",
+          "start": 113.1,
+          "end": 113.22,
+          "probability": 0.3639666587114334
+        },
+        {
+          "word": " hvor",
+          "start": 113.22,
+          "end": 113.42,
+          "probability": 0.5502893924713135
+        },
+        {
+          "word": " langt",
+          "start": 113.42,
+          "end": 113.7,
+          "probability": 0.8811147212982178
+        },
+        {
+          "word": " du",
+          "start": 113.7,
+          "end": 113.76,
+          "probability": 0.9829826951026917
+        },
+        {
+          "word": " er.",
+          "start": 113.76,
+          "end": 113.86,
+          "probability": 0.9919179081916809
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "seek": 10800,
+      "start": 114.98,
+      "end": 116.4,
+      "text": " Klar får utfordringen?",
+      "tokens": [
+        50664,
+        44893,
+        14865,
+        2839,
+        7404,
+        2937,
+        268,
+        30,
+        50814
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30249992283907806,
+      "compression_ratio": 1.2883435582822085,
+      "no_speech_prob": 0.035498011857271194,
+      "words": [
+        {
+          "word": " Klar",
+          "start": 114.98,
+          "end": 115.22,
+          "probability": 0.7030302286148071
+        },
+        {
+          "word": " får",
+          "start": 115.22,
+          "end": 115.5,
+          "probability": 0.4303227961063385
+        },
+        {
+          "word": " utfordringen?",
+          "start": 115.5,
+          "end": 116.4,
+          "probability": 0.8258561044931412
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "seek": 10800,
+      "start": 117.38,
+      "end": 120.42,
+      "text": " Følg meg, hit linken i bio og las sparsammen.",
+      "tokens": [
+        50814,
+        479,
+        6715,
+        75,
+        70,
+        10816,
+        11,
+        2045,
+        2113,
+        268,
+        741,
+        12198,
+        5360,
+        2439,
+        637,
+        685,
+        335,
+        2558,
+        13,
+        51014
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30249992283907806,
+      "compression_ratio": 1.2883435582822085,
+      "no_speech_prob": 0.035498011857271194,
+      "words": [
+        {
+          "word": " Følg",
+          "start": 117.38,
+          "end": 117.74,
+          "probability": 0.590256854891777
+        },
+        {
+          "word": " meg,",
+          "start": 117.74,
+          "end": 117.82,
+          "probability": 0.8908862471580505
+        },
+        {
+          "word": " hit",
+          "start": 118.24,
+          "end": 118.34,
+          "probability": 0.5826423764228821
+        },
+        {
+          "word": " linken",
+          "start": 118.34,
+          "end": 118.8,
+          "probability": 0.7954988479614258
+        },
+        {
+          "word": " i",
+          "start": 118.8,
+          "end": 118.88,
+          "probability": 0.9836782217025757
+        },
+        {
+          "word": " bio",
+          "start": 118.88,
+          "end": 119.08,
+          "probability": 0.30883508920669556
+        },
+        {
+          "word": " og",
+          "start": 119.08,
+          "end": 119.6,
+          "probability": 0.8919817805290222
+        },
+        {
+          "word": " las",
+          "start": 119.6,
+          "end": 119.76,
+          "probability": 0.44348642230033875
+        },
+        {
+          "word": " sparsammen.",
+          "start": 119.76,
+          "end": 120.42,
+          "probability": 0.3675369340926409
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "seek": 10800,
+      "start": 121.99999999999999,
+      "end": 123.36,
+      "text": " 52.000 kroner.",
+      "tokens": [
+        51014,
+        18079,
+        13,
+        1360,
+        350,
+        2044,
+        260,
+        13,
+        51114
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30249992283907806,
+      "compression_ratio": 1.2883435582822085,
+      "no_speech_prob": 0.035498011857271194,
+      "words": [
+        {
+          "word": " 52",
+          "start": 121.99999999999999,
+          "end": 122.67999999999999,
+          "probability": 0.972197949886322
+        },
+        {
+          "word": ".000",
+          "start": 122.67999999999999,
+          "end": 123.36,
+          "probability": 0.2713749557733536
+        },
+        {
+          "word": " kroner.",
+          "start": 123.36,
+          "end": 123.36,
+          "probability": 0.6729114862779776
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "seek": 10800,
+      "start": 124.12,
+      "end": 125.6,
+      "text": " 68.900 kroner.",
+      "tokens": [
+        51114,
+        23317,
+        13,
+        23943,
+        350,
+        2044,
+        260,
+        13,
+        51264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30249992283907806,
+      "compression_ratio": 1.2883435582822085,
+      "no_speech_prob": 0.035498011857271194,
+      "words": [
+        {
+          "word": " 68",
+          "start": 124.12,
+          "end": 124.12,
+          "probability": 0.07144831866025925
+        },
+        {
+          "word": ".900",
+          "start": 124.12,
+          "end": 125.12,
+          "probability": 0.8074177205562592
+        },
+        {
+          "word": " kroner.",
+          "start": 125.12,
+          "end": 125.6,
+          "probability": 0.8520903587341309
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "seek": 10800,
+      "start": 126.52,
+      "end": 127.6,
+      "text": " Du starter i dag.",
+      "tokens": [
+        51264,
+        5153,
+        22465,
+        741,
+        15460,
+        13,
+        51364
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.30249992283907806,
+      "compression_ratio": 1.2883435582822085,
+      "no_speech_prob": 0.035498011857271194,
+      "words": [
+        {
+          "word": " Du",
+          "start": 126.52,
+          "end": 126.82,
+          "probability": 0.9713289141654968
+        },
+        {
+          "word": " starter",
+          "start": 126.82,
+          "end": 127.3,
+          "probability": 0.7454100847244263
+        },
+        {
+          "word": " i",
+          "start": 127.3,
+          "end": 127.46,
+          "probability": 0.9226434826850891
+        },
+        {
+          "word": " dag.",
+          "start": 127.46,
+          "end": 127.6,
+          "probability": 0.9956719875335693
+        }
+      ]
+    }
+  ],
+  "language": "no"
+}

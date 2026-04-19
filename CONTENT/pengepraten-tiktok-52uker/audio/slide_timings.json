@@ -1,0 +1,58 @@
+[
+  {
+    "slide": 1,
+    "name": "HOOK",
+    "start": 0.0,
+    "end": 10.26,
+    "duration": 10.26
+  },
+  {
+    "slide": 2,
+    "name": "INTRO",
+    "start": 11.26,
+    "end": 33.26,
+    "duration": 22.0
+  },
+  {
+    "slide": 3,
+    "name": "MATH",
+    "start": 34.12,
+    "end": 49.62,
+    "duration": 15.5
+  },
+  {
+    "slide": 4,
+    "name": "MILESTONES 1",
+    "start": 50.74,
+    "end": 64.88,
+    "duration": 14.14
+  },
+  {
+    "slide": 5,
+    "name": "MILESTONES 2",
+    "start": 65.8,
+    "end": 76.36,
+    "duration": 10.56
+  },
+  {
+    "slide": 6,
+    "name": "PITCH",
+    "start": 81.86,
+    "end": 97.08,
+    "duration": 15.22
+  },
+  {
+    "slide": 7,
+    "name": "PUSH",
+    "start": 98.24,
+    "end": 113.86,
+    "duration": 15.62
+  },
+  {
+    "slide": 8,
+    "name": "CTA",
+    "start": 114.98,
+    "end": 127.6,
+    "duration": 12.62
+  }
+]

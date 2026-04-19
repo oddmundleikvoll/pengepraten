@@ -1,110 +1,246 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import EmailCapture from '@/components/EmailCapture'
 
 export const metadata: Metadata = {
-  title: 'Høyrentekonto 2026: Få 5,2% på sparepengene dine',
-  description: 'Sammenlign de beste høyrentekontoene i Norge i 2026. Sbanken, Hygga, Nordnet og flere. Slik får du 5%+ avkastning på sparepengene uten risiko.',
+  title: 'Beste Høyrentekonto Akkurat Nå (April 2026) | Pengepraten',
+  description: 'Sammenlign de beste høyrentekontoene i Norge akkurat nå. Oppdatert april 2026 med Sbanken (5,20%), Hygga (5,10%), Nordnet og flere. Få 5%+ rente uten risiko.',
+  keywords: ['beste høyrentekonto akkurat nå', 'høyrentekonto sammenligning', 'sparekonto med høyest rente', 'høyrentekonto 2026'],
+}
+
+const BANKS = [
+  { name: 'Sbanken', rate: 5.20, type: 'Ren digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://sbanken.no', cta: 'Åpne konto' },
+  { name: 'Hygga', rate: 5.10, type: 'Digital, norsk', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://hygga.no', cta: 'Åpne konto' },
+  { name: 'Nordnet', rate: 4.95, type: 'Investeringsplattform', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://nordnet.no', cta: 'Åpne konto' },
+  { name: 'Milk Money', rate: 4.85, type: 'Digital sparekonto', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://milkmoney.no', cta: 'Åpne konto' },
+  { name: 'Bluestep', rate: 4.70, type: 'Digitale lån og sparing', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://bluestep.no', cta: 'Åpne konto' },
+  { name: 'BN Bank', rate: 4.60, type: 'Nettbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://bnbank.no', cta: 'Åpne konto' },
+  { name: 'Skandiabanken', rate: 4.50, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://skandia.no', cta: 'Åpne konto' },
+]
+
+function StarRating() {
+  return (
+    <div className="flex gap-0.5">
+      {[1,2,3,4,5].map(s => (
+        <svg key={s} className="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
+    </div>
+  )
 }
 
 export default function Hoyrentekonto() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-100 text-sm mb-4">
+      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/3" />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
+          <nav className="text-green-200 text-sm mb-6">
             <Link href="/">Hjem</Link>
             <span className="mx-2">/</span>
             <Link href="/sparing">Sparing</Link>
             <span className="mx-2">/</span>
-            <span>Høyrentekonto</span>
+            <span className="text-white">Høyrentekonto</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
-            Høyrentekonto 2026: Få 5,2% på sparepengene dine
-          </h1>
-          <p className="text-green-100 text-xl max-w-2xl">
-            Svært få nordmenn bruker høyrentekonto. Det er synd — forskjellen mellom 0% og 5% rente på 100.000 kroner er 5.000 kroner i året.
-          </p>
+          <div className="flex flex-col lg:flex-row gap-10 items-center">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm">
+                <span className="text-amber-300">📈</span>
+                <span>Oppdatert april 2026</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight">
+                Beste høyrentekonto{' '}
+                <span className="text-amber-300">akkurat nå</span>
+              </h1>
+              <p className="text-green-100 text-lg md:text-xl max-w-2xl leading-relaxed">
+                Svært få nordmenn bruker høyrentekonto. Det er synd — forskjellen mellom 0% og 5% rente på 100.000 kroner er{' '}
+                <strong className="text-white">5.000 kroner i året</strong>.
+              </p>
+            </div>
+            {/* Quick stats */}
+            <div className="shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 min-w-[260px]">
+              <div className="text-sm font-semibold text-green-200 mb-3">Topp rente akkurat nå</div>
+              <div className="text-5xl font-black text-amber-300 mb-1">5,20%</div>
+              <div className="text-green-200 text-sm mb-4">Sbanken — beste valg i april 2026</div>
+              <div className="space-y-2">
+                {[
+                  { label: 'Innskuddsgaranti', value: '100.000 €' },
+                  { label: 'Minsteinnskudd', value: 'Ingen' },
+                  { label: 'Bindingstid', value: 'Ingen' },
+                ].map(item => (
+                  <div key={item.label} className="flex justify-between text-sm">
+                    <span className="text-green-200">{item.label}</span>
+                    <span className="font-semibold text-white">{item.value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* INNHOLD */}
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 py-12 article-content space-y-8">
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 py-12 article-content space-y-10">
 
         {/* INTRO */}
-        <div className="bg-green-50 rounded-2xl p-6 border-l-4 border-green-600">
+        <div className="bg-green-50 rounded-2xl p-7 border-l-4 border-green-600">
           <p className="text-lg text-gray-800 leading-relaxed">
             <span className="text-2xl mr-2">💸</span>
             <strong>Høyrentekonto</strong> er rett og slett en sparekonto med bedre rente enn det du får på den vanlige brukskontoen din. I 2026 kan du få over 5% rente — rett og slett gratis avkastning uten noen risiko.
           </p>
         </div>
 
+        {/* BANK COMPARISON TABLE */}
+        <section>
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-2 flex items-center gap-2">
+                <span>📊</span> Beste høyrentekontoer i Norge
+              </h2>
+              <p className="text-gray-500">Oppdatert april 2026 — klikk på banken for å åpne konto</p>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-gray-400 shrink-0">
+              <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>Innskuddsgaranti på alle</span>
+            </div>
+          </div>
+
+          {/* Desktop table */}
+          <div className="hidden md:block bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-4">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-gradient-to-r from-gray-800 to-gray-900 text-white text-sm">
+                  <th className="text-left px-6 py-4 font-bold">Bank</th>
+                  <th className="text-center px-4 py-4 font-bold">Rente</th>
+                  <th className="text-center px-4 py-4 font-bold">Innskuddsgaranti</th>
+                  <th className="text-center px-4 py-4 font-bold">Minsteinnskudd</th>
+                  <th className="text-center px-4 py-4 font-bold">Tilgang</th>
+                  <th className="text-center px-6 py-4 font-bold">Åpne konto</th>
+                </tr>
+              </thead>
+              <tbody>
+                {BANKS.map((bank, i) => (
+                  <tr
+                    key={bank.name}
+                    className={`
+                      border-b border-gray-100 last:border-0
+                      hover:bg-green-50 transition-colors group
+                      ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}
+                    `}
+                  >
+                    <td className="px-6 py-5">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white font-black text-sm shadow-sm shrink-0">
+                          {bank.name.charAt(0)}
+                        </div>
+                        <div>
+                          <div className="font-bold text-gray-900">{bank.name}</div>
+                          <div className="text-xs text-gray-400">{bank.type}</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-5 text-center">
+                      <div className="inline-flex items-center gap-1 bg-green-100 text-green-700 font-black text-xl px-3 py-1.5 rounded-lg">
+                        {bank.rate.toFixed(2)}%
+                      </div>
+                    </td>
+                    <td className="px-4 py-5 text-center">
+                      <span className="text-sm text-gray-600">{bank.guarantee}</span>
+                    </td>
+                    <td className="px-4 py-5 text-center">
+                      <span className="text-sm text-gray-600">{bank.minDeposit}</span>
+                    </td>
+                    <td className="px-4 py-5 text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <span className="text-sm font-medium text-gray-700">{bank.access}</span>
+                        <StarRating />
+                      </div>
+                    </td>
+                    <td className="px-6 py-5 text-center">
+                      <a
+                        href={bank.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 bg-green-600 hover:bg-green-700 text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow-md"
+                      >
+                        {bank.cta}
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Mobile cards */}
+          <div className="md:hidden grid gap-3">
+            {BANKS.map((bank, i) => (
+              <div key={bank.name} className={`rounded-xl border p-5 ${i % 2 === 0 ? 'bg-white border-gray-200' : 'bg-gray-50 border-gray-100'}`}>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white font-black text-sm shadow-sm">
+                      {bank.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-bold text-gray-900">{bank.name}</div>
+                      <div className="text-xs text-gray-400">{bank.type}</div>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-black text-green-700">{bank.rate.toFixed(2)}%</div>
+                    <div className="text-xs text-gray-400">effektiv rente</div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mb-4 text-sm">
+                  <div className="flex justify-between"><span className="text-gray-500">Garanti:</span><span className="font-medium">{bank.guarantee}</span></div>
+                  <div className="flex justify-between"><span className="text-gray-500">Minst:</span><span className="font-medium">{bank.minDeposit}</span></div>
+                  <div className="flex justify-between"><span className="text-gray-500">Tilgang:</span><span className="font-medium">{bank.access}</span></div>
+                </div>
+                <a
+                  href={bank.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block text-center bg-green-600 hover:bg-green-700 text-white font-semibold text-sm py-2.5 rounded-lg transition-colors"
+                >
+                  {bank.cta} →
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-gray-100 rounded-xl p-4 text-sm text-gray-500 flex items-center gap-2 mt-4">
+            <svg className="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+            </svg>
+            <span>Rentene er flytende og kan endres. Sjekk bankens nettsider for oppdaterte tall. Alle kontoer er dekket av norsk innskuddsgaranti (100.000 euro per person per bank).</span>
+          </div>
+        </section>
+
+        {/* EMAIL CAPTURE */}
+        <EmailCapture
+          variant="card"
+          title="Få e-postvarsel når rentene endres"
+          description="Få ukentlig renteoppdatering rett i innboksen din. Vi sender deg beskjed med en gang noen av bankene endrer renten sin — slik at du alltid er på topp."
+        />
+
         {/* INFOBOX */}
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
           <h3 className="font-bold text-amber-800 mb-3 flex items-center gap-2">
             <span className="text-xl">→</span> Visste du?
           </h3>
-          <p className="text-gray-800 text-lg">
-            <strong>100.000 kr på en vanlig brukskonto med 0% rente</strong> taper rundt <span className="text-amber-700 font-black text-xl">4.000 kr</span> i året i reell verdi — bare på grunn av inflasjon. Pengene dine blir stadig mindre verdt.
+          <p className="text-gray-800 text-lg leading-relaxed">
+            <strong>100.000 kr på en vanlig brukskonto med 0% rente</strong> taper rundt{' '}
+            <span className="text-amber-700 font-black text-xl">4.000 kr</span> i året i reell verdi — bare på grunn av inflasjon. Pengene dine blir stadig mindre verdt.
           </p>
         </div>
-
-        {/* HVA ER HØYRENTEKONTO */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>📖</span> Hva er en høyrentekonto — og hvorfor bry seg?
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            En høyrentekonto er rett og slett en sparekonto der banken tilbyr deg bedre rente. Forskjellen mot en vanlig sparekonto kan være enorm: der en vanlig sparekonto kanskje gir 1-2%, kan du på en høyrentekonto få 4-5% i 2026.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Konseptet er enkelt: banker som bare driver digitalt (ingen dyre filialer) har lavere kostnader og kan dele mer av overskuddet med deg gjennom høyere renter.
-          </p>
-
-          {/* TABELL */}
-          <div className="overflow-x-auto mb-6">
-            <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
-              <thead>
-                <tr className="bg-green-600 text-white">
-                  <th className="text-left p-4 font-bold">Bank</th>
-                  <th className="text-left p-4 font-bold">Rente (april 2026)</th>
-                  <th className="text-left p-4 font-bold">Type</th>
-                  <th className="text-left p-4 font-bold">Innskuddsgaranti</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">Sbanken</td>
-                  <td className="p-4 text-green-700 font-black text-lg">5,20%</td>
-                  <td className="p-4 text-sm text-gray-600">Ren digital bank</td>
-                  <td className="p-4 text-sm text-gray-600">✓ 100.000 €</td>
-                </tr>
-                <tr className="bg-green-50 border-b border-gray-100">
-                  <td className="p-4 font-semibold">Hygga</td>
-                  <td className="p-4 text-green-700 font-black text-lg">5,10%</td>
-                  <td className="p-4 text-sm text-gray-600">Digital, norsk</td>
-                  <td className="p-4 text-sm text-gray-600">✓ 100.000 €</td>
-                </tr>
-                <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">Nordnet</td>
-                  <td className="p-4 text-green-700 font-black text-lg">4,95%</td>
-                  <td className="p-4 text-sm text-gray-600">Investeringsplattform</td>
-                  <td className="p-4 text-sm text-gray-600">✓ 100.000 €</td>
-                </tr>
-                <tr className="bg-green-50 border-b border-gray-100">
-                  <td className="p-4 font-semibold">Milk Money (MB)</td>
-                  <td className="p-4 text-green-700 font-black text-lg">4,85%</td>
-                  <td className="p-4 text-sm text-gray-600">Digital sparekonto</td>
-                  <td className="p-4 text-sm text-gray-600">✓ 100.000 €</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="bg-gray-100 rounded-xl p-4 text-sm text-gray-600">
-            <strong>Merk:</strong> Rentene er flytende og kan endres. Sjekk bankens nettsider for oppdaterte tall. Alle kontoer er dekket av norsk innskuddsgaranti (100.000 euro per person per bank).
-          </div>
-        </section>
 
         {/* HVORFOR HØYERE RENTE */}
         <section>
@@ -112,21 +248,17 @@ export default function Hoyrentekonto() {
             <span>🏦</span> Hvorfor kan noen banker tilby så høy rente?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-            <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <div className="text-3xl mb-3">💻</div>
-              <h3 className="font-bold text-gray-900 mb-2">Ingen filialer</h3>
-              <p className="text-gray-600 text-sm">Digitale banker har ikke kostnader til lokaler, ansatte i fysiske banker og annet. De sparer, og deler besparelsen med deg.</p>
-            </div>
-            <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <div className="text-3xl mb-3">📱</div>
-              <h3 className="font-bold text-gray-900 mb-2">Kun app og nettside</h3>
-              <p className="text-gray-600 text-sm">Alt skjer digitalt. Du har tilgang til kontoen din 24/7, og kan overføre penger umiddelbart når du trenger det.</p>
-            </div>
-            <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <div className="text-3xl mb-3">📈</div>
-              <h3 className="font-bold text-gray-900 mb-2">Konkurranse om kundene</h3>
-              <p className="text-gray-600 text-sm">Bankene kjemper om sparingen din. Høy rente er et markedsmessig verktøy for å tiltrekke seg nye kunder.</p>
-            </div>
+            {[
+              { emoji: '💻', title: 'Ingen filialer', desc: 'Digitale banker har ikke kostnader til lokaler, ansatte i fysiske banker og annet. De sparer, og deler besparelsen med deg.' },
+              { emoji: '📱', title: 'Kun app og nettside', desc: 'Alt skjer digitalt. Du har tilgang til kontoen din 24/7, og kan overføre penger umiddelbart når du trenger det.' },
+              { emoji: '📈', title: 'Konkurranse om kundene', desc: 'Bankene kjemper om sparingen din. Høy rente er et markedsmessig verktøy for å tiltrekke seg nye kunder.' },
+            ].map(item => (
+              <div key={item.title} className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md hover:border-green-200 transition-all">
+                <div className="text-3xl mb-3">{item.emoji}</div>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
           <p className="text-gray-700 leading-relaxed">
             En vanlig norsk storbank som DnB eller Nordea har mange tusen ansatte og dyre kontorer over hele landet. De trenger ikke å tilby høy rente fordi kundene likevel har sin lønnskonto der. Digitale banker har ingen slik fordel — så de må konkurrere på pris.
@@ -138,16 +270,16 @@ export default function Hoyrentekonto() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span>🔒</span> Er det trygt? Ja — og her er hvorfor
           </h2>
-          <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 text-white mb-6">
-            <h3 className="font-bold text-green-100 mb-4 uppercase text-sm tracking-wide">Innskuddsgaranti i Norge</h3>
+          <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-7 text-white mb-6">
+            <h3 className="font-bold text-green-100 mb-5 uppercase text-sm tracking-wide">Innskuddsgaranti i Norge</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <div className="text-4xl font-black mb-2">100.000 €</div>
-                <div className="text-green-100">per person per bank</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                <div className="text-5xl font-black mb-2">100.000 €</div>
+                <div className="text-green-100 text-sm font-medium">per person per bank</div>
               </div>
-              <div>
-                <div className="text-4xl font-black mb-2">Statlig</div>
-                <div className="text-green-100">Bankenes Sikringsfond</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                <div className="text-5xl font-black mb-2">Statlig</div>
+                <div className="text-green-100 text-sm font-medium">Bankenes Sikringsfond</div>
               </div>
             </div>
           </div>
@@ -158,28 +290,23 @@ export default function Hoyrentekonto() {
             For de aller fleste sparere er ikke dette noe du trenger å bekymre deg for. Men det er godt å vite at staten har din rygg.
           </p>
 
-          <div className="bg-green-50 rounded-xl p-5 border border-green-200">
-            <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
+          <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+            <h3 className="font-bold text-green-800 mb-4 flex items-center gap-2">
               <span>✅</span> Høyrentekonto = trygt + høy avkastning
             </h3>
-            <ul className="space-y-2 text-gray-700">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
-                <span>Ingen aksjemarkedrisiko — pengene er der alltid</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
-                <span>Ingen bindingstid — du kan ta ut pengene når som helst</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
-                <span>Statlig garanti på innskudd</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
-                <span>Renteinntekter beskattes (formueskat på innskudd)</span>
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                'Ingen aksjemarkedrisiko — pengene er der alltid',
+                'Ingen bindingstid — du kan ta ut pengene når som helst',
+                'Statlig garanti på innskudd',
+                'Renteinntekter beskattes (25% skatt på renteinntekt)',
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold mt-0.5">✓</span>
+                  <span className="text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -199,49 +326,38 @@ export default function Hoyrentekonto() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">50.000 kr</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">+ 2.500 kr/år</td>
-                  <td className="p-4 text-gray-500">+ 0 kr</td>
-                  <td className="p-4 font-bold text-green-700">+ 2.500 kr</td>
-                </tr>
-                <tr className="bg-gray-50 border-b border-gray-100">
-                  <td className="p-4 font-semibold">100.000 kr</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">+ 5.000 kr/år</td>
-                  <td className="p-4 text-gray-500">+ 0 kr</td>
-                  <td className="p-4 font-bold text-green-700">+ 5.000 kr</td>
-                </tr>
-                <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">250.000 kr</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">+ 12.500 kr/år</td>
-                  <td className="p-4 text-gray-500">+ 0 kr</td>
-                  <td className="p-4 font-bold text-green-700">+ 12.500 kr</td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="p-4 font-semibold">500.000 kr</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">+ 25.000 kr/år</td>
-                  <td className="p-4 text-gray-500">+ 0 kr</td>
-                  <td className="p-4 font-bold text-green-700">+ 25.000 kr</td>
-                </tr>
+                {[
+                  { amount: '50.000 kr', diff: '+ 2.500 kr/år' },
+                  { amount: '100.000 kr', diff: '+ 5.000 kr/år' },
+                  { amount: '250.000 kr', diff: '+ 12.500 kr/år' },
+                  { amount: '500.000 kr', diff: '+ 25.000 kr/år' },
+                ].map((row, i) => (
+                  <tr key={row.amount} className={i % 2 === 0 ? 'bg-white border-b border-gray-100' : 'bg-gray-50 border-b border-gray-100'}>
+                    <td className="p-4 font-semibold text-gray-700">{row.amount}</td>
+                    <td className="p-4 bg-green-50 text-green-700 font-bold">{row.diff}</td>
+                    <td className="p-4 text-gray-400">+ 0 kr</td>
+                    <td className="p-4 font-bold text-green-700">{row.diff}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white">
-            <h3 className="font-bold text-green-400 mb-3 flex items-center gap-2">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-7 text-white">
+            <h3 className="font-bold text-green-400 mb-5 flex items-center gap-2">
               <span>💡</span> Etter 10 år med 100.000 kr på høyrentekonto:
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="text-center p-4 bg-green-600/20 rounded-lg">
-                <div className="text-3xl font-black text-green-400">162.889 kr</div>
-                <div className="text-sm text-gray-300 mt-1">Med 5% rente ( årlig kapitalisering )</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+              <div className="text-center p-5 bg-green-600/20 rounded-xl border border-green-500/20">
+                <div className="text-4xl font-black text-green-400">162.889 kr</div>
+                <div className="text-sm text-gray-300 mt-2">Med 5% rente (årlig kapitalisering)</div>
               </div>
-              <div className="text-center p-4 bg-gray-700/50 rounded-lg">
-                <div className="text-3xl font-black text-gray-400">100.000 kr</div>
-                <div className="text-sm text-gray-400 mt-1">På brukskonto med 0%</div>
+              <div className="text-center p-5 bg-white/5 rounded-xl border border-white/10">
+                <div className="text-4xl font-black text-gray-400">100.000 kr</div>
+                <div className="text-sm text-gray-400 mt-2">På brukskonto med 0%</div>
               </div>
             </div>
-            <p className="text-center text-green-400 font-bold mt-4">
+            <p className="text-center text-green-400 font-bold text-lg">
               + 62.889 kr bare på renteinntekter — uten å løfte en finger
             </p>
           </div>
@@ -259,11 +375,11 @@ export default function Hoyrentekonto() {
             En høyrentekonto på 5% beskytter ikke bare pengene dine — den <strong>øker</strong> faktisk kjøpekraften din i reelle termer (inflasjon justert).
           </p>
 
-          <div className="bg-red-50 rounded-xl p-5 border border-red-200">
-            <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+          <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+            <h3 className="font-bold text-red-800 mb-4 flex items-center gap-2">
               <span>⚠️</span> Regnestykket som bør bekymre deg
             </h3>
-            <div className="space-y-2 text-gray-700">
+            <div className="space-y-2.5 text-gray-700">
               <div className="flex justify-between py-2 border-b border-red-100">
                 <span>Penger på brukskonto:</span>
                 <span className="font-bold text-gray-900">100.000 kr</span>
@@ -276,7 +392,7 @@ export default function Hoyrentekonto() {
                 <span>Renteinntekt (0%):</span>
                 <span className="font-bold">+ 0 kr</span>
               </div>
-              <div className="flex justify-between py-2 bg-red-100 rounded-lg px-3 py-2">
+              <div className="flex justify-between bg-red-100 rounded-lg px-4 py-3 mt-2">
                 <span className="font-bold text-red-800">Reell verdi etter 1 år:</span>
                 <span className="font-black text-red-800 text-lg">~97.000 kr</span>
               </div>
@@ -286,38 +402,24 @@ export default function Hoyrentekonto() {
 
         {/* SLIK KOMMER DU I GANG */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <span>🚀</span> Slik kommer du i gang — steg for steg
           </h2>
           <div className="space-y-4">
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Velg en høyrentekonto</h3>
-                <p className="text-gray-600 text-sm">Sammenlign bankene i tabellen over. Sbanken og Hygga topper listen i april 2026. Velg den som passer deg best.</p>
+            {[
+              { n: '1', title: 'Velg en høyrentekonto', desc: 'Sammenlign bankene i tabellen over. Sbanken og Hygga topper listen i april 2026. Velg den som passer deg best.' },
+              { n: '2', title: 'Åpne konto digitalt', desc: 'De fleste digitale banker lar deg åpne konto direkte i app eller på nettsiden. Du trenger BankID og en norsk folkeregistrert adresse.' },
+              { n: '3', title: 'Overfør sparepengene dine', desc: 'Flytt pengene du vil spare fra din vanlige bank til den nye høyrentekontoen. BankID gjør dette kjapt og sikkert.' },
+              { n: '4', title: 'Sett opp spareavtale', desc: 'Mange banker tilbyr muligheten til å sette opp en fast månedlig overføring. På den måten bygger du sparingen din automatisk.' },
+            ].map(item => (
+              <div key={item.n} className="flex items-start gap-5 bg-white rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition-all">
+                <div className="w-11 h-11 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-sm">{item.n}</div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Åpne konto digitalt</h3>
-                <p className="text-gray-600 text-sm">De fleste digitale banker lar deg åpne konto direkte i app eller på nettsiden. Du trenger BankID og en norsk folkeregistrert adresse.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Overfør sparepengene dine</h3>
-                <p className="text-gray-600 text-sm">Flytt pengene du vil spare fra din vanlige bank til den nye høyrentekontoen. BankID gjør dette kjapt og sikkert.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Sett opp spareavtale</h3>
-                <p className="text-gray-600 text-sm">Mange banker tilbyr muligheten til å sette opp en fast månedlig overføring. På den måten bygger du sparingen din automatisk.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
@@ -327,68 +429,77 @@ export default function Hoyrentekonto() {
             <span>❓</span> Vanlige spørsmål
           </h2>
           <div className="space-y-4">
-            <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">Må jeg betale skatt på renteinntekter?</h3>
-              <p className="text-gray-600 text-sm">Ja, renteinntekter er skattepliktig. For 2026 er skattesatsen på renteinntekter 25%. Men med 5% rente på 100.000 kr gir dette 5.000 kr i brutto rente, hvorav du betaler 1.250 kr i skatt — altså fortsatt 3.750 kr netto. Langt bedre enn 0 kr på brukskonto.</p>
-            </div>
-            <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">Kan jeg ta ut pengene når jeg vil?</h3>
-              <p className="text-gray-600 text-sm">Ja, de fleste høyrentekontoer har ingen bindingstid. Pengene er dine å flytte når som helst. Enkelte banker kan ha litt ventetid på uttak (1-2 dager), men ingen reell binding.</p>
-            </div>
-            <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">Er høyrentekonto bedre enn fond?</h3>
-              <p className="text-gray-600 text-sm">Det avhenger av tidshorisonten din. Høyrentekonto gir garantert avkastning med null risiko. Fond kan gi høyere avkastning over tid, men du kan tape penger. For kortsiktig sparing (under 2-3 år) er høyrentekonto det beste valget.</p>
-            </div>
-            <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">Hva med formuesskatt på innskudd?</h3>
-              <p className="text-gray-600 text-sm">Formuesskatt på bankinnskudd er en spesiell norsk skatt som legges på innskudd over 1.700.000 kr (2026). For de fleste sparere er ikke dette relevant. Sjekk med din situasjon hvis du har veldig store innskudd.</p>
-            </div>
+            {[
+              { q: 'Må jeg betale skatt på renteinntekter?', a: 'Ja, renteinntekter er skattepliktig. For 2026 er skattesatsen på renteinntekter 25%. Men med 5% rente på 100.000 kr gir dette 5.000 kr i brutto rente, hvorav du betaler 1.250 kr i skatt — altså fortsatt 3.750 kr netto. Langt bedre enn 0 kr på brukskonto.' },
+              { q: 'Kan jeg ta ut pengene når jeg vil?', a: 'Ja, de fleste høyrentekontoer har ingen bindingstid. Pengene er dine å flytte når som helst. Enkelte banker kan ha litt ventetid på uttak (1-2 dager), men ingen reell binding.' },
+              { q: 'Er høyrentekonto bedre enn fond?', a: 'Det avhenger av tidshorisonten din. Høyrentekonto gir garantert avkastning med null risiko. Fond kan gi høyere avkastning over tid, men du kan tape penger. For kortsiktig sparing (under 2-3 år) er høyrentekonto det beste valget.' },
+              { q: 'Hva med formuesskatt på innskudd?', a: 'Formuesskatt på bankinnskudd er en spesiell norsk skatt som legges på innskudd over 1.700.000 kr (2026). For de fleste sparere er ikke dette relevant. Sjekk med din situasjon hvis du har veldig store innskudd.' },
+            ].map((faq, i) => (
+              <details key={i} className="group bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-bold text-gray-800 hover:text-green-600 transition-colors list-none">
+                  <span className="flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-full bg-green-100 text-green-700 text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                    {faq.q}
+                  </span>
+                  <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
           </div>
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-black mb-4">Klar til å la pengene jobbe for deg?</h2>
-          <p className="text-green-100 mb-6 max-w-2xl mx-auto">
-            En høyrentekonto tar 15 minutter å sette opp og kan gi deg tusenvis av kroner mer i året — helt uten risiko.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/sparing/beste-sparekonto-2026" className="inline-block bg-white text-green-700 font-bold px-6 py-3 rounded-lg hover:bg-green-50 transition-colors">
-              📊 Sammenlign alle sparekontoer
-            </Link>
-            <Link href="/sparing" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-green-400 transition-colors border border-green-400">
-              📚 Flere spareguider
-            </Link>
+        <section className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-10 text-white text-center relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/4" />
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4" />
+          <div className="relative">
+            <h2 className="text-3xl md:text-4xl font-black mb-4">Klar til å la pengene jobbe for deg?</h2>
+            <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+              En høyrentekonto tar 15 minutter å sette opp og kan gi deg tusenvis av kroner mer i året — helt uten risiko.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/verktøy/sparekalkulator" className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-green-900 font-extrabold px-8 py-4 rounded-xl text-lg shadow-lg transition-all hover:scale-105">
+                <span>🧮</span> Bruk sparekalkulatoren
+              </Link>
+              <Link href="/sparing/beste-sparekonto-2026" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-bold px-6 py-4 rounded-xl transition-colors border border-white/30">
+                📊 Sammenlign alle sparekontoer
+              </Link>
+            </div>
           </div>
         </section>
 
         {/* RELATERTE ARTIKLER */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">📚 Relaterte artikler</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-5 flex items-center gap-2">
+            <span>📚</span> Relaterte artikler
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/sparing/indeksfond-nybegynnere" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">📈</span>
-                <div>
-                  <h3 className="font-bold text-gray-900 group-hover:text-green-700">Indeksfond for nybegynnere</h3>
-                  <p className="text-gray-500 text-sm">Lær hvordan fond kan gi deg høyere avkastning over tid</p>
+            {[
+              { href: '/sparing/indeksfond-nybegynnere', emoji: '📈', title: 'Indeksfond for nybegynnere', desc: 'Lær hvordan fond kan gi deg høyere avkastning over tid' },
+              { href: '/sparing/bsu-guide', emoji: '🏠', title: 'BSU 2026: Full guide', desc: "Norges beste spareform for unge under 34 år" },
+              { href: '/verktøy/sparekalkulator', emoji: '🧮', title: 'Sparekalkulator med mål', desc: 'Beregn hvor lenge det tar å nå sparemålet ditt' },
+              { href: '/sparing/spareplan-guide', emoji: '📋', title: 'Spareplan-guide', desc: 'Bygg en solid spareplan som faktisk fungerer' },
+            ].map(item => (
+              <Link key={item.href} href={item.href} className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 hover:shadow-md transition-all group">
+                <div className="flex items-center gap-4">
+                  <span className="text-3xl">{item.emoji}</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 group-hover:text-green-700 transition-colors">{item.title}</h3>
+                    <p className="text-gray-500 text-sm">{item.desc}</p>
+                  </div>
                 </div>
-              </div>
-            </Link>
-            <Link href="/sparing/bsu-guide" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🏠</span>
-                <div>
-                  <h3 className="font-bold text-gray-900 group-hover:text-green-700">BSU 2026: Full guide</h3>
-                  <p className="text-gray-500 text-sm">Norges beste spareform for unge under 34 år</p>
-                </div>
-              </div>
-            </Link>
+              </Link>
+            ))}
           </div>
         </section>
 
         <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 15. april 2026. Rentene er veiledende og kan endres. Sjekk bankens nettsider for oppdaterte vilkår.
+          Sist oppdatert: april 2026. Rentene er veiledende og kan endres. Sjekk bankens nettsider for oppdaterte vilkår.
         </p>
       </article>
     </>
