@@ -16,6 +16,14 @@ const tools = [
     textColor: 'text-green-600',
   },
   {
+    href: '/verktøy/sparekalkulator',
+    title: 'Sparekalkulator',
+    description: 'Beregn hvor lenge det tar å nå sparemålet ditt med en høyrentekonto. Sett inn sparemål, ønsket beløp og månedlig sparing.',
+    icon: '💰',
+    color: 'bg-blue-50',
+    textColor: 'text-blue-600',
+  },
+  {
     href: '/verktøy/lånekalkulator',
     title: 'Forbrukslånskalkulator',
     description: 'Beregn månedlig kostnad, total rente og effektiv rente for forbrukslån.',
