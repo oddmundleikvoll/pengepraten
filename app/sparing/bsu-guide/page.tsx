@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom',
-  description: 'BSU er Norges beste spareform for unge under 34. Få opptil 26% effektiv avkastning med skattefradraget. Full guide til BSU i 2026.',
+  description: 'BSU er Norges beste spareform for unge under 34. Få 10% skattefradrag på innskudd opp til 27.500 kr/år. Full guide til BSU i 2026.',
 }
 
 export default function BSUGuide() {
@@ -23,7 +23,7 @@ export default function BSUGuide() {
             BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom
           </h1>
           <p className="text-green-100 text-xl max-w-2xl">
-            Norges beste spareform for unge boligkjøpere. Lær hvordan du får opptil 26% effektiv avkastning på pengene dine.
+            Norges beste spareform for unge boligkjøpere. Lær hvordan du får <strong>10% skattefradrag</strong> på pengene dine.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function BSUGuide() {
         <div className="bg-green-50 rounded-2xl p-6 border-l-4 border-green-600">
           <p className="text-lg text-gray-800 leading-relaxed">
             <span className="text-2xl mr-2">🏠</span>
-            <strong>BSU</strong> (Boligsparing for Ungdom) er Norges mest fordelaktige spareordning for deg under 34 år som vil eie din egen bolig. Med skattefradrag på 26% av pengene du setter inn, er det rett og slett gratis penger fra staten.
+            <strong>BSU</strong> (Boligsparing for Ungdom) er Norges mest fordelaktige spareordning for deg under 34 år som vil eie din egen bolig. Med skattefradrag på <strong>10%</strong> av pengene du setter inn, er det rett og slett gratis penger fra staten.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function BSUGuide() {
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 font-bold mt-0.5">✓</span>
-                <span><strong>26% effektiv avkastning</strong> — langt bedre enn noen sparekonto</span>
+                <span><strong>10% skattefradrag</strong> — staten gir deg 10 kr tilbake per 100 kr spart</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 font-bold mt-0.5">✓</span>
@@ -76,7 +76,7 @@ export default function BSUGuide() {
         {/* SKATTEFRADRAG */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>💰</span> 26% skattefradrag forklart — statens gave
+            <span>💰</span> 10% skattefradrag forklart — statens gave
           </h2>
           <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 text-white mb-6">
             <h3 className="font-bold text-green-100 mb-3 uppercase text-sm tracking-wide">Skattefradraget på én titt</h3>
@@ -210,7 +210,7 @@ export default function BSUGuide() {
             <span>🏦</span> Beste BSU-kontoer 2026
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Ikke alle banker tilbyr BSU, og de som gjør det har forskjellige renter. Her er en oversikt over de beste BSU-kontoene i Norge akkurat nå:
+            Ikke alle banker tilbyr BSU, og de som gjør det har forskjellige renter. Her er en omfattende oversikt over BSU-kontoene i Norge akkurat nå:
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
@@ -223,36 +223,36 @@ export default function BSUGuide() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">DNB</td>
-                  <td className="p-4 text-green-700 font-bold">3,95%</td>
-                  <td className="p-4">27 500 kr/år</td>
-                  <td className="p-4 text-sm text-gray-600">God digital løsning</td>
-                </tr>
-                <tr className="bg-green-50 border-b border-gray-100">
-                  <td className="p-4 font-semibold">Norwegian Bank</td>
-                  <td className="p-4 text-green-700 font-bold">4,10%</td>
-                  <td className="p-4">27 500 kr/år</td>
-                  <td className="p-4 text-sm text-gray-600">Cashback på kort</td>
-                </tr>
-                <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">Sbanken</td>
-                  <td className="p-4 text-green-700 font-bold">3,75%</td>
-                  <td className="p-4">27 500 kr/år</td>
-                  <td className="p-4 text-sm text-gray-600">Ingen gebyrer</td>
-                </tr>
-                <tr className="bg-green-50 border-b border-gray-100">
-                  <td className="p-4 font-semibold">Nordea</td>
-                  <td className="p-4 text-green-700 font-bold">3,60%</td>
-                  <td className="p-4">27 500 kr/år</td>
-                  <td className="p-4 text-sm text-gray-600">Stor bank, god support</td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="p-4 font-semibold">Sparebank 1</td>
-                  <td className="p-4 text-green-700 font-bold">3,80%</td>
-                  <td className="p-4">27 500 kr/år</td>
-                  <td className="p-4 text-sm text-gray-600">Lokalt engasjement</td>
-                </tr>
+                {[
+                  { bank: 'DNB', rate: 3.95, note: 'Norges største bank, god digital løsning' },
+                  { bank: 'Nordea', rate: 3.60, note: 'Stor bank, god kundeservice' },
+                  { bank: 'SpareBank 1', rate: 3.80, note: 'Lokale banker med sterkt engasjement' },
+                  { bank: 'Danske Bank', rate: 3.55, note: 'Nordisk storbank' },
+                  { bank: 'Sbanken', rate: 3.75, note: 'Digital bank, ingen gebyrer' },
+                  { bank: 'Handelsbanken', rate: 3.50, note: 'Svensk bank, solid løsning' },
+                  { bank: 'Nordea', rate: 3.60, note: 'Stor bank, god support' },
+                  { bank: 'SpareBank 1 SR-Bank', rate: 3.85, note: 'Største SpareBank 1-bank' },
+                  { bank: 'SpareBank 1 SMN', rate: 3.82, note: 'Trøndelagsbanken' },
+                  { bank: 'SpareBank 1 Nord-Norge', rate: 3.88, note: 'Nord-Norges største bank' },
+                  { bank: 'SpareBank 1 Østlandet', rate: 3.78, note: 'Østlandssparingen' },
+                  { bank: 'Sandnes Sparebank', rate: 3.90, note: 'Lokal bank på Sør-Vestlandet' },
+                  { bank: 'Helgeland Sparebank', rate: 3.85, note: 'Nordland' },
+                  { bank: 'Lillehammer Sparebank', rate: 3.72, note: 'Lokal bank på Oppland' },
+                  { bank: 'Totens Sparebank', rate: 3.68, note: 'Lokal bank' },
+                  { bank: 'Romsdal Sparebank', rate: 3.80, note: 'Møre og Romsdal' },
+                  { bank: 'LO Favør', rate: 4.15, note: 'Forbundets medlemmer — best i test' },
+                  { bank: 'Marine Group', rate: 3.95, note: 'For ansatte i sjøfart/næring' },
+                  { bank: 'KLP', rate: 3.70, note: 'For kommuneansatte' },
+                  { bank: 'Storebrand', rate: 3.65, note: 'Liv og bank' },
+                  { bank: 'Nytter AS', rate: 3.50, note: 'Alternative banker' },
+                ].map((item, i) => (
+                  <tr key={item.bank} className={i % 2 === 0 ? 'bg-white border-b border-gray-100' : 'bg-green-50 border-b border-gray-100'}>
+                    <td className="p-4 font-semibold text-gray-900">{item.bank}</td>
+                    <td className="p-4 text-green-700 font-bold text-lg">{item.rate.toFixed(2)}%</td>
+                    <td className="p-4 text-gray-600">27 500 kr/år</td>
+                    <td className="p-4 text-sm text-gray-500">{item.note}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

@@ -9,13 +9,28 @@ export const metadata: Metadata = {
 }
 
 const BANKS = [
-  { name: 'Sbanken', rate: 5.20, type: 'Ren digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://sbanken.no', cta: 'Åpne konto' },
-  { name: 'Hygga', rate: 5.10, type: 'Digital, norsk', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://hygga.no', cta: 'Åpne konto' },
-  { name: 'Nordnet', rate: 4.95, type: 'Investeringsplattform', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://nordnet.no', cta: 'Åpne konto' },
-  { name: 'Milk Money', rate: 4.85, type: 'Digital sparekonto', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://milkmoney.no', cta: 'Åpne konto' },
-  { name: 'Bluestep', rate: 4.70, type: 'Digitale lån og sparing', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://bluestep.no', cta: 'Åpne konto' },
-  { name: 'BN Bank', rate: 4.60, type: 'Nettbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://bnbank.no', cta: 'Åpne konto' },
-  { name: 'Skandiabanken', rate: 4.50, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://skandia.no', cta: 'Åpne konto' },
+  { name: 'Sbanken', rate: 5.20, type: 'Ren digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.sbanken.no', cta: 'Åpne konto' },
+  { name: 'Hygga', rate: 5.10, type: 'Digital, norsk', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.hygga.no', cta: 'Åpne konto' },
+  { name: 'Nordnet', rate: 4.95, type: 'Investeringsplattform', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.nordnet.no', cta: 'Åpne konto' },
+  { name: 'Front Finance', rate: 4.85, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://frontfinance.no', cta: 'Åpne konto' },
+  { name: 'Milk Money', rate: 4.80, type: 'Digital sparekonto', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.milkmoney.no', cta: 'Åpne konto' },
+  { name: 'Bluestep', rate: 4.70, type: 'Digitale lån og sparing', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.bluestep.no', cta: 'Åpne konto' },
+  { name: 'BN Bank', rate: 4.60, type: 'Nettbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.bnbank.no', cta: 'Åpne konto' },
+  { name: 'Skandiabanken', rate: 4.55, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.skandia.no', cta: 'Åpne konto' },
+  { name: 'Obos', rate: 4.50, type: 'Medlemsbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.obos.no', cta: 'Åpne konto' },
+  { name: 'Laksefjord Sparebank', rate: 4.45, type: 'Lokalbank Finnmark', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.laksefjord.no', cta: 'Åpne konto' },
+  { name: 'SpareBank 1 Østlandet', rate: 4.35, type: 'SpareBank 1-bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/ostlandet', cta: 'Åpne konto' },
+  { name: 'SpareBank 1 SMN', rate: 4.30, type: 'SpareBank 1-bank Trøndelag', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/smn', cta: 'Åpne konto' },
+  { name: 'SpareBank 1 SR-Bank', rate: 4.28, type: 'SpareBank 1-bank Rogaland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/sr-bank', cta: 'Åpne konto' },
+  { name: 'SpareBank 1 Nord-Norge', rate: 4.25, type: 'SpareBank 1 Nord-Norge', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/nn', cta: 'Åpne konto' },
+  { name: 'Sandnes Sparebank', rate: 4.20, type: 'Lokalbank Rogaland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.sandnes-sparebank.no', cta: 'Åpne konto' },
+  { name: 'Helgeland Sparebank', rate: 4.18, type: 'Lokalbank Nordland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.helgeland-sparebank.no', cta: 'Åpne konto' },
+  { name: 'Handelsbanken', rate: 4.15, type: 'Svensk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.handelsbanken.no', cta: 'Åpne konto' },
+  { name: 'Danske Bank', rate: 4.05, type: 'Nordisk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.danskebank.no', cta: 'Åpne konto' },
+  { name: 'Nordea', rate: 3.90, type: 'Nordisk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.nordea.no', cta: 'Åpne konto' },
+  { name: 'DNB', rate: 3.75, type: 'Norges største bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.dnb.no', cta: 'Åpne konto' },
+  { name: 'Nordax', rate: 4.65, type: 'Digital bank (Sverige)', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.nordax.no', cta: 'Åpne konto' },
+  { name: 'Salvest', rate: 4.55, type: 'Digital sparebank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.salvest.no', cta: 'Åpne konto' },
 ]
 
 function StarRating() {
