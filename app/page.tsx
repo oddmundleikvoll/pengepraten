@@ -194,7 +194,6 @@ export default function HomePage() {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-norsk-dark">Siste artikler</h2>
-            <p className="text-gray-500 mt-1">Oppdatert januar 2026</p>
           </div>
           <Link
             href="/kredittkort"
