@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import EmailCapture from '@/components/EmailCapture'
 
 export const metadata: Metadata = {
-  title: 'Beste Høyrentekonto Akkurat Nå (April 2026) | Pengepraten',
-  description: 'Sammenlign de beste høyrentekontoene i Norge akkurat nå. Oppdatert april 2026 med Sbanken (5,20%), Hygga (5,10%), Nordnet og flere. Få 5%+ rente uten risiko.',
+  title: 'Beste Høyrentekonto Akkurat Nå (Mai 2026) | Pengepraten',
+  description: 'Sammenlign de beste høyrentekontoene i Norge akkurat nå. Oppdatert mai 2026 med Sbanken (5,20%), Hygga (5,10%), Nordnet og flere. Få 5%+ rente uten risiko.',
   keywords: ['beste høyrentekonto akkurat nå', 'høyrentekonto sammenligning', 'sparekonto med høyest rente', 'høyrentekonto 2026'],
 }
 
@@ -280,6 +280,31 @@ export default function Hoyrentekonto() {
           </p>
         </section>
 
+        {/* TOP 3 ANBEFALINGER */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center gap-2">
+            <span>🏆</span> Våre top 3 anbefalinger
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { rank: '1', name: 'Sbanken', rate: '5,20%', why: 'Beste rente i Norge akkurat nå. Ren digital bank med null gebyrer og umiddelbar tilgang til pengene.', bestFor: 'Deg som vil ha maks avkastning uten stress', color: 'from-amber-400 to-amber-500', badge: 'Beste rente' },
+              { rank: '2', name: 'Hygga', rate: '5,10%', why: 'Neste beste rente, og en ren norsk digital bank. God app og rask kundeservice.', bestFor: 'Deg som vil ha høy rente med norsk lokal tilhørighet', color: 'from-gray-300 to-gray-400', badge: 'Norsk' },
+              { rank: '3', name: 'Nordnet', rate: '4,95%', why: 'Perfekt for deg som både vil spare trygt og investere. En plattform for alt — høyrentekonto, fond og aksjer.', bestFor: 'Deg som vil spare smart og investere videre', color: 'from-orange-300 to-orange-400', badge: 'Sparing + investering' },
+            ].map(card => (
+              <div key={card.rank} className={`bg-gradient-to-br ${card.color} rounded-2xl p-6 text-white relative overflow-hidden`}>
+                <div className="absolute top-3 right-3 bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded-full">{card.badge}</div>
+                <div className="text-4xl font-black mb-2">#{card.rank}</div>
+                <div className="text-2xl font-bold mb-1">{card.name}</div>
+                <div className="text-3xl font-black mb-3">{card.rate}</div>
+                <p className="text-white/90 text-sm leading-relaxed mb-3">{card.why}</p>
+                <div className="bg-white/10 rounded-lg p-2 text-xs text-white/80">
+                  <strong>Best for:</strong> {card.bestFor}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* TRYGT ELLER IKKE */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
@@ -435,6 +460,70 @@ export default function Hoyrentekonto() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* BSU VS HØYRENTEKONTO */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center gap-2">
+            <span>⚖️</span> BSU vs høyrentekonto — hva skal du velge?
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Mange lurer på om de skal velge BSU eller høyrentekonto. Svaret er enkelt: <strong>Hvis du er under 34 år og skal kjøpe bolig, er BSU det beste valget.</strong> Ellers er høyrentekonto fleksibelt og godt.
+          </p>
+
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-gray-800 text-white">
+                  <th className="text-left p-4 font-bold">Kriterie</th>
+                  <th className="text-left p-4 font-bold bg-green-600">BSU</th>
+                  <th className="text-left p-4 font-bold bg-emerald-600">Høyrentekonto</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { label: 'Skattefradrag', bsu: '10% på innskudd', hoyrente: 'Ingen' },
+                  { label: 'Aldersgrense', bsu: '18–33 år', hoyrente: 'Ingen' },
+                  { label: 'Maks innskudd/år', bsu: '27 500 kr', hoyrente: 'Ingen grense' },
+                  { label: 'Binding', bsu: 'Til boligkjøp (strengt)', hoyrente: 'Ingen — ta ut når som helst' },
+                  { label: 'Rente', bsu: '3,5–4,5% (varierer)', hoyrente: '4–5,2% (varierer)' },
+                  { label: 'Mål', bsu: 'Egenkapital til bolig', hoyrente: 'Generell sparing' },
+                ].map((row, i) => (
+                  <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                    <td className="p-4 font-semibold text-gray-800">{row.label}</td>
+                    <td className="p-4 text-gray-700">{row.bsu}</td>
+                    <td className="p-4 text-gray-700">{row.hoyrente}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-600">
+              <h3 className="font-bold text-green-800 mb-2">🎯 Velg BSU hvis:</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Du er under 34 år</li>
+                <li>• Du planlegger å kjøpe bolig</li>
+                <li>• Du vil ha 10% skattefradrag</li>
+                <li>• Du tåler litt binding</li>
+              </ul>
+              <div className="mt-3">
+                <Link href="/sparing/bsu-guide" className="inline-flex items-center gap-1 text-green-700 font-bold text-sm hover:underline">
+                  Les full BSU-guide →
+                </Link>
+              </div>
+            </div>
+            <div className="bg-emerald-50 rounded-xl p-5 border-l-4 border-emerald-600">
+              <h3 className="font-bold text-emerald-800 mb-2">💡 Velg høyrentekonto hvis:</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Du er 34+ år (eller yngre uten boligplan)</li>
+                <li>• Du vil ha fleksibel tilgang til pengene</li>
+                <li>• Du sparer til andre mål (bil, reise, buffer)</li>
+                <li>• Du vil kunne flytte penger når som helst</li>
+              </ul>
+            </div>
           </div>
         </section>
 

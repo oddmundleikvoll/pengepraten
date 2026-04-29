@@ -230,7 +230,6 @@ export default function BSUGuide() {
                   { bank: 'Danske Bank', rate: 3.55, note: 'Nordisk storbank' },
                   { bank: 'Sbanken', rate: 3.75, note: 'Digital bank, ingen gebyrer' },
                   { bank: 'Handelsbanken', rate: 3.50, note: 'Svensk bank, solid løsning' },
-                  { bank: 'Nordea', rate: 3.60, note: 'Stor bank, god support' },
                   { bank: 'SpareBank 1 SR-Bank', rate: 3.85, note: 'Største SpareBank 1-bank' },
                   { bank: 'SpareBank 1 SMN', rate: 3.82, note: 'Trøndelagsbanken' },
                   { bank: 'SpareBank 1 Nord-Norge', rate: 3.88, note: 'Nord-Norges største bank' },
@@ -257,7 +256,99 @@ export default function BSUGuide() {
             </table>
           </div>
           <div className="bg-green-50 rounded-xl p-4 text-sm text-gray-600">
-            <strong>Merk:</strong> Rentene er veiledende per april 2026 og kan endres. Sjekk bankens nettsider for oppdaterte tall.
+            <strong>Merk:</strong> Rentene er veiledende per mai 2026 og kan endres. Sjekk bankens nettsider for oppdaterte tall.
+          </div>
+        </section>
+
+        {/* BSU VS HØYRENTEKONTO */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center gap-2">
+            <span>⚖️</span> BSU vs høyrentekonto — hva skal du velge?
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            <strong>Under 34 år og skal kjøpe bolig?</strong> Da er BSU det soleklare beste valget. Skattefradraget på 10% slår alt annet. Men hva hvis du ikke passer i BSU-kategorien?
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-600">
+              <h3 className="font-bold text-green-800 mb-3">🏠 BSU er best for deg hvis:</h3>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Du er mellom 18 og 33 år</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Du planlegger å kjøpe bolig i fremtiden</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Du vil ha 10% skattefradrag (opptil 2 750 kr/år)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Du tåler at pengene er bundet til boligkjøp</span>
+                </li>
+              </ul>
+              <div className="mt-4 bg-white rounded-lg p-3 border border-green-200">
+                <div className="text-xs text-gray-500 mb-1">Effektiv avkastning</div>
+                <div className="text-2xl font-black text-green-700">~14%</div>
+                <div className="text-xs text-gray-500">Rente + skattefradrag</div>
+              </div>
+            </div>
+
+            <div className="bg-emerald-50 rounded-xl p-5 border-l-4 border-emerald-600">
+              <h3 className="font-bold text-emerald-800 mb-3">💡 Høyrentekonto er best for deg hvis:</h3>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span>Du er 34+ år (eller har allerede bolig)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span>Du vil ha full fleksibilitet — ta ut når som helst</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span>Du sparer til andre mål (bil, reise, buffer)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span>Du vil kunne spare mer enn 27 500 kr/år</span>
+                </li>
+              </ul>
+              <div className="mt-4 bg-white rounded-lg p-3 border border-emerald-200">
+                <div className="text-xs text-gray-500 mb-1">Topp rente akkurat nå</div>
+                <div className="text-2xl font-black text-emerald-700">5,20%</div>
+                <div className="text-xs text-gray-500">Sbanken — ingen binding</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">🧮 Kan du ha begge deler?</h3>
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
+              <strong>Ja!</strong> Mange smarte sparere bruker både BSU og høyrentekonto:
+            </p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-green-600 font-bold">1.</span>
+                <span>Sett inn <strong>27 500 kr på BSU</strong> hvert år for å få skattefradraget</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-600 font-bold">2.</span>
+                <span>Resten av sparepengene dine legger du på en <strong>høyrentekonto</strong> for fleksibilitet</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-600 font-bold">3.</span>
+                <span>Resultat: <strong>Maksimal avkastning + maksimal fleksibilitet</strong></span>
+              </li>
+            </ul>
+            <div className="mt-4">
+              <Link href="/sparing/hoyrentekonto" className="inline-flex items-center gap-1 text-green-700 font-bold text-sm hover:underline">
+                Se beste høyrentekonto akkurat nå →
+              </Link>
+            </div>
           </div>
         </section>
 

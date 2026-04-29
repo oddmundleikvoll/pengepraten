@@ -79,6 +79,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pengepraten.no/lan/samle-lan-spar-tusenvis</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://pengepraten.no/lan/refinansiering-spar-paa-gjelden</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -104,7 +110,7 @@
   </url>
   <url>
     <loc>https://pengepraten.no/sparing/bsu-guide</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -122,7 +128,7 @@
   </url>
   <url>
     <loc>https://pengepraten.no/sparing/hoyrentekonto</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
