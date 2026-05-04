@@ -64,7 +64,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-white">
+      <body className="min-h-screen flex flex-col bg-warm-bg text-stone-900 antialiased">
         <Header />
         <main className="flex-1">
           {children}

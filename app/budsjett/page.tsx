@@ -10,32 +10,37 @@ export const metadata: Metadata = {
 export default function BudsjettPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-amber-500 to-orange-600 text-white py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <nav className="text-amber-100 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <span>Budsjett</span>
+      <section className="bg-stone-900 text-white py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
+          }}
+        />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+          <nav className="text-stone-400 text-sm mb-6">
+            <Link href="/" className="hover:text-white transition-colors focus-ring rounded">Hjem</Link>
+            <span className="mx-2 text-stone-600">/</span>
+            <span className="text-stone-300">Budsjett</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">Budsjett</h1>
-          <p className="text-xl text-amber-100 max-w-2xl">
+          <h1 className="font-display text-display mb-4 text-balance">Budsjett</h1>
+          <p className="text-lg text-stone-400 max-w-xl leading-relaxed text-balance">
             Ta kontroll over økonomien med våre gratis budsjettmaler og verktøy.
           </p>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div>
-            <h2 className="text-2xl font-bold text-norsk-dark mb-4">
+            <h2 className="font-display text-display-sm mb-5 text-balance">
               Hvorfor budsjettere?
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Et budsjett er ikke en stram økonomisk tvangstrøye — det er et verktøy 
-              for å sikre at pengene dine går til det som faktisk betyr noe for deg. 
+            <p className="text-stone-600 leading-[1.75] mb-8 text-[17px]">
+              Et budsjett er ikke en stram økonomisk tvangstrøye — det er et verktøy
+              for å sikre at pengene dine går til det som faktisk betyr noe for deg.
               Med et godt budsjett kan du:
             </p>
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-3 mb-10">
               {[
                 'Se nøyaktig hvor pengene dine går',
                 'Finne områder hvor du kan spare',
@@ -44,20 +49,20 @@ export default function BudsjettPage() {
                 'Nå dine sparemål raskere',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-3 h-3 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-5 h-5 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-3 h-3 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">{item}</span>
+                  <span className="text-stone-700 text-[15px]">{item}</span>
                 </li>
               ))}
             </ul>
 
-            <h2 className="text-2xl font-bold text-norsk-dark mb-4">
+            <h2 className="font-display text-display-sm mb-5 text-balance">
               Hva får du?
             </h2>
-            <div className="bg-gray-50 rounded-xl p-6 mb-8">
+            <div className="bg-stone-50 rounded-2xl p-6 mb-10 border border-stone-100">
               <ul className="space-y-3">
                 {[
                   'Ferdig oppsatt budsjettmal i Google Sheets',
@@ -67,19 +72,19 @@ export default function BudsjettPage() {
                   'Sparing- og buffer-tracking',
                   'Ingen binding — bruk så mye du vil',
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm">
-                    <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <li key={item} className="flex items-center gap-3 text-[15px]">
+                    <svg className="w-4 h-4 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-stone-700">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-amber-50 rounded-xl p-6 mb-8">
-              <h3 className="font-bold text-norsk-dark mb-2">Hvordan fungerer det?</h3>
-              <ol className="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+            <div className="bg-stone-50 rounded-2xl p-6 mb-10 border border-stone-100">
+              <h3 className="font-semibold text-stone-900 mb-3 text-sm tracking-tight">Hvordan fungerer det?</h3>
+              <ol className="space-y-2 text-[15px] text-stone-600 list-decimal list-inside leading-relaxed">
                 <li>Fyll inn e-postadressen din i skjemaet</li>
                 <li>Vi sender deg en lenke til Google Sheets-malen</li>
                 <li>Kopier malen til din egen Google Drive</li>
@@ -87,27 +92,27 @@ export default function BudsjettPage() {
               </ol>
             </div>
 
-            <h2 className="text-2xl font-bold text-norsk-dark mb-4">
+            <h2 className="font-display text-display-sm mb-5 text-balance">
               Artikler om budsjett
             </h2>
             <div className="grid gap-4">
-              <Link href="/budsjett/kom-i-gang-med-budsjett" className="group">
-                <article className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-amber-200 transition-all duration-200 overflow-hidden">
+              <Link href="/budsjett/kom-i-gang-med-budsjett" className="group block focus-ring rounded-2xl">
+                <article className="bg-white rounded-2xl border border-stone-200/60 shadow-soft hover:shadow-soft-lg hover:border-teal-200/60 transition-all duration-300 overflow-hidden card-hover">
                   <div className="px-5 pt-5 pb-0">
-                    <span className="inline-block px-3 py-1 text-xs font-medium bg-amber-50 text-amber-700 rounded-full">
+                    <span className="inline-block px-2.5 py-1 text-xs font-medium bg-teal-50 text-teal-700 rounded-md tracking-tight">
                       Budsjett
                     </span>
                   </div>
-                  <div className="p-5">
-                    <h3 className="font-semibold text-norsk-dark group-hover:text-amber-600 transition-colors mb-2">
+                  <div className="p-5 pt-4">
+                    <h3 className="font-semibold text-stone-900 group-hover:text-teal-800 transition-colors mb-2 leading-snug">
                       Kom i gang med budsjett: En komplett guide for nordmenn
                     </h3>
-                    <p className="text-sm text-gray-500 line-clamp-3">
+                    <p className="text-sm text-stone-500 line-clamp-3 leading-relaxed">
                       Lær hvordan du lager et budsjett som fungerer. Vi guider deg gjennom 50/30/20-regelen, faste vs variable utgifter, og gir deg en gratis mal å starte med.
                     </p>
-                    <div className="mt-4 flex items-center text-sm text-amber-600 font-medium">
+                    <div className="mt-4 flex items-center text-sm text-teal-700 font-medium">
                       <span>Les mer</span>
-                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </div>

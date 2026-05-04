@@ -2,80 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;450;500;600;700&display=swap');
 
-:root {
-  --norsk-blue: #002772;
-  --norsk-light-blue: #0066cc;
-  --norsk-green: #00843d;
+@layer base {
+  :root {
+    --bg: #faf9f7;
+    --bg-elevated: #ffffff;
+    --bg-muted: #f3f1ed;
+    --fg: #1c1917;
+    --fg-muted: #78716c;
+    --fg-subtle: #a8a29e;
+    --accent: #0f766e;
+    --accent-soft: rgba(15, 118, 110, 0.08);
+    --accent-hover: #115e59;
+    --border: #e7e5e4;
+    --border-light: #f0eeeb;
+    --radius: 12px;
+    --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.04);
+    --shadow: 0 4px 16px rgba(28, 25, 23, 0.06);
+    --shadow-lg: 0 12px 40px rgba(28, 25, 23, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer components {
+  .font-display {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  .container-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  color: #1a1a2e;
-  background: #ffffff;
-}
+  .section-padding {
+    padding-top: clamp(3rem, 8vw, 6rem);
+    padding-bottom: clamp(3rem, 8vw, 6rem);
+  }
 
-.font-heading {
-  font-family: 'Inter', system-ui, sans-serif;
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: reveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .reveal-delay-1 { animation-delay: 0.08s; }
+  .reveal-delay-2 { animation-delay: 0.16s; }
+  .reveal-delay-3 { animation-delay: 0.24s; }
+  .reveal-delay-4 { animation-delay: 0.32s; }
+
+  @keyframes reveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Card hover */
+  .card-hover {
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Button press */
+  .btn-press:active {
+    transform: scale(0.98);
+  }
+
+  /* Focus ring */
+  .focus-ring:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 4px;
+  background: #d6d3d1;
+  border-radius: 3px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+  background: #a8a29e;
 }
 
 /* Article content styles */
 .article-content h2 {
-  @apply text-2xl font-bold text-norsk-dark mt-8 mb-4;
+  font-family: 'DM Serif Display', Georgia, serif;
+  @apply text-2xl md:text-3xl font-normal text-stone-900 mt-10 mb-5 leading-tight;
 }
 
 .article-content h3 {
-  @apply text-xl font-semibold text-norsk-dark mt-6 mb-3;
+  font-family: 'DM Serif Display', Georgia, serif;
+  @apply text-xl md:text-2xl font-normal text-stone-800 mt-8 mb-4 leading-tight;
 }
 
 .article-content p {
-  @apply text-gray-700 leading-relaxed mb-4;
+  @apply text-stone-600 leading-[1.75] mb-5 text-[17px];
 }
 
 .article-content ul {
-  @apply list-disc list-inside mb-4 text-gray-700 space-y-1;
+  @apply list-disc list-outside mb-5 text-stone-600 space-y-2 pl-5;
 }
 
 .article-content ol {
-  @apply list-decimal list-inside mb-4 text-gray-700 space-y-1;
+  @apply list-decimal list-outside mb-5 text-stone-600 space-y-2 pl-5;
 }
 
 .article-content a {
-  @apply text-accent-600 hover:text-accent-700 underline;
+  @apply text-teal-700 hover:text-teal-900 underline underline-offset-2 decoration-teal-300 hover:decoration-teal-700 transition-colors;
 }
 
 .article-content strong {
-  @apply font-semibold text-norsk-dark;
+  @apply font-semibold text-stone-900;
+}
+
+.article-content blockquote {
+  @apply border-l-2 border-teal-600 pl-5 py-1 my-6 text-stone-500 italic;
 }
 
 /* Lead magnet form */
 .lead-magnet-input:focus {
-  @apply outline-none ring-2 ring-primary-500 border-transparent;
+  @apply outline-none ring-2 ring-white/40 border-transparent;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
