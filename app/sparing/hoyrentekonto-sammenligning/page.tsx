@@ -319,7 +319,7 @@ export default function HoyrentekontoSammenligning() {
 
         <div className="bg-green-50 rounded-xl p-6 my-8 border border-green-100">
           <p className="font-medium text-norsk-dark mb-3">
-            📧 <strong>Få e-postvarsel når rentene endres</strong>
+             <strong>Få e-postvarsel når rentene endres</strong>
           </p>
           <p className="text-sm text-gray-600 mb-4">
             Registrer e-postadressen din under, så sender vi deg beskjed med en 

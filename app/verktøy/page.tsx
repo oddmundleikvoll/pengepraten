@@ -6,12 +6,14 @@ export const metadata: Metadata = {
   description: 'Gratis verktøy for personlig økonomi. Forbrukslånskalkulator, boliglånskalkulator, budsjettmal og mer. Helt gratis og uten registrering.',
 }
 
+import { Home, TrendingUp, PiggyBank, Calculator, BarChart3 } from 'lucide-react'
+
 const tools = [
   {
     href: '/verktøy/boliglånskalkulator',
     title: 'Boliglånskalkulator',
     description: 'Beregn månedlig kostnad, total lånekostnad og effektiv rente for boliglån. Oppdatert med dagens renter fra norske banker.',
-    icon: '🏠',
+    icon: <Home className="w-6 h-6" />,
     color: 'bg-green-50',
     textColor: 'text-green-600',
   },
@@ -19,7 +21,7 @@ const tools = [
     href: '/sparing/hoyrentekonto-sammenligning',
     title: 'Høyrentekonto-sammenligning',
     description: 'Sammenlign renter fra 8 norske banker på én side. Sbanken, Hygga, Nordnet og flere. Oppdatert april 2026.',
-    icon: '📈',
+    icon: <TrendingUp className="w-6 h-6" />,
     color: 'bg-yellow-50',
     textColor: 'text-yellow-600',
   },
@@ -27,7 +29,7 @@ const tools = [
     href: '/verktøy/sparekalkulator',
     title: 'Sparekalkulator',
     description: 'Beregn hvor lenge det tar å nå sparemålet ditt med en høyrentekonto. Sett inn sparemål, ønsket beløp og månedlig sparing.',
-    icon: '💰',
+    icon: <PiggyBank className="w-6 h-6" />,
     color: 'bg-blue-50',
     textColor: 'text-blue-600',
   },
@@ -35,7 +37,7 @@ const tools = [
     href: '/verktøy/lånekalkulator',
     title: 'Forbrukslånskalkulator',
     description: 'Beregn månedlig kostnad, total rente og effektiv rente for forbrukslån.',
-    icon: '🧮',
+    icon: <Calculator className="w-6 h-6" />,
     color: 'bg-primary-50',
     textColor: 'text-primary-600',
   },
@@ -43,7 +45,7 @@ const tools = [
     href: '/budsjett',
     title: 'Budsjettmal',
     description: 'Last ned vår gratis budsjettmal for Google Sheets eller Excel.',
-    icon: '📊',
+    icon: <BarChart3 className="w-6 h-6" />,
     color: 'bg-accent-50',
     textColor: 'text-accent-600',
   },

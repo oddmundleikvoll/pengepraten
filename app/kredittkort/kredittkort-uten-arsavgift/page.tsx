@@ -108,7 +108,7 @@ export default function KredittkortUtenArsavgift() {
         </p>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Viktig å huske</h3>
           <p className="text-gray-700">
             «Ingen årsavgift» betyr ikke «gratis å bruke». Hvis du ikke betaler hele 
             regningen innen forfallsdato, vil du betale renter som fort kan overstige 

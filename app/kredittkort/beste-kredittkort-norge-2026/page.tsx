@@ -43,7 +43,7 @@ export default function BesteKredittkortNorge2026() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             Nordmenn bruker i gjennomsnitt <strong>14.500 kroner i måneden</strong> på 
             kredittkort. Med 1% cashback betyr det 1.740 kroner i året — helt gratis, 
@@ -121,7 +121,7 @@ export default function BesteKredittkortNorge2026() {
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Vårt tips</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Vårt tips</h3>
           <p className="text-gray-700">
             Bank Norwegian er det beste valget for de fleste nordmenn. Det kombinerer 
             null årsavgift med god cashback og reiseforsikring. Har du bare ett kredittkort, 
@@ -213,7 +213,7 @@ export default function BesteKredittkortNorge2026() {
         </p>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske på</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Viktig å huske på</h3>
           <p className="text-gray-700">
             SAS EuroBonus Premium lønner seg kun hvis du reiser mye — helst flere 
             ganger i året. Med årsavgiften på 1.995 kr må du tjene inn minst dette 
@@ -266,7 +266,7 @@ export default function BesteKredittkortNorge2026() {
                 <td className="p-3 border font-medium">Bank Norwegian</td>
                 <td className="p-3 border">0 kr</td>
                 <td className="p-3 border">Opptil 1%</td>
-                <td className="p-3 border">✓</td>
+                <td className="p-3 border"></td>
                 <td className="p-3 border">0%</td>
                 <td className="p-3 border">17,99%</td>
               </tr>
@@ -274,7 +274,7 @@ export default function BesteKredittkortNorge2026() {
                 <td className="p-3 border font-medium">Trumf Visa</td>
                 <td className="p-3 border">0 kr</td>
                 <td className="p-3 border">1-2%</td>
-                <td className="p-3 border">✗</td>
+                <td className="p-3 border"></td>
                 <td className="p-3 border">1,75%</td>
                 <td className="p-3 border">18,50%</td>
               </tr>
@@ -282,7 +282,7 @@ export default function BesteKredittkortNorge2026() {
                 <td className="p-3 border font-medium">Komplett Bank</td>
                 <td className="p-3 border">0 kr</td>
                 <td className="p-3 border">Opptil 1%</td>
-                <td className="p-3 border">✓</td>
+                <td className="p-3 border"></td>
                 <td className="p-3 border">1,75%</td>
                 <td className="p-3 border">17,99%</td>
               </tr>
@@ -290,15 +290,15 @@ export default function BesteKredittkortNorge2026() {
                 <td className="p-3 border font-medium">SAS EuroBonus Premium</td>
                 <td className="p-3 border">1.995 kr</td>
                 <td className="p-3 border">Poeng</td>
-                <td className="p-3 border">✓</td>
+                <td className="p-3 border"></td>
                 <td className="p-3 border">0%</td>
                 <td className="p-3 border">17,99%</td>
               </tr>
               <tr>
                 <td className="p-3 border font-medium">re:member Gold</td>
                 <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">✗</td>
-                <td className="p-3 border">✗</td>
+                <td className="p-3 border"></td>
+                <td className="p-3 border"></td>
                 <td className="p-3 border">1,75%</td>
                 <td className="p-3 border">17,40%</td>
               </tr>

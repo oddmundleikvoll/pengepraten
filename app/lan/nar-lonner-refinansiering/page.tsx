@@ -43,7 +43,7 @@ export default function NarLonnerRefinansiering() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             Nordmenn har over <strong>100 milliarder kroner</strong> i kredittkortgjeld 
             med gjennomsnittlig rente på over 20%. Ved å refinansiere til et forbrukslån 
@@ -191,7 +191,7 @@ export default function NarLonnerRefinansiering() {
         </p>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske på</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Viktig å huske på</h3>
           <p className="text-gray-700">
             Se alltid på den <strong>effektive renten</strong>, ikke bare den nominelle. 
             Den effektive renten inkluderer alle gebyrer og gir deg det sanne bildet av 

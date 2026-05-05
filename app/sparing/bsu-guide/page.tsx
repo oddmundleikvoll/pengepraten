@@ -34,7 +34,7 @@ export default function BSUGuide() {
         {/* INTRO */}
         <div className="bg-green-50 rounded-2xl p-6 border-l-4 border-green-600">
           <p className="text-lg text-gray-800 leading-relaxed">
-            <span className="text-2xl mr-2">🏠</span>
+            <span className="text-2xl mr-2"></span>
             <strong>BSU</strong> (Boligsparing for Ungdom) er Norges mest fordelaktige spareordning for deg under 34 år som vil eie din egen bolig. Med skattefradrag på <strong>10%</strong> av pengene du setter inn, er det rett og slett gratis penger fra staten.
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function BSUGuide() {
         {/* HVA ER BSU */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>📋</span> Hva er BSU og hvorfor er det den beste spareformen?
+            Hva er BSU og hvorfor er det den beste spareformen?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             BSU er en spareordning opprettet av den norske staten for å hjelpe unge å komme inn på boligmarkedet. Ordningen ble innført i 1991 og har siden da vært en av de mest fordelaktige spareformene i Norge.
@@ -54,19 +54,19 @@ export default function BSUGuide() {
             <h3 className="font-bold text-green-700 mb-3">Hvorfor BSU er best for deg:</h3>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
+                <span className="text-green-600 font-bold mt-0.5"></span>
                 <span><strong>10% skattefradrag</strong> — staten gir deg 10 kr tilbake per 100 kr spart</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
+                <span className="text-green-600 font-bold mt-0.5"></span>
                 <span><strong>Ingen risiko</strong> — pengene dine er trygge, ingen aksjemarked nødvendig</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
+                <span className="text-green-600 font-bold mt-0.5"></span>
                 <span><strong>Penger til bolig</strong> — du bygger egenkapital samtidig</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold mt-0.5">✓</span>
+                <span className="text-green-600 font-bold mt-0.5"></span>
                 <span><strong>Flexibilitet</strong> — du kan ta ut pengene hvis du trenger (da mister du fradraget)</span>
               </li>
             </ul>
@@ -76,7 +76,7 @@ export default function BSUGuide() {
         {/* SKATTEFRADRAG */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>💰</span> 10% skattefradrag forklart — statens gave
+            10% skattefradrag forklart — statens gave
           </h2>
           <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 text-white mb-6">
             <h3 className="font-bold text-green-100 mb-3 uppercase text-sm tracking-wide">Skattefradraget på én titt</h3>
@@ -105,7 +105,7 @@ export default function BSUGuide() {
           {/* REGNEKSTYKKE */}
           <div className="bg-green-50 rounded-xl p-5 border border-green-200">
             <h3 className="font-bold text-green-800 mb-4 flex items-center gap-2">
-              <span>🧮</span> Regnestykket: Slik vokser BSU-pengene dine
+              Regnestykket: Slik vokser BSU-pengene dine
             </h3>
             <div className="space-y-3 text-sm">
               <div className="flex justify-between items-center py-2 border-b border-green-200">
@@ -135,7 +135,7 @@ export default function BSUGuide() {
         {/* HVEM KAN SPARE */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>👤</span> Hvem kan spare i BSU?
+            Hvem kan spare i BSU?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             BSU er kun for <strong>unge som ennå ikke har kommet inn på boligmarkedet</strong>. Her er kravene:
@@ -143,7 +143,6 @@ export default function BSUGuide() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-white rounded-xl p-5 border border-gray-200">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-2xl">🎂</span>
                 <h3 className="font-bold text-gray-900">Alder</h3>
               </div>
               <p className="text-gray-700">
@@ -152,7 +151,7 @@ export default function BSUGuide() {
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-2xl">🏠</span>
+                <span className="text-2xl"></span>
                 <h3 className="font-bold text-gray-900">Boligstatus</h3>
               </div>
               <p className="text-gray-700">
@@ -162,7 +161,7 @@ export default function BSUGuide() {
           </div>
           <div className="bg-amber-50 rounded-xl p-5 border border-amber-200 mb-6">
             <h3 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-              <span>⚠️</span> OBS: Inntektsbegrensning
+              <span></span> OBS: Inntektsbegrensning
             </h3>
             <p className="text-gray-700">
               Det er <strong>ingen direkte inntektsbegrensning</strong> for å starte BSU, men skattefradraget kan tidligere bortfalle hvis du har svært høy inntekt (dog sjenerøst definert). I praksis er BSU tilgjengelig for de aller fleste under 34 år.
@@ -171,7 +170,7 @@ export default function BSUGuide() {
 
           {/* KJENDT FIGUR */}
           <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
-            <h3 className="font-bold text-blue-800 mb-3">📊 Aldersfordeling for BSU i Norge</h3>
+            <h3 className="font-bold text-blue-800 mb-3">Aldersfordeling for BSU i Norge</h3>
             <div className="space-y-3">
               <div>
                 <div className="flex justify-between text-sm mb-1">
@@ -207,7 +206,7 @@ export default function BSUGuide() {
         {/* BESTE BSU-KONTOER */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🏦</span> Beste BSU-kontoer 2026
+            Beste BSU-kontoer 2026
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Ikke alle banker tilbyr BSU, og de som gjør det har forskjellige renter. Her er en omfattende oversikt over BSU-kontoene i Norge akkurat nå:
@@ -263,7 +262,7 @@ export default function BSUGuide() {
         {/* BSU VS HØYRENTEKONTO */}
         <section>
           <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center gap-2">
-            <span>⚖️</span> BSU vs høyrentekonto — hva skal du velge?
+            <span></span> BSU vs høyrentekonto — hva skal du velge?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             <strong>Under 34 år og skal kjøpe bolig?</strong> Da er BSU det soleklare beste valget. Skattefradraget på 10% slår alt annet. Men hva hvis du ikke passer i BSU-kategorien?
@@ -271,22 +270,22 @@ export default function BSUGuide() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-600">
-              <h3 className="font-bold text-green-800 mb-3">🏠 BSU er best for deg hvis:</h3>
+              <h3 className="font-bold text-green-800 mb-3">BSU er best for deg hvis:</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
+                  <span className="text-green-600 font-bold"></span>
                   <span>Du er mellom 18 og 33 år</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
+                  <span className="text-green-600 font-bold"></span>
                   <span>Du planlegger å kjøpe bolig i fremtiden</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
+                  <span className="text-green-600 font-bold"></span>
                   <span>Du vil ha 10% skattefradrag (opptil 2 750 kr/år)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
+                  <span className="text-green-600 font-bold"></span>
                   <span>Du tåler at pengene er bundet til boligkjøp</span>
                 </li>
               </ul>
@@ -298,22 +297,22 @@ export default function BSUGuide() {
             </div>
 
             <div className="bg-emerald-50 rounded-xl p-5 border-l-4 border-emerald-600">
-              <h3 className="font-bold text-emerald-800 mb-3">💡 Høyrentekonto er best for deg hvis:</h3>
+              <h3 className="font-bold text-emerald-800 mb-3"> Høyrentekonto er best for deg hvis:</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span className="text-emerald-600 font-bold"></span>
                   <span>Du er 34+ år (eller har allerede bolig)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span className="text-emerald-600 font-bold"></span>
                   <span>Du vil ha full fleksibilitet — ta ut når som helst</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span className="text-emerald-600 font-bold"></span>
                   <span>Du sparer til andre mål (bil, reise, buffer)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-600 font-bold">✓</span>
+                  <span className="text-emerald-600 font-bold"></span>
                   <span>Du vil kunne spare mer enn 27 500 kr/år</span>
                 </li>
               </ul>
@@ -326,7 +325,7 @@ export default function BSUGuide() {
           </div>
 
           <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-            <h3 className="font-bold text-gray-900 mb-3">🧮 Kan du ha begge deler?</h3>
+            <h3 className="font-bold text-gray-900 mb-3">Kan du ha begge deler?</h3>
             <p className="text-gray-700 text-sm leading-relaxed mb-3">
               <strong>Ja!</strong> Mange smarte sparere bruker både BSU og høyrentekonto:
             </p>
@@ -355,35 +354,35 @@ export default function BSUGuide() {
         {/* MAKSIMERE BSU */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🚀</span> Hvordan maksimere BSU hvert år
+            Hvordan maksimere BSU hvert år
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             For å virkelig høste fra BSU-ordningen, må du være strukturert. Her er de viktigste tipsene:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white rounded-xl p-5 border-2 border-green-200 shadow-sm">
-              <div className="text-3xl mb-3">💡</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-2">Automatisering</h3>
               <p className="text-gray-600 text-sm">
                 Sett opp en fast månedlig overføring på <strong>2 292 kr</strong> (27 500 / 12). På den måten fyller du kvoten uten å tenke over det.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 border-2 border-green-200 shadow-sm">
-              <div className="text-3xl mb-3">📅</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-2">Start tidlig i året</h3>
               <p className="text-gray-600 text-sm">
                 Jo før du starter, jo flere renteinntekter får du. Sett inn hele beløpet ved starten av året for maksimal renteeffekt.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 border-2 border-green-200 shadow-sm">
-              <div className="text-3xl mb-3">🔄</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-2">Samme konto hvert år</h3>
               <p className="text-gray-600 text-sm">
                 Ikke bytt bank bare for en høyere rente — flytteprosessen kan være tung. Velg en god bank og bli der.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 border-2 border-green-200 shadow-sm">
-              <div className="text-3xl mb-3">🧾</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-2">Sjekk skattemeldingen</h3>
               <p className="text-gray-600 text-sm">
                 Pass på at BSU-fradraget faktisk kommer med på skattemeldingen. Det skal legges til automatisk, men dobbeltsjekk.
@@ -394,7 +393,7 @@ export default function BSUGuide() {
           {/* MAKS-INN SKJEMA */}
           <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl p-6 mt-6">
             <h3 className="font-bold text-green-800 mb-4 flex items-center gap-2">
-              <span>🎯</span> Slik fyller du BSU-kvoten fullstendig
+              <span></span> Slik fyller du BSU-kvoten fullstendig
             </h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 bg-white rounded-lg p-3">
@@ -420,7 +419,7 @@ export default function BSUGuide() {
         {/* BSU VS VANLIG SPARING */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>⚖️</span> BSU vs. vanlig sparing: Regnestykket
+            <span></span> BSU vs. vanlig sparing: Regnestykket
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Er BSU virkelig så mye bedre enn vanlig sparing? La oss sammenligne:
@@ -467,7 +466,7 @@ export default function BSUGuide() {
 
           {/* STOR TABELL */}
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white">
-            <h3 className="font-bold mb-4">📈 5-års vs. 10-års sparing: BSU vs. vanlig konto</h3>
+            <h3 className="font-bold mb-4">5-års vs. 10-års sparing: BSU vs. vanlig konto</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h4 className="text-green-400 font-bold mb-2">Med BSU (27 500 kr/år)</h4>
@@ -521,7 +520,7 @@ export default function BSUGuide() {
         {/* VANLIGE FEIL */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>❌</span> Vanlige feil å unngå
+            Vanlige feil å unngå
           </h2>
           <div className="space-y-4">
             <div className="bg-red-50 rounded-xl p-5 border-l-4 border-red-500">
@@ -546,24 +545,24 @@ export default function BSUGuide() {
         {/* BSU OG BOLIGLÅN */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🏦</span> BSU og boliglån: Hvordan det henger sammen
+            BSU og boliglån: Hvordan det henger sammen
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             BSU og boliglån henger nøye sammen. Pengene du sparer i BSU blir ikke bare en buffer — de blir <strong>direkte egenkapital</strong> når du skal kjøpe bolig.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div className="bg-green-50 rounded-xl p-5 text-center">
-              <div className="text-4xl mb-3">💪</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-green-800 mb-2">Egenkapital</h3>
               <p className="text-gray-600 text-sm">BSU-penger teller som egenkapital når du søker om boliglån. Banken liker dette!</p>
             </div>
             <div className="bg-green-50 rounded-xl p-5 text-center">
-              <div className="text-4xl mb-3">📉</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-green-800 mb-2">Lavere rente</h3>
               <p className="text-gray-600 text-sm">Mer egenkapital = lavere risiko = bedre rente på boliglånet ditt.</p>
             </div>
             <div className="bg-green-50 rounded-xl p-5 text-center">
-              <div className="text-4xl mb-3">✅</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-green-800 mb-2">15% egenkapital</h3>
               <p className="text-gray-600 text-sm">Du trenger 15% av boligprisen i egenkapital. BSU hjelper deg dit.</p>
             </div>
@@ -601,21 +600,20 @@ export default function BSUGuide() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/verktøy/boliglanskalkulator" className="inline-block bg-white text-green-700 font-bold px-6 py-3 rounded-lg hover:bg-green-50 transition-colors">
-              🧮 Boliglånskalkulator
+              Boliglånskalkulator
             </Link>
             <Link href="/sparing" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-green-400 transition-colors border border-green-400">
-              📚 Flere spareguider
+               Flere spareguider
             </Link>
           </div>
         </section>
 
         {/* VERKTØY OG RELATERTE ARTIKLER */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">📚 Relaterte artikler og verktøy</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4"> Relaterte artikler og verktøy</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/sparing/beste-sparekonto-2026" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">🏦</span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-green-700">Beste sparekonto 2026</h3>
                   <p className="text-gray-500 text-sm">Sammenlign renter fra alle norske banker</p>
@@ -624,7 +622,7 @@ export default function BSUGuide() {
             </Link>
             <Link href="/lan/hvor-mye-boliglan-kan-jeg-fa" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">🏠</span>
+                <span className="text-2xl"></span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-green-700">Hvor mye boliglån kan jeg få?</h3>
                   <p className="text-gray-500 text-sm">Beregn ditt maksimale lånebeløp i 2026</p>
@@ -633,7 +631,6 @@ export default function BSUGuide() {
             </Link>
             <Link href="/verktøy/boliglanskalkulator" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">🧮</span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-green-700">Boliglånskalkulator</h3>
                   <p className="text-gray-500 text-sm">Beregn månedlig kostnad og total rentekostnad</p>
@@ -642,7 +639,6 @@ export default function BSUGuide() {
             </Link>
             <Link href="/budsjett/kom-i-gang-med-budsjett" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">📊</span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-green-700">Kom i gang med budsjett</h3>
                   <p className="text-gray-500 text-sm">Lær hvordan du budsjetterer effektivt</p>

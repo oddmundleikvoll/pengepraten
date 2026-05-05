@@ -1,6 +1,7 @@
 'use client'
 
 import { getWeekAmount, getTotalUpTo } from '@/lib/spareutfordringStore'
+import { Sprout, Leaf, Wheat, Coins, Trophy, Star, Target, Dumbbell } from 'lucide-react'
 
 interface WeekCardProps {
   week: number
@@ -9,29 +10,29 @@ interface WeekCardProps {
   isCurrentWeek?: boolean
 }
 
-const WEEK_EMOJIS: Record<number, string> = {
-  1: '🌱',
-  4: '🌿',
-  8: '🌾',
-  13: '💰',
-  26: '🏆',
-  39: '⭐',
-  52: '🎯',
+const WEEK_ICONS: Record<number, React.ReactNode> = {
+  1: <Sprout className="w-4 h-4" />,
+  4: <Leaf className="w-4 h-4" />,
+  8: <Wheat className="w-4 h-4" />,
+  13: <Coins className="w-4 h-4" />,
+  26: <Trophy className="w-4 h-4" />,
+  39: <Star className="w-4 h-4" />,
+  52: <Target className="w-4 h-4" />,
 }
 
-function getEmoji(week: number): string {
-  if (WEEK_EMOJIS[week]) return WEEK_EMOJIS[week]
-  if (week <= 4) return '🌱'
-  if (week <= 13) return '🌿'
-  if (week <= 26) return '🌾'
-  if (week <= 39) return '💪'
-  return '⭐'
+function getIcon(week: number): React.ReactNode {
+  if (WEEK_ICONS[week]) return WEEK_ICONS[week]
+  if (week <= 4) return <Sprout className="w-4 h-4" />
+  if (week <= 13) return <Leaf className="w-4 h-4" />
+  if (week <= 26) return <Wheat className="w-4 h-4" />
+  if (week <= 39) return <Dumbbell className="w-4 h-4" />
+  return <Star className="w-4 h-4" />
 }
 
 export default function WeekCard({ week, completed, onToggle, isCurrentWeek }: WeekCardProps) {
   const amount = getWeekAmount(week)
   const total = getTotalUpTo(week)
-  const emoji = getEmoji(week)
+  const icon = getIcon(week)
 
   return (
     <button
@@ -49,8 +50,8 @@ export default function WeekCard({ week, completed, onToggle, isCurrentWeek }: W
       aria-pressed={completed}
       aria-label={`Uke ${week}: ${amount.toLocaleString('nb-NO')} kr${completed ? ' (fullført)' : ''}`}
     >
-      {/* Emoji badge */}
-      <div className="absolute -top-2 -right-2 text-lg leading-none">{emoji}</div>
+      {/* Icon badge */}
+      <div className="absolute -top-2 -right-2 text-green-600">{icon}</div>
 
       {/* Week number */}
       <div className={`text-xs font-bold mb-1 ${completed ? 'text-amber-700' : 'text-gray-400'}`}>

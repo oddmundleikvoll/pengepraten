@@ -228,7 +228,7 @@ export default function MinBoliglanPage() {
           {!isAbove && (
             <div className="p-6 border-t border-gray-100">
               <div className="bg-primary-50 rounded-xl p-4 text-center">
-                <span className="text-3xl mb-2 block">🎉</span>
+                <span className="text-3xl mb-2 block"></span>
                 <p className="font-semibold text-primary-700">God rente!</p>
                 <p className="text-sm text-primary-600 mt-1">
                   Din rente er {Math.abs(calc.difference).toFixed(2)}% under gjennomsnittet. Fortsett å forhandle med banken din!
@@ -266,7 +266,7 @@ export default function MinBoliglanPage() {
 
         {/* Email alerts */}
         <div className="bg-white rounded-xl border border-gray-100 p-6">
-          <h3 className="text-sm font-semibold text-norsk-dark mb-1">📧 E-postvarsler</h3>
+          <h3 className="text-sm font-semibold text-norsk-dark mb-1">E-postvarsler</h3>
           {data.email ? (
             <div className="flex items-center justify-between">
               <div>

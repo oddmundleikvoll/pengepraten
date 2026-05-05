@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { Plane, Car, Shield, Home, Umbrella, Target, Calculator, TrendingUp, BarChart3 } from 'lucide-react'
 
 type GoalType = 'ferie' | 'bil' | 'nodfond' | 'bolig' | 'pensjon' | 'annet'
 
@@ -13,13 +14,13 @@ const GOAL_LABELS: Record<GoalType, string> = {
   annet: 'Annet',
 }
 
-const GOAL_ICONS: Record<GoalType, string> = {
-  ferie: '✈️',
-  bil: '🚗',
-  nodfond: '🛡️',
-  bolig: '🏠',
-  pensjon: '🏖️',
-  annet: '🎯',
+const GOAL_ICONS: Record<GoalType, React.ReactNode> = {
+  ferie: <Plane className="w-5 h-5" />,
+  bil: <Car className="w-5 h-5" />,
+  nodfond: <Shield className="w-5 h-5" />,
+  bolig: <Home className="w-5 h-5" />,
+  pensjon: <Umbrella className="w-5 h-5" />,
+  annet: <Target className="w-5 h-5" />,
 }
 
 const DEFAULT_RATE = 0.052 // 5.2% annual rate
@@ -119,7 +120,7 @@ export default function SparekalkulatorClient() {
       {/* Input section */}
       <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm">
         <h2 className="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">
-          <span>🧮</span> Sparekalkulator med mål
+          <Calculator className="w-6 h-6 text-green-600" /> Sparekalkulator med mål
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -245,7 +246,7 @@ export default function SparekalkulatorClient() {
                 {/* Time result */}
                 <div className={`rounded-xl p-4 ${results.reachedOnTime ? 'bg-green-50 border border-green-200' : 'bg-amber-50 border border-amber-200'}`}>
                   <div className="text-xs text-gray-500 mb-1">
-                    {results.reachedOnTime ? '✅ Du når målet!' : '⚠️ Du når ikke målet på tiden'}
+                    {results.reachedOnTime ? ' Du når målet!' : ' Du når ikke målet på tiden'}
                   </div>
                   <div className="flex items-end gap-2">
                     <span className={`text-3xl font-black ${results.reachedOnTime ? 'text-green-600' : 'text-amber-600'}`}>
@@ -317,9 +318,9 @@ export default function SparekalkulatorClient() {
       {/* Projection chart — simple bar visualization */}
       {results.projectionPoints.length > 0 && (
         <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm">
-          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>📈</span> Slik vokser sparingen din
-          </h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <TrendingUp className="w-5 h-5 text-green-600" /> Slik vokser sparingen din
+            </h3>
           <div className="flex items-end gap-1 h-48 mb-3">
             {results.projectionPoints.filter((_, i) => i % Math.max(1, Math.floor(results.projectionPoints.length / 20)) === 0 || i === results.projectionPoints.length - 1).map((pt, i) => {
               const pct = (pt.amount / results.target) * 100
@@ -364,7 +365,7 @@ export default function SparekalkulatorClient() {
             href="/sparing/hoyrentekonto"
             className="inline-flex items-center gap-2 bg-white text-green-700 font-bold px-8 py-4 rounded-xl text-lg shadow-lg hover:bg-green-50 transition-all hover:scale-105"
           >
-            <span>📊</span> Se beste høyrentekontoer
+            <BarChart3 className="w-5 h-5" /> Se beste høyrentekontoer
           </a>
         </div>
       </div>

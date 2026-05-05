@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
+import { PiggyBank, Calculator, AlertTriangle, Check, X, BarChart3, Rocket, TrendingUp } from 'lucide-react'
+
 export const metadata: Metadata = {
   title: 'IPS 2026: Alt du trenger å vite om Individuell Pensjonssparing',
   description: 'IPS (Individuell Pensjonssparing) gir deg skattefradrag + fond-avkastning. Lær alt om hvordan det fungerer, hvem det passer for, og hvordan du kommer i gang.',
@@ -34,7 +36,7 @@ export default function IPSGuide() {
         {/* INTRO */}
         <div className="bg-indigo-50 rounded-2xl p-6 border-l-4 border-indigo-600">
           <p className="text-lg text-gray-800 leading-relaxed">
-            <span className="text-2xl mr-2">🎯</span>
+            <span className="text-2xl mr-2"></span>
             <strong>IPS</strong> (Individuell Pensjonssparing) er en spareordning der du får <strong>skattefradrag</strong> for pengene du setter inn. Det er som BSU for voksne — staten gir deg penger tilbake bare for å spare.
           </p>
         </div>
@@ -52,7 +54,7 @@ export default function IPSGuide() {
         {/* HVORDAN DET FUNGERER */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>📖</span> Hvordan fungerer IPS? Enkelt forklart
+            Hvordan fungerer IPS? Enkelt forklart
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             IPS fungerer slik: du setter inn penger på en IPS-konto (eller fondsparingskonto med IPS-status), og hvert innskudd gir deg <strong>26% skattefradrag</strong> (inntektsavhengig, se forklaring under).
@@ -90,11 +92,11 @@ export default function IPSGuide() {
         {/* SKATTEFRADRAG */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>💰</span> Skattefradraget — regnestykket
+            <PiggyBank className="w-5 h-5 text-green-600" /> Skattefradraget — regnestykket
           </h2>
           <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-6">
             <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <span>🧮</span> Eksempel: Du sparer 2.000 kr/måned i IPS
+              <Calculator className="w-5 h-5 text-blue-600" /> Eksempel: Du sparer 2.000 kr/måned i IPS
             </h3>
             <div className="space-y-3 text-sm">
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
@@ -118,7 +120,7 @@ export default function IPSGuide() {
 
           <div className="bg-amber-50 rounded-xl p-5 border border-amber-200">
             <h3 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-              <span>⚠️</span> Viktig: Skattefradraget er ikke gratis penger
+              <AlertTriangle className="w-5 h-5 text-amber-500" /> Viktig: Skattefradraget er ikke gratis penger
             </h3>
             <p className="text-gray-700 text-sm">
               Skattefradraget reduserer skatten din — det betyr at du må ha en viss inntekt for at det skal lønne seg. Har du lite eller ingen inntekt, er IPS ikke like gunstig. BSU er bedre for unge med lav inntekt.
@@ -129,7 +131,7 @@ export default function IPSGuide() {
         {/* HVEM PASSER DET FOR */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>👤</span> Hvem passer IPS for?
+            Hvem passer IPS for?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             IPS er ikke for alle. Her er en enkel sjekkliste:
@@ -137,50 +139,46 @@ export default function IPSGuide() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-white rounded-xl p-5 border-2 border-green-200">
               <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
-                <span>✅</span> IPS passer for deg hvis:
+                <Check className="w-5 h-5 text-green-600" /> IPS passer for deg hvis:
               </h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
+                  <span className="text-green-600 font-bold mt-0.5"></span>
                   <span>Du er over 18 år</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
+                  <span className="text-green-600 font-bold mt-0.5"></span>
                   <span>Du har inntekt over 50.000 kr/år</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
+                  <span className="text-green-600 font-bold mt-0.5"></span>
                   <span>Du har minst 5-10 år til pensjon</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
+                  <span className="text-green-600 font-bold mt-0.5"></span>
                   <span>Du vil ha mer enn vanlig sparing</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
+                  <span className="text-green-600 font-bold mt-0.5"></span>
                   <span>Du har fylt BSU-kvoten (27.500 kr)</span>
                 </li>
               </ul>
             </div>
             <div className="bg-white rounded-xl p-5 border-2 border-red-200">
               <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
-                <span>❌</span> IPS passer ikke for deg hvis:
+                <X className="w-5 h-5 text-red-500" /> IPS passer ikke for deg hvis:
               </h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold mt-0.5">✗</span>
                   <span>Du er under 34 og kan spare i BSU (bedre)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold mt-0.5">✗</span>
                   <span>Du trenger pengene de nærmeste 5-10 årene</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold mt-0.5">✗</span>
                   <span>Du har svært lav inntekt (lite skattefordel)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-red-600 font-bold mt-0.5">✗</span>
                   <span>Du liker ikke å ha pengene bundet</span>
                 </li>
               </ul>
@@ -191,7 +189,7 @@ export default function IPSGuide() {
         {/* IPS VS BSU VS VANLIG */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>⚖️</span> IPS vs. BSU vs. vanlig sparekonto — sammenligning
+            <span></span> IPS vs. BSU vs. vanlig sparekonto — sammenligning
           </h2>
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
@@ -218,7 +216,7 @@ export default function IPSGuide() {
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="p-4 font-semibold">Investering i fond</td>
-                  <td className="p-4 bg-indigo-50 text-indigo-700 font-bold">✓ Ja</td>
+                  <td className="p-4 bg-indigo-50 text-indigo-700 font-bold"> Ja</td>
                   <td className="p-4 bg-green-50">Kun sparekonto</td>
                   <td className="p-4">Kun konto</td>
                 </tr>
@@ -246,7 +244,7 @@ export default function IPSGuide() {
 
           <div className="bg-purple-50 rounded-xl p-5 border border-purple-200">
             <h3 className="font-bold text-purple-800 mb-2 flex items-center gap-2">
-              <span>💡</span> Anbefalt strategi
+              <span></span> Anbefalt strategi
             </h3>
             <p className="text-gray-700 text-sm">
               <strong>Fyll BSU først</strong> (hvis du er under 34), deretter <strong>vurder IPS</strong> hvis du har mer å spare. BSU har lavere maxibeløp, men ingen bindingstid når du først bruker det til bolig.
@@ -257,11 +255,11 @@ export default function IPSGuide() {
         {/* ADVARSEL */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>⚠️</span> Den store advarselen: Innestengingsperioden
+            <AlertTriangle className="w-5 h-5 text-amber-500" /> Den store advarselen: Innestengingsperioden
           </h2>
           <div className="bg-red-50 rounded-xl p-5 border border-red-200 mb-4">
             <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
-              <span>🔒</span> Pengene er bundet til du er 62-67 år
+              <span></span> Pengene er bundet til du er 62-67 år
             </h3>
             <p className="text-gray-700 text-sm mb-3">
               IPS-pengene kan du ikke ta ut før du når <strong>62-67 års alderen</strong>. Dette er en lang tidshorisont — du må være komfortabel med at pengene er innelåst.
@@ -272,7 +270,7 @@ export default function IPSGuide() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">❌ Hvis du tar ut for tidlig:</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Hvis du tar ut for tidlig:</h3>
               <ul className="space-y-1 text-gray-600 text-sm">
                 <li>• 30% reduksjon av fondverdi som straff</li>
                 <li>• Skatt på tapet (ikke fradrag på gevinst)</li>
@@ -280,7 +278,7 @@ export default function IPSGuide() {
               </ul>
             </div>
             <div className="bg-green-50 rounded-xl p-5 border border-green-200">
-              <h3 className="font-bold text-green-800 mb-2">✓ Slik unngår du problemet:</h3>
+              <h3 className="font-bold text-green-800 mb-2"> Slik unngår du problemet:</h3>
               <ul className="space-y-1 text-gray-700 text-sm">
                 <li>• Bare sett inn det du virkelig kan unvære</li>
                 <li>• Ha 3-6 måneders buffer på vanlig konto</li>
@@ -293,7 +291,7 @@ export default function IPSGuide() {
         {/* HVA KAN DU SPARE I */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>📊</span> Hva kan du spare i? Fondene du bør kjenne til
+            <BarChart3 className="w-5 h-5 text-blue-600" /> Hva kan du spare i? Fondene du bør kjenne til
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             IPS fungerer som en beholder — inni den kan du velge fond. Her er de mest populære for IPS-sparere i Norge:
@@ -344,7 +342,7 @@ export default function IPSGuide() {
         {/* REGNEKSTYKKE */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🧮</span> Langsiktig eksempel: 20 års IPS-sparing
+            <Calculator className="w-5 h-5 text-blue-600" /> Langsiktig eksempel: 20 års IPS-sparing
           </h2>
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white mb-6">
             <h3 className="font-bold text-indigo-400 mb-4">10.000 kr/måned i IPSfond over 20 år</h3>
@@ -377,7 +375,7 @@ export default function IPSGuide() {
         {/* HVORDAN KOMME I GANG */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🚀</span> Slik kommer du i gang med IPS
+            <Rocket className="w-5 h-5 text-orange-500" /> Slik kommer du i gang med IPS
           </h2>
           <div className="space-y-4">
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
@@ -421,7 +419,7 @@ export default function IPSGuide() {
         {/* VANLIGE SPØRSMÅL */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>❓</span> Vanlige spørsmål
+            Vanlige spørsmål
           </h2>
           <div className="space-y-4">
             <div className="bg-white rounded-xl p-5 border border-gray-200">
@@ -446,7 +444,7 @@ export default function IPSGuide() {
         {/* INDEKSFOND-HOOK */}
         <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
           <h3 className="font-bold text-blue-800 mb-2 flex items-center gap-2">
-            <span>💡</span> Kombiner IPS med indeksfond
+            <span></span> Kombiner IPS med indeksfond
           </h3>
           <p className="text-gray-700 text-sm">
             IPS er en skattefordel-boks, indeksfond er avkastningsmotoren. <strong>Den beste kombinasjonen</strong> er å spare i et globalt indeksfond via IPS-kontoen din. Da får du både skattefradraget og markedets langsiktige vekst.
@@ -464,21 +462,21 @@ export default function IPSGuide() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/sparing/indeksfond-nybegynnere" className="inline-block bg-white text-indigo-700 font-bold px-6 py-3 rounded-lg hover:bg-indigo-50 transition-colors">
-              📈 Les om indeksfond
+              Les om indeksfond
             </Link>
             <Link href="/sparing" className="inline-block bg-indigo-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-indigo-400 transition-colors border border-indigo-400">
-              📚 Flere spareguider
+               Flere spareguider
             </Link>
           </div>
         </section>
 
         {/* RELATERTE ARTIKLER */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">📚 Relaterte artikler</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4"> Relaterte artikler</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/sparing/indeksfond-nybegynnere" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-indigo-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">📈</span>
+                <TrendingUp className="w-8 h-8 text-green-600" />
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-indigo-700">Indeksfond for nybegynnere</h3>
                   <p className="text-gray-500 text-sm">Hvordan fond fungerer og hvorfor indeksfond vinner</p>
@@ -487,7 +485,7 @@ export default function IPSGuide() {
             </Link>
             <Link href="/sparing/bsu-guide" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-indigo-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">🏠</span>
+                <span className="text-2xl"></span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-indigo-700">BSU 2026: Full guide</h3>
                   <p className="text-gray-500 text-sm">Norges beste spareform for unge under 34 år</p>

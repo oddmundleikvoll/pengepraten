@@ -44,7 +44,7 @@ export default function SpareplanGuide() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             Nordmenn har i gjennomsnitt <strong>245.000 kroner</strong> på sparekonto, 
             men 40% har mindre enn 50.000 kroner i buffer. En god spareplan kan være 
@@ -92,7 +92,7 @@ export default function SpareplanGuide() {
         </div>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske på</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Viktig å huske på</h3>
           <p className="text-gray-700">
             Nødfondet skal være lett tilgjengelig — men ikke FOR lett. Plasser det på 
             en sparekonto uten brukskort, slik at du ikke fristes til å bruke det på 
@@ -174,7 +174,7 @@ export default function SpareplanGuide() {
         </ul>
 
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             Med BSU får du ikke bare skattefradrag — du får også ofte bedre rente enn 
             på vanlig sparekonto. Kombinert kan dette gi en effektiv avkastning på 

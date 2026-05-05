@@ -45,7 +45,7 @@ export default function RefinansieringForFolkFlest() {
         {/* Visual intro */}
         <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 my-8 border border-green-100">
           <div className="flex items-center gap-4 mb-4">
-            <div className="text-5xl">⚖️</div>
+            <div className="text-5xl"></div>
             <div>
               <p className="text-green-800 font-bold text-lg">Kjernen i refinansiering</p>
               <p className="text-green-600 text-sm">Bytt ett dyrt lån med ett billigere — eller samle mange dyre lån til ett mindre dyrt.</p>
@@ -61,14 +61,14 @@ export default function RefinansieringForFolkFlest() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
           <div className="bg-green-50 border border-green-200 rounded-xl p-5">
-            <h3 className="font-bold text-norsk-dark mb-2">🔄 Ordinær refinansiering</h3>
+            <h3 className="font-bold text-norsk-dark mb-2"> Ordinær refinansiering</h3>
             <p className="text-gray-700 text-sm">
               Du har ett lån med høy rente (f.eks. forbrukslån) og bytter det 
               til ett med lavere rente (f.eks. boliglån eller bedre forbrukslån).
             </p>
           </div>
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
-            <h3 className="font-bold text-norsk-dark mb-2">📦 Samlefinansiering</h3>
+            <h3 className="font-bold text-norsk-dark mb-2"> Samlefinansiering</h3>
             <p className="text-gray-700 text-sm">
               Du slår sammen flere smålån og kredittkortgjeld til ett nytt lån — 
               ofte med lavere samlet rentekostnad og kun én faktura.
@@ -83,7 +83,7 @@ export default function RefinansieringForFolkFlest() {
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-3">✅ Tydelige tegn på at det lønner seg</h3>
+          <h3 className="font-bold text-norsk-dark mb-3">Tydelige tegn på at det lønner seg</h3>
           <ul className="space-y-2 text-gray-700">
             <li><strong>Du har kredittkortgjeld:</strong> Kredittkortrenter på 20-30% 
               er blant de høyeste du kan ha. Bytt til et forbrukslån på 10-15% 
@@ -165,7 +165,7 @@ export default function RefinansieringForFolkFlest() {
         </p>
 
         <div className="bg-red-50 border-l-4 border-red-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-3">🚨 Advarselstegn: Kanskje bør du la være</h3>
+          <h3 className="font-bold text-norsk-dark mb-3"> Advarselstegn: Kanskje bør du la være</h3>
           <ul className="space-y-2 text-gray-700">
             <li><strong>Etableringsgebyrer spiser gevinsten:</strong> Noen banker 
               tar 2-4% i etableringsgebyr + 500-1.000 kr i administrative kostnader. 
@@ -204,37 +204,37 @@ export default function RefinansieringForFolkFlest() {
           {[
             {
               step: 1,
-              icon: '📋',
+              icon: '',
               title: 'Samle all informasjon om din nåværende gjeld',
               desc: 'Hvilke lån har du? Hva er restbeløpet, renten og månedsbeløpet på hvert? Du finner dette i nettbanken eller på Fakturaoversikter.'
             },
             {
               step: 2,
-              icon: '🔍',
+              icon: '',
               title: 'Sammenlign tilbud på Finansportalen',
               desc: 'Gå til finansportalen.no og søk etter refinansieringslån som passer ditt beløp. Noter de beste effektive rentene.'
             },
             {
               step: 3,
-              icon: '📞',
+              icon: '',
               title: 'Sjekk med din nåværende bank først',
               desc: 'Gi dem beskjed om at du vurderer å refinansiere. Banken din vil ofte matche eller gi bedre vilkår for å beholde deg som kunde — spesielt hvis du har sikkerhet i bolig.'
             },
             {
               step: 4,
-              icon: '🏦',
+              icon: '',
               title: 'Søk om refinansiering hos 2-3 banker',
               desc: 'Send inn søknader (bankene gjør kredittvurdering, men flere søknader på kort tid teller som én hvis de er innen 14 dager).'
             },
             {
               step: 5,
-              icon: '✅',
+              icon: '',
               title: 'Les avtalen nøye før du signerer',
               desc: 'Sjekk etableringsgebyr, termingebyr, forsinkelsesrente og eventuelle bonusordninger. Er det bindingstid?'
             },
             {
               step: 6,
-              icon: '💸',
+              icon: '',
               title: 'Få gjelden din overført og sett opp nedbetaling',
               desc: 'Den nye banken overfører direkte til gamle kreditorer. Sett deretter opp avtale om rett beløp til rett tid — og ikke stå på minimumsbetaling.'
             }
@@ -252,7 +252,7 @@ export default function RefinansieringForFolkFlest() {
         </div>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig: Sjekk gebyrer FØRST</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Viktig: Sjekk gebyrer FØRST</h3>
           <p className="text-gray-700">
             Den vanligste feilen er å kun se på renten og glemme gebyrene. 
             Et lån med 8% rente + 4% etableringsgebyr kan fort ha høyere 
@@ -270,7 +270,7 @@ export default function RefinansieringForFolkFlest() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">🏠 Boliglånsrenter i Norge 2026</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Boliglånsrenter i Norge 2026</h3>
           <p className="text-gray-700 mb-3">
             Per april 2026 ligger boliglånsrentene i Norge typisk mellom 
             <strong> 3,5% og 5,5%</strong> avhengig av bank, egenkapital og 
@@ -294,7 +294,7 @@ export default function RefinansieringForFolkFlest() {
         </p>
 
         <div className="bg-gray-50 rounded-xl p-6 my-6">
-          <h4 className="font-bold text-norsk-dark mb-3">📞 Script: Slik forhandler du med banken</h4>
+          <h4 className="font-bold text-norsk-dark mb-3"> Script: Slik forhandler du med banken</h4>
           <p className="text-gray-700 text-sm mb-3 italic">
             «Hei, jeg sitter med [låntype] på [beløp] hos dere til [rente]%. 
             Jeg har sett at andre banker tilbyr [bedre rente] for tilsvarende 
@@ -312,19 +312,19 @@ export default function RefinansieringForFolkFlest() {
         <div className="bg-gray-50 rounded-xl p-6 my-6">
           <div className="space-y-4">
             <div>
-              <p className="font-semibold text-norsk-dark">❓ Påvirker refinansiering kredittscore?</p>
+              <p className="font-semibold text-norsk-dark"> Påvirker refinansiering kredittscore?</p>
               <p className="text-gray-700 text-sm mt-1">Midlertidig — ja, en søknad gir en liten negativ registrering. Men flere søknader innen 14 dager regnes som én hendelse. På lang sikt er lavere gjeld bedre for score.</p>
             </div>
             <div>
-              <p className="font-semibold text-norsk-dark">❓ Kan jeg refinansiere hvis jeg har betalingsanmerkning?</p>
+              <p className="font-semibold text-norsk-dark"> Kan jeg refinansiere hvis jeg har betalingsanmerkning?</p>
               <p className="text-gray-700 text-sm mt-1">Det er vanskeligere, men ikke umulig. Noen banker og långivere tilbyr lån til personer med anmerkninger, ofte til høyere rente. Prioriter å bli kvitt anmerkningen først.</p>
             </div>
             <div>
-              <p className="font-semibold text-norsk-dark">❓ Hvor ofte bør jeg vurdere refinansiering?</p>
+              <p className="font-semibold text-norsk-dark"> Hvor ofte bør jeg vurdere refinansiering?</p>
               <p className="text-gray-700 text-sm mt-1">Sjekk markedet minst én gang i året eller når rentenivået endrer seg. Det er gratis å sjekke — og kan spare deg for tusenvis.</p>
             </div>
             <div>
-              <p className="font-semibold text-norsk-dark">❓ Er det gratis å refinansiere?</p>
+              <p className="font-semibold text-norsk-dark"> Er det gratis å refinansiere?</p>
               <p className="text-gray-700 text-sm mt-1">Selve refinansieringen kan ha kostnader (etableringsgebyr, tinglysningsgebyr ved boliglån). Men ofte tilbyr banker å dekke disse kostnadene for å vinne deg som kunde. Spør alltid.</p>
             </div>
           </div>

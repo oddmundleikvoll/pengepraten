@@ -46,7 +46,7 @@ export default function KredittscoreNorge() {
         {/* Visual intro */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 my-8 border border-blue-100">
           <div className="flex items-center gap-4 mb-4">
-            <div className="text-5xl">📊</div>
+            <div className="text-5xl"></div>
             <div>
               <p className="text-blue-800 font-bold text-lg">Kredittscore forklarert</p>
               <p className="text-blue-600 text-sm">
@@ -66,7 +66,7 @@ export default function KredittscoreNorge() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Slik tenker bankene:</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Slik tenker bankene:</h3>
           <p className="text-gray-700">
             «En person med høy kredittscore har historisk betalt regninger til rett tid, 
             har moderat gjeld i forhold til inntekt, og har lang og stabil økonomisk historikk. 
@@ -93,7 +93,7 @@ export default function KredittscoreNorge() {
         </p>
 
         <div className="bg-gray-50 rounded-xl p-6 my-6">
-          <h4 className="font-bold text-norsk-dark mb-3">🏦 Aktører som innhenter kredittinformasjon</h4>
+          <h4 className="font-bold text-norsk-dark mb-3">Aktører som innhenter kredittinformasjon</h4>
           <ul className="space-y-2 text-gray-700">
             <li><strong>Experian:</strong> Et av verdens største kredittbyråer, aktivt i Norge</li>
             <li><strong>Bisnode / Dun & Bradstreet:</strong> Næringslivs- og personkredittvurdering</li>
@@ -108,37 +108,37 @@ export default function KredittscoreNorge() {
         <div className="space-y-4 my-6">
           {[
             {
-              icon: '💳',
+              icon: '',
               factor: 'Betalingshistorikk',
               weight: '35-40%',
               desc: 'Har du betalt regninger og regelmessige avdrag til rett tid? Dette er den desidert viktigste faktoren. Én sen betaling kan koste deg poeng.'
             },
             {
-              icon: '💰',
+              icon: '',
               factor: 'Gjeldsbelastning',
               weight: '25-30%',
               desc: 'Hvor mye gjeld har du i forhold til inntekt? «Gjeldsgraden» er kritisk. Bankene ser på gjeld-to-income ratio (DTI). Under 40% er bra.'
             },
             {
-              icon: '📈',
+              icon: '',
               factor: 'Kredittbenyttelse',
               weight: '15-20%',
               desc: 'Hvor mye av din tilgjengelige kreditt bruker du? Bruker du 80% av kredittkortlimiten er det et rødt flagg. Under 30% er optimalt.'
             },
             {
-              icon: '⏱️',
+              icon: '⏱',
               factor: 'Kreditt historikk-lengde',
               weight: '10-15%',
               desc: 'Jo eldre kredittkontoene dine er, desto bedre. En lang historikk med ansvarlig bruk viser stabilitet.'
             },
             {
-              icon: '🔄',
+              icon: '',
               factor: 'Kredittyper',
               weight: '5-10%',
               desc: 'Har du en god miks av kreditt (boliglån, kredittkort, avbetalingsløsninger)? Det kan være positivt — så lenge du håndterer dem bra.'
             },
             {
-              icon: '🔍',
+              icon: '',
               factor: 'Antall kredittforespørsler',
               weight: '5-10%',
               desc: 'Mange lånesøknader på kort tid sender et advarselssignal. Flere søknader utover 14 dager teller separat, men mange treffer på rad kan skade scoren.'
@@ -166,7 +166,7 @@ export default function KredittscoreNorge() {
         </p>
 
         <div className="bg-accent-50 border-l-4 border-accent-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">📋 Hva betyr Gjeldsregisteret for deg?</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Hva betyr Gjeldsregisteret for deg?</h3>
           <ul className="space-y-2 text-gray-700">
             <li>Bankene kan <strong>ikke lenger glemme</strong> at du har annen usikret gjeld</li>
             <li>Det hindrer «gjeldstutting» — å ta opp flere lån samtidig uten at bankene vet om det</li>
@@ -221,7 +221,7 @@ export default function KredittscoreNorge() {
         </div>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å vite</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Viktig å vite</h3>
           <ul className="space-y-2 text-gray-700 text-sm">
             <li>Kredittscore fra private byråer er <strong>ikke nøyaktig lik</strong> 
               den banken bruker — men den gir en god indikasjon</li>
@@ -284,7 +284,7 @@ export default function KredittscoreNorge() {
               <div>
                 <h4 className="font-bold text-norsk-dark">{item.title}</h4>
                 <p className="text-gray-600 text-sm mt-1 mb-2">{item.desc}</p>
-                <p className="text-xs bg-blue-50 text-blue-700 rounded-lg px-3 py-1.5 font-medium">💡 {item.tip}</p>
+                <p className="text-xs bg-blue-50 text-blue-700 rounded-lg px-3 py-1.5 font-medium"> {item.tip}</p>
               </div>
             </div>
           ))}
@@ -372,7 +372,7 @@ export default function KredittscoreNorge() {
             }
           ].map((item) => (
             <div key={item.myth} className="flex gap-3 bg-white border border-gray-200 rounded-xl p-4">
-              <div className="text-red-400 text-xl">❌</div>
+              <div className="text-red-400 text-xl"></div>
               <div>
                 <p className="font-semibold text-norsk-dark text-sm">{item.myth}</p>
                 <p className="text-green-700 text-sm mt-1"><strong>Faktisk:</strong> {item.fact}</p>
@@ -394,7 +394,7 @@ export default function KredittscoreNorge() {
         </ul>
 
         <div className="bg-accent-50 border-l-4 border-accent-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">🏠 God nyhet</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">God nyhet</h3>
           <p className="text-gray-700">
             For boliglån er det viktigste verktøyet ditt <strong>egenkapital</strong> — 
             ikke nødvendigvis perfekt kredittscore. Med 25-40% egenkapital får de 
@@ -404,7 +404,7 @@ export default function KredittscoreNorge() {
         </div>
 
         <div className="bg-primary-50 rounded-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Neste steg</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Neste steg</h3>
           <p className="text-gray-700 mb-4">
             Kredittscore er et dynamisk verktøy — det endres hele tiden basert 
             på din økonomiske atferd. Start i dag med én av disse handlingene:

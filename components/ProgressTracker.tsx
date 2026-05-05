@@ -61,7 +61,7 @@ export default function ChallengeProgress({ weeksCompleted, onReset }: Challenge
         {/* Motivational message */}
         {weeksCompleted.length === 0 && (
           <p className="mt-3 text-sm text-gray-500 text-center">
-            🚀 Start med uke 1 og byggomentum!
+            Start med uke 1 og bygg momentum!
           </p>
         )}
         {weeksCompleted.length > 0 && weeksCompleted.length < 52 && (
@@ -72,7 +72,7 @@ export default function ChallengeProgress({ weeksCompleted, onReset }: Challenge
         {weeksCompleted.length === 52 && (
           <div className="mt-3 text-center">
             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-amber-100 text-amber-800 rounded-full text-sm font-bold">
-              🎉 Du har fullført hele utfordringen!
+              Du har fullført hele utfordringen!
             </span>
           </div>
         )}

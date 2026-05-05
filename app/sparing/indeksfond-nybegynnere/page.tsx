@@ -34,7 +34,6 @@ export default function IndeksfondNybegynnere() {
         {/* INTRO */}
         <div className="bg-blue-50 rounded-2xl p-6 border-l-4 border-blue-600">
           <p className="text-lg text-gray-800 leading-relaxed">
-            <span className="text-2xl mr-2">📈</span>
             <strong>Et indeksfond</strong> er en type verdipapirfond som følger en bestemt indeks — for eksempel den norske eller globale aksjemarkedet. Poenget er at du eier en bit av mange selskaper samtidig, uten å måtte velge dem selv.
           </p>
         </div>
@@ -64,7 +63,7 @@ export default function IndeksfondNybegynnere() {
         {/* HVA ER INDEKSFOND */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>📖</span> Hva er et indeksfond — enkelt forklart
+            Hva er et indeksfond — enkelt forklart
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Tenk deg at du vil eie en liten bit av alle de største selskapene i verden. Det er praktisk talt umulig å kjøpe aksjer i 500 ulike selskaper selv — det ville tatt timer og koste mye i transaksjonsgebyrer.
@@ -75,7 +74,7 @@ export default function IndeksfondNybegynnere() {
 
           <div className="bg-blue-50 rounded-xl p-5 border border-blue-200 mb-6">
             <h3 className="font-bold text-blue-800 mb-3 flex items-center gap-2">
-              <span>🏢</span> Et konkret eksempel: MSCI World
+              Et konkret eksempel: MSCI World
             </h3>
             <p className="text-gray-700 text-sm">
               MSCI World-indeksen inneholder rundt 1.500 store selskaper fra hele verden — Apple, Microsoft, NVIDIA, Novo Nordisk, og mange flere. Når du kjøper et fond som følger denne indeksen, eier du en bit av alle disse selskapene.
@@ -90,7 +89,7 @@ export default function IndeksfondNybegynnere() {
         {/* HVORFOR INDEKSFOND */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🎯</span> Hvorfor er indeksfond bedre for de fleste?
+            <span></span> Hvorfor er indeksfond bedre for de fleste?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             De fleste som prøver å slå markedet — profesjonelle fondforvaltere inkludert — klarer det ikke over tid. Her er hvorfor indeksfond vinner:
@@ -137,7 +136,7 @@ export default function IndeksfondNybegynnere() {
 
           <div className="bg-gradient-to-br from-red-50 to-amber-50 rounded-xl p-5 border border-red-200 mb-6">
             <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
-              <span>⚠️</span> Aktiv forvaltning: Fakta som sjelden snakkes om
+              <span></span> Aktiv forvaltning: Fakta som sjelden snakkes om
             </h3>
             <p className="text-gray-700 text-sm mb-3">
               Studier viser at <strong>over 80% av aktive fondforvaltere taper mot indeksfond over 10 år</strong>. Det er ikke fordi de er dumme — markedet er bare svært effektivt. Den informasjonen som kunne gitt en fordel, er allerede innarbeidet i prisene.
@@ -151,7 +150,7 @@ export default function IndeksfondNybegynnere() {
         {/* POPULÆRE INDEKSFOND */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🏦</span> Populære indeksfond i Norge
+            Populære indeksfond i Norge
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Her er noen av de mest populære indeksfondene blant norske investorer. Alle kan du kjøpe via norske nettmeglere:
@@ -202,7 +201,7 @@ export default function IndeksfondNybegynnere() {
         {/* EKSEMPEL */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🧮</span> Eksempelet: 10.000 kr/mnd i indeksfond vs. sparekonto
+            Eksempelet: 10.000 kr/mnd i indeksfond vs. sparekonto
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             La oss se på hva som skjer hvis du investerer 10.000 kroner hver måned i et indeksfond over 10 år — sammenlignet med å sette pengene på en sparekonto med 4% rente.
@@ -253,7 +252,7 @@ export default function IndeksfondNybegynnere() {
 
           <div className="bg-amber-50 rounded-xl p-5 border border-amber-200">
             <h3 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-              <span>📈</span> Over 20 år blir forskjellen enorm
+              Over 20 år blir forskjellen enorm
             </h3>
             <p className="text-gray-700 text-sm">
               Med samme månedlige sparing (10.000 kr) og 7% årlig avkastning: etter 20 år vil fondet være verdt ca. <strong>4.700.000 kr</strong> — mens sparekontoen ville vært ca. <strong>3.300.000 kr</strong>. Altså <strong>1.400.000 kr mer</strong> med fond.
@@ -264,11 +263,11 @@ export default function IndeksfondNybegynnere() {
         {/* RISIKO */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>⚠️</span> Viktig: Risikoen du må forstå
+            <span></span> Viktig: Risikoen du må forstå
           </h2>
           <div className="bg-red-50 rounded-xl p-5 border border-red-200 mb-6">
             <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
-              <span>🔴</span> Aksjemarkedet kan falle — mye
+              Aksjemarkedet kan falle — mye
             </h3>
             <p className="text-gray-700 text-sm mb-4">
               I 2008 falt verdens aksjemarkeder med over 40%. Under koronakrisen i mars 2020 falt de med rundt 30% på bare én måned. Hvis du hadde solgt i panikk, ville du tapt store summer.
@@ -280,25 +279,25 @@ export default function IndeksfondNybegynnere() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">🎯 Tidshorisont</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Tidshorisont</h3>
               <p className="text-gray-600 text-sm">
                 <strong>Ikke invester i aksjer</strong> hvis du trenger pengene innen 3-5 år. For kortsiktige mål: bruk høyrentekonto. For langsiktige mål (10+ år): fond er perfekt.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">📊 Volatilitet er normalt</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Volatilitet er normalt</h3>
               <p className="text-gray-600 text-sm">
                 At fondet svinger i verdi er <strong>normalt og forventet</strong>. Det er ikke et tap før du selger. Tenk på det som å eie enandel i en bedrift — verdien svinger, men eierskapet er der.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">🏦 Spred risiko</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Spred risiko</h3>
               <p className="text-gray-600 text-sm">
                 Et globalt indeksfond sprer risiko over hundrevis av selskaper og land. Det er tryggere enn å satse på ett selskap eller én bransje.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-900 mb-2">💸 Ikke invester alt</h3>
+              <h3 className="font-bold text-gray-900 mb-2"> Ikke invester alt</h3>
               <p className="text-gray-600 text-sm">
                 Ha alltid en buffer på høyrentekonto (3-6 måneders utgifter). Ikke sett alle sparepengene i fond — da risikerer du å måtte selge i et dårlig tidspunkt.
               </p>
@@ -309,7 +308,7 @@ export default function IndeksfondNybegynnere() {
         {/* SLIK KOMMER DU I GANG */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🚀</span> Slik kommer du i gang — steg for steg
+            Slik kommer du i gang — steg for steg
           </h2>
           <div className="space-y-4">
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
@@ -346,7 +345,7 @@ export default function IndeksfondNybegynnere() {
         {/* IPS-HOOK */}
         <div className="bg-indigo-50 rounded-xl p-5 border border-indigo-200">
           <h3 className="font-bold text-indigo-800 mb-2 flex items-center gap-2">
-            <span>💡</span> Visste du? IPS + indeksfond = kraftfull kombinasjon
+            <span></span> Visste du? IPS + indeksfond = kraftfull kombinasjon
           </h3>
           <p className="text-gray-700 text-sm">
             Hvis du vil investere langsiktig (til pensjon), kan det være lurt å vurdere IPS (Individuell Pensjonssparing). Der kan du investere i indeksfond og få <strong>skattefradrag</strong> i tillegg til avkastningen. Les mer i vår IPS-guide.
@@ -364,21 +363,20 @@ export default function IndeksfondNybegynnere() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/sparing/ips-individuell-pensjonssparing" className="inline-block bg-white text-blue-700 font-bold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
-              📊 Les om IPS (skattefradrag!)
+              Les om IPS (skattefradrag!)
             </Link>
             <Link href="/sparing" className="inline-block bg-blue-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-400 transition-colors border border-blue-400">
-              📚 Flere spareguider
+               Flere spareguider
             </Link>
           </div>
         </section>
 
         {/* RELATERTE ARTIKLER */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">📚 Relaterte artikler</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4"> Relaterte artikler</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/sparing/ips-individuell-pensjonssparing" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-blue-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">🏦</span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-blue-700">IPS 2026: Full guide</h3>
                   <p className="text-gray-500 text-sm">Skattefradrag + fond = kraftfull sparing</p>
@@ -387,7 +385,6 @@ export default function IndeksfondNybegynnere() {
             </Link>
             <Link href="/sparing/hoyrentekonto" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-blue-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">💰</span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-blue-700">Høyrentekonto 2026</h3>
                   <p className="text-gray-500 text-sm">Få 5,2% på sparepengene dine trygt</p>

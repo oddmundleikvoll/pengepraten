@@ -108,14 +108,18 @@ export default function SpareutfordringApp({ embedded = false }: Spareutfordring
       {/* Empty state for filter */}
       {filteredWeeks.length === 0 && (
         <div className="text-center py-12 text-gray-400">
-          {filter === 'done' ? 'Ingen uker fullført ennå — kom i gang! 🎯' : 'Alle uker er fullført! 🎉'}
+          {filter === 'done' ? 'Ingen uker fullført ennå — kom i gang!' : 'Alle uker er fullført!'}
         </div>
       )}
 
       {/* Motivational banner when done */}
       {weeksCompleted.length === 52 && (
         <div className="bg-gradient-to-r from-amber-400 to-amber-500 rounded-2xl p-6 text-center text-amber-900">
-          <div className="text-4xl mb-2">🏆</div>
+          <div className="text-4xl mb-2">
+            <svg className="w-10 h-10 mx-auto text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
           <h3 className="text-xl font-black mb-1">Utfordringen er fullført!</h3>
           <p className="text-amber-800 font-medium">
             Du har spart <strong className="text-2xl">{totalSaved.toLocaleString('nb-NO')} kr</strong> på 52 uker.

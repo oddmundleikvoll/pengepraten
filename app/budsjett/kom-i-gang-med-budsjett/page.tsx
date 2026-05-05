@@ -44,7 +44,7 @@ export default function KomIGangMedBudsjett() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             Ifølge en undersøkelse fra Forbrukerrådet har <strong>6 av 10 nordmenn</strong> 
             enten ikke budsjett eller følger det ikke aktivt. Samtidig viser studier at 
@@ -77,7 +77,7 @@ export default function KomIGangMedBudsjett() {
         </ul>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske på</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Viktig å huske på</h3>
           <p className="text-gray-700">
             Bruk <strong>netto inntekt</strong> — altså det som faktisk kommer inn på kontoen 
             etter skatt og andre trekk. Hvis inntekten varierer (f.eks. provisjonsbasert lønn), 
@@ -172,7 +172,7 @@ export default function KomIGangMedBudsjett() {
         </ul>
 
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             50/30/20-regelen ble populærisert av senator Elizabeth Warren i boken 
             «All Your Worth». Den er enkel å huske og fungerer for de fleste, men 
@@ -341,7 +341,7 @@ export default function KomIGangMedBudsjett() {
         </p>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Vanlige budsjett-feller</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Vanlige budsjett-feller</h3>
           <ul className="text-gray-700 space-y-2">
             <li>Å være for ambisiøs — budsjettet må være realistisk</li>
             <li>Å glemme irregulære utgifter (forsikringer, vedlikehold)</li>

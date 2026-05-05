@@ -106,7 +106,7 @@ export default function RefinansieringPage() {
         </ul>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Viktig å huske</h3>
           <p className="text-gray-700">
             Refinansiering er ikke magi — det flytter bare gjelden din. For å virkelig 
             komme på rett kjøl, må du kombinere det med en plan for å leve innenfor 

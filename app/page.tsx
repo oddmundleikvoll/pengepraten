@@ -10,33 +10,35 @@ export const metadata: Metadata = {
   description: 'Norges beste nettside for personlig økonomi. Forbrukslånskalkulator, boliglånskalkulator, budsjettmal, guider om kredittkort, lån og sparing. Helt gratis.',
 }
 
+import { CreditCard, Landmark, PiggyBank, BarChart3 } from 'lucide-react'
+
 const categoryLinks = [
   {
     href: '/kredittkort',
     label: 'Kredittkort',
     desc: 'Sammenlign beste kort',
-    icon: '💳',
+    icon: <CreditCard className="w-8 h-8" />,
     color: 'bg-accent-50 text-accent-700',
   },
   {
     href: '/lan',
     label: 'Forbrukslån',
     desc: 'Finn billigste lån',
-    icon: '🏦',
+    icon: <Landmark className="w-8 h-8" />,
     color: 'bg-primary-50 text-primary-700',
   },
   {
     href: '/sparing',
     label: 'Sparing',
     desc: 'Beste sparekonto',
-    icon: '💰',
+    icon: <PiggyBank className="w-8 h-8" />,
     color: 'bg-green-50 text-green-700',
   },
   {
     href: '/budsjett',
     label: 'Budsjett',
     desc: 'Maler og verktøy',
-    icon: '📊',
+    icon: <BarChart3 className="w-8 h-8" />,
     color: 'bg-amber-50 text-amber-700',
   },
 ]

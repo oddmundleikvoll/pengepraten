@@ -9,9 +9,11 @@ const navItems = [
   { href: '/budsjett', label: 'Budsjett' },
 ]
 
+import { Target } from 'lucide-react'
+
 const sparingDropdown = [
   { href: '/sparing', label: 'Alle sparingstips' },
-  { href: '/spareutfordring', label: '🎯 52-ukers Spareutfordring' },
+  { href: '/spareutfordring', label: '52-ukers Spareutfordring', icon: Target },
 ]
 
 const verktøyDropdown = [
@@ -88,7 +90,8 @@ export default function Header() {
                   <div className="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">Sparing</div>
                   {sparingDropdown.map((item) => (
                     <Link key={item.href} href={item.href} onClick={() => setSparingOpen(false)}
-                      className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
+                      className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
+                      {item.icon && <item.icon className="w-4 h-4 text-green-600" />}
                       {item.label}
                     </Link>
                   ))}
@@ -174,7 +177,8 @@ export default function Header() {
             <div className="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">Sparing</div>
             {sparingDropdown.map((item) => (
               <Link key={item.href} href={item.href} onClick={() => setMobileOpen(false)}
-                className="block px-6 py-3 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all">
+                className="flex items-center gap-2 px-6 py-3 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all">
+                {item.icon && <item.icon className="w-4 h-4 text-green-600" />}
                 {item.label}
               </Link>
             ))}

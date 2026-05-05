@@ -43,7 +43,7 @@ export default function HvorMyeBoliglanKanJegFa() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             Finanstilsynets retningslinjer sier at den totale gjelden din ikke bør overstige 
             <strong> 5 ganger brutto årsinntekt</strong>. Dette er ikke en lov, men de aller 
@@ -75,7 +75,7 @@ export default function HvorMyeBoliglanKanJegFa() {
         </ul>
 
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske på</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Viktig å huske på</h3>
           <p className="text-gray-700">
             Egenkapitalen må være «ekte» penger — altså ikke fra et forbrukslån. Bankene 
             sjekker nøye hvor pengene kommer fra, og et lån som egenkapital vil som regel 
@@ -229,7 +229,7 @@ export default function HvorMyeBoliglanKanJegFa() {
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">💡 Visste du at...</h3>
+          <h3 className="font-bold text-norsk-dark mb-2"> Visste du at...</h3>
           <p className="text-gray-700">
             Du kan ha opptil <strong>10% av lånet som «flexilån»</strong> — altså en 
             rammekreditt som du kan bruke til oppussing eller andre formål. Dette gir 

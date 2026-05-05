@@ -5,6 +5,8 @@ import ChallengeDownload from '@/components/ChallengeDownload'
 import EmailCapture from '@/components/EmailCapture'
 import { TOTAL_CHALLENGE, getWeekAmount, getTotalUpTo } from '@/lib/spareutfordringStore'
 
+import { Flame, PartyPopper, PiggyBank, TrendingUp, Trophy } from 'lucide-react'
+
 export const metadata: Metadata = {
   title: '52-ukers Spareutfordring — Spar 68 900 kr på ett år | Pengepraten',
   description: 'Bli med på 52-ukers spareutfordringen og spar 68 900 kr på ett år. Start på 50 kr i uka, øk med 50 kr hver uke. Du merker knapt at pengene forsvinner!',
@@ -35,7 +37,7 @@ export default function SpareutfordringPage() {
             <div>
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
-                <span className="text-amber-300">🔥</span>
+                <Flame className="w-6 h-6 text-amber-300" />
                 <span>Norges morsomste spareutfordring</span>
               </div>
 
@@ -99,7 +101,7 @@ export default function SpareutfordringPage() {
                 <div className="mt-3 text-center">
                   <div className="inline-flex items-center gap-2 px-5 py-2 bg-amber-400 text-green-900 font-black rounded-full text-sm shadow-lg">
                     <span>Totalt: {totalDisplay} kr</span>
-                    <span>🎉</span>
+                    <PartyPopper className="w-5 h-5" />
                   </div>
                 </div>
               </div>
@@ -124,19 +126,19 @@ export default function SpareutfordringPage() {
           {[
             {
               step: '01',
-              emoji: '💰',
+              icon: <PiggyBank className="w-5 h-5" />,
               title: 'Start på 50 kr',
               desc: 'Uke 1: Sett av 50 kr. Det er like mye som én kaffekopp. Knapt merkbar på budsjettet.',
             },
             {
               step: '02',
-              emoji: '📈',
+              icon: <TrendingUp className="w-5 h-5" />,
               title: 'Øk gradvis',
               desc: 'Hver uke øker du med 50 kr. Uke 2 = 100 kr, uke 4 = 200 kr, uke 13 = 650 kr.',
             },
             {
               step: '03',
-              emoji: '🏆',
+              icon: <Trophy className="w-5 h-5" />,
               title: 'Samle 68 900 kr',
               desc: 'Etter 52 uker har du spart totalt 68 900 kr — uten å ha kjent det særlig på forbruket.',
             },
@@ -144,7 +146,7 @@ export default function SpareutfordringPage() {
             <div key={item.step} className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-md hover:border-green-200 transition-all">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl">
-                  {item.emoji}
+                  {item.icon}
                 </div>
                 <span className="text-4xl font-black text-green-100">{item.step}</span>
               </div>
@@ -196,7 +198,7 @@ export default function SpareutfordringPage() {
       <section className="bg-gradient-to-br from-green-50 to-emerald-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-green-100 text-center">
-            <div className="text-5xl mb-6">💬</div>
+            <div className="text-5xl mb-6"></div>
             <blockquote className="text-xl md:text-2xl font-medium text-gray-800 leading-relaxed mb-8">
               &ldquo;Jeg trodde det var umulig å spare så mye. Men med 52-ukers
               utfordringen merket jeg knapt at pengene forsvant. Etter 6 måneder

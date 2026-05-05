@@ -27,6 +27,11 @@ export const articles: Article[] = [
     date: '2026-04-15',
     readTime: '7 min',
     pillar: 'sparing',
+    relatedTools: [
+      { title: 'Sparekalkulator', href: '/verktøy/sparekalkulator', description: 'Beregn hvor lenge det tar å nå sparemålet ditt' },
+      { title: 'Høyrentekonto-sammenligning', href: '/sparing/hoyrentekonto-sammenligning', description: 'Sammenlign alle høyrentekontoer på én side' },
+    ],
+    relatedArticles: ['/sparing/bsu-guide', '/sparing/indeksfond-nybegynnere'],
   },
   {
     slug: '/bank/bytte-bank',
@@ -126,6 +131,10 @@ export const articles: Article[] = [
     date: '2026-04-09',
     readTime: '10 min',
     pillar: 'lan',
+    relatedTools: [
+      { title: 'Boliglånskalkulator', href: '/verktøy/boliglånskalkulator', description: 'Beregn månedlig kostnad for ditt boliglån' },
+    ],
+    relatedArticles: ['/lan/beste-forbrukslan-2026'],
   },
   {
     slug: '/lan/nar-lonner-refinansiering',
@@ -162,6 +171,10 @@ export const articles: Article[] = [
     date: '2026-04-09',
     readTime: '13 min',
     pillar: 'budsjett',
+    relatedTools: [
+      { title: 'Budsjettmal', href: '/budsjett', description: 'Last ned vår gratis budsjettmal for Google Sheets' },
+    ],
+    relatedArticles: ['/budsjett/budsjett-app'],
   },
   {
     slug: '/sparing/bsu-guide',
@@ -187,4 +200,12 @@ export const latestArticles = [...articles].sort((a, b) => new Date(b.date).getT
 
 export function getArticlesByPillar(pillar: string): Article[] {
   return articles.filter(a => a.pillar === pillar)
+}
+
+export function getArticleBySlug(slug: string): Article | undefined {
+  return articles.find(a => a.slug === slug)
+}
+
+export function getRelatedArticles(slugs: string[]): Article[] {
+  return slugs.map(slug => getArticleBySlug(slug)).filter((a): a is Article => a !== undefined)
 }

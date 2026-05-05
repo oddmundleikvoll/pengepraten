@@ -34,7 +34,6 @@ export default function BytteBank() {
         {/* INTRO */}
         <div className="bg-teal-50 rounded-2xl p-6 border-l-4 border-teal-600">
           <p className="text-lg text-gray-800 leading-relaxed">
-            <span className="text-2xl mr-2">🏦</span>
             <strong>Nordmenn er latiske med bankbytte.</strong> Gjennomsnittlig nordmann bruker samme bank i 15+ år, selv om en annen bank kanskje tilbyr 2-3% lavere rente eller 500 kroner mindre i månedlige gebyrer. Det er tusenvis av kroner rett i søpla.
           </p>
         </div>
@@ -52,21 +51,21 @@ export default function BytteBank() {
         {/* HVORFOR */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>💰</span> Hvorfor bytte bank? Her er fordelene
+            Hvorfor bytte bank? Her er fordelene
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div className="bg-white rounded-xl p-5 border border-gray-200 text-center">
-              <div className="text-4xl mb-3">📉</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-1">Bedre rente</h3>
               <p className="text-gray-600 text-sm">En lavere boligrente på 0,5% kan spare deg 50.000+ kr/år</p>
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200 text-center">
-              <div className="text-4xl mb-3">💳</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-1">Lavere gebyrer</h3>
               <p className="text-gray-600 text-sm">Noen banker tar 100-200 kr/mnd i gebyrer — andre tar null</p>
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200 text-center">
-              <div className="text-4xl mb-3">📱</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-1">Bedre digital opplevelse</h3>
               <p className="text-gray-600 text-sm">Moderne apper vs. gamle storbank-løsninger</p>
             </div>
@@ -78,7 +77,7 @@ export default function BytteBank() {
               <thead>
                 <tr className="bg-gray-800 text-white">
                   <th className="text-left p-4 font-bold">Bankgebyr-type</th>
-                  <th className="text-left p-4 font-bold">Gammel bank (典型)</th>
+                  <th className="text-left p-4 font-bold">Gammel bank ()</th>
                   <th className="text-left p-4 font-bold bg-green-600">Digital bank</th>
                   <th className="text-left p-4 font-bold">Besparelse</th>
                 </tr>
@@ -120,7 +119,7 @@ export default function BytteBank() {
         {/* STEG FOR STEG */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>📋</span> Slik bytter du bank — steg for steg
+            Slik bytter du bank — steg for steg
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Bankbytte er enklere enn du tror takket være <strong>BankID</strong> og norske standarder. Nye banker tar ofte jobben med å flytte alt for deg. Slik går du frem:
@@ -178,12 +177,12 @@ export default function BytteBank() {
         {/* HVA MED */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>🔄</span> Hva skjer med betalinger, avtalegiro og lignende?
+            <span></span> Hva skjer med betalinger, avtalegiro og lignende?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-white rounded-xl p-5 border border-gray-200">
               <h3 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <span>📄</span> Betalingsoppdrag
+                Betalingsoppdrag
               </h3>
               <p className="text-gray-600 text-sm">
                 Disse flyttes vanligvis ikke automatisk. Du må sette opp nye betalingsoppdrag i den nye banken. Heldigvis er dette ofte like enkelt som å kopiere fra en notisblokk.
@@ -191,7 +190,7 @@ export default function BytteBank() {
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200">
               <h3 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <span>📅</span> Avtalegiro
+                <span></span> Avtalegiro
               </h3>
               <p className="text-gray-600 text-sm">
                 Avtalegiro (faste trekk fra konto) blir <strong>ikke</strong> automatisk flyttet. Du må melde nytt kontonummer til alle som trekker deg (strøm, forsikring, etc.). Mange banker gir deg 60 dagers varsel dersom kontoen legges ned.
@@ -199,7 +198,7 @@ export default function BytteBank() {
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200">
               <h3 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <span>🏠</span> Boliglån
+                <span></span> Boliglån
               </h3>
               <p className="text-gray-600 text-sm">
                 Boliglån kan flyttes, men det krever en ny avtale med den nye banken. Det er verdt å undersøke om din nye bank kan tilby bedre vilkår. <Link href="/lan/nar-lonner-refinansiering" className="text-teal-700 hover:underline">Refinansiering av boliglån</Link> er egen prosess.
@@ -207,7 +206,7 @@ export default function BytteBank() {
             </div>
             <div className="bg-white rounded-xl p-5 border border-gray-200">
               <h3 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <span>💳</span> Kredittkort
+                Kredittkort
               </h3>
               <p className="text-gray-600 text-sm">
                 Kredittkort er knyttet til kortutsteder, ikke banken. Du trenger normalt ikke bytte kredittkort når du bytter bank — men sjekk gebyrer og vilkår uansett.
@@ -247,7 +246,7 @@ export default function BytteBank() {
         {/* VANLIGE SPØRSMÅL */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span>❓</span> Vanlige spørsmål
+            Vanlige spørsmål
           </h2>
           <div className="space-y-4">
             <div className="bg-white rounded-xl p-5 border border-gray-200">
@@ -277,21 +276,21 @@ export default function BytteBank() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/lan/hvor-mye-boliglan-kan-jeg-fa" className="inline-block bg-white text-teal-700 font-bold px-6 py-3 rounded-lg hover:bg-teal-50 transition-colors">
-              🧮 Sjekk din lånekraft
+              Sjekk din lånekraft
             </Link>
             <Link href="/sparing/hoyrentekonto" className="inline-block bg-teal-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-teal-400 transition-colors border border-teal-400">
-              💰 Sett sparepengene på høyrentekonto
+              Sett sparepengene på høyrentekonto
             </Link>
           </div>
         </section>
 
         {/* RELATERTE ARTIKLER */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">📚 Relaterte artikler</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4"> Relaterte artikler</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/lan/nar-lonner-refinansiering" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-teal-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">🔄</span>
+                <span className="text-2xl"></span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-teal-700">Refinansiering — når det lønner seg</h3>
                   <p className="text-gray-500 text-sm">Bytt boliglån og spar titusenvis</p>
@@ -300,7 +299,6 @@ export default function BytteBank() {
             </Link>
             <Link href="/sparing/hoyrentekonto" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-teal-400 transition-colors group">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">💰</span>
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-teal-700">Høyrentekonto 2026</h3>
                   <p className="text-gray-500 text-sm">Få 5,2% på sparepengene dine</p>

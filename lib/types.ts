@@ -7,6 +7,8 @@ export interface Article {
   readTime: string
   content?: string
   pillar?: string
+  relatedTools?: { title: string; href: string; description: string }[]
+  relatedArticles?: string[]
 }
 
 export interface Tool {

@@ -136,7 +136,7 @@ function getKokoPassFeedback(
   years: number
 ): string {
   const annualPayment = monthlyPayment * 12
-  const annualIncome = annualPayment / 0.30 // Approximate:房贷 shouldn't exceed 30% of gross income
+  const annualIncome = annualPayment / 0.30 // Approximate: shouldn't exceed 30% of gross income
   const income = annualIncome
 
   if (effectiveRate > 6.5) {
@@ -305,7 +305,7 @@ export default function BoliglanskalkulatorClient() {
                 {equityPercent < 15 && (
                   <div className="mt-2 bg-amber-50 border-l-4 border-amber-400 rounded-r p-3">
                     <p className="text-xs text-amber-800">
-                      ⚠️ Bankene krever minimum 15% egenkapital i Norge. Du må ha egenkapital på{' '}
+                      Bankene krever minimum 15% egenkapital i Norge. Du må ha egenkapital på{' '}
                       <strong>{formatKr(housePrice * 0.15)}</strong> for å kunne få boliglån.
                     </p>
                   </div>
@@ -415,7 +415,7 @@ export default function BoliglanskalkulatorClient() {
                   onClick={() => setShowFeeSection(!showFeeSection)}
                   className="flex items-center justify-between w-full text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors"
                 >
-                  <span>⚙️ Gebyrer (valgfritt — påvirker effektiv rente)</span>
+                  <span> Gebyrer (valgfritt — påvirker effektiv rente)</span>
                   <svg
                     className={`w-4 h-4 transition-transform ${showFeeSection ? 'rotate-180' : ''}`}
                     fill="none"
@@ -513,7 +513,7 @@ export default function BoliglanskalkulatorClient() {
               <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-5">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-green-600 text-sm">💡</span>
+                    <span className="text-green-600 text-sm"></span>
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-green-800 mb-2">Vår vurdering</h3>

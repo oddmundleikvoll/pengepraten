@@ -105,7 +105,7 @@ export default function MortgageWidgetCTA({ variant = 'sidebar' }: Props) {
           <div className="p-4">
             {calc.isAboveAverage && (
               <p className="text-xs text-gray-600 mb-3">
-                💸 Du betaler <strong>{calc.yearlyCostDifference.toLocaleString('nb-NO')} kr/år</strong> for mye
+                 Du betaler <strong>{calc.yearlyCostDifference.toLocaleString('nb-NO')} kr/år</strong> for mye
               </p>
             )}
             <Link

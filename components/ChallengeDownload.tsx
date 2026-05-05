@@ -37,13 +37,13 @@ function generatePDFHtml(): string {
   </style>
 </head>
 <body>
-  <h1>💚 52-ukers Spareutfordring</h1>
+  <h1> 52-ukers Spareutfordring</h1>
   <p class="subtitle">Pengepraten.no — Spar 68 900 kr på 52 uker</p>
 
   <div class="summary">
     <p><strong>Slik fungerer det:</strong> Hver uke setter du av et beløp som øker med 50 kr.</p>
     <p>Uke 1 = 50 kr → Uke 52 = 2 600 kr → <strong>Total: 68 900 kr</strong></p>
-    <p style="color:#15803d;font-weight:700;margin-top:8px;">🎯 Etter 52 uker har du spart over 68 000 kr — uten å tømme lommeboken!</p>
+    <p style="color:#15803d;font-weight:700;margin-top:8px;"> Etter 52 uker har du spart over 68 000 kr — uten å tømme lommeboken!</p>
   </div>
 
   <table>
@@ -60,7 +60,7 @@ function generatePDFHtml(): string {
   </table>
 
   <div class="footer">
-    Generert av Pengepraten.no — Lykke til med spareutfordringen! 🍀
+    Generert av Pengepraten.no — Lykke til med spareutfordringen! 
   </div>
 </body>
 </html>
@@ -136,7 +136,9 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
           className="flex items-center gap-3 px-5 py-4 bg-white border-2 border-gray-200 rounded-xl hover:border-green-400 hover:shadow-md transition-all group"
         >
           <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-lg shrink-0 group-hover:bg-green-200 transition-colors">
-            📄
+            <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
           </div>
           <div className="text-left">
             <div className="font-semibold text-gray-800 text-sm">Last ned HTML</div>
@@ -149,7 +151,9 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
           className="flex items-center gap-3 px-5 py-4 bg-white border-2 border-gray-200 rounded-xl hover:border-green-400 hover:shadow-md transition-all group"
         >
           <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-lg shrink-0 group-hover:bg-green-200 transition-colors">
-            📊
+            <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
           </div>
           <div className="text-left">
             <div className="font-semibold text-gray-800 text-sm">Last ned CSV</div>
@@ -209,7 +213,7 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className="font-bold text-green-800 text-lg mb-1">Sjekk innboksen din! 📬</h3>
+          <h3 className="font-bold text-green-800 text-lg mb-1">Sjekk innboksen din!</h3>
           <p className="text-sm text-green-700">PDF-en med 52-ukers oversikten er på vei.</p>
         </div>
       )}
