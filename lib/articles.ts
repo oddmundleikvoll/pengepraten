@@ -137,6 +137,15 @@ export const articles: Article[] = [
     pillar: 'lan',
   },
   {
+    slug: '/sparing/hoyrente-vs-aksjesparing',
+    title: 'Høyrentekonto vs Aksjesparing: Hva bør du velge i 2026?',
+    excerpt: 'Skal du velge trygg høyrentekonto eller potensielt mer lønnsom aksjesparing? Vi sammenligner avkastning, risiko og når du bør velge hva.',
+    category: 'Sparing',
+    date: '2026-05-05',
+    readTime: '8 min',
+    pillar: 'sparing',
+  },
+  {
     slug: '/sparing/beste-sparekonto-2026',
     title: 'Beste sparekonto i Norge 2026 — de beste rentene nå',
     excerpt: 'Med inflasjonen som spiser av sparepengene dine, er det viktigere enn noensinne å plassere pengene der de faktisk vokser. Her er vår oppdaterte oversikt.',
