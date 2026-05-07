@@ -38,15 +38,13 @@ export default function Boliglansrente2026() {
           på å velge feil bank.
         </p>
         <p className="text-gray-600 mb-8">
-          Per april 2026 holder Norges Bank styringsrenten på 4,5 % etter å ha kuttet 
-          forsiktig gjennom 2025. Boliglånsrentene i Norge ligger i intervallet 4,3 % 
-          til 6,2 % avhengig av bank, profil og forhandlingsdyktighet.
+          Per mai 2026 har Norges Bank hevet styringsrenten fra 4,00 % til 4,25 % etter rentemøtet 7. mai 2026. Boliglånsrentene i Norge ligger i intervallet 4,7 % til 5,5 % avhengig av bank, profil og forhandlingsdyktighet. Neste rentebeslutning kommer 18. juni 2026.
         </p>
 
-        <h2>Gjeldende boliglånsrenter (april 2026)</h2>
+        <h2>Gjeldende boliglånsrenter (mai 2026)</h2>
         <p className="text-sm text-gray-500 mb-4">
-          Tabellen under viser nominelle boliglånsrenter fra de største norske bankene. 
-          Legg merke til at effektiv rente alltid er høyere på grunn av gebyrer og 
+          Tabellen under viser nominelle boliglånsrenter fra de største norske bankene 
+          etter Norges Banks renteheving 7. mai 2026. Legg merke til at effektiv rente alltid er høyere på grunn av gebyrer og 
           andre kostnader.
         </p>
 
@@ -63,52 +61,64 @@ export default function Boliglansrente2026() {
             <tbody>
               <tr className="bg-white">
                 <td className="p-3 border border-gray-200 font-medium">DNB</td>
-                <td className="p-3 border border-gray-200 font-bold">4,85 %</td>
-                <td className="p-3 border border-gray-200">5,10 %</td>
+                <td className="p-3 border border-gray-200 font-bold">4,95 %</td>
+                <td className="p-3 border border-gray-200">5,20 %</td>
                 <td className="p-3 border border-gray-200">Krav til kundeforhold og egenkapital</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="p-3 border border-gray-200 font-medium">Nordea</td>
-                <td className="p-3 border border-gray-200 font-bold">4,90 %</td>
-                <td className="p-3 border border-gray-200">5,15 %</td>
+                <td className="p-3 border border-gray-200 font-bold">5,00 %</td>
+                <td className="p-3 border border-gray-200">5,25 %</td>
                 <td className="p-3 border border-gray-200">Bonus ved helhetlig kundeforhold</td>
               </tr>
               <tr className="bg-white">
                 <td className="p-3 border border-gray-200 font-medium">Sparebank 1</td>
-                <td className="p-3 border border-gray-200 font-bold">4,75 %</td>
-                <td className="p-3 border border-gray-200">5,00 %</td>
+                <td className="p-3 border border-gray-200 font-bold">4,85 %</td>
+                <td className="p-3 border border-gray-200">5,10 %</td>
                 <td className="p-3 border border-gray-200">Bred pakke med forsikring og kort</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border border-gray-200 font-medium">Danske Bank</td>
-                <td className="p-3 border border-gray-200 font-bold">4,95 %</td>
-                <td className="p-3 border border-gray-200">5,20 %</td>
-                <td className="p-3 border border-gray-200">Forhandlingssterk for nye kunder</td>
+                <td className="p-3 border border-gray-200 font-medium">Sbanken</td>
+                <td className="p-3 border border-gray-200 font-bold text-green-700">4,79 %</td>
+                <td className="p-3 border border-gray-200 text-green-700">4,90 %</td>
+                <td className="p-3 border border-gray-200">Ingen gebyrer, ren rente (50% belåningsgrad)</td>
               </tr>
               <tr className="bg-white">
-                <td className="p-3 border border-gray-200 font-medium">Sbanken</td>
-                <td className="p-3 border border-gray-200 font-bold text-green-700">4,60 %</td>
-                <td className="p-3 border border-gray-200 text-green-700">4,85 %</td>
-                <td className="p-3 border border-gray-200">Ingen gebyrer, ren rente</td>
+                <td className="p-3 border border-gray-200 font-medium">BN Bank</td>
+                <td className="p-3 border border-gray-200 font-bold">5,04 %</td>
+                <td className="p-3 border border-gray-200">5,19 %</td>
+                <td className="p-3 border border-gray-200">Lån &gt;4M, 50% belåningsgrad. Laveste rente</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border border-gray-200 font-medium">BN Bank</td>
-                <td className="p-3 border border-gray-200 font-bold">4,70 %</td>
-                <td className="p-3 border border-gray-200">4,95 %</td>
-                <td className="p-3 border border-gray-200">Flatt gebyr, konkurransedyktig</td>
+                <td className="p-3 border border-gray-200 font-medium">OBOS (medlem)</td>
+                <td className="p-3 border border-gray-200 font-bold">4,87 %</td>
+                <td className="p-3 border border-gray-200">5,05 %</td>
+                <td className="p-3 border border-gray-200">OBOS-medlem, ingen etableringsgebyr ved flytting</td>
               </tr>
               <tr className="bg-white">
-                <td className="p-3 border border-gray-200 font-medium">Bluestep</td>
-                <td className="p-3 border border-gray-200 font-bold">5,80 %</td>
-                <td className="p-3 border border-gray-200">6,20 %</td>
-                <td className="p-3 border border-gray-200">For boliglån utenfor hovedbank</td>
+                <td className="p-3 border border-gray-200 font-medium">OBOS (beste)</td>
+                <td className="p-3 border border-gray-200 font-bold text-green-700">4,71 %</td>
+                <td className="p-3 border border-gray-200 text-green-700">4,90 %</td>
+                <td className="p-3 border border-gray-200">Fleksibilitet + god sikkerhet, energieffektiv bolig 4,73%</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200 font-medium">Handelsbanken</td>
+                <td className="p-3 border border-gray-200 font-bold">4,90 %</td>
+                <td className="p-3 border border-gray-200">5,15 %</td>
+                <td className="p-3 border border-gray-200">Forhandlingssterk for gode kunder</td>
+              </tr>
+              <tr className="bg-white">
+                <td className="p-3 border border-gray-200 font-medium">Storebrand</td>
+                <td className="p-3 border border-gray-200 font-bold">4,95 %</td>
+                <td className="p-3 border border-gray-200">5,20 %</td>
+                <td className="p-3 border border-gray-200">Konkurransedyktig for helkundeforhold</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p className="text-xs text-gray-500 mb-8">
-          * Oppdatert april 2026. Rentene er veiledende og kan variere basert på 
-          din økonomiske situasjon. Kontakt banken direkte for et personlig tilbud.
+          * Oppdatert mai 2026 etter Norges Banks renteheving til 4,25 %. Rentene er veiledende og kan variere basert på 
+          din økonomiske situasjon, belåningsgrad og lånebeløp. Kontakt banken direkte for et personlig tilbud.
         </p>
 
         <h3>Hva betyr dette for din lommebok?</h3>
@@ -175,19 +185,26 @@ export default function Boliglansrente2026() {
           i Norge — inkludert boliglånsrenten din.
         </p>
 
-        <h3>Siste rentebeslutning (mars 2026)</h3>
+        <h3>Siste rentebeslutning (mai 2026)</h3>
         <p>
-          Styringsrenten ble holdt på 4,5 % etter det siste rentemøtet i mars 2026. 
-          Norges Bank signaliserer ingen hastige kutt, men legger til at ytterligere 
-          reduksjoner kan komme mot slutten av året hvis inflasjonen holder seg under kontroll.
+          Norges Bank hevet styringsrenten fra 4,00 % til 4,25 % ved rentemøtet 7. mai 2026.
+          Dette er første renteheving på over ett år, etter en periode med rentekutt.
+          Norges Bank begrunner hevingen med at inflasjonen har vist seg mer seiglivet 
+          enn ventet, og at økonomien tåler en litt strammere pengepolitikk.
+        </p>
+        <p>
+          Neste rentebeslutning offentliggjøres <strong>18. juni 2026</strong>. Markedet 
+          priser inn omtrent 50/50 sjanse for ytterligere heving, eller at renten holdes 
+          uendret på 4,25 %.
         </p>
 
         <h3>Hva ekspertene tror om fremtiden</h3>
         <p>
-          De fleste analytikere venter en styringsrente på rundt 4,0-4,25 % ved 
-          utgangen av 2026, med mulig fall til 3,5-3,75 % i løpet av 2027. Det vil 
-          i så fall gi lavere boliglånsrenter for alle — men du må forhandle aktivt 
-          med din nåværende bank, fordi automatikken ikke alltid virker.
+          Etter rentehevingen i mai 2026 er det usikkert hvilken vei renten går. 
+          De fleste analytikere venter at styringsrenten holdes på 4,25 % gjennom 
+          sommeren, med mulig justering nedover mot høsten hvis inflasjonen faller 
+          tilbake mot 2 %-målet. Enkelte spår styringsrente på 3,75-4,00 % ved 
+          utgangen av 2026.
         </p>
 
         <h3>Hvordan påvirker dette boliglånsrenten?</h3>
@@ -241,10 +258,10 @@ export default function Boliglansrente2026() {
 
         <h3>Hva lønner seg akkurat nå?</h3>
         <p>
-          Med styringsrenten på 4,5 % og forventninger om fallende renter, er 
-          flytende rente ofte det smarteste valget for de fleste akkurat nå. Du 
-          betaler en premie for fastrente (gjerne 0,5-1,0 prosentpoeng høyere), 
-          og den premien er vanskelig å forsvare hvis rentene faller de neste årene.
+          Med styringsrenten på 4,25 % etter hevingen i mai 2026 og usikkerhet om 
+          fremtidig renteutvikling, er flytende rente fortsatt det vanligste valget. 
+          Du betaler en premie for fastrente (gjerne 0,5-1,0 prosentpoeng høyere), 
+          og den premien er vanskelig å forsvare hvis rentene kan gå begge veier.
         </p>
         <p>
           Har du derimot et stramt budsjett og ikke tåler svingninger, kan fastrente 
@@ -365,10 +382,10 @@ export default function Boliglansrente2026() {
 
         <h3>Er 5 års fastrente verdt det i dagens marked?</h3>
         <p>
-          Avhengig av din risikovillighet og budsjettsituasjon. I april 2026 med 
-          forventet fallende renter, er flytende rente trolig smartere for de fleste. 
-          Men hvis du verdsetter forutsigbarhet høyt, er 5 års fastrente et 
-          akseptabelt kompromiss.
+          Avhengig av din risikovillighet og budsjettsituasjon. I mai 2026 med 
+          styringsrente på 4,25 % og usikker fremtidsutsikt, er flytende rente trolig 
+          smartere for de fleste. Men hvis du verdsetter forutsigbarhet høyt, er 5 års 
+          fastrente et akseptabelt kompromiss.
         </p>
 
         <h3>Hva betyr effektiv rente versus nominell rente?</h3>
@@ -393,9 +410,9 @@ export default function Boliglansrente2026() {
           kroner betyr over 100.000 kroner over 10 år.
         </p>
         <p>
-          I april 2026 ligger boliglånsrentene mellom 4,6 % og 6,2 % avhengig av 
-          bank og din situasjon. Sbanken og Sparebank 1 tenderer mot de laveste, 
-          mens Bluestep og andre spesialister ligger høyere.
+          I mai 2026 ligger boliglånsrentene mellom 4,7 % og 5,5 % avhengig av 
+          bank og din situasjon. OBOS og Sbanken tenderer mot de laveste, 
+          mens de tradisjonelle storbankene ligger litt høyere.
         </p>
         <p>
           Det viktigste du kan gjøre? <strong>Ikke aksepter første tilbud.</strong> 
@@ -445,7 +462,7 @@ export default function Boliglansrente2026() {
         </div>
 
         <p className="text-xs text-gray-400 mt-8">
-          Sist oppdatert: april 2026. Rentene er veiledende og kan endres.
+          Sist oppdatert: mai 2026. Rentene er veiledende og kan endres.
         </p>
       </article>
     </>

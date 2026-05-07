@@ -2,6 +2,15 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/artikler/norges-bank-hever-renten-mai-2026',
+    title: 'Norges Bank hever renten til 4,25% i mai 2026: Hva betyr det for deg?',
+    excerpt: 'Norges Bank hevet styringsrenten fra 4,00% til 4,25% 7. mai 2026. Les hva det betyr for boliglån, sparing og forbrukslån — med konkrete tall og eksperttips.',
+    category: 'Boliglån',
+    date: '2026-05-07',
+    readTime: '8 min',
+    pillar: 'boliglan',
+  },
+  {
     slug: '/sparing/ips-individuell-pensjonssparing',
     title: 'IPS 2026: Alt du trenger å vite om Individuell Pensjonssparing',
     excerpt: 'IPS gir deg skattefradrag pluss fond-avkastning. Lær alt om hvordan det fungerer, hvem det passer for, og hvordan du kommer i gang med IPS i 2026.',

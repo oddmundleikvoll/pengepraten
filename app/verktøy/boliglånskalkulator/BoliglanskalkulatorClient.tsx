@@ -4,22 +4,26 @@ import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 
 /*
- * SOURCES — Boliglånsrenter (april 2026):
- * - DNB: Flytende ~5,15-5,75%, 3-års binding ~5,05-5,35%, 5-års binding ~4,90-5,25%
- * - Nordea: Flytende ~5,25-5,65%, 3-års binding ~5,10-5,40%, 5-års binding ~4,95-5,25%
- * - SpareBank1: Flytende ~5,10-5,70%, 3-års binding ~4,95-5,30%, 5-års binding ~4,80-5,15%
- * - OBOS: Flytende ~5,20-5,80%, 3-års binding ~5,00-5,35%, 5-års binding ~4,85-5,20%
- * - Storebrand: Flytende ~5,15-5,75%, 3-års binding ~5,00-5,30%, 5-års binding ~4,85-5,15%
- * - Handelsbanken: Flytende ~5,00-5,60%, 3-års binding ~4,90-5,20%, 5-års binding ~4,75-5,05%
+ * SOURCES — Boliglånsrenter (mai 2026):
+ * - Norges Bank styringsrente: 4,25% (hevet fra 4,00% 7. mai 2026)
+ * - Neste rentemøte: 18. juni 2026
+ * - DNB: Flytende ~4,95-5,35%, 3-års binding ~4,80-5,15%, 5-års binding ~4,65-5,00%
+ * - Nordea: Flytende ~5,00-5,40%, 3-års binding ~4,85-5,20%, 5-års binding ~4,70-5,05%
+ * - SpareBank1: Flytende ~4,85-5,25%, 3-års binding ~4,70-5,05%, 5-års binding ~4,55-4,90%
+ * - OBOS: Flytende ~4,71-5,20%, 3-års binding ~4,55-4,90%, 5-års binding ~4,40-4,75%
+ * - Storebrand: Flytende ~4,95-5,35%, 3-års binding ~4,80-5,15%, 5-års binding ~4,65-5,00%
+ * - Handelsbanken: Flytende ~4,90-5,30%, 3-års binding ~4,75-5,10%, 5-års binding ~4,60-4,95%
+ * - Sbanken: Flytende 4,79-5,08% (effektiv 4,90-5,20%)
+ * - BN Bank: Flytende 5,04-5,45% (effektiv 5,19-5,64%)
  *
- * Typisk boliglånsrente i Norge april 2026:
- * - Flytende rente: 5,10-5,70% (nominell)
- * - Bundet 3 år: 4,95-5,35%
- * - Bundet 5 år: 4,80-5,20%
+ * Typisk boliglånsrente i Norge mai 2026:
+ * - Flytende rente: 4,80-5,40% (nominell)
+ * - Bundet 3 år: 4,65-5,05%
+ * - Bundet 5 år: 4,50-4,90%
  *
  * Obligatorisk egenkapital i Norge: 15% (bankene krever dette)
  * Etableringsgebyr: typisk 2.000-6.000 kr
- * Termingebyr: typisk 20-75 kr/mnd
+ * Termingebyr: typisk 0-75 kr/mnd
  */
 
 interface MonthlyPayment {
@@ -41,9 +45,9 @@ interface CalculationResult {
 }
 
 const RENTING_TYPES = {
-  flytende: { label: 'Flytende rente', defaultRate: 5.40, minRate: 4.00, maxRate: 8.00 },
-  bundet3: { label: 'Bundet 3 år', defaultRate: 5.15, minRate: 3.50, maxRate: 7.50 },
-  bundet5: { label: 'Bundet 5 år', defaultRate: 5.00, minRate: 3.00, maxRate: 7.00 },
+  flytende: { label: 'Flytende rente', defaultRate: 5.05, minRate: 3.80, maxRate: 7.50 },
+  bundet3: { label: 'Bundet 3 år', defaultRate: 4.80, minRate: 3.50, maxRate: 7.00 },
+  bundet5: { label: 'Bundet 5 år', defaultRate: 4.65, minRate: 3.00, maxRate: 6.50 },
 }
 
 const REPAYMENT_YEARS = [10, 15, 20, 25, 30]
@@ -525,12 +529,12 @@ export default function BoliglanskalkulatorClient() {
 
             {/* Rate type info */}
             <div className="bg-gray-50 rounded-xl p-4">
-              <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">Rentehistorikk (april 2026)</h3>
+              <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">Rentehistorikk (mai 2026)</h3>
               <div className="space-y-2">
                 {[
-                  { type: 'Flytende', range: '5,10–5,70%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
-                  { type: 'Bundet 3 år', range: '4,95–5,35%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
-                  { type: 'Bundet 5 år', range: '4,80–5,20%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
+                  { type: 'Flytende', range: '4,80–5,40%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
+                  { type: 'Bundet 3 år', range: '4,65–5,05%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
+                  { type: 'Bundet 5 år', range: '4,50–4,90%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
                 ].map((r) => (
                   <div key={r.type} className="flex justify-between items-center text-xs">
                     <span className="text-gray-600">{r.type}</span>
@@ -540,7 +544,7 @@ export default function BoliglanskalkulatorClient() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-3">Kilder: Bankenes nettsider, Finansportalen. Renter kan variere etter kredittscore og belåningsgrad.</p>
+              <p className="text-xs text-gray-400 mt-3">Kilder: Bankenes nettsider, Finansportalen. Oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026. Renter kan variere etter kredittscore og belåningsgrad.</p>
             </div>
           </div>
         </div>
@@ -667,8 +671,8 @@ export default function BoliglanskalkulatorClient() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               ),
-              title: 'Oppdatert 2026',
-              desc: 'Rentene er oppdatert april 2026 basert på reelle tilbud fra norske banker.',
+              title: 'Oppdatert mai 2026',
+              desc: 'Rentene er oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026, basert på reelle tilbud fra norske banker.',
               color: 'bg-green-50',
               iconColor: 'text-green-600',
             },
