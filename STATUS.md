@@ -1,8 +1,36 @@
 # Pengepraten.no — Prosjektstatus
 
 **Opprettet:** 2026-04-08
-**Sist oppdatert:** 2026-04-15
+**Sist oppdatert:** 2026-05-07
 **Mål:** 50.000–100.000 kr/år innen 18 mnd
+
+---
+
+## Statusrapport 2026-05-07
+
+### ✅ Fullført i dag (Norges Bank renteheving)
+
+| Del | Status | Dato |
+|-----|--------|------|
+| **Renteheving 4,00% → 4,25%** | ✅ Oppdatert | 2026-05-07 |
+| Boliglånskalkulator (mai 2026) | ✅ Oppdatert | 2026-05-07 |
+| Boliglånsrente-artikkel (9 banker) | ✅ Oppdatert | 2026-05-07 |
+| **Ny artikkel: Rentehevingen** | ✅ Live | 2026-05-07 |
+| Emoji-sanering + ikon-system | ✅ Bevart | 2026-05-07 |
+| Ryddet parallelle repos | ✅ Ferdig | 2026-05-07 |
+
+**Ny artikkel (7. mai):**
+- `/artikler/norges-bank-hever-renten-mai-2026` — Hva betyr rentehevingen for deg?
+
+**Oppdaterte renter (mai 2026):**
+- Flytende: 4,80–5,40% (ned fra 5,10–5,70%)
+- Bundet 3 år: 4,65–5,05% (ned fra 4,95–5,35%)
+- Bundet 5 år: 4,50–4,90% (ned fra 4,80–5,20%)
+
+**Teknisk rydding:**
+- Arkivert utdatert repo: `walt/pengepraten-UTDATERT-20260507`
+- Aktivt repo: `projects/pengepraten` (tidligere `norsk-penger`)
+- `main` branch er nå master med alle endringer
 
 ---
 
@@ -56,10 +84,12 @@
 
 ---
 
-## Nettstedstruktur (34 sider)
+## Nettstedstruktur (35 sider)
 
 ```
 FORTSIDE (hero m/ bilde + 3 CTA-knapper)
+├── /artikler
+│   └── /artikler/norges-bank-hever-renten-mai-2026  ← NY (7. mai)
 ├── /kredittkort
 │   ├── /kredittkort/beste-kredittkort-2026
 │   ├── /kredittkort/beste-kredittkort-norge-2026
@@ -73,23 +103,27 @@ FORTSIDE (hero m/ bilde + 3 CTA-knapper)
 │   ├── /lan/nar-lonner-refinansiering-seg
 │   └── /lan/refinansiering-spar-paa-gjelden
 ├── /boliglan (Boliglån)
+│   └── /boliglan/boliglan-rente-2026          ← OPPDATERT (mai 2026)
 ├── /sparing
 │   ├── /sparing/beste-sparekonto-2026
 │   ├── /sparing/bsu-guide
-│   ├── /sparing/hoyrentekonto          ← NY
-│   ├── /sparing/indeksfond-nybegynnere  ← NY
-│   ├── /sparing/ips-individuell-pensjonssparing ← NY
+│   ├── /sparing/hoyrentekonto
+│   ├── /sparing/hoyrentekonto-sammenligning
+│   ├── /sparing/hoyrente-vs-aksjesparing       ← NY (5. mai)
+│   ├── /sparing/indeksfond-nybegynnere
+│   ├── /sparing/ips-individuell-pensjonssparing
 │   ├── /sparing/slik-bygger-du-spareseddel
 │   └── /sparing/spareplan-guide
-├── /spareutfordring                    ← NY
+├── /spareutfordring
 ├── /budsjett
-│   ├── /budsjett/budsjett-app           ← NY
+│   ├── /budsjett/budsjett-app
 │   └── /budsjett/kom-i-gang-med-budsjett
 ├── /bank
-│   └── /bank/bytte-bank                 ← NY
+│   └── /bank/bytte-bank
 ├── /verktøy
+│   ├── /verktøy/boliglånskalkulator            ← OPPDATERT (mai 2026)
 │   ├── /verktøy/lånekalkulator
-│   └── /verktøy/boliglånskalkulator
+│   └── /verktøy/sparekalkulator
 ├── /min-boliglån (widget)
 ├── /om-oss
 ├── /kontakt
@@ -122,20 +156,24 @@ FORTSIDE (hero m/ bilde + 3 CTA-knapper)
 
 - **Hosting:** Vercel (auto-deploy fra GitHub)
 - **Repo:** github.com/oddmundleikvoll/pengepraten
+- **Lokal mappe:** `/home/o/.openclaw/workspace/projects/pengepraten` (tidligere `norsk-penger`)
+- **Branch:** `main` (tidligere `master`)
 - **GA4:** Property 532272471 (Måle-ID: G-RHXXSHTYRH)
 - **E-post:** Resend API (kontaktskjema → wntviral@gmail.com)
 - **DNS:** Cloudflare (Email Routing)
+- **Arkivert repo:** `walt/pengepraten-UTDATERT-20260507` ( beholdes for historikk )
 
 ---
 
 ## Commit-historikk (siste)
 
 ```
-0cc36c8 Add 5 new SEO articles (Walt)
-3490767 fix: oppdatert sitemap med alle 29 sider
-d2ea9f2 fix: juster beløp til 50kr/uke (max 2600kr, total 68900kr)
-d2a89d7 feat: 52-ukers Spareutfordring + komponenter
-d8fc9df feat: BSU-guide og cashback-kredittkort artikler
+6308df6 merge: Norges Bank renteheving 4,25% + emoji-sanering + ikon-system
+7e6b662 feat: ny artikkel hoyrente-vs-aksjesparing + sitemap
+94add2e feat: emoji-sanering + ikon-system U1-U4 (plan 2026-05-04)
+285fc6e Fjern 'Oppdatert januar 2026' fra forsiden
+bb22543 feat: forbedre høyrentekonto + BSU-guide, ny refinansieringsartikkel
+ad566bf fix SEO: correct 10% tax deduction on BSU page, expand bank tables to 20+ banks
 ```
 
 ---
@@ -145,5 +183,16 @@ d8fc9df feat: BSU-guide og cashback-kredittkort artikler
 1. **Kort sikt:** Søk Adtraction affiliate-avtaler
 2. **Kort sikt:** Fiks SSL www.pengepraten.no i SAN
 3. **Kort sikt:** Sett opp sitemap i Google Search Console (full retry)
-4. **Middels sikt:** Flere artikler + bygge lenker
-5. **Middels sikt:** Flere interaktive verktøy
+4. **Kort sikt:** Automatisk scraping av Norges Bank styringsrente (cron)
+5. **Middels sikt:** Automatisk scraping av bankrenter (live data)
+6. **Middels sikt:** Flere artikler + bygge lenker
+7. **Middels sikt:** Flere interaktive verktøy
+
+### 🚨 Viktig: Unngå parallelle repos
+**Lærdom 7. mai 2026:** Vi hadde to versjoner (`walt/pengepraten` og `projects/norsk-penger`) som divergerte. Dette førte til at emoji-sanering og ikon-system ble overskrevet.
+
+**Regel fremover:**
+- **Ett aktivt repo:** `projects/pengepraten`
+- **Branch:** `main` (master)
+- **Deploy:** Vercel fra GitHub `main` branch
+- **ALDRI** arbeid i `walt/pengepraten` uten å synce tilbake til `projects/pengepraten`
