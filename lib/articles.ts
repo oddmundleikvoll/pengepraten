@@ -2,6 +2,18 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/boligpriser',
+    title: 'Boligpriser mai 2026: Opp 1% i april — men Oslo bremser opp',
+    excerpt: 'Boligprisene steg 1% nasjonalt i april og er nå opp 5,6% hittil i år. Samtidig advarer Eiendom Norge-sjef Henning Lauridsen om at Oslo kan falle. Her er alt du trenger å vite før du kjøper eller selger.',
+    category: 'Boliglån',
+    date: '2026-05-12',
+    readTime: '8 min',
+    pillar: 'boliglan',
+    relatedTools: [
+      { title: 'Boliglånskalkulator', href: '/verktøy/boliglånskalkulator', description: 'Beregn månedlig kostnad for ditt boliglån' },
+    ],
+  },
+  {
     slug: '/artikler/norges-bank-hever-renten-mai-2026',
     title: 'Norges Bank hever renten til 4,25% i mai 2026: Hva betyr det for deg?',
     excerpt: 'Norges Bank hevet styringsrenten fra 4,00% til 4,25% 7. mai 2026. Les hva det betyr for boliglån, sparing og forbrukslån — med konkrete tall og eksperttips.',
