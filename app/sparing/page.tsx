@@ -41,6 +41,32 @@ export default function SparingPage() {
 
             <h2 className="text-2xl font-bold text-norsk-dark mb-6">Artikler om sparing</h2>
             <div className="grid md:grid-cols-2 gap-6">
+              <Link href="/sparing/kronen-sterk-2026" className="group">
+                <article className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition-all duration-200 overflow-hidden">
+                  <div className="px-5 pt-5 pb-0">
+                    <span className="inline-block px-3 py-1 text-xs font-medium bg-green-50 text-green-700 rounded-full">
+                      Sparing
+                    </span>
+                    <span className="inline-block px-3 py-1 text-xs font-medium bg-amber-50 text-amber-700 rounded-full ml-2">
+                      Nyhet
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-norsk-dark group-hover:text-green-600 transition-colors mb-2">
+                      Kronen er sterkere enn på årevis: 5 måter å utnytte det på
+                    </h3>
+                    <p className="text-sm text-gray-500 line-clamp-3">
+                      Norske kronen er på det sterkeste nivået på flere år. Slik utnytter du det: billigere netthandel, ferie i USA/Europa, investeringer og feriesparing.
+                    </p>
+                    <div className="mt-4 flex items-center text-sm text-green-600 font-medium">
+                      <span>Les mer</span>
+                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </article>
+              </Link>
               <Link href="/sparing/beste-sparekonto-2026" className="group">
                 <article className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition-all duration-200 overflow-hidden">
                   <div className="px-5 pt-5 pb-0">

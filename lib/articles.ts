@@ -2,6 +2,15 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/sparing/kronen-sterk-2026',
+    title: 'Kronen er sterkere enn på årevis: 5 måter å utnytte det på',
+    excerpt: 'Norske kronen er på det sterkeste nivået på flere år. Slik utnytter du det: billigere netthandel, ferie i USA/Europa, investeringer og feriesparing. 5 konkrete tips for vanlige nordmenn.',
+    category: 'Sparing',
+    date: '2026-05-16',
+    readTime: '8 min',
+    pillar: 'sparing',
+  },
+  {
     slug: '/boligpriser',
     title: 'Boligpriser mai 2026: Opp 1% i april — men Oslo bremser opp',
     excerpt: 'Boligprisene steg 1% nasjonalt i april og er nå opp 5,6% hittil i år. Samtidig advarer Eiendom Norge-sjef Henning Lauridsen om at Oslo kan falle. Her er alt du trenger å vite før du kjøper eller selger.',
