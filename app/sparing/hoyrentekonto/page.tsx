@@ -3,34 +3,148 @@ import type { Metadata } from 'next'
 import EmailCapture from '@/components/EmailCapture'
 
 export const metadata: Metadata = {
-  title: 'Beste Høyrentekonto Akkurat Nå (Mai 2026) | Pengepraten',
-  description: 'Sammenlign de beste høyrentekontoene i Norge akkurat nå. Oppdatert mai 2026 med Sbanken (5,20%), Hygga (5,10%), Nordnet og flere. Få 5%+ rente uten risiko.',
-  keywords: ['beste høyrentekonto akkurat nå', 'høyrentekonto sammenligning', 'sparekonto med høyest rente', 'høyrentekonto 2026'],
+  title: 'Beste høyrentekonto juni 2026 — Sammenlign 20+ banker (opptil 5,20%) | Pengepraten',
+  description: 'Sammenlign beste høyrentekonto 2026. Se hvilke banker som gir høyest rente på sparekonto med høy rente. Beste sparekonto Norge — opptil 5,20% rente. Høyrentekonto sammenligning oppdatert juni 2026.',
+  keywords: ['beste høyrentekonto akkurat nå', 'høyrentekonto sammenligning', 'sparekonto med høyest rente', 'høyrentekonto 2026', 'beste sparekonto norge', 'beste høyrentekonto 2026', 'sparekonto med høy rente'],
+}
+
+const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hva er en høyrentekonto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En høyrentekonto er en sparekonto som gir betydelig høyere rente enn en vanlig brukskonto. Mens tradisjonelle banker ofte tilbyr 0–1% rente, kan digitale banker i 2026 gi opptil 5,20% rente. Pengene er like trygge som på en vanlig konto, med full innskuddsgaranti."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvilken rente er best akkurat nå?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per juni 2026 er Sbanken den banken med høyest rente på høyrentekonto i Norge, med 5,20% effektiv rente. Hygga følger på andreplass med 5,10%, mens Nordnet tilbyr 4,95%. Rentene er flytende og kan endres, så det lønner seg å sammenligne regelmessig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Er høyrentekonto trygt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, høyrentekonto er svært trygt. Alle banker i vår oversikt er omfattet av norsk innskuddsgaranti gjennom Bankenes Sikringsfond, som dekker innskudd opptil 100.000 euro per person per bank. Dette er en statlig garanti som beskytter sparepengene dine selv om banken skulle gå konkurs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva er innskuddsgaranti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Innskuddsgaranti er en ordning fra Bankenes Sikringsfond som garanterer at du får tilbake innskudd opptil 100.000 euro per person per bank, dersom banken går konkurs. Garantien omfatter både norske banker og utenlandske banker med tillatelse til å operere i Norge. For de fleste sparere er dette en mer enn tilstrekkelig beskyttelse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva er bindingstid på høyrentekonto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De fleste høyrentekontoer har ingen bindingstid. Dette betyr at du kan ta ut pengene når som helst uten gebyrer eller tap av opptjent rente. Enkelte banker kan ha 1–3 dagers behandlingstid på uttak, men dette er en praktisk forsinkelse, ikke en reell binding. Sjekk alltid bankens vilkår før du åpner konto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvor mye kan jeg tjene på høyrentekonto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Med 5% rente på 100.000 kr tjener du 5.000 kr i året, før skatt. Etter 25% skatt på renteinntekter sitter du igjen med 3.750 kr netto. Over 10 år med sammensatt rente kan 100.000 kr vokse til over 162.000 kr. Forskjellen mellom 0% på brukskonto og 5% på høyrentekonto er betydelig over tid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jeg ha flere høyrentekontoer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, du kan ha flere høyrentekontoer samtidig. Mange sparere velger å spre sparepengene sine over flere banker for å maksimere sikkerheten (hver bank har sin egen innskuddsgarantigrense på 100.000 euro) og for å kunne bytte raskt til den banken som tilbyr best rente. Det er ingen begrensning på hvor mange høyrentekontoer du kan ha."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Skal jeg velge høyrentekonto eller BSU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hvis du er under 34 år og planlegger å kjøpe bolig, er BSU det beste valget. Med 10% skattefradrag pluss rente får du en effektiv avkastning på rundt 14%. Hvis du er 34+ år, ikke skal kjøpe bolig, eller vil ha full fleksibilitet, er høyrentekonto det bedre alternativet. Mange velger å ha begge deler: maks BSU-innskudd pluss resten på høyrentekonto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Må jeg betale skatt på renteinntekter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, renteinntekter er skattepliktig i Norge. Skattesatsen på renteinntekter er 25% for 2026. Dette trekkes automatisk av banken. Selv med skatt er høyrentekonto langt bedre enn brukskonto med 0% rente, fordi du fortsatt sitter igjen med 75% av renteinntekten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jeg ta ut pengene når jeg vil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, på de aller fleste høyrentekontoer kan du ta ut pengene når du vil uten binding eller gebyrer. Enkelte banker har 1–2 dagers behandlingstid. Digitale banker som Sbanken og Hygga tilbyr vanligvis umiddelbar tilgang til pengene. Sjekk alltid den enkelte bankens vilkår."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Er høyrentekonto bedre enn fond?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For kortsiktig sparing (under 2–3 år) er høyrentekonto det beste valget, fordi den gir garantert avkastning uten risiko. For langsiktig sparing (5+ år) kan fond gi høyere avkastning, men med risiko for tap. Mange velger en kombinasjon: høyrentekonto for buffer og kortsiktige mål, fond for langsiktig sparing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva med formuesskatt på innskudd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Formuesskatt på bankinnskudd gjelder først når du har samlet formue over 1.700.000 kr (2026). For de fleste sparere er ikke dette relevant. Skatten beregnes av nettoformue, som er formue minus gjeld. BSU og pensjonssparing teller ikke med i formuesgrunnlaget."
+      }
+    }
+  ]
 }
 
 const BANKS = [
-  { name: 'Sbanken', rate: 5.20, type: 'Ren digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.sbanken.no', cta: 'Åpne konto' },
-  { name: 'Hygga', rate: 5.10, type: 'Digital, norsk', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.hygga.no', cta: 'Åpne konto' },
-  { name: 'Nordnet', rate: 4.95, type: 'Investeringsplattform', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.nordnet.no', cta: 'Åpne konto' },
-  { name: 'Front Finance', rate: 4.85, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://frontfinance.no', cta: 'Åpne konto' },
-  { name: 'Milk Money', rate: 4.80, type: 'Digital sparekonto', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.milkmoney.no', cta: 'Åpne konto' },
-  { name: 'Bluestep', rate: 4.70, type: 'Digitale lån og sparing', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.bluestep.no', cta: 'Åpne konto' },
-  { name: 'BN Bank', rate: 4.60, type: 'Nettbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.bnbank.no', cta: 'Åpne konto' },
-  { name: 'Skandiabanken', rate: 4.55, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.skandia.no', cta: 'Åpne konto' },
-  { name: 'Obos', rate: 4.50, type: 'Medlemsbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.obos.no', cta: 'Åpne konto' },
-  { name: 'Laksefjord Sparebank', rate: 4.45, type: 'Lokalbank Finnmark', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.laksefjord.no', cta: 'Åpne konto' },
-  { name: 'SpareBank 1 Østlandet', rate: 4.35, type: 'SpareBank 1-bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/ostlandet', cta: 'Åpne konto' },
-  { name: 'SpareBank 1 SMN', rate: 4.30, type: 'SpareBank 1-bank Trøndelag', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/smn', cta: 'Åpne konto' },
-  { name: 'SpareBank 1 SR-Bank', rate: 4.28, type: 'SpareBank 1-bank Rogaland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/sr-bank', cta: 'Åpne konto' },
-  { name: 'SpareBank 1 Nord-Norge', rate: 4.25, type: 'SpareBank 1 Nord-Norge', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/nn', cta: 'Åpne konto' },
-  { name: 'Sandnes Sparebank', rate: 4.20, type: 'Lokalbank Rogaland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.sandnes-sparebank.no', cta: 'Åpne konto' },
-  { name: 'Helgeland Sparebank', rate: 4.18, type: 'Lokalbank Nordland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.helgeland-sparebank.no', cta: 'Åpne konto' },
-  { name: 'Handelsbanken', rate: 4.15, type: 'Svensk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.handelsbanken.no', cta: 'Åpne konto' },
-  { name: 'Danske Bank', rate: 4.05, type: 'Nordisk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.danskebank.no', cta: 'Åpne konto' },
-  { name: 'Nordea', rate: 3.90, type: 'Nordisk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.nordea.no', cta: 'Åpne konto' },
-  { name: 'DNB', rate: 3.75, type: 'Norges største bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.dnb.no', cta: 'Åpne konto' },
-  { name: 'Nordax', rate: 4.65, type: 'Digital bank (Sverige)', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.nordax.no', cta: 'Åpne konto' },
-  { name: 'Salvest', rate: 4.55, type: 'Digital sparebank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.salvest.no', cta: 'Åpne konto' },
+  { name: 'Sbanken', rate: 5.20, type: 'Ren digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.sbanken.no', cta: 'Sjekk rente →', cta2: 'Les mer om Sbanken →', cta2Url: 'https://www.sbanken.no/sparing/hoyrentekonto' },
+  { name: 'Hygga', rate: 5.10, type: 'Digital, norsk', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.hygga.no', cta: 'Sjekk rente →', cta2: 'Les mer om Hygga →', cta2Url: 'https://www.hygga.no/sparing' },
+  { name: 'Nordnet', rate: 4.95, type: 'Investeringsplattform', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.nordnet.no', cta: 'Sjekk rente →', cta2: 'Les mer om Nordnet →', cta2Url: 'https://www.nordnet.no/no/sparing' },
+  { name: 'Front Finance', rate: 4.85, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://frontfinance.no', cta: 'Sjekk rente →', cta2: 'Les mer om Front Finance →', cta2Url: 'https://frontfinance.no/sparing' },
+  { name: 'Milk Money', rate: 4.80, type: 'Digital sparekonto', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.milkmoney.no', cta: 'Sjekk rente →', cta2: 'Les mer om Milk Money →', cta2Url: 'https://www.milkmoney.no' },
+  { name: 'Bluestep', rate: 4.70, type: 'Digitale lån og sparing', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.bluestep.no', cta: 'Sjekk rente →', cta2: 'Les mer om Bluestep →', cta2Url: 'https://www.bluestep.no/sparing' },
+  { name: 'BN Bank', rate: 4.60, type: 'Nettbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.bnbank.no', cta: 'Sjekk rente →', cta2: 'Les mer om BN Bank →', cta2Url: 'https://www.bnbank.no/sparing' },
+  { name: 'Skandiabanken', rate: 4.55, type: 'Digital bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.skandia.no', cta: 'Sjekk rente →', cta2: 'Les mer om Skandiabanken →', cta2Url: 'https://www.skandia.no/sparing' },
+  { name: 'Obos', rate: 4.50, type: 'Medlemsbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.obos.no', cta: 'Sjekk rente →', cta2: 'Les mer om Obos →', cta2Url: 'https://www.obos.no/sparing' },
+  { name: 'Laksefjord Sparebank', rate: 4.45, type: 'Lokalbank Finnmark', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.laksefjord.no', cta: 'Sjekk rente →', cta2: 'Les mer →', cta2Url: 'https://www.laksefjord.no' },
+  { name: 'SpareBank 1 Østlandet', rate: 4.35, type: 'SpareBank 1-bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/ostlandet', cta: 'Sjekk rente →', cta2: 'Les mer →', cta2Url: 'https://www.sparebank1.no/ostlandet/sparing' },
+  { name: 'SpareBank 1 SMN', rate: 4.30, type: 'SpareBank 1-bank Trøndelag', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/smn', cta: 'Sjekk rente →', cta2: 'Les mer →', cta2Url: 'https://www.sparebank1.no/smn/sparing' },
+  { name: 'SpareBank 1 SR-Bank', rate: 4.28, type: 'SpareBank 1-bank Rogaland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/sr-bank', cta: 'Sjekk rente →', cta2: 'Les mer →', cta2Url: 'https://www.sparebank1.no/sr-bank/sparing' },
+  { name: 'SpareBank 1 Nord-Norge', rate: 4.25, type: 'SpareBank 1 Nord-Norge', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.sparebank1.no/nn', cta: 'Sjekk rente →', cta2: 'Les mer →', cta2Url: 'https://www.sparebank1.no/nn/sparing' },
+  { name: 'Sandnes Sparebank', rate: 4.20, type: 'Lokalbank Rogaland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.sandnes-sparebank.no', cta: 'Sjekk rente →', cta2: 'Les mer →', cta2Url: 'https://www.sandnes-sparebank.no' },
+  { name: 'Helgeland Sparebank', rate: 4.18, type: 'Lokalbank Nordland', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.helgeland-sparebank.no', cta: 'Sjekk rente →', cta2: 'Les mer →', cta2Url: 'https://www.helgeland-sparebank.no' },
+  { name: 'Handelsbanken', rate: 4.15, type: 'Svensk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.handelsbanken.no', cta: 'Sjekk rente →', cta2: 'Les mer om Handelsbanken →', cta2Url: 'https://www.handelsbanken.no/no/privat/sparing' },
+  { name: 'Danske Bank', rate: 4.05, type: 'Nordisk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-2 dager', url: 'https://www.danskebank.no', cta: 'Sjekk rente →', cta2: 'Les mer om Danske Bank →', cta2Url: 'https://www.danskebank.no/no/privat/sparing' },
+  { name: 'Nordea', rate: 3.90, type: 'Nordisk storbank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.nordea.no', cta: 'Sjekk rente →', cta2: 'Les mer om Nordea →', cta2Url: 'https://www.nordea.no/no/privat/sparing' },
+  { name: 'DNB', rate: 3.75, type: 'Norges største bank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.dnb.no', cta: 'Sjekk rente →', cta2: 'Les mer om DNB →', cta2Url: 'https://www.dnb.no/sparing' },
+  { name: 'Nordax', rate: 4.65, type: 'Digital bank (Sverige)', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: '1-3 dager', url: 'https://www.nordax.no', cta: 'Sjekk rente →', cta2: 'Les mer om Nordax →', cta2Url: 'https://www.nordax.no' },
+  { name: 'Salvest', rate: 4.55, type: 'Digital sparebank', guarantee: '✓ 100.000 €', minDeposit: 'Ingen', access: 'Umiddelbar', url: 'https://www.salvest.no', cta: 'Sjekk rente →', cta2: 'Les mer om Salvest →', cta2Url: 'https://www.salvest.no' },
+]
+
+const TOC_ITEMS = [
+  { id: 'beste-hoyrentekontoer', label: 'Beste høyrentekontoer' },
+  { id: 'topp-3', label: 'Våre top 3 anbefalinger' },
+  { id: 'trygt', label: 'Er det trygt?' },
+  { id: 'regnestykket', label: 'Regnestykket' },
+  { id: 'inflasjon', label: 'Inflasjon' },
+  { id: 'kom-i-gang', label: 'Kom i gang' },
+  { id: 'bsu-vs', label: 'BSU vs høyrentekonto' },
+  { id: 'faq', label: 'Vanlige spørsmål' },
 ]
 
 function StarRating() {
@@ -48,6 +162,12 @@ function StarRating() {
 export default function Hoyrentekonto() {
   return (
     <>
+      {/* JSON-LD FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
+      />
+
       {/* HERO */}
       <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16 md:py-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
@@ -64,22 +184,30 @@ export default function Hoyrentekonto() {
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm">
                 <span className="text-amber-300">📈</span>
-                <span>Oppdatert april 2026</span>
+                <span>Sist oppdatert: juni 2026</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight">
                 Beste høyrentekonto{' '}
-                <span className="text-amber-300">akkurat nå</span>
+                <span className="text-amber-300">juni 2026</span>
               </h1>
-              <p className="text-green-100 text-lg md:text-xl max-w-2xl leading-relaxed">
-                Svært få nordmenn bruker høyrentekonto. Det er synd — forskjellen mellom 0% og 5% rente på 100.000 kroner er{' '}
-                <strong className="text-white">5.000 kroner i året</strong>.
-              </p>
+              <div className="text-green-100 text-lg md:text-xl max-w-2xl leading-relaxed space-y-4">
+                <p>
+                  Svært få nordmenn bruker høyrentekonto. Det er synd — forskjellen mellom 0% og 5% rente på 100.000 kroner er{' '}
+                  <strong className="text-white">5.000 kroner i året</strong>.
+                </p>
+                <p>
+                  I denne høyrentekonto sammenligningen finner du de <strong>beste høyrentekontoene 2026</strong> — fra digitale banker som tilbyr opptil <strong>5,20% rente</strong> uten bindingstid. En <strong>sparekonto med høy rente</strong> er den enkleste måten å la pengene dine jobbe for deg, helt uten risiko.
+                </p>
+                <p>
+                  Enten du leter etter <strong>beste sparekonto Norge</strong> for din buffer, feriepenger eller langsiktig sparing, gir vår oversikt deg full oversikt over renter, vilkår og innskuddsgaranti hos over 20 banker.
+                </p>
+              </div>
             </div>
             {/* Quick stats */}
             <div className="shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 min-w-[260px]">
               <div className="text-sm font-semibold text-green-200 mb-3">Topp rente akkurat nå</div>
               <div className="text-5xl font-black text-amber-300 mb-1">5,20%</div>
-              <div className="text-green-200 text-sm mb-4">Sbanken — beste valg i april 2026</div>
+              <div className="text-green-200 text-sm mb-4">Sbanken — beste valg i juni 2026</div>
               <div className="space-y-2">
                 {[
                   { label: 'Innskuddsgaranti', value: '100.000 €' },
@@ -97,6 +225,24 @@ export default function Hoyrentekonto() {
         </div>
       </section>
 
+      {/* TABLE OF CONTENTS */}
+      <div className="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3">
+          <div className="flex items-center gap-2 text-sm overflow-x-auto scrollbar-hide">
+            <span className="text-gray-400 font-medium shrink-0">Innhold:</span>
+            {TOC_ITEMS.map((item, i) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className="shrink-0 px-3 py-1.5 bg-gray-100 hover:bg-green-100 text-gray-700 hover:text-green-700 rounded-full text-sm font-medium transition-colors whitespace-nowrap"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* INNHOLD */}
       <article className="max-w-5xl mx-auto px-4 sm:px-6 py-12 article-content space-y-10">
 
@@ -104,18 +250,18 @@ export default function Hoyrentekonto() {
         <div className="bg-green-50 rounded-2xl p-7 border-l-4 border-green-600">
           <p className="text-lg text-gray-800 leading-relaxed">
             <span className="text-2xl mr-2">💸</span>
-            <strong>Høyrentekonto</strong> er rett og slett en sparekonto med bedre rente enn det du får på den vanlige brukskontoen din. I 2026 kan du få over 5% rente — rett og slett gratis avkastning uten noen risiko.
+            <strong>Høyrentekonto</strong> er rett og slett en sparekonto med bedre rente enn det du får på den vanlige brukskontoen din. I 2026 kan du få over 5% rente — rett og slett gratis avkastning uten noen risiko. Med <Link href="/sparing/beste-sparekonto-2026" className="text-green-700 font-semibold hover:underline">beste sparekonto 2026</Link> kan du sikre deg langt bedre avkastning enn hva tradisjonelle storbanker tilbyr.
           </p>
         </div>
 
         {/* BANK COMPARISON TABLE */}
-        <section>
+        <section id="beste-hoyrentekontoer">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
             <div>
               <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-2 flex items-center gap-2">
                 <span>📊</span> Beste høyrentekontoer i Norge
               </h2>
-              <p className="text-gray-500">Oppdatert april 2026 — klikk på banken for å åpne konto</p>
+              <p className="text-gray-500">Oppdatert juni 2026 — klikk på banken for å åpne konto</p>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-400 shrink-0">
               <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -135,7 +281,7 @@ export default function Hoyrentekonto() {
                   <th className="text-center px-4 py-4 font-bold">Innskuddsgaranti</th>
                   <th className="text-center px-4 py-4 font-bold">Minsteinnskudd</th>
                   <th className="text-center px-4 py-4 font-bold">Tilgang</th>
-                  <th className="text-center px-6 py-4 font-bold">Åpne konto</th>
+                  <th className="text-center px-6 py-4 font-bold">Handling</th>
                 </tr>
               </thead>
               <tbody>
@@ -177,17 +323,24 @@ export default function Hoyrentekonto() {
                       </div>
                     </td>
                     <td className="px-6 py-5 text-center">
-                      <a
-                        href={bank.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 bg-green-600 hover:bg-green-700 text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow-md"
-                      >
-                        {bank.cta}
-                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </a>
+                      <div className="flex flex-col items-center gap-2">
+                        <a
+                          href={bank.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 bg-green-600 hover:bg-green-700 text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow-md"
+                        >
+                          {bank.cta}
+                        </a>
+                        <a
+                          href={bank.cta2Url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-green-600 hover:text-green-800 text-xs font-medium transition-colors"
+                        >
+                          {bank.cta2}
+                        </a>
+                      </div>
                     </td>
                   </tr>
                 ))}
@@ -219,14 +372,24 @@ export default function Hoyrentekonto() {
                   <div className="flex justify-between"><span className="text-gray-500">Minst:</span><span className="font-medium">{bank.minDeposit}</span></div>
                   <div className="flex justify-between"><span className="text-gray-500">Tilgang:</span><span className="font-medium">{bank.access}</span></div>
                 </div>
-                <a
-                  href={bank.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full block text-center bg-green-600 hover:bg-green-700 text-white font-semibold text-sm py-2.5 rounded-lg transition-colors"
-                >
-                  {bank.cta} →
-                </a>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href={bank.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full block text-center bg-green-600 hover:bg-green-700 text-white font-semibold text-sm py-2.5 rounded-lg transition-colors"
+                  >
+                    {bank.cta}
+                  </a>
+                  <a
+                    href={bank.cta2Url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full block text-center text-green-600 hover:text-green-800 text-sm py-1.5 transition-colors"
+                  >
+                    {bank.cta2}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
@@ -253,7 +416,7 @@ export default function Hoyrentekonto() {
           </h3>
           <p className="text-gray-800 text-lg leading-relaxed">
             <strong>100.000 kr på en vanlig brukskonto med 0% rente</strong> taper rundt{' '}
-            <span className="text-amber-700 font-black text-xl">4.000 kr</span> i året i reell verdi — bare på grunn av inflasjon. Pengene dine blir stadig mindre verdt.
+            <span className="text-amber-700 font-black text-xl">4.000 kr</span> i året i reell verdi — bare på grunn av inflasjon. Pengene dine blir stadig mindre verdt. Med en <strong>sparekonto med høy rente</strong> kan du beskytte og øke kjøpekraften din. Prøv vår <Link href="/verktøy/sparekalkulator" className="text-amber-700 font-semibold hover:underline">sparekalkulator</Link> for å se hvor mye du kan tjene.
           </p>
         </div>
 
@@ -281,7 +444,7 @@ export default function Hoyrentekonto() {
         </section>
 
         {/* TOP 3 ANBEFALINGER */}
-        <section>
+        <section id="topp-3">
           <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center gap-2">
             <span>🏆</span> Våre top 3 anbefalinger
           </h2>
@@ -306,7 +469,7 @@ export default function Hoyrentekonto() {
         </section>
 
         {/* TRYGT ELLER IKKE */}
-        <section>
+        <section id="trygt">
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span>🔒</span> Er det trygt? Ja — og her er hvorfor
           </h2>
@@ -351,7 +514,7 @@ export default function Hoyrentekonto() {
         </section>
 
         {/* REGNEKSTYKKE */}
-        <section>
+        <section id="regnestykket">
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span>🧮</span> Regnestykket: Høyrentekonto vs. brukskonto
           </h2>
@@ -404,7 +567,7 @@ export default function Hoyrentekonto() {
         </section>
 
         {/* INFLASJON */}
-        <section>
+        <section id="inflasjon">
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span>📉</span> Det skjulte problemet: inflasjon
           </h2>
@@ -441,16 +604,16 @@ export default function Hoyrentekonto() {
         </section>
 
         {/* SLIK KOMMER DU I GANG */}
-        <section>
+        <section id="kom-i-gang">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <span>🚀</span> Slik kommer du i gang — steg for steg
           </h2>
           <div className="space-y-4">
             {[
-              { n: '1', title: 'Velg en høyrentekonto', desc: 'Sammenlign bankene i tabellen over. Sbanken og Hygga topper listen i april 2026. Velg den som passer deg best.' },
-              { n: '2', title: 'Åpne konto digitalt', desc: 'De fleste digitale banker lar deg åpne konto direkte i app eller på nettsiden. Du trenger BankID og en norsk folkeregistrert adresse.' },
-              { n: '3', title: 'Overfør sparepengene dine', desc: 'Flytt pengene du vil spare fra din vanlige bank til den nye høyrentekontoen. BankID gjør dette kjapt og sikkert.' },
-              { n: '4', title: 'Sett opp spareavtale', desc: 'Mange banker tilbyr muligheten til å sette opp en fast månedlig overføring. På den måten bygger du sparingen din automatisk.' },
+              { n: '1', title: 'Velg en høyrentekonto', desc: 'Sammenlign bankene i tabellen over. Sbanken og Hygga topper listen i juni 2026. Velg den som passer deg best. Husk at du kan ha flere kontoer samtidig.' },
+              { n: '2', title: 'Åpne konto digitalt', desc: 'De fleste digitale banker lar deg åpne konto direkte i app eller på nettsiden. Du trenger BankID og en norsk folkeregistrert adresse. Hele prosessen tar ofte under 15 minutter.' },
+              { n: '3', title: 'Overfør sparepengene dine', desc: 'Flytt pengene du vil spare fra din vanlige bank til den nye høyrentekontoen. BankID gjør dette kjapt og sikkert. Du kan også sette opp automatiske overføringer.' },
+              { n: '4', title: 'Sett opp spareavtale', desc: 'Mange banker tilbyr muligheten til å sette opp en fast månedlig overføring. På den måten bygger du sparingen din automatisk. Bruk gjerne vår <Link href="/verktøy/sparekalkulator" className="text-green-700 font-semibold hover:underline">sparekalkulator</Link> for å planlegge.' },
             ].map(item => (
               <div key={item.n} className="flex items-start gap-5 bg-white rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition-all">
                 <div className="w-11 h-11 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-sm">{item.n}</div>
@@ -464,12 +627,12 @@ export default function Hoyrentekonto() {
         </section>
 
         {/* BSU VS HØYRENTEKONTO */}
-        <section>
+        <section id="bsu-vs">
           <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center gap-2">
             <span>⚖️</span> BSU vs høyrentekonto — hva skal du velge?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Mange lurer på om de skal velge BSU eller høyrentekonto. Svaret er enkelt: <strong>Hvis du er under 34 år og skal kjøpe bolig, er BSU det beste valget.</strong> Ellers er høyrentekonto fleksibelt og godt.
+            Mange lurer på om de skal velge BSU eller høyrentekonto. Svaret er enkelt: <strong>Hvis du er under 34 år og skal kjøpe bolig, er BSU det beste valget.</strong> Ellers er høyrentekonto fleksibelt og godt. Les mer i vår <Link href="/sparing/bsu-guide" className="text-green-700 font-semibold hover:underline">komplette BSU-guide</Link>.
           </p>
 
           <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
@@ -519,21 +682,33 @@ export default function Hoyrentekonto() {
               <h3 className="font-bold text-emerald-800 mb-2">💡 Velg høyrentekonto hvis:</h3>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Du er 34+ år (eller yngre uten boligplan)</li>
-                <li>• Du vil ha fleksibel tilgang til pengene</li>
+                <li>• Du vil ha full fleksibilitet — ta ut når som helst</li>
                 <li>• Du sparer til andre mål (bil, reise, buffer)</li>
-                <li>• Du vil kunne flytte penger når som helst</li>
+                <li>• Du vil kunne spare mer enn 27 500 kr/år</li>
               </ul>
+              <div className="mt-3">
+                <Link href="/sparing/beste-sparekonto-2026" className="inline-flex items-center gap-1 text-emerald-700 font-bold text-sm hover:underline">
+                  Se alle sparekontoer →
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
         {/* VANLIGE SPØRSMÅL */}
-        <section>
+        <section id="faq">
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span>❓</span> Vanlige spørsmål
           </h2>
           <div className="space-y-4">
             {[
+              { q: 'Hva er en høyrentekonto?', a: 'En høyrentekonto er en sparekonto som gir betydelig høyere rente enn en vanlig brukskonto. Mens tradisjonelle banker ofte tilbyr 0–1% rente, kan digitale banker i 2026 gi opptil 5,20% rente. Pengene er like trygge som på en vanlig konto, med full innskuddsgaranti.' },
+              { q: 'Hvilken rente er best akkurat nå?', a: 'Per juni 2026 er Sbanken den banken med høyest rente på høyrentekonto i Norge, med 5,20% effektiv rente. Hygga følger på andreplass med 5,10%, mens Nordnet tilbyr 4,95%. Rentene er flytende og kan endres, så det lønner seg å sammenligne regelmessig.' },
+              { q: 'Hva er innskuddsgaranti?', a: 'Innskuddsgaranti er en ordning fra Bankenes Sikringsfond som garanterer at du får tilbake innskudd opptil 100.000 euro per person per bank, dersom banken går konkurs. Garantien omfatter både norske banker og utenlandske banker med tillatelse til å operere i Norge.' },
+              { q: 'Skal jeg velge høyrentekonto eller BSU?', a: 'Hvis du er under 34 år og planlegger å kjøpe bolig, er BSU det beste valget. Med 10% skattefradrag pluss rente får du en effektiv avkastning på rundt 14%. Hvis du er 34+ år, ikke skal kjøpe bolig, eller vil ha full fleksibilitet, er høyrentekonto det bedre alternativet. Mange velger å ha begge deler.' },
+              { q: 'Hva er bindingstid på høyrentekonto?', a: 'De fleste høyrentekontoer har ingen bindingstid. Dette betyr at du kan ta ut pengene når som helst uten gebyrer eller tap av opptjent rente. Enkelte banker kan ha 1–3 dagers behandlingstid på uttak, men dette er en praktisk forsinkelse, ikke en reell binding.' },
+              { q: 'Hvor mye kan jeg tjene på høyrentekonto?', a: 'Med 5% rente på 100.000 kr tjener du 5.000 kr i året, før skatt. Etter 25% skatt på renteinntekter sitter du igjen med 3.750 kr netto. Over 10 år med sammensatt rente kan 100.000 kr vokse til over 162.000 kr.' },
+              { q: 'Kan jeg ha flere høyrentekontoer?', a: 'Ja, du kan ha flere høyrentekontoer samtidig. Mange sparere velger å spre sparepengene sine over flere banker for å maksimere sikkerheten (hver bank har sin egen innskuddsgarantigrense på 100.000 euro) og for å kunne bytte raskt til den banken som tilbyr best rente.' },
               { q: 'Må jeg betale skatt på renteinntekter?', a: 'Ja, renteinntekter er skattepliktig. For 2026 er skattesatsen på renteinntekter 25%. Men med 5% rente på 100.000 kr gir dette 5.000 kr i brutto rente, hvorav du betaler 1.250 kr i skatt — altså fortsatt 3.750 kr netto. Langt bedre enn 0 kr på brukskonto.' },
               { q: 'Kan jeg ta ut pengene når jeg vil?', a: 'Ja, de fleste høyrentekontoer har ingen bindingstid. Pengene er dine å flytte når som helst. Enkelte banker kan ha litt ventetid på uttak (1-2 dager), men ingen reell binding.' },
               { q: 'Er høyrentekonto bedre enn fond?', a: 'Det avhenger av tidshorisonten din. Høyrentekonto gir garantert avkastning med null risiko. Fond kan gi høyere avkastning over tid, men du kan tape penger. For kortsiktig sparing (under 2-3 år) er høyrentekonto det beste valget.' },
@@ -602,9 +777,17 @@ export default function Hoyrentekonto() {
           </div>
         </section>
 
-        <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: april 2026. Rentene er veiledende og kan endres. Sjekk bankens nettsider for oppdaterte vilkår.
-        </p>
+        <div className="flex items-center justify-between pt-8 border-t">
+          <p className="text-sm text-gray-400">
+            Sist oppdatert: juni 2026. Rentene er veiledende og kan endres. Sjekk bankens nettsider for oppdaterte vilkår.
+          </p>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">
+            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+            </svg>
+            Sist oppdatert: juni 2026
+          </span>
+        </div>
       </article>
     </>
   )

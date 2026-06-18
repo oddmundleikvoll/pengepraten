@@ -2,13 +2,122 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom',
-  description: 'BSU er Norges beste spareform for unge under 34. Få 10% skattefradrag på innskudd opp til 27.500 kr/år. Full guide til BSU i 2026.',
+  title: 'Beste BSU rente 2026 — Sammenlign 15+ banker og få 10% skattefradrag | Pengepraten',
+  description: 'Sammenlign beste BSU-rente 2026. Se hvilke banker som gir høyest rente på BSU-konto. Få 10% skattefradrag + opptil 4,15% rente. Sjekk din BSU-rente nå.',
+}
+
+const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hva er BSU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BSU (Boligsparing for Ungdom) er en statlig spareordning for personer under 34 år som ikke eier bolig. Du kan spare inntil 27 500 kr per år og få 10% skattefradrag på innskuddet. I tillegg får du rente på sparebeløpet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvem kan spare i BSU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For å spare i BSU må du være mellom 18 og 33 år, ikke eie bolig fra før, og være folkeregistrert i Norge. Fra og med det året du fyller 34, kan du ikke lenger sette inn nye penger, men du beholder alt du har spart."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvor mye kan jeg spare i BSU per år?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maksimalt årlig innskudd i BSU er 27 500 kr (2026). På dette beløpet får du 10% skattefradrag, som gir 2 750 kr tilbake på skatten. Du kan spare i BSU fra du er 18 år frem til og med det året du fyller 33 år."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva er skattefradraget på BSU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BSU gir 10% skattefradrag på innskudd opptil 27 500 kr per år. Det betyr at du får 2 750 kr tilbake på skatten hvert år du setter inn maksbeløpet. Dette er i tillegg til renteinntektene, og gjør BSU til en av de beste spareformene i Norge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvilken bank har best BSU-rente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per juni 2026 har LO Favør den høyeste BSU-renten med 4,15%. Sandnes Sparebank følger med 3,90%, og SpareBank 1 Nord-Norge tilbyr 3,88%. Rentene varierer mellom bankene, så det lønner seg å sammenligne."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jeg ta ut BSU-penger uten å kjøpe bolig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, du kan ta ut BSU-penger uten å kjøpe bolig, men da mister du skattefradraget. Skattefradraget du har fått tidligere år må da betales tilbake. Hvis du kjøper bolig, kan du bruke BSU-pengene som egenkapital uten å betale tilbake fradraget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva er forskjellen på BSU og høyrentekonto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BSU er kun for personer under 34 år som ikke eier bolig, og gir 10% skattefradrag i tillegg til rente. Høyrentekonto er tilgjengelig for alle, har ingen binding, men gir ikke skattefradrag. Høyrentekonto kan ha høyere rente (opptil 5,20%), mens BSU har lavere rente men bedre totalavkastning pga skattefradraget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvor lenge kan jeg spare i BSU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Du kan spare i BSU fra du er 18 år og frem til og med det året du fyller 33 år. Det gir maksimalt 16 år med sparing. Med maks innskudd på 27 500 kr per år kan du spare totalt 440 000 kr, pluss renter og skattefradrag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Teller BSU som egenkapital ved boligkjøp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, BSU-pengene dine teller som egenkapital når du søker om boliglån. Bankene ser positivt på BSU-sparing fordi det viser at du har evne og vilje til å spare. Med 15% egenkapitalkrav i Norge, er BSU en effektiv måte å bygge egenkapital på."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Må jeg betale skatt på BSU-rente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, renteinntekter på BSU er skattepliktige på samme måte som annen rente. Skattesatsen er 25% (2026). Skattefradraget på 10% av innskuddet kommer i tillegg, og er langt mer verdt enn skatten på renten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jeg ha BSU i flere banker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nei, du kan kun ha én aktiv BSU-konto om gangen. Hvis du vil bytte bank, må du avslutte BSU-kontoen i den gamle banken og opprette en ny i den nye. Husk at bytte av BSU-konto kan medføre at du mister skattefradrag — sjekk reglene nøye før du bytter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva skjer med BSU når jeg fyller 34?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Når du fyller 34 år, kan du ikke lenger sette inn nye penger i BSU. Men du beholder allerede sparte penger, opptjente renter og skattefradrag. Pengene kan brukes til boligkjøp, eller du kan ta dem ut (da mister du skattefradraget). Mange velger å la BSU-pengene stå til de kjøper bolig."
+      }
+    }
+  ]
 }
 
 export default function BSUGuide() {
   return (
     <>
+      {/* JSON-LD FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
+      />
+
       {/* HERO */}
       <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -19,6 +128,10 @@ export default function BSUGuide() {
             <span className="mx-2">/</span>
             <span>BSU Guide</span>
           </nav>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm">
+            <span className="text-amber-300">📅</span>
+            <span>Sist oppdatert: juni 2026</span>
+          </div>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
             BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom
           </h1>
@@ -256,7 +369,7 @@ export default function BSUGuide() {
             </table>
           </div>
           <div className="bg-green-50 rounded-xl p-4 text-sm text-gray-600">
-            <strong>Merk:</strong> Rentene er veiledende per mai 2026 og kan endres. Sjekk bankens nettsider for oppdaterte tall.
+            <strong>Merk:</strong> Rentene er veiledende per juni 2026 og kan endres. Sjekk bankens nettsider for oppdaterte tall.
           </div>
         </section>
 
@@ -652,9 +765,17 @@ export default function BSUGuide() {
           </div>
         </section>
 
-        <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 12. april 2026. Skattefradragssats og BSU-regler kan endres. Sjekk Skatteetaten for oppdaterte regler.
-        </p>
+        <div className="flex items-center justify-between pt-8 border-t">
+          <p className="text-sm text-gray-400">
+            Sist oppdatert: juni 2026. Skattefradragssats og BSU-regler kan endres. Sjekk Skatteetaten for oppdaterte regler.
+          </p>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">
+            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+            </svg>
+            Sist oppdatert: juni 2026
+          </span>
+        </div>
       </article>
     </>
   )
