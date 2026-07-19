@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Sparing — Beste sparekonto og sparetips 2026',
+  title: 'Sparing — Beste høyrentekonto og sparetips juli 2026',
   description: 'Finn den beste sparekontoen i Norge. Sammenlign renter, gebyrer og betingelser. Lær om BSU, IPS og høyrentekonto.',
 }
 
@@ -50,7 +50,7 @@ export default function SparingPage() {
                   </div>
                   <div className="p-5">
                     <h3 className="font-semibold text-norsk-dark group-hover:text-green-600 transition-colors mb-2">
-                      Beste sparekonto i Norge 2026
+                      Beste høyrentekonto i Norge juli 2026
                     </h3>
                     <p className="text-sm text-gray-500 line-clamp-3">
                       Med inflasjonen som spiser av sparepengene dine, er det viktigere enn noensinne å plassere pengene der de faktisk vokser.

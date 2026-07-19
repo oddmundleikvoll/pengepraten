@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hvor mye boliglån kan jeg få? Sånn regner du ut det i 2026',
+  title: 'Hvor mye boliglån kan jeg få? Sånn regner du ut det i juli 2026',
   description: 'Lær hvor mye boliglån du kan få basert på inntekt, gjeld og egenkapital. Vi forklarer finanstilsynets regler og gir deg en enkel formel for å regne ut ditt maksimale lånebeløp.',
   keywords: ['boliglån', 'hvor mye kan jeg låne', 'boliglånskalkulator', 'egenkapital', 'låneevne', 'finanstilsynet'],
 }
@@ -21,7 +21,7 @@ export default function HvorMyeBoliglanKanJegFa() {
             <span>Hvor mye boliglån kan jeg få</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-4xl font-black mb-4">
             Hvor mye boliglån kan jeg få?
@@ -271,13 +271,13 @@ export default function HvorMyeBoliglanKanJegFa() {
 
         <h2>Kilder og videre lesing</h2>
         <ul>
-          <li>Finanstilsynet: Retningslinjer for boliglån (april 2026)</li>
+          <li>Finanstilsynet: Retningslinjer for boliglån (juli 2026)</li>
           <li>Finans Norge: Veiledning om låneevne og gjeldsgrad</li>
           <li>Skatteetaten: Regler for gaver og skattefradrag</li>
         </ul>
 
         <p className="text-sm text-gray-500 mt-8">
-          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 9. april 2026
+          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 19. juli 2026
           <br />
           Artikkelen er ment som veiledning og utgjør ikke finansiell rådgivning. 
           Kontakt alltid banken din for konkrete tilbud og vurderinger.

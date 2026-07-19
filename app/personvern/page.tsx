@@ -79,7 +79,7 @@ export default function PersonvernPage() {
         </p>
 
         <p className="text-sm text-gray-500 mt-8">
-          Sist oppdatert: 9. april 2026
+          Sist oppdatert: 19. juli 2026
         </p>
       </section>
     </>

@@ -21,7 +21,7 @@ export default function RefinansieringForFolkFlest() {
             <span>Når lønner refinansiering seg</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
             Refinansiering for folk flest
@@ -270,12 +270,12 @@ export default function RefinansieringForFolkFlest() {
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">🏠 Boliglånsrenter i Norge 2026</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">🏠 Boliglånsrenter i Norge juli 2026</h3>
           <p className="text-gray-700 mb-3">
-            Per april 2026 ligger boliglånsrentene i Norge typisk mellom 
-            <strong> 3,5% og 5,5%</strong> avhengig av bank, egenkapital og 
-            kredittverdighet. Til sammenligning er usikrede forbrukslån 
-            ofte på 10-20%.
+            Per juli 2026 ligger boliglånsrentene i Norge typisk mellom
+            <strong> 4,5 % og 5,5 %</strong> avhengig av bank, egenkapital og
+            kredittverdighet (snitt 5,08 % utestående / 5,13 % nye, SSB mai 2026). Til sammenligning er usikrede forbrukslån
+            ofte på 9–16 %.
           </p>
           <p className="text-gray-600 text-sm">
             <strong>Konklusjon:</strong> Hvis du har usikret gjeld, er det 
@@ -364,7 +364,7 @@ export default function RefinansieringForFolkFlest() {
         </p>
 
         <p className="text-sm text-gray-500 mt-8">
-          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 9. april 2026<br />
+          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 19. juli 2026<br />
           Artikkelen er ment som veiledning og utgjør ikke finansiell rådgivning. 
           Vurder din egen situasjon nøye før du tar økonomiske beslutninger.
         </p>

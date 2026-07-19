@@ -1,12 +1,15 @@
 import type { MarketRates } from './mortgageTypes'
 
 export const MARKET_RATES: MarketRates = {
-  averageNominalRate: 4.8,
-  effectiveRate: 5.1,
-  source: 'SSB / Finansportalen (april 2026)',
-  lastUpdated: '2026-04-01',
-  nextUpdate: '2026-05-01',
+  averageNominalRate: 5.08,
+  effectiveRate: 5.13,
+  source: 'SSB / Finansportalen (juli 2026)',
+  lastUpdated: '2026-07-19',
+  nextUpdate: '2026-08-01',
   history: [
+    { month: '2026-07', rate: 5.08 },
+    { month: '2026-06', rate: 5.08 },
+    { month: '2026-05', rate: 5.05 },
     { month: '2026-04', rate: 4.8 },
     { month: '2026-03', rate: 4.7 },
     { month: '2026-02', rate: 4.6 },

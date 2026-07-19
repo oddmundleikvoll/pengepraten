@@ -18,7 +18,7 @@ const tools = [
   {
     href: '/sparing/hoyrentekonto-sammenligning',
     title: 'Høyrentekonto-sammenligning',
-    description: 'Sammenlign renter fra 8 norske banker på én side. Sbanken, Hygga, Nordnet og flere. Oppdatert april 2026.',
+    description: 'Sammenlign renter fra 8 norske banker på én side. Morrow Bank, Instabank, Pareto Bank og flere. Oppdatert juli 2026.',
     icon: '📈',
     color: 'bg-yellow-50',
     textColor: 'text-yellow-600',

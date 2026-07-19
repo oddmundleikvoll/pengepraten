@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Slik bytter du bank i Norge — guiden for 2026',
+  title: 'Slik bytter du bank i Norge — guiden for juli 2026',
   description: 'Lær hvordan du bytter bank i Norge uten å miste betalinger eller problemer. Steg-for-steg-guide, og se hvor mye du kan spare på gebyrer og rente.',
 }
 
@@ -20,7 +20,7 @@ export default function BytteBank() {
             <span>Bytte bank</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
-            Slik bytter du bank i Norge — guiden for 2026
+            Slik bytter du bank i Norge — guiden for juli 2026
           </h1>
           <p className="text-teal-100 text-xl max-w-2xl">
             Bytte av bank er enklere enn du tror — og ofte verdt titusenvis av kroner i året. Her er hele prosessen.
@@ -302,7 +302,7 @@ export default function BytteBank() {
               <div className="flex items-center gap-3">
                 <span className="text-2xl">💰</span>
                 <div>
-                  <h3 className="font-bold text-gray-900 group-hover:text-teal-700">Høyrentekonto 2026</h3>
+                  <h3 className="font-bold text-gray-900 group-hover:text-teal-700">Høyrentekonto juli 2026</h3>
                   <p className="text-gray-500 text-sm">Få 5,2% på sparepengene dine</p>
                 </div>
               </div>
@@ -311,7 +311,7 @@ export default function BytteBank() {
         </section>
 
         <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 15. april 2026. Bankprodukter og gebyrer endres. Sjekk med banken for oppdaterte opplysninger.
+          Sist oppdatert: 19. juli 2026. Bankprodukter og gebyrer endres. Sjekk med banken for oppdaterte opplysninger.
         </p>
       </article>
     </>

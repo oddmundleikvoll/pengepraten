@@ -4,19 +4,21 @@ import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 
 /*
- * SOURCES — Boliglånsrenter (mai 2026):
- * - Norges Bank styringsrente: 4,25% (hevet fra 4,00% 7. mai 2026)
- * - Neste rentemøte: 18. juni 2026
+ * SOURCES — Boliglånsrenter (juli 2026):
+ * - Norges Bank styringsrente: 4,25% (uendret 18. juni 2026; hevet fra 4,00% 7. mai 2026)
+ * - Neste rentemøte: 13. august 2026
+ * - Snitt utestående boliglån: 5,08% (SSB mai 2026)
+ * - Snitt nye boliglån: 5,13% (SSB mai 2026)
+ * - Snitt nye fastrente: 5,33% (SSB mai 2026)
+ * - Landkreditt Bank: Beste 4,78% effektiv (50% belåning)
+ * - Nybygger (Spb. Øst): 4,81% effektiv (60% belåning)
+ * - Penni (Eika): 4,85% effektiv (50% belåning) / 4,91% (75%)
+ * - Sbanken (DNB): ~4,75-5,00% nom / 5,00-5,20% effektiv
  * - DNB: Flytende ~4,95-5,35%, 3-års binding ~4,80-5,15%, 5-års binding ~4,65-5,00%
  * - Nordea: Flytende ~5,00-5,40%, 3-års binding ~4,85-5,20%, 5-års binding ~4,70-5,05%
  * - SpareBank1: Flytende ~4,85-5,25%, 3-års binding ~4,70-5,05%, 5-års binding ~4,55-4,90%
- * - OBOS: Flytende ~4,71-5,20%, 3-års binding ~4,55-4,90%, 5-års binding ~4,40-4,75%
- * - Storebrand: Flytende ~4,95-5,35%, 3-års binding ~4,80-5,15%, 5-års binding ~4,65-5,00%
- * - Handelsbanken: Flytende ~4,90-5,30%, 3-års binding ~4,75-5,10%, 5-års binding ~4,60-4,95%
- * - Sbanken: Flytende 4,79-5,08% (effektiv 4,90-5,20%)
- * - BN Bank: Flytende 5,04-5,45% (effektiv 5,19-5,64%)
  *
- * Typisk boliglånsrente i Norge mai 2026:
+ * Typisk boliglånsrente i Norge juli 2026:
  * - Flytende rente: 4,80-5,40% (nominell)
  * - Bundet 3 år: 4,65-5,05%
  * - Bundet 5 år: 4,50-4,90%
@@ -529,10 +531,10 @@ export default function BoliglanskalkulatorClient() {
 
             {/* Rate type info */}
             <div className="bg-gray-50 rounded-xl p-4">
-              <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">Rentehistorikk (mai 2026)</h3>
+              <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">Rentehistorikk (juli 2026)</h3>
               <div className="space-y-2">
                 {[
-                  { type: 'Flytende', range: '4,80–5,40%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
+                  { type: 'Flytende', range: '4,80–5,40%', banks: 'Landkreditt, Nybygger, Penni, Sbanken, DNB, Nordea' },
                   { type: 'Bundet 3 år', range: '4,65–5,05%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
                   { type: 'Bundet 5 år', range: '4,50–4,90%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
                 ].map((r) => (
@@ -544,7 +546,7 @@ export default function BoliglanskalkulatorClient() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-3">Kilder: Bankenes nettsider, Finansportalen. Oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026. Renter kan variere etter kredittscore og belåningsgrad.</p>
+              <p className="text-xs text-gray-400 mt-3">Kilder: Bankenes nettsider, Finansportalen, SSB (mai 2026). Beste boliglånsrente juli 2026: 4,78 % effektiv (Landkreditt Bank). Renter kan variere etter kredittscore og belåningsgrad.</p>
             </div>
           </div>
         </div>
@@ -671,8 +673,8 @@ export default function BoliglanskalkulatorClient() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               ),
-              title: 'Oppdatert mai 2026',
-              desc: 'Rentene er oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026, basert på reelle tilbud fra norske banker.',
+              title: 'Oppdatert juli 2026',
+              desc: 'Rentene er oppdatert per 19. juli 2026, basert på reelle tilbud fra norske banker. Styringsrente 4,25 % (Norges Bank, vedtak 18.06.2026).',
               color: 'bg-green-50',
               iconColor: 'text-green-600',
             },

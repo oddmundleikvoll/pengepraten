@@ -21,7 +21,7 @@ export default function SlikByggerDuSpareddel() {
             <span>Spareseddel</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
             Slik bygger du en spareseddel du faktisk følger
@@ -387,7 +387,7 @@ export default function SlikByggerDuSpareddel() {
         </p>
 
         <p className="text-sm text-gray-500 mt-8">
-          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 9. april 2026<br />
+          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 19. juli 2026<br />
           Artikkelen er ment som veiledning og utgjør ikke finansiell rådgivning. 
           Vurder din egen situasjon nøye før du tar økonomiske beslutninger.
         </p>

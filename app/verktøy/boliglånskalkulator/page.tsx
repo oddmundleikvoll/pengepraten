@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BoliglanskalkulatorClient from './BoliglanskalkulatorClient'
 
 export const metadata: Metadata = {
-  title: 'Boliglånskalkulator — Beregn månedlig kostnad for boliglån (2026)',
+  title: 'Boliglånskalkulator juli 2026 — Beregn månedlig kostnad for boliglån',
   description: 'Gratis boliglånskalkulator med nedbetalingsplan. Beregn månedlig kostnad, total lånekostnad og effektiv rente for boliglån. Oppdatert med dagens boliglånsrenter fra norske banker.',
 }
 

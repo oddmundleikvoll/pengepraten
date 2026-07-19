@@ -206,7 +206,7 @@ export default function MinBoliglanPage() {
               <div className="bg-white rounded-lg border border-orange-100 p-4 space-y-2">
                 <p className="text-sm font-medium text-gray-700 mb-2">Hvis renten synker...</p>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Til 4,5% kan du spare</span>
+                  <span className="text-gray-600">Til 5,0% kan du spare</span>
                   <span className="font-semibold text-orange-600">
                     {calc.potentialSavingsAt4_5 > 0
                       ? `~${Math.round(calc.potentialSavingsAt4_5).toLocaleString('nb-NO')} kr/år`
@@ -214,7 +214,7 @@ export default function MinBoliglanPage() {
                   </span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Til 4,0% kan du spare</span>
+                  <span className="text-gray-600">Til 4,5% kan du spare</span>
                   <span className="font-semibold text-orange-600">
                     {calc.potentialSavingsAt4_0 > 0
                       ? `~${Math.round(calc.potentialSavingsAt4_0).toLocaleString('nb-NO')} kr/år`

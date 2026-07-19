@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste forbrukslån 2026 — slik finner du det billigste lånet',
-  description: 'Forbrukslån kan koste deg tusenvis av kroner mer avhengig av hvem du låner fra. Vi viser deg hvordan du sikrer deg den beste renten.',
+  title: 'Beste forbrukslån juli 2026 — slik finner du det billigste lånet',
+  description: 'Forbrukslån kan koste deg tusenvis av kroner mer avhengig av hvem du låner fra. Vi viser deg hvordan du sikrer deg den beste renten juli 2026.',
 }
 
 export default function BesteForbrukslan2026() {
@@ -16,10 +16,10 @@ export default function BesteForbrukslan2026() {
             <span className="mx-2">/</span>
             <Link href="/lan" className="hover:text-white">Lån</Link>
             <span className="mx-2">/</span>
-            <span>Beste forbrukslån 2026</span>
+            <span>Beste forbrukslån juli 2026</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">
-            Beste forbrukslån 2026
+            Beste forbrukslån juli 2026
           </h1>
           <p className="text-primary-100 text-lg">
             Slik finner du det billigste lånet. En forskjell på bare 2% i rente 
@@ -47,40 +47,43 @@ export default function BesteForbrukslan2026() {
           <li><strong>Løpetid:</strong> Kortere løpetid gir lavere total kostnad</li>
         </ul>
 
-        <h2>Beste forbrukslån i Norge 2026</h2>
+        <h2>Beste forbrukslån i Norge juli 2026</h2>
         <p>
-          Basert på vår analyse av markedet, her er de beste alternativene:
+          Per juli 2026 er snitt på forbrukslån <strong>15,52 %</strong> (alle 160 lån på Finansportalen). Beste reelle banktilbud er Santander Refinansiering på 11,04 % effektiv (9,50 % nom.). DNB: 11,70 %, Nordea: 12,60 %, Lea Bank: 12,63 %.
+        </p>
+        <p>
+          <strong>Obs:</strong> De laveste annonserte rentene (6,00–6,90 %) er via sammenligningstjenester (Zensum, Sambla) — ikke direkte banktilbud.
         </p>
 
-        <h3>Bank Norwegian</h3>
+        <h3>Santander Refinansiering — best i 2026 (11,04 % eff)</h3>
         <p>
-          Bank Norwegian tilbyr konkurransedyktige renter, spesielt for kunder med 
-          god økonomi. De har ingen etableringsgebyr og fleksibel nedbetaling.
+          Santander tilbyr det beste forbrukslånet i juli 2026: 11,04 % effektiv rente (9,50 % nominell). For refinansiering av eksisterende dyr gjeld.
         </p>
         <p>
-          <strong>Styrker:</strong> Konkurransedyktig rente, ingen etableringsgebyr, 
-          fleksibel nedbetaling, god digital løsning.
+          <strong>Styrker:</strong> Beste rente, refinansiering opptil 500.000 kr.
         </p>
 
-        <h3>Arcadia Finans</h3>
+        <h3>DNB Forbrukslån (11,70 % eff)</h3>
         <p>
-          Arcadia Finans er en låneformidler som sender søknaden din til flere banker. 
-          Dette øker sjansen for å få beste mulig rente.
+          DNB tilbyr forbrukslån fra 11,70 % effektiv rente. Lånebeløp 10.000–500.000 kr.
         </p>
 
-        <h3>Axo Finans</h3>
+        <h3>Nordea Forbrukslån (12,60 % eff)</h3>
         <p>
-          Ligner Arcadia — en formidler som hjelper deg å sammenligne tilbud fra 
-          flere banker samtidig. Effektivt for å finne beste rente.
+          Nordea tilbyr forbrukslån fra 12,60 % effektiv rente. Lånebeløp 10.000–500.000 kr.
         </p>
 
-        <h3>Santander</h3>
+        <h3>Lea Bank Forbrukslån (12,63 % eff)</h3>
         <p>
-          Santander er en av de største aktørene på forbrukslån i Norge. De tilbyr 
-          lån fra 10.000 til 350.000 kroner med konkurransedyktige betingelser.
+          Lea Bank tilbyr forbrukslån fra 12,63 % effektiv rente. Lånebeløp 10.000–500.000 kr.
         </p>
 
-        <h2>Sammenligning av renter</h2>
+        <h3>Formidlingstjenester (Zensum, Sambla)</h3>
+        <p>
+          Formidlingstjenester sender søknaden din til flere banker. Annonserte renter fra 6,00–6,90 % er disse kanalene — ikke direkte banktilbud.
+        </p>
+
+        <h2>Sammenligning av renter (juli 2026)</h2>
         <div className="overflow-x-auto my-6">
           <table className="w-full text-sm border-collapse">
             <thead>
@@ -88,27 +91,51 @@ export default function BesteForbrukslan2026() {
                 <th className="text-left p-3 border">Bank</th>
                 <th className="text-left p-3 border">Nominell rente</th>
                 <th className="text-left p-3 border">Effektiv rente</th>
-                <th className="text-left p-3 border">Etableringsgebyr</th>
+                <th className="text-left p-3 border">Type</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="p-3 border font-medium">Bank Norwegian</td>
-                <td className="p-3 border">7,90% - 19,90%</td>
-                <td className="p-3 border">8,4% - 21,8%</td>
-                <td className="p-3 border">0 kr</td>
+                <td className="p-3 border font-medium">⭐ Santander Refinansiering</td>
+                <td className="p-3 border">9,50 %</td>
+                <td className="p-3 border text-green-700 font-bold">11,04 %</td>
+                <td className="p-3 border">Refinansiering 10-500k</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border font-medium">Santander</td>
-                <td className="p-3 border">7,90% - 19,90%</td>
-                <td className="p-3 border">8,4% - 21,8%</td>
-                <td className="p-3 border">950 kr</td>
+                <td className="p-3 border font-medium">DNB Forbrukslån</td>
+                <td className="p-3 border">~10,5 %</td>
+                <td className="p-3 border">11,70 %</td>
+                <td className="p-3 border">Forbrukslån 10-500k</td>
               </tr>
               <tr>
-                <td className="p-3 border font-medium">Komplett Bank</td>
-                <td className="p-3 border">8,90% - 21,90%</td>
-                <td className="p-3 border">9,4% - 24,0%</td>
-                <td className="p-3 border">0 kr</td>
+                <td className="p-3 border font-medium">Nordea Forbrukslån</td>
+                <td className="p-3 border">~11,5 %</td>
+                <td className="p-3 border">12,60 %</td>
+                <td className="p-3 border">Forbrukslån 10-500k</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border font-medium">Lea Bank Forbrukslån</td>
+                <td className="p-3 border">~11,5 %</td>
+                <td className="p-3 border">12,63 %</td>
+                <td className="p-3 border">Forbrukslån 10-500k</td>
+              </tr>
+              <tr>
+                <td className="p-3 border font-medium">Santander Forbrukslån</td>
+                <td className="p-3 border">~10,8 %</td>
+                <td className="p-3 border">12,69 %</td>
+                <td className="p-3 border">Forbrukslån 10-500k</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border font-medium">Uno Finans</td>
+                <td className="p-3 border">12,20 %</td>
+                <td className="p-3 border">12,71 %</td>
+                <td className="p-3 border">Forbrukslån 10-500k</td>
+              </tr>
+              <tr>
+                <td className="p-3 border font-medium">Snitt alle lån (Finansportalen)</td>
+                <td className="p-3 border">–</td>
+                <td className="p-3 border font-bold">15,52 %</td>
+                <td className="p-3 border">Markedet totalt</td>
               </tr>
             </tbody>
           </table>
@@ -142,19 +169,17 @@ export default function BesteForbrukslan2026() {
         </p>
 
         <div className="bg-primary-50 rounded-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">Vår anbefaling</h3>
+          <h3 className="font-bold text-norsk-dark mb-2">Vår anbefaling (juli 2026)</h3>
           <p className="text-gray-700">
-            Start med å søke via en låneformidler som <strong>Arcadia Finans</strong> eller 
-            <strong>Axo Finans</strong>. De sender søknaden din til flere banker samtidig, 
-            slik at du kan sammenligne tilbud og velge det beste. Husk å sjekke den effektive 
-            renten — den inkluderer alle gebyrer.
+            Beste direkte banktilbud er <strong>Santander Refinansiering 11,04 % effektiv</strong>. DNB, Nordea og Lea Bank ligger mellom 11,7–12,7 %.
+            Du kan sjekke formidlingstjenester (Zensum, Sambla) for å samle tilbud, men husk at rentene på 6–6,90 % er rene formidlingskanaler — ikke direkte banktilbud.
           </p>
         </div>
 
         <p className="text-sm text-gray-500 mt-8">
-          Sist oppdatert: 1. februar 2026. Rentene er veiledende og kan endres. 
-          Din faktiske rente avhenger av din økonomiske situasjon. Sjekk alltid 
-          bankens egne nettsider for gjeldende vilkår.
+          Sist oppdatert: 19. juli 2026. Rentene er veiledende og kan endres.
+          Din faktiske rente avhenger av din økonomiske situasjon. Sjekk alltid
+          bankenes egne nettsider for gjeldende vilkår.
         </p>
       </article>
     </>

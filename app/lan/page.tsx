@@ -5,8 +5,8 @@ import { getArticlesByPillar } from '@/lib/articles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Forbrukslån — Sammenlign og finn det billigste lånet 2026',
-  description: 'Finn det billigste forbrukslånet i Norge. Sammenlign renter, gebyrer og betingelser. Lær om refinansiering og hvordan du kan spare penger på gjelden din.',
+  title: 'Forbrukslån — Sammenlign og finn det billigste lånet juli 2026',
+  description: 'Finn det billigste forbrukslånet i Norge juli 2026. Sammenlign renter, gebyrer og betingelser. Lær om refinansiering og hvordan du kan spare penger på gjelden din.',
 }
 
 export default function LanPage() {

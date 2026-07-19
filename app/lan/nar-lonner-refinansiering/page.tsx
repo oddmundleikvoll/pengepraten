@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Når lønner det seg å refinansiere? Komplett guide 2026',
+  title: 'Når lønner det seg å refinansiere? Komplett guide juli 2026',
   description: 'Lær når refinansiering er lønnsomt og når det ikke er det. Vi forklarer regnestykket og viser deg hvor mye du kan spare på å samle gjelden.',
   keywords: ['refinansiering', 'samle lån', 'kredittkortgjeld', 'forbrukslån', 'gjeldskonsolidering', 'spare penger'],
 }
@@ -21,7 +21,7 @@ export default function NarLonnerRefinansiering() {
             <span>Når lønner refinansiering seg</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-4xl font-black mb-4">
             Når lønner det seg å refinansiere?
@@ -271,10 +271,10 @@ export default function NarLonnerRefinansiering() {
           umiddelbart. Ikke la pengene stå på konto — fristelsen til å bruke dem kan bli for stor.
         </p>
 
-        <h2>Beste banker for refinansiering i 2026</h2>
+        <h2>Beste banker for refinansiering juli 2026</h2>
         <p>
-          De fleste banker som tilbyr forbrukslån tilbyr også refinansiering. 
-          Her er noen populære valg:
+          De fleste banker som tilbyr forbrukslån tilbyr også refinansiering.
+          Her er noen populære valg per juli 2026:
         </p>
 
         <div className="overflow-x-auto my-6">
@@ -283,40 +283,46 @@ export default function NarLonnerRefinansiering() {
               <tr className="bg-gray-50">
                 <th className="text-left p-3 border">Bank</th>
                 <th className="text-left p-3 border">Nominell rente</th>
-                <th className="text-left p-3 border">Etableringsgebyr</th>
+                <th className="text-left p-3 border">Effektiv rente</th>
                 <th className="text-left p-3 border">Styrker</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="p-3 border font-medium">Bank Norwegian</td>
-                <td className="p-3 border">7,90% - 19,90%</td>
-                <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">Ingen gebyrer, fleksibel</td>
+                <td className="p-3 border font-medium">⭐ Santander Refinansiering</td>
+                <td className="p-3 border">9,50 %</td>
+                <td className="p-3 border text-green-700 font-bold">11,04 %</td>
+                <td className="p-3 border">Beste rente i juli 2026</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border font-medium">Arcadia Finans</td>
-                <td className="p-3 border">Varierer</td>
-                <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">Formidler til flere banker</td>
+                <td className="p-3 border font-medium">DNB</td>
+                <td className="p-3 border">~10,5 %</td>
+                <td className="p-3 border">11,70 %</td>
+                <td className="p-3 border">Storbank, trygg</td>
               </tr>
               <tr>
-                <td className="p-3 border font-medium">Santander</td>
-                <td className="p-3 border">7,90% - 19,90%</td>
-                <td className="p-3 border">950 kr</td>
-                <td className="p-3 border">Erfaren aktør, fleksibel</td>
+                <td className="p-3 border font-medium">Morrow Bank</td>
+                <td className="p-3 border">10,75 %</td>
+                <td className="p-3 border">~12,3 %</td>
+                <td className="p-3 border">Digital, rask</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border font-medium">Komplett Bank</td>
-                <td className="p-3 border">8,90% - 21,90%</td>
-                <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">Rask saksbehandling</td>
+                <td className="p-3 border font-medium">Nordea</td>
+                <td className="p-3 border">~11,5 %</td>
+                <td className="p-3 border">12,60 %</td>
+                <td className="p-3 border">Storbank</td>
+              </tr>
+              <tr>
+                <td className="p-3 border font-medium">Lea Bank</td>
+                <td className="p-3 border">~11,5 %</td>
+                <td className="p-3 border">12,63 %</td>
+                <td className="p-3 border">Digital, konkurransedyktig</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p className="text-sm text-gray-500">
-          Merk: Rentene er veiledende per april 2026. Din faktiske rente avhenger av din økonomiske situasjon.
+          Merk: Rentene er veiledende per juli 2026. Typisk rente uten sikkerhet 9–16 %. Med pant i bolig 5–8 %. Din faktiske rente avhenger av din økonomiske situasjon.
         </p>
 
         <h2>Oppsummering: Skal du refinansiere?</h2>
@@ -368,11 +374,11 @@ export default function NarLonnerRefinansiering() {
         <ul>
           <li>Forbrukerrådet: Guide til refinansiering</li>
           <li>Finanstilsynet: Retningslinjer for lån og kreditt</li>
-          <li>Bankenes egne nettsider (oppdatert april 2026)</li>
+          <li>Bankenes egne nettsider (oppdatert juli 2026)</li>
         </ul>
 
         <p className="text-sm text-gray-500 mt-8">
-          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 9. april 2026
+          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 19. juli 2026
           <br />
           Informasjonen er generell og utgjør ikke finansiell rådgivning. Vurder din 
           egen situasjon nøye før du refinansierer. Artikkelen inneholder annonselenker.

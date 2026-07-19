@@ -4,8 +4,8 @@ import { getArticlesByPillar } from '@/lib/articles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kredittkort — Sammenlign beste kort i Norge 2026',
-  description: 'Sammenligning av alle populære kredittkort i Norge. Finn kortet med best cashback, reiseforsikring og lavest rente. Oppdatert for 2026.',
+  title: 'Kredittkort — Sammenlign beste kort i Norge juli 2026',
+  description: 'Sammenligning av alle populære kredittkort i Norge juli 2026. Finn kortet med best cashback, reiseforsikring og lavest rente.',
 }
 
 export default function KredittkortPage() {
@@ -61,10 +61,10 @@ export default function KredittkortPage() {
               <h3 className="font-bold text-norsk-dark mb-4">Populære kredittkort</h3>
               <ul className="space-y-3 text-sm">
                 {[
-                  'Bank Norwegian kredittkort',
-                  'Komplett Bank Mastercard',
-                  'SAS EuroBonus Premium',
-                  'Trumf Visa',
+                  'TF Bank Mastercard',
+                  'DNB Mastercard',
+                  'Coop Mastercard',
+                  'Morrow Bank Mastercard',
                 ].map((card) => (
                   <li key={card} className="flex items-center gap-2 text-gray-700">
                     <span className="w-1.5 h-1.5 bg-primary-500 rounded-full" />
@@ -79,7 +79,7 @@ export default function KredittkortPage() {
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Rentefri periode</span>
-                  <span className="font-medium">Opptil 45 dager</span>
+                  <span className="font-medium">Opptil 50 dager</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Årsavgift</span>
@@ -87,7 +87,7 @@ export default function KredittkortPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Nominell rente</span>
-                  <span className="font-medium">15-25%</span>
+                  <span className="font-medium">18,9-24,9%</span>
                 </div>
               </div>
             </div>

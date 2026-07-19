@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'IPS 2026: Alt du trenger å vite om Individuell Pensjonssparing',
-  description: 'IPS (Individuell Pensjonssparing) gir deg skattefradrag + fond-avkastning. Lær alt om hvordan det fungerer, hvem det passer for, og hvordan du kommer i gang.',
+  title: 'IPS juli 2026: Alt du trenger å vite om Individuell Pensjonssparing',
+  description: 'IPS (Individuell Pensjonssparing) gir deg skattefradrag + fond-avkastning. Lær alt om hvordan det fungerer, hvem det passer for, og hvordan du kommer i gang. Maks innskudd 25.000 kr/år.',
 }
 
 export default function IPSGuide() {
@@ -23,7 +23,7 @@ export default function IPSGuide() {
             IPS 2026: Alt du trenger å vite om Individuell Pensjonssparing
           </h1>
           <p className="text-indigo-200 text-xl max-w-2xl">
-            IPS er en av Norges mest underspilte spareformer. Med skattefradrag pluss fond-avkastning kan du få 26-40% av pengene tilbake fra staten — før du tjener en eneste krone.
+            IPS er en av Norges mest underspilte spareformer. Med skattefradrag pluss fond-avkastning kan du få 22 % av pengene tilbake fra staten — og nytt i 2026 er maks innskudd økt til 25.000 kr/år.
           </p>
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function IPSGuide() {
             <span className="text-xl">→</span> Visste du?
           </h3>
           <p className="text-gray-800 text-lg">
-            Spar <strong>2.000 kr/måned</strong> i IPS og få <strong>26-40% avkastning</strong> bare i skattefradrag. Det betyr at staten gir deg 6.000-9.600 kroner i året tilbake — før fondet ditt har vokst en eneste krone.
+            Spar <strong>2.000 kr/måned</strong> i IPS og få <strong>22 % skattefradrag</strong> på hele beløpet. Maks innskudd er nå <strong>25.000 kr/år</strong> (opp fra 15.000), som gir deg 5.500 kr i skattefradrag hvert år.
           </p>
         </div>
 
@@ -55,30 +55,30 @@ export default function IPSGuide() {
             <span>📖</span> Hvordan fungerer IPS? Enkelt forklart
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            IPS fungerer slik: du setter inn penger på en IPS-konto (eller fondsparingskonto med IPS-status), og hvert innskudd gir deg <strong>26% skattefradrag</strong> (inntektsavhengig, se forklaring under).
+            IPS fungerer slik: du setter inn penger på en IPS-konto (eller fondsparingskonto med IPS-status), og hvert innskudd gir deg <strong>22% skattefradrag</strong> (opp til 5.500 kr/år på maks innskudd 25.000 kr).
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Pengene kan plasseres i fond — aksjefond, indeksfond, obligasjonsfond — akkurat som med vanlig fondsparing. Men i motsetning til vanlig sparing, trekkes skattefradraget fra skatten din.
           </p>
 
           <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-6 text-white mb-6">
-            <h3 className="font-bold text-indigo-200 mb-4 uppercase text-sm tracking-wide">Skattesystemet i IPS</h3>
+            <h3 className="font-bold text-indigo-200 mb-4 uppercase text-sm tracking-wide">IPS i 2026</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">26%</div>
-                <div className="text-indigo-200 text-sm">Grunnfradrag (skatt 22%)</div>
+                <div className="text-3xl font-black mb-1">22%</div>
+                <div className="text-indigo-200 text-sm">Skattefradrag (alminnelig inntekt)</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">28%</div>
-                <div className="text-indigo-200 text-sm">Mellomtrinn (skatt 22%)</div>
+                <div className="text-3xl font-black mb-1">25.000 kr</div>
+                <div className="text-indigo-200 text-sm">Maks innskudd per år (NY 2026)</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">40%</div>
-                <div className="text-indigo-200 text-sm">Øvre trinn (skatt 22%)</div>
+                <div className="text-3xl font-black mb-1">5.500 kr</div>
+                <div className="text-indigo-200 text-sm">Maks skattefradrag per år</div>
               </div>
             </div>
             <p className="text-indigo-200 text-sm mt-4 text-center">
-              Fradragene avhenger av inntekten din. Høy inntekt = høyere fradragssats.
+              Fradraget er 22 % av innbetalt beløp — opp til 5.500 kr/år.
             </p>
           </div>
 
@@ -102,8 +102,8 @@ export default function IPSGuide() {
                 <span className="font-bold text-gray-900">24.000 kr</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                <span className="text-gray-700">Skattefradrag (26-40%):</span>
-                <span className="font-bold text-indigo-700">+ 6.240 - 9.600 kr</span>
+                <span className="text-gray-700">Skattefradrag (22 %):</span>
+                <span className="font-bold text-indigo-700">+ 5.280 kr</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
                 <span className="text-gray-700">Fondavkastning (~7%):</span>
@@ -111,7 +111,7 @@ export default function IPSGuide() {
               </div>
               <div className="flex justify-between items-center py-2 bg-indigo-50 rounded-lg px-3 py-3">
                 <span className="font-bold text-indigo-800">Din reelle kostnad etter skatt:</span>
-                <span className="font-black text-indigo-800 text-lg">~8.400-13.200 kr</span>
+                <span className="font-black text-indigo-800 text-lg">~18.720 kr</span>
               </div>
             </div>
           </div>
@@ -206,13 +206,13 @@ export default function IPSGuide() {
               <tbody>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="p-4 font-semibold">Skattefradrag</td>
-                  <td className="p-4 bg-indigo-50 font-bold text-indigo-700">26-40%</td>
-                  <td className="p-4 bg-green-50 font-bold text-green-700">26% (10%)</td>
+                  <td className="p-4 bg-indigo-50 font-bold text-indigo-700">22 %</td>
+                  <td className="p-4 bg-green-50 font-bold text-green-700">10 %</td>
                   <td className="p-4 text-gray-500">Ingen</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <td className="p-4 font-semibold">Maksimalt per år</td>
-                  <td className="p-4 bg-indigo-50 font-semibold">40.000 kr</td>
+                  <td className="p-4 bg-indigo-50 font-semibold">25.000 kr</td>
                   <td className="p-4 bg-green-50 font-semibold">27.500 kr</td>
                   <td className="p-4">Ubegrenset</td>
                 </tr>
@@ -347,23 +347,23 @@ export default function IPSGuide() {
             <span>🧮</span> Langsiktig eksempel: 20 års IPS-sparing
           </h2>
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white mb-6">
-            <h3 className="font-bold text-indigo-400 mb-4">10.000 kr/måned i IPSfond over 20 år</h3>
+            <h3 className="font-bold text-indigo-400 mb-4">2.000 kr/måned i IPS-fond over 20 år</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between py-2 border-b border-gray-700">
                 <span className="text-gray-300">Ditt totale innskudd:</span>
-                <span className="font-semibold">2.400.000 kr</span>
+                <span className="font-semibold">480.000 kr</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-700">
-                <span className="text-gray-300">Skattefradrag mottatt (30% snitt):</span>
-                <span className="font-bold text-green-400">+ 720.000 kr</span>
+                <span className="text-gray-300">Skattefradrag mottatt (22 %):</span>
+                <span className="font-bold text-green-400">+ 105.600 kr</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-700">
                 <span className="text-gray-300">Fondavkastning (~7%):</span>
-                <span className="font-bold text-green-400">+ ~1.900.000 kr</span>
+                <span className="font-bold text-green-400">+ ~520.000 kr</span>
               </div>
               <div className="flex justify-between py-2 font-bold bg-green-600/20 rounded px-3 py-3">
                 <span className="text-green-400">Total verdi ved pensjon:</span>
-                <span className="font-black text-green-400 text-lg">~5.000.000 kr</span>
+                <span className="font-black text-green-400 text-lg">~1.100.000 kr</span>
               </div>
             </div>
           </div>
@@ -498,7 +498,7 @@ export default function IPSGuide() {
         </section>
 
         <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 15. april 2026. IPS-regler og skattesatser kan endres. Sjekk med Skatteetaten eller en finansrådgiver for oppdatert informasjon. Investering i fond innebærer risiko.
+          Sist oppdatert: 19. juli 2026. IPS-regler og skattesatser kan endres. Sjekk med Skatteetaten eller en finansrådgiver for oppdatert informasjon. Investering i fond innebærer risiko.
         </p>
       </article>
     </>

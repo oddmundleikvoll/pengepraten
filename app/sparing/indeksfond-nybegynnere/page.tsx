@@ -398,7 +398,7 @@ export default function IndeksfondNybegynnere() {
         </section>
 
         <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 15. april 2026. Fond og markeder kan endre seg. Investering innebærer risiko, og du kan tape pengene dine. Søk profesjonell rådgivning ved usikkerhet.
+          Sist oppdatert: 19. juli 2026. Fond og markeder kan endre seg. Investering innebærer risiko, og du kan tape pengene dine. Søk profesjonell rådgivning ved usikkerhet.
         </p>
       </article>
     </>

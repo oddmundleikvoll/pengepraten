@@ -40,12 +40,12 @@ export default function SamleLanPage() {
             {/* Quick stats */}
             <div className="shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 min-w-[260px]">
               <div className="text-sm font-semibold text-green-200 mb-3">Typisk sparing</div>
-              <div className="text-5xl font-black text-amber-300 mb-1">12.000</div>
+              <div className="text-5xl font-black text-amber-300 mb-1">15.000</div>
               <div className="text-green-200 text-sm mb-4">kr/år ved 200.000 kr gjeld</div>
               <div className="space-y-2">
                 {[
-                  { label: 'Før', value: '14–22% rente' },
-                  { label: 'Etter', value: '7–10% rente' },
+                  { label: 'Før', value: '15,5–22% rente' },
+                  { label: 'Etter', value: '11–12% rente' },
                   { label: 'Tidsbruk', value: '15 minutter' },
                 ].map(item => (
                   <div key={item.label} className="flex justify-between text-sm">

@@ -5,8 +5,8 @@ import { getArticlesByPillar } from '@/lib/articles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Boliglån — Alt du trenger å vite om boligfinansiering 2026',
-  description: 'Lær alt om boliglån i Norge. Sammenlign boliglånsrenter, forstå forskjellen mellom boliglån og forbrukslån, og finn ut hvor mye boliglån du kan få.',
+  title: 'Boliglån juli 2026 — Alt du trenger å vite om boligfinansiering',
+  description: 'Lær alt om boliglån i Norge juli 2026. Sammenlign boliglånsrenter, forstå forskjellen mellom boliglån og forbrukslån, og finn ut hvor mye boliglån du kan få.',
 }
 
 export default function BoliglanPage() {
@@ -37,13 +37,13 @@ export default function BoliglanPage() {
             <div className="bg-white rounded-xl border border-gray-100 p-8">
               <h2 className="text-2xl font-bold text-norsk-dark mb-4">Boliglån vs. forbrukslån</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Et boliglån er et lån der banken har pant i boligen din som sikkerhet. 
-                Det betyr lavere rente — typisk 3-6% nominelt — fordi banken kan tvangsselge 
+                Et boliglån er et lån der banken har pant i boligen din som sikkerhet.
+                Det betyr lavere rente — typisk 4,5–5,30 % nominelt (SSB mai 2026) — fordi banken kan tvangsselge
                 eiendommen hvis du ikke betaler.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Et <Link href="/lan" className="text-primary-600 hover:underline font-medium">forbrukslån</Link> derimot, 
-                har ingen sikkerhet. Rentene er derfor høyere — gjerne 7-20% — fordi banken 
+                Et <Link href="/lan" className="text-primary-600 hover:underline font-medium">forbrukslån</Link> derimot,
+                har ingen sikkerhet. Rentene er derfor høyere — gjerne 11–16 % — fordi banken
                 tar større risiko.
               </p>
               <div className="bg-primary-50 rounded-lg p-4 mt-6">
@@ -72,13 +72,13 @@ export default function BoliglanPage() {
             <div className="bg-white rounded-xl border border-gray-100 p-8">
               <h2 className="text-2xl font-bold text-norsk-dark mb-4">Rentene på boliglån</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Boliglånsrenten består av en nominell rente + gebyrer = effektiv rente. 
-                Den nominelle renten er det banken oppgir først, men den effektive renten 
+                Boliglånsrenten består av en nominell rente + gebyrer = effektiv rente.
+                Den nominelle renten er det banken oppgir først, men den effektive renten
                 inkluderer alle kostnader og gir et mer realistisk bilde.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Per 2026 ligger boliglånsrentene typisk på 3-6% nominelt. Bankene har 
-                konkurranse, så det kan lønne seg å forhandle — spesielt hvis du har 
+                Per juli 2026 ligger snitt på 5,08–5,13 % (SSB), og beste tilbud er 4,78 % effektiv (Landkreditt Bank). Bankene har
+                konkurranse, så det kan lønne seg å forhandle — spesielt hvis du har
                 god inntekt og lav gjeld.
               </p>
             </div>
@@ -114,11 +114,11 @@ export default function BoliglanPage() {
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Nominell rente</span>
-                  <span className="font-medium">3-6%</span>
+                  <span className="font-medium">~5,08 %</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Effektiv rente</span>
-                  <span className="font-medium">3,5-7%</span>
+                  <span className="font-medium">~5,13–5,33 %</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Løpetid</span>

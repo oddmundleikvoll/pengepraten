@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Slik setter du opp en spareplan som faktisk fungerer i 2026',
+  title: 'Slik setter du opp en spareplan som faktisk fungerer juli 2026',
   description: 'Lær hvordan du bygger en spareplan som holder seg over tid. Vi guider deg gjennom målsetting, automatisk sparing og de beste sparekontoene.',
   keywords: ['spareplan', 'sparing', 'sparekonto', 'BSU', 'nødfond', 'automatisk sparing', 'sparemål'],
 }
@@ -21,7 +21,7 @@ export default function SpareplanGuide() {
             <span>Spareplan guide</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-4xl font-black mb-4">
             Slik setter du opp en spareplan som faktisk fungerer
@@ -160,7 +160,7 @@ export default function SpareplanGuide() {
         </p>
         <p>
           <strong>Anbefaling:</strong> Høyrentekonto med 3-12 måneders binding. 
-          Rente: 3,5-4,5% (per april 2026).
+          Rente: 4,80–4,85 % (per juli 2026).
         </p>
 
         <h3>Langsiktig sparing (5+ år): BSU, IPS eller fond</h3>
@@ -301,7 +301,7 @@ export default function SpareplanGuide() {
         </ul>
 
         <p className="text-sm text-gray-500 mt-8">
-          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 9. april 2026
+          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 19. juli 2026
           <br />
           Artikkelen er ment som veiledning og utgjør ikke finansiell rådgivning. 
           Vurder din egen situasjon nøye før du tar økonomiske beslutninger.

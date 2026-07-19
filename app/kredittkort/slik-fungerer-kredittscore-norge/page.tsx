@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kredittscore i Norge 2026: Slik fungerer det og slik forbedrer du den | Pengepraten',
+  title: 'Kredittscore i Norge juli 2026: Slik fungerer det og slik forbedrer du den | Pengepraten',
   description: 'Kredittscore påvirker hvilken rente du får på lån og kredittkort. Lær hvordan kredittscore beregnes i Norge, hvordan du får tak i din egen score, og 7 konkrete tiltak for å forbedre den.',
   keywords: ['kredittscore', 'kredittvurdering', 'kredittsjekk', 'gjeldsregisteret', 'lånesøknad', 'rente', 'personlig økonomi Norge'],
 }
@@ -21,13 +21,13 @@ export default function KredittscoreNorge() {
             <span>Kredittscore i Norge</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
             Kredittscore i Norge
           </h1>
           <p className="text-blue-100 text-xl max-w-2xl">
-            Hvordan det fungerer — og hvordan du forbedrer din egen. Alt du trenger å vite for 2026.
+            Hvordan det fungerer — og hvordan du forbedrer din egen. Alt du trenger å vite juli 2026.
           </p>
         </div>
       </section>
@@ -441,7 +441,7 @@ export default function KredittscoreNorge() {
         </p>
 
         <p className="text-sm text-gray-500 mt-8">
-          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 9. april 2026<br />
+          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 19. juli 2026<br />
           Artikkelen er ment som veiledning og utgjør ikke finansiell rådgivning. 
           Vurder din egen situasjon nøye før du tar økonomiske beslutninger.
         </p>

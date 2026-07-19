@@ -117,7 +117,7 @@ export default function HomePage() {
               { value: '50+', label: 'Artikler og guider' },
               { value: '2.000+', label: 'Nedlastede maler' },
               { value: 'Gratis', label: 'Alle verktøy' },
-              { value: '2026', label: 'Oppdatert for 2026' },
+              { value: 'Juli', label: 'Oppdatert juli 2026' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl md:text-3xl font-black text-primary-600">{stat.value}</div>

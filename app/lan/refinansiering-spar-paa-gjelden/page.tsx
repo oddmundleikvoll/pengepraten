@@ -22,8 +22,10 @@ export default function RefinansieringPage() {
             Refinansiering: Spar på gjelden
           </h1>
           <p className="text-primary-100 text-lg">
-            Slik sparer du tusenvis på gjelden din. Med riktig refinansiering 
+            Slik sparer du tusenvis på gjelden din. Med riktig refinansiering
             kan du kutte månedlige utgifter og betale ned raskere.
+            <br />
+            <strong>Typisk rente juli 2026:</strong> Nytt forbrukslån uten sikkerhet 9–16 %, med pant i bolig 5–8 %.
           </p>
         </div>
       </section>
@@ -53,7 +55,7 @@ export default function RefinansieringPage() {
           Refinansiering er spesielt verdt å vurdere hvis du har:
         </p>
         <ul>
-          <li>Kredittkortgjeld med høy rente (ofte 20-25%)</li>
+          <li>Kredittkortgjeld med høy rente (ofte 20–28 %)</li>
           <li>Smålån med høye effektive renter</li>
           <li>Forbrukslån fra flere år tilbake med høyere rente enn dagens marked</li>
           <li>Flere lån som er tungvint å holde styr på</li>
@@ -64,23 +66,23 @@ export default function RefinansieringPage() {
           La oss si du har følgende gjeld:
         </p>
         <ul>
-          <li>Kredittkortgjeld: 50.000 kr med 22% rente</li>
-          <li>Forbrukslån 1: 100.000 kr med 15% rente</li>
-          <li>Forbrukslån 2: 75.000 kr med 18% rente</li>
+          <li>Kredittkortgjeld: 50.000 kr med 22–28 % rente</li>
+          <li>Forbrukslån 1: 100.000 kr med 15,52 % rente (snitt markedet)</li>
+          <li>Forbrukslån 2: 75.000 kr med 18 % rente</li>
         </ul>
         <p>
-          <strong>Totalt:</strong> 225.000 kr i gjeld med vektet rente på ca. 17%.
+          <strong>Totalt:</strong> 225.000 kr i gjeld med vektet rente på ca. 18 %.
         </p>
         <p>
-          Hvis du refinansierer til ett lån med 9% rente:
+          Hvis du refinansierer til ett lån med 11,04 % rente (Santander Refinansiering, juli 2026):
         </p>
         <ul>
-          <li><strong>Før:</strong> Ca. 38.000 kr i årlige renter</li>
-          <li><strong>Etter:</strong> Ca. 20.000 kr i årlige renter</li>
-          <li><strong>Årlig sparing:</strong> 18.000 kr</li>
+          <li><strong>Før:</strong> Ca. 40.000 kr i årlige renter</li>
+          <li><strong>Etter:</strong> Ca. 24.800 kr i årlige renter</li>
+          <li><strong>Årlig sparing:</strong> ~15.200 kr</li>
         </ul>
         <p>
-          Over 5 år sparer du altså rundt <strong>90.000 kroner</strong> — penger 
+          Over 5 år sparer du altså rundt <strong>76.000 kroner</strong> — penger
           som heller kan gå til nedbetaling eller andre formål.
         </p>
 
@@ -150,8 +152,8 @@ export default function RefinansieringPage() {
         </div>
 
         <p className="text-sm text-gray-500 mt-8">
-          Sist oppdatert: 10. februar 2026. Informasjonen er generell og utgjør 
-          ikke finansiell rådgivning. Vurder din egen situasjon nøye før du 
+          Sist oppdatert: 19. juli 2026. Informasjonen er generell og utgjør
+          ikke finansiell rådgivning. Vurder din egen situasjon nøye før du
           refinansierer.
         </p>
       </article>

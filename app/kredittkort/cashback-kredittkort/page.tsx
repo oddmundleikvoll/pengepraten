@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cashback Kredittkort: Få opptil 4% tilbake på alt du handler i 2026',
-  description: 'Lær alt om cashback kredittkort i Norge. Hvordan de fungerer, hvilke som gir mest tilbake, og hvordan du maksimerer cashback i 2026.',
+  title: 'Cashback Kredittkort juli 2026: Få opptil 1 % tilbake på alt du handler',
+  description: 'Lær alt om cashback kredittkort i Norge juli 2026. Hvordan de fungerer, hvilke som gir mest tilbake, og hvordan du maksimerer cashback.',
 }
 
 export default function CashbackKredittkort() {
@@ -20,7 +20,7 @@ export default function CashbackKredittkort() {
             <span>Cashback Kredittkort</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
-            Cashback Kredittkort: Få opptil 4% tilbake på alt du handler i 2026
+            Cashback Kredittkort: Få opptil 1 % tilbake på alt du handler i juli 2026
           </h1>
           <p className="text-blue-100 text-xl max-w-2xl">
             Få penger tilbake på hvert kjøp. Vi viser deg hvordan cashback fungerer og hvilke norske kort som gir mest.
@@ -35,7 +35,7 @@ export default function CashbackKredittkort() {
         <div className="bg-blue-50 rounded-2xl p-6 border-l-4 border-accent-600">
           <p className="text-lg text-gray-800 leading-relaxed">
             <span className="text-2xl mr-2">💳</span>
-            <strong>Cashback-kredittkort</strong> gir deg en prosentandel tilbake av alt du bruker. Det er som å få rabatt på alt du kjøper — bare at pengene kommer tilbake på kontoen din. I 2026 tilbyr flere norske banker opptil 4% cashback på enkelte kategorier.
+            <strong>Cashback-kredittkort</strong> gir deg en prosentandel tilbake av alt du bruker. Det er som å få rabatt på alt du kjøper — bare at pengene kommer tilbake på kontoen din. I juli 2026 er beste cashback 1 % i Coop-butikker (Coop Mastercard) eller 0,5 % generelt (Bank Norwegian).
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export default function CashbackKredittkort() {
             <span>📊</span> Oversikt over norske cashback-kort
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Her er de mest populære cashback-kortene i Norge i 2026:
+            Her er de mest populære cashback-kortene i Norge juli 2026:
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
@@ -100,39 +100,39 @@ export default function CashbackKredittkort() {
               </thead>
               <tbody>
                 <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">Apple Card (Nordea)</td>
-                  <td className="p-4 text-accent-700 font-bold">1-3%</td>
-                  <td className="p-4">Ingen</td>
-                  <td className="p-4 text-red-600 font-bold">249 kr/år</td>
-                  <td className="p-4 text-sm text-gray-600">Apple Pay bonus</td>
+                  <td className="p-4 font-semibold">⭐ Coop Mastercard</td>
+                  <td className="p-4 text-accent-700 font-bold">1 %</td>
+                  <td className="p-4">2.500 kr/år i Coop</td>
+                  <td className="p-4 text-green-600 font-bold">0 kr</td>
+                  <td className="p-4 text-sm text-gray-600">1 % ekstra bonus i Coop</td>
                 </tr>
                 <tr className="bg-blue-50 border-b border-gray-100">
-                  <td className="p-4 font-semibold">Eurocard Corporate</td>
-                  <td className="p-4 text-accent-700 font-bold">Opptil 2%</td>
-                  <td className="p-4">Bedrift</td>
+                  <td className="p-4 font-semibold">Bank Norwegian</td>
+                  <td className="p-4 text-accent-700 font-bold">0,5 %</td>
+                  <td className="p-4">750 kr/år</td>
                   <td className="p-4 text-green-600 font-bold">0 kr</td>
-                  <td className="p-4 text-sm text-gray-600">Reiseforsikring</td>
+                  <td className="p-4 text-sm text-gray-600">CashPoints på alle kjøp</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
-                  <td className="p-4 font-semibold">SAS Mastercard</td>
-                  <td className="p-4 text-accent-700 font-bold">1-2%</td>
-                  <td className="p-4">EuroBonus-poeng</td>
-                  <td className="p-4 text-red-600 font-bold">395 kr/år</td>
-                  <td className="p-4 text-sm text-gray-600">EuroBonus-poeng</td>
+                  <td className="p-4 font-semibold">DNB Mastercard</td>
+                  <td className="p-4 text-accent-700 font-bold">1 %</td>
+                  <td className="p-4">Maks 50.000 kr/år</td>
+                  <td className="p-4 text-green-600 font-bold">0 kr</td>
+                  <td className="p-4 text-sm text-gray-600">1 % drivstoff + 6 % elbillading</td>
                 </tr>
                 <tr className="bg-blue-50 border-b border-gray-100">
-                  <td className="p-4 font-semibold">REITAN银行卡</td>
-                  <td className="p-4 text-accent-700 font-bold">Opptil 2%</td>
-                  <td className="p-4">Reise/handel</td>
+                  <td className="p-4 font-semibold">TF Bank Mastercard</td>
+                  <td className="p-4 text-accent-700 font-bold">Ingen</td>
+                  <td className="p-4">–</td>
                   <td className="p-4 text-green-600 font-bold">0 kr</td>
-                  <td className="p-4 text-sm text-gray-600">Clibs-poeng</td>
+                  <td className="p-4 text-sm text-gray-600">Beste allround, ingen bonus</td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="p-4 font-semibold">Coop Mastercard</td>
-                  <td className="p-4 text-accent-700 font-bold">Opptil 2%</td>
-                  <td className="p-4">Coop</td>
+                  <td className="p-4 font-semibold">Morrow Bank Mastercard</td>
+                  <td className="p-4 text-accent-700 font-bold">Ingen</td>
+                  <td className="p-4">–</td>
                   <td className="p-4 text-green-600 font-bold">0 kr</td>
-                  <td className="p-4 text-sm text-gray-600">Coop-poeng</td>
+                  <td className="p-4 text-sm text-gray-600">Lengst rentefri (50 dager)</td>
                 </tr>
               </tbody>
             </table>
@@ -289,24 +289,26 @@ export default function CashbackKredittkort() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-3xl">🍎</span>
+                <span className="text-3xl">🛒</span>
                 <h3 className="font-bold text-gray-900">Mat og dagligvare</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">Coop Mastercard og reisekort med bonus på matkjøp</p>
+              <p className="text-gray-600 text-sm mb-3">Coop Mastercard gir 1 % ekstra i alle Coop-butikker</p>
               <div className="text-sm">
-                <span className="font-bold text-green-700">Opptil 2% tilbake</span>
-                <span className="text-gray-400"> på matvarer</span>
+                <span className="font-bold text-green-700">1 % tilbake</span>
+                <span className="text-gray-400"> på Coop-kjøp (maks 2.500 kr/år)</span>
               </div>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-accent-50 rounded-xl p-5 border border-blue-200">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">⛽</span>
-                <h3 className="font-bold text-gray-900">Drivstoff</h3>
+                <h3 className="font-bold text-gray-900">Drivstoff og elbil</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">REITAN银行卡 og Norwegian Bank har god cashback på drivstoff</p>
+              <p className="text-gray-600 text-sm mb-3">DNB Mastercard har ekstra bonus på drivstoff og elbillading</p>
               <div className="text-sm">
-                <span className="font-bold text-blue-700">Opptil 2-3% tilbake</span>
-                <span className="text-gray-400"> på drivstoff</span>
+                <span className="font-bold text-blue-700">1 % drivstoff</span>
+                <span className="text-gray-400"> / </span>
+                <span className="font-bold text-blue-700">6 % elbillading</span>
+                <span className="text-gray-400"> (samlet maks 50k/år)</span>
               </div>
             </div>
             <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-5 border border-amber-200">
@@ -314,21 +316,21 @@ export default function CashbackKredittkort() {
                 <span className="text-3xl">✈️</span>
                 <h3 className="font-bold text-gray-900">Reise og fly</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">SAS Mastercard og Eurocard gir bonuspoeng på reise</p>
+              <p className="text-gray-600 text-sm mb-3">SAS Mastercard og Bank Norwegian har bonuspoeng på reise</p>
               <div className="text-sm">
-                <span className="font-bold text-amber-700">Opptil 4% tilbake</span>
-                <span className="text-gray-400"> på reisebestilling</span>
+                <span className="font-bold text-amber-700">EuroBonus-poeng</span>
+                <span className="text-gray-400"> med SAS Mastercard</span>
               </div>
             </div>
             <div className="bg-gradient-to-br from-purple-50 to-fuchsia-50 rounded-xl p-5 border border-purple-200">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">🛍️</span>
-                <h3 className="font-bold text-gray-900">Shopping online</h3>
+                <h3 className="font-bold text-gray-900">Generelt forbruk</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">Apple Card og spesialtilbud fra norske banker</p>
+              <p className="text-gray-600 text-sm mb-3">Bank Norwegian gir 0,5 % cashback på alle kjøp</p>
               <div className="text-sm">
-                <span className="font-bold text-purple-700">Opptil 3% tilbake</span>
-                <span className="text-gray-400"> på netthandel</span>
+                <span className="font-bold text-purple-700">0,5 % tilbake</span>
+                <span className="text-gray-400"> på alt (maks 750 kr/år)</span>
               </div>
             </div>
           </div>
@@ -500,7 +502,7 @@ export default function CashbackKredittkort() {
         </section>
 
         <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 12. april 2026. Cashback-satser og vilkår kan endres. Sjekk alltid bankens nettsider for oppdaterte betingelser.
+          Sist oppdatert: 19. juli 2026. Cashback-satser og vilkår kan endres. Sjekk alltid bankenes nettsider for oppdaterte betingelser.
         </p>
       </article>
     </>

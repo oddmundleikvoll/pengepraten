@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste BSU rente 2026 — Sammenlign 15+ banker og få 10% skattefradrag | Pengepraten',
-  description: 'Sammenlign beste BSU-rente 2026. Se hvilke banker som gir høyest rente på BSU-konto. Få 10% skattefradrag + opptil 4,15% rente. Sjekk din BSU-rente nå.',
+  title: 'Beste BSU rente juli 2026 — Sammenlign 15+ banker og få 10% skattefradrag | Pengepraten',
+  description: 'Sammenlign beste BSU-rente juli 2026. Se hvilke banker som gir høyest rente på BSU-konto. Få 10% skattefradrag + opptil 6,40% rente. Sjekk din BSU-rente nå.',
 }
 
 const FAQ_SCHEMA = {
@@ -47,7 +47,7 @@ const FAQ_SCHEMA = {
       "name": "Hvilken bank har best BSU-rente?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Per juni 2026 har LO Favør den høyeste BSU-renten med 4,15%. Sandnes Sparebank følger med 3,90%, og SpareBank 1 Nord-Norge tilbyr 3,88%. Rentene varierer mellom bankene, så det lønner seg å sammenligne."
+        "text": "Per juli 2026 er Tolga-Os Sparebank på topp med 6,50 %. Handelsbanken Fordel følger med 6,40 % (krever medlemskap). Uten krav er Fana Sparebank best med 6,30 %. Storbanker: DNB 6,35 %, Nordea 6,25 %. Rentene varierer, så det lønner seg å sammenligne."
       }
     },
     {
@@ -63,7 +63,7 @@ const FAQ_SCHEMA = {
       "name": "Hva er forskjellen på BSU og høyrentekonto?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BSU er kun for personer under 34 år som ikke eier bolig, og gir 10% skattefradrag i tillegg til rente. Høyrentekonto er tilgjengelig for alle, har ingen binding, men gir ikke skattefradrag. Høyrentekonto kan ha høyere rente (opptil 5,20%), mens BSU har lavere rente men bedre totalavkastning pga skattefradraget."
+        "text": "BSU er kun for personer under 34 år som ikke eier bolig, og gir 10% skattefradrag i tillegg til rente. Høyrentekonto er tilgjengelig for alle, har ingen binding, men gir ikke skattefradrag. Høyrentekonto kan ha høyere nominell rente (opptil 4,85%), mens BSU har opptil 6,40% rente pluss skattefradrag — og totalt sett langt bedre avkastning."
       }
     },
     {
@@ -87,7 +87,7 @@ const FAQ_SCHEMA = {
       "name": "Må jeg betale skatt på BSU-rente?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, renteinntekter på BSU er skattepliktige på samme måte som annen rente. Skattesatsen er 25% (2026). Skattefradraget på 10% av innskuddet kommer i tillegg, og er langt mer verdt enn skatten på renten."
+        "text": "Ja, renteinntekter på BSU er skattepliktige på samme måte som annen rente. Skattesatsen er 22 % (2026). Skattefradraget på 10% av innskuddet kommer i tillegg, og er langt mer verdt enn skatten på renten."
       }
     },
     {
@@ -130,7 +130,7 @@ export default function BSUGuide() {
           </nav>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm">
             <span className="text-amber-300">📅</span>
-            <span>Sist oppdatert: juni 2026</span>
+            <span>Sist oppdatert: juli 2026</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
             BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom
@@ -337,26 +337,26 @@ export default function BSUGuide() {
               </thead>
               <tbody>
                 {[
-                  { bank: 'DNB', rate: 3.95, note: 'Norges største bank, god digital løsning' },
-                  { bank: 'Nordea', rate: 3.60, note: 'Stor bank, god kundeservice' },
-                  { bank: 'SpareBank 1', rate: 3.80, note: 'Lokale banker med sterkt engasjement' },
-                  { bank: 'Danske Bank', rate: 3.55, note: 'Nordisk storbank' },
-                  { bank: 'Sbanken', rate: 3.75, note: 'Digital bank, ingen gebyrer' },
-                  { bank: 'Handelsbanken', rate: 3.50, note: 'Svensk bank, solid løsning' },
-                  { bank: 'SpareBank 1 SR-Bank', rate: 3.85, note: 'Største SpareBank 1-bank' },
-                  { bank: 'SpareBank 1 SMN', rate: 3.82, note: 'Trøndelagsbanken' },
-                  { bank: 'SpareBank 1 Nord-Norge', rate: 3.88, note: 'Nord-Norges største bank' },
-                  { bank: 'SpareBank 1 Østlandet', rate: 3.78, note: 'Østlandssparingen' },
-                  { bank: 'Sandnes Sparebank', rate: 3.90, note: 'Lokal bank på Sør-Vestlandet' },
-                  { bank: 'Helgeland Sparebank', rate: 3.85, note: 'Nordland' },
-                  { bank: 'Lillehammer Sparebank', rate: 3.72, note: 'Lokal bank på Oppland' },
-                  { bank: 'Totens Sparebank', rate: 3.68, note: 'Lokal bank' },
-                  { bank: 'Romsdal Sparebank', rate: 3.80, note: 'Møre og Romsdal' },
-                  { bank: 'LO Favør', rate: 4.15, note: 'Forbundets medlemmer — best i test' },
-                  { bank: 'Marine Group', rate: 3.95, note: 'For ansatte i sjøfart/næring' },
-                  { bank: 'KLP', rate: 3.70, note: 'For kommuneansatte' },
-                  { bank: 'Storebrand', rate: 3.65, note: 'Liv og bank' },
-                  { bank: 'Nytter AS', rate: 3.50, note: 'Alternative banker' },
+                  { bank: 'Tolga-Os Sparebank', rate: 6.50, note: 'Regional bank — markedets beste' },
+                  { bank: 'Handelsbanken Fordel', rate: 6.40, note: 'Krever medlemskap i Akademikerne/Tekna' },
+                  { bank: 'DNB', rate: 6.35, note: 'Norges største bank, god digital løsning' },
+                  { bank: 'LO Favør', rate: 6.35, note: 'Forbundets medlemmer — beste blant de store' },
+                  { bank: 'Fana Sparebank', rate: 6.30, note: 'Landsdekkende digital — beste uten krav' },
+                  { bank: 'Nordea', rate: 6.25, note: 'Stor bank, god kundeservice' },
+                  { bank: 'Sogn Sparebank', rate: 6.25, note: 'Vestlandsbank' },
+                  { bank: 'Sbanken (DNB)', rate: 6.10, note: 'Digital bank, ingen gebyrer' },
+                  { bank: 'SpareBank 1 SR-Bank', rate: 5.95, note: 'Største SpareBank 1-bank' },
+                  { bank: 'SpareBank 1 SMN', rate: 5.90, note: 'Trøndelagsbanken' },
+                  { bank: 'SpareBank 1 Nord-Norge', rate: 5.90, note: 'Nord-Norges største bank' },
+                  { bank: 'SpareBank 1 Østlandet', rate: 5.85, note: 'Østlandssparingen' },
+                  { bank: 'Sandnes Sparebank', rate: 5.95, note: 'Lokal bank på Sør-Vestlandet' },
+                  { bank: 'Helgeland Sparebank', rate: 5.85, note: 'Nordland' },
+                  { bank: 'Lillehammer Sparebank', rate: 5.75, note: 'Lokal bank på Oppland' },
+                  { bank: 'Totens Sparebank', rate: 5.65, note: 'Lokal bank' },
+                  { bank: 'Romsdal Sparebank', rate: 5.80, note: 'Møre og Romsdal' },
+                  { bank: 'Danske Bank', rate: 5.55, note: 'Nordisk storbank' },
+                  { bank: 'Handelsbanken (standard)', rate: 5.40, note: 'Svensk bank, solid løsning' },
+                  { bank: 'Storebrand', rate: 5.50, note: 'Liv og bank' },
                 ].map((item, i) => (
                   <tr key={item.bank} className={i % 2 === 0 ? 'bg-white border-b border-gray-100' : 'bg-green-50 border-b border-gray-100'}>
                     <td className="p-4 font-semibold text-gray-900">{item.bank}</td>
@@ -369,7 +369,7 @@ export default function BSUGuide() {
             </table>
           </div>
           <div className="bg-green-50 rounded-xl p-4 text-sm text-gray-600">
-            <strong>Merk:</strong> Rentene er veiledende per juni 2026 og kan endres. Sjekk bankens nettsider for oppdaterte tall.
+            <strong>Merk:</strong> Rentene er veiledende per juli 2026 og kan endres. Sjekk bankenes nettsider for oppdaterte tall. Gjennomsnitt topp 5: ~6,40 %.
           </div>
         </section>
 
@@ -432,8 +432,8 @@ export default function BSUGuide() {
               </ul>
               <div className="mt-4 bg-white rounded-lg p-3 border border-emerald-200">
                 <div className="text-xs text-gray-500 mb-1">Topp rente akkurat nå</div>
-                <div className="text-2xl font-black text-emerald-700">5,20%</div>
-                <div className="text-xs text-gray-500">Sbanken — ingen binding</div>
+                <div className="text-2xl font-black text-emerald-700">4,85%</div>
+                <div className="text-xs text-gray-500">Pareto Bank — 12 mnd binding</div>
               </div>
             </div>
           </div>
@@ -767,13 +767,13 @@ export default function BSUGuide() {
 
         <div className="flex items-center justify-between pt-8 border-t">
           <p className="text-sm text-gray-400">
-            Sist oppdatert: juni 2026. Skattefradragssats og BSU-regler kan endres. Sjekk Skatteetaten for oppdaterte regler.
+            Sist oppdatert: 19. juli 2026. Skattefradragssats og BSU-regler kan endres. Sjekk Skatteetaten for oppdaterte regler.
           </p>
           <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
             </svg>
-            Sist oppdatert: juni 2026
+            Sist oppdatert: juli 2026
           </span>
         </div>
       </article>

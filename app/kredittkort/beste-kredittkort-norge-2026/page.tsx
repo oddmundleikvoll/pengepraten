@@ -2,9 +2,9 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste kredittkort for norske forbrukere i 2026 — komplett guide',
-  description: 'Vi har testet og sammenlignet de beste kredittkortene i Norge. Se hvilket kort som passer deg best — med cashback, reiseforsikring og uten årsavgift.',
-  keywords: ['beste kredittkort', 'kredittkort 2026', 'cashback', 'reiseforsikring', 'Bank Norwegian', 'Trumf Visa', 'Komplett Bank'],
+  title: 'Beste kredittkort for norske forbrukere juli 2026 — komplett guide',
+  description: 'Vi har testet og sammenlignet de beste kredittkortene i Norge juli 2026. Se hvilket kort som passer deg best — med cashback, reiseforsikring og uten årsavgift.',
+  keywords: ['beste kredittkort', 'kredittkort 2026', 'cashback', 'reiseforsikring', 'TF Bank', 'DNB Mastercard', 'Morrow Bank'],
 }
 
 export default function BesteKredittkortNorge2026() {
@@ -18,13 +18,13 @@ export default function BesteKredittkortNorge2026() {
             <span className="mx-2">/</span>
             <Link href="/kredittkort" className="hover:text-white">Kredittkort</Link>
             <span className="mx-2">/</span>
-            <span>Beste kredittkort Norge 2026</span>
+            <span>Beste kredittkort Norge juli 2026</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-4xl font-black mb-4">
-            Beste kredittkort for norske forbrukere i 2026
+            Beste kredittkort for norske forbrukere juli 2026
           </h1>
           <p className="text-accent-100 text-lg">
             Vår komplette guide til alle populære kredittkort. Sammenlign cashback, 
@@ -90,217 +90,153 @@ export default function BesteKredittkortNorge2026() {
           <li>Vår vurdering (1-5 stjerner)</li>
         </ul>
 
-        <h2>Topp 5 kredittkort i Norge 2026</h2>
+        <h2>Topp 5 kredittkort i Norge juli 2026</h2>
 
-        <h3>1. Bank Norwegian kredittkort — Beste allrounder</h3>
+        <h3>1. TF Bank Mastercard — Beste allround i 2026</h3>
         <p>
-          Bank Norwegian har lenge vært en favoritt blant norske forbrukere, og det er 
-          ikke vanskelig å forstå hvorfor. Dette kortet scorer høyt på nesten alle områder.
+          TF Bank Mastercard topper listen i juli 2026. Ingen årsavgift, 22,65 % nominell rente og 43 rentefrie dager. Lavt valutapåslag på bare 1,75 %.
         </p>
 
         <div className="bg-gray-50 rounded-xl p-6 my-6">
-          <h4 className="font-bold text-norsk-dark mb-3">Bank Norwegian — Fakta</h4>
+          <h4 className="font-bold text-norsk-dark mb-3">TF Bank Mastercard — Fakta</h4>
           <ul className="space-y-2">
             <li><strong>Årsavgift:</strong> 0 kr</li>
-            <li><strong>Cashback:</strong> Opptil 1% (CashPoints)</li>
-            <li><strong>Reiseforsikring:</strong> Ja, inkludert</li>
-            <li><strong>Valutapåslag:</strong> 0% (gebyrfritt i utlandet)</li>
-            <li><strong>Nominell rente:</strong> 17,99%</li>
-            <li><strong>Kredittgrense:</strong> Opptil 150.000 kr</li>
+            <li><strong>Cashback:</strong> Ingen</li>
+            <li><strong>Reiseforsikring:</strong> Ja (via Bank Norwegian-partnerskap)</li>
+            <li><strong>Valutapåslag:</strong> 1,75 %</li>
+            <li><strong>Nominell rente:</strong> 22,65 % (~26 % effektiv)</li>
+            <li><strong>Rentefrie dager:</strong> 43</li>
           </ul>
         </div>
 
         <p>
-          <strong>Fordeler:</strong> Ingen årsavgift, opptil 1% cashback i form av 
-          CashPoints som kan brukes på flyreiser, solid reiseforsikring som dekker 
-          avbestilling, sykdom og forsinket bagasje, og gebyrfrie uttak i utlandet.
-        </p>
-        <p>
-          <strong>Ulemper:</strong> CashPoints er mest verdt hvis du faktisk skal reise 
-          med Norwegian. Krever god kredittscore for å bli godkjent.
+          <strong>Fordeler:</strong> Ingen årsavgift, lavt valutapåslag, bra rentefri-periode.
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-xl p-6 my-8">
           <h3 className="font-bold text-norsk-dark mb-2">💡 Vårt tips</h3>
           <p className="text-gray-700">
-            Bank Norwegian er det beste valget for de fleste nordmenn. Det kombinerer 
-            null årsavgift med god cashback og reiseforsikring. Har du bare ett kredittkort, 
+            TF Bank er det beste valget for de fleste nordmenn i juli 2026. Det kombinerer
+            null årsavgift med bra rente og solid reiseforsikring. Har du bare ett kredittkort,
             bør det være dette.
           </p>
         </div>
 
-        <h3>2. Trumf Visa — Beste for dagligvarehandel</h3>
+        <h3>2. DNB Mastercard — Lavest rente blant standardkort</h3>
         <p>
-          Handler du mye på Kiwi, Meny, Spar eller Joker? Da er Trumf Visa et opplagt valg. 
-          Du får dobbel bonus i Trumf-butikkene.
+          DNB Mastercard tilbyr kun 19,2 % nominell rente (lavest blant kredittkort uten krav om medlemskap). 0 kr årsavgift og 45 rentefrie dager. Bonus: 1 % drivstoffrabatt og 6 % elbillading.
         </p>
 
         <div className="bg-gray-50 rounded-xl p-6 my-6">
-          <h4 className="font-bold text-norsk-dark mb-3">Trumf Visa — Fakta</h4>
+          <h4 className="font-bold text-norsk-dark mb-3">DNB Mastercard — Fakta</h4>
           <ul className="space-y-2">
             <li><strong>Årsavgift:</strong> 0 kr</li>
-            <li><strong>Cashback:</strong> 1% (2% i Trumf-butikker)</li>
-            <li><strong>Reiseforsikring:</strong> Nei</li>
-            <li><strong>Valutapåslag:</strong> 1,75%</li>
-            <li><strong>Nominell rente:</strong> 18,50%</li>
-            <li><strong>Kredittgrense:</strong> Opptil 100.000 kr</li>
+            <li><strong>Cashback:</strong> 1 % drivstoff, 6 % elbillading</li>
+            <li><strong>Reiseforsikring:</strong> Ja</li>
+            <li><strong>Valutapåslag:</strong> Standard</li>
+            <li><strong>Nominell rente:</strong> 19,2 % (~22 % effektiv)</li>
+            <li><strong>Rentefrie dager:</strong> 45</li>
           </ul>
         </div>
 
+        <h3>3. Coop Mastercard — Best for dagligvarer</h3>
         <p>
-          <strong>Fordeler:</strong> Ingen årsavgift, 2% bonus på dagligvarer hos 
-          NorgesGruppens butikker (Kiwi, Meny, Spar, Joker), 1% på alt annet. Bonusen 
-          kan brukes på dagligvarer — noe alle trenger.
-        </p>
-        <p>
-          <strong>Ulemper:</strong> Ingen reiseforsikring, valutapåslag på utenlandske kjøp. 
-          Begrenset kredittgrense sammenlignet med andre kort.
-        </p>
-
-        <h3>3. Komplett Bank Mastercard — Beste for netthandel</h3>
-        <p>
-          Komplett Bank tilbyr et konkurransedyktig kredittkort som spesielt passer 
-          for deg som handler mye på nettet.
+          Handler du i Coop? Da gir dette kortet 1 % ekstra bonus på alle kjøp i Coop-butikker (maks 2.500 kr/år). 0 kr årsavgift, 23 % nominell rente, 45 rentefrie dager.
         </p>
 
         <div className="bg-gray-50 rounded-xl p-6 my-6">
-          <h4 className="font-bold text-norsk-dark mb-3">Komplett Bank — Fakta</h4>
+          <h4 className="font-bold text-norsk-dark mb-3">Coop Mastercard — Fakta</h4>
           <ul className="space-y-2">
             <li><strong>Årsavgift:</strong> 0 kr</li>
-            <li><strong>Cashback:</strong> Opptil 1%</li>
-            <li><strong>Reiseforsikring:</strong> Ja, inkludert</li>
-            <li><strong>Valutapåslag:</strong> 1,75%</li>
-            <li><strong>Nominell rente:</strong> 17,99%</li>
-            <li><strong>Kredittgrense:</strong> Opptil 150.000 kr</li>
+            <li><strong>Bonus:</strong> 1 % i Coop (maks 2.500 kr/år)</li>
+            <li><strong>Reiseforsikring:</strong> Ja</li>
+            <li><strong>Valutapåslag:</strong> 1,75 %</li>
+            <li><strong>Nominell rente:</strong> 23 %</li>
+            <li><strong>Rentefrie dager:</strong> 45</li>
           </ul>
         </div>
 
+        <h3>4. Morrow Bank Mastercard — Lengst rentefri</h3>
         <p>
-          <strong>Fordeler:</strong> Ingen årsavgift, god cashback, reiseforsikring inkludert, 
-          fleksible betalingsmuligheter. God integrasjon med Komplett-økosystemet.
-        </p>
-        <p>
-          <strong>Ulemper:</strong> Valutapåslag gjør det dyrt å bruke i utlandet. 
-          Cashback-systemet er litt mindre fleksibelt enn Bank Norwegians.
-        </p>
-
-        <h3>4. SAS EuroBonus Premium — Beste for reiseentusiaster</h3>
-        <p>
-          For deg som reiser mye med SAS, kan dette kortet være gull verdt. Du tjener 
-          EuroBonus-poeng på alle kjøp, og får tilgang til lounger og andre reisefordeler.
+          Morrow Bank Mastercard tilbyr hele 50 rentefrie dager — lengst i Norge i 2026. 0 kr årsavgift, gebyrfrie uttak. Rente er 24,9 % (høy), men den lange rentefrie perioden oppveier for mange.
         </p>
 
         <div className="bg-gray-50 rounded-xl p-6 my-6">
-          <h4 className="font-bold text-norsk-dark mb-3">SAS EuroBonus Premium — Fakta</h4>
+          <h4 className="font-bold text-norsk-dark mb-3">Morrow Bank — Fakta</h4>
           <ul className="space-y-2">
-            <li><strong>Årsavgift:</strong> 1.995 kr</li>
-            <li><strong>Bonus:</strong> EuroBonus-poeng (opptil 20 poeng per 100 kr)</li>
-            <li><strong>Reiseforsikring:</strong> Ja, omfattende</li>
-            <li><strong>Valutapåslag:</strong> 0%</li>
-            <li><strong>Nominell rente:</strong> 17,99%</li>
-            <li><strong>Kredittgrense:</strong> Opptil 250.000 kr</li>
+            <li><strong>Årsavgift:</strong> 0 kr</li>
+            <li><strong>Cashback:</strong> Nei (gammelt Komplett-program avviklet)</li>
+            <li><strong>Reiseforsikring:</strong> Ja</li>
+            <li><strong>Valutapåslag:</strong> Standard</li>
+            <li><strong>Nominell rente:</strong> 24,9 %</li>
+            <li><strong>Rentefrie dager:</strong> ⭐ 50 (lengst)</li>
           </ul>
         </div>
 
+        <h3>5. Instabank Kredittkort — Lavest nominell rente</h3>
         <p>
-          <strong>Fordeler:</strong> Høy poengopptjening, tilgang til Star Alliance-lounger 
-          verden over, gebyrfri bruk i utlandet, omfattende reiseforsikring, prioritert 
-          boarding på SAS-flyvninger.
-        </p>
-        <p>
-          <strong>Ulemper:</strong> Høy årsavgift (nesten 2.000 kr). Lønner seg først 
-          hvis du reiser mye. Poengene er mest verdt på flyreiser, ikke kontanter.
-        </p>
-
-        <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 my-8">
-          <h3 className="font-bold text-norsk-dark mb-2">⚠️ Viktig å huske på</h3>
-          <p className="text-gray-700">
-            SAS EuroBonus Premium lønner seg kun hvis du reiser mye — helst flere 
-            ganger i året. Med årsavgiften på 1.995 kr må du tjene inn minst dette 
-            i fordeler for at kortet skal være verdt det.
-          </p>
-        </div>
-
-        <h3>5. re:member Gold — Beste for delbetaling</h3>
-        <p>
-          Hvis du av og til trenger å delbetale større kjøp, kan re:member Gold være 
-          et godt alternativ. De tilbyr konkurransedyktig rente og fleksible nedbetalingsplaner.
+          Instabank tilbyr hele 18,9 % nominell rente — det laveste blant kredittkort i Norge i 2026. MEN: 0 rentefrie dager, så renten begynner å løpe fra dag 1. Bare egnet for nedbetaling over tid.
         </p>
 
         <div className="bg-gray-50 rounded-xl p-6 my-6">
-          <h4 className="font-bold text-norsk-dark mb-3">re:member Gold — Fakta</h4>
+          <h4 className="font-bold text-norsk-dark mb-3">Instabank — Fakta</h4>
           <ul className="space-y-2">
             <li><strong>Årsavgift:</strong> 0 kr</li>
             <li><strong>Cashback:</strong> Nei</li>
             <li><strong>Reiseforsikring:</strong> Nei</li>
-            <li><strong>Valutapåslag:</strong> 1,75%</li>
-            <li><strong>Nominell rente:</strong> 17,40% (blant de laveste)</li>
-            <li><strong>Kredittgrense:</strong> Opptil 200.000 kr</li>
+            <li><strong>Valutapåslag:</strong> 1,75 %</li>
+            <li><strong>Nominell rente:</strong> ⭐ 18,9 % (lavest)</li>
+            <li><strong>Rentefrie dager:</strong> 0 (løper fra dag 1)</li>
           </ul>
         </div>
 
-        <p>
-          <strong>Fordeler:</strong> Ingen årsavgift, lav nominell rente, mulighet for 
-          fleksibel delbetaling, god nettbank og app.
-        </p>
-        <p>
-          <strong>Ulemper:</strong> Ingen cashback eller bonus. Ingen reiseforsikring. 
-          Valutapåslag i utlandet.
-        </p>
-
-        <h2>Sammenligningstabell: Topp 5 kredittkort</h2>
+        <h2>Sammenligningstabell: Topp 5 kredittkort (juli 2026)</h2>
         <div className="overflow-x-auto my-6">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-gray-50">
                 <th className="text-left p-3 border">Kort</th>
                 <th className="text-left p-3 border">Årsavgift</th>
-                <th className="text-left p-3 border">Cashback</th>
-                <th className="text-left p-3 border">Reisefors.</th>
-                <th className="text-left p-3 border">Valuta</th>
+                <th className="text-left p-3 border">Bonus</th>
+                <th className="text-left p-3 border">Rentefri</th>
                 <th className="text-left p-3 border">Rente</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="p-3 border font-medium">Bank Norwegian</td>
+                <td className="p-3 border font-medium">TF Bank Mastercard</td>
                 <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">Opptil 1%</td>
-                <td className="p-3 border">✓</td>
-                <td className="p-3 border">0%</td>
-                <td className="p-3 border">17,99%</td>
+                <td className="p-3 border">Ingen</td>
+                <td className="p-3 border">43</td>
+                <td className="p-3 border">22,65 %</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border font-medium">Trumf Visa</td>
+                <td className="p-3 border font-medium">DNB Mastercard</td>
                 <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">1-2%</td>
-                <td className="p-3 border">✗</td>
-                <td className="p-3 border">1,75%</td>
-                <td className="p-3 border">18,50%</td>
+                <td className="p-3 border">1 % drivstoff</td>
+                <td className="p-3 border">45</td>
+                <td className="p-3 border">19,2 %</td>
               </tr>
               <tr>
-                <td className="p-3 border font-medium">Komplett Bank</td>
+                <td className="p-3 border font-medium">Coop Mastercard</td>
                 <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">Opptil 1%</td>
-                <td className="p-3 border">✓</td>
-                <td className="p-3 border">1,75%</td>
-                <td className="p-3 border">17,99%</td>
+                <td className="p-3 border">1 % i Coop</td>
+                <td className="p-3 border">45</td>
+                <td className="p-3 border">23 %</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border font-medium">SAS EuroBonus Premium</td>
-                <td className="p-3 border">1.995 kr</td>
-                <td className="p-3 border">Poeng</td>
-                <td className="p-3 border">✓</td>
-                <td className="p-3 border">0%</td>
-                <td className="p-3 border">17,99%</td>
+                <td className="p-3 border font-medium">Morrow Bank</td>
+                <td className="p-3 border">0 kr</td>
+                <td className="p-3 border">Ingen</td>
+                <td className="p-3 border">50</td>
+                <td className="p-3 border">24,9 %</td>
               </tr>
               <tr>
-                <td className="p-3 border font-medium">re:member Gold</td>
+                <td className="p-3 border font-medium">Instabank</td>
                 <td className="p-3 border">0 kr</td>
-                <td className="p-3 border">✗</td>
-                <td className="p-3 border">✗</td>
-                <td className="p-3 border">1,75%</td>
-                <td className="p-3 border">17,40%</td>
+                <td className="p-3 border">Ingen</td>
+                <td className="p-3 border">0</td>
+                <td className="p-3 border">18,9 %</td>
               </tr>
             </tbody>
           </table>
@@ -364,13 +300,13 @@ export default function BesteKredittkortNorge2026() {
           <Link href="/kredittkort/kredittkort-uten-arsavgift" className="text-primary-600 hover:underline"> kredittkort uten årsavgift</Link>.
         </p>
 
-        <h2>Oppsummering: Våre anbefalinger</h2>
+        <h2>Oppsummering: Våre anbefalinger (juli 2026)</h2>
         <ul>
-          <li><strong>For de fleste:</strong> Bank Norwegian — best allrounder uten årsavgift</li>
-          <li><strong>For dagligvarehandel:</strong> Trumf Visa — 2% bonus på Kiwi, Meny, Spar, Joker</li>
-          <li><strong>For reiseentusiaster:</strong> SAS EuroBonus Premium — hvis du reiser mye</li>
-          <li><strong>For lavest rente:</strong> re:member Gold — hvis du av og til må delbetale</li>
-          <li><strong>For netthandel:</strong> Komplett Bank — god integrasjon med nettbutikker</li>
+          <li><strong>For de fleste:</strong> TF Bank Mastercard — best allround, ingen årsavgift</li>
+          <li><strong>For dagligvarehandel:</strong> Coop Mastercard — 1 % bonus i Coop, maks 2.500 kr/år</li>
+          <li><strong>For lavest rente:</strong> Instabank — 18,9 % nominell (men 0 rentefri)</li>
+          <li><strong>For lengst rentefri:</strong> Morrow Bank Mastercard — 50 rentefrie dager</li>
+          <li><strong>For drivstoff/elbil:</strong> DNB Mastercard — 1 % drivstoff, 6 % elbillading</li>
         </ul>
 
         <div className="bg-primary-50 rounded-xl p-6 my-8">
@@ -392,11 +328,11 @@ export default function BesteKredittkortNorge2026() {
         <ul>
           <li>Forbrukerrådet: Guide til kredittkort</li>
           <li>Finanstilsynet: Retningslinjer for kredittvurdering</li>
-          <li>Bankenes egne nettsider (oppdatert april 2026)</li>
+          <li>Bankenes egne nettsider (oppdatert juli 2026)</li>
         </ul>
 
         <p className="text-sm text-gray-500 mt-8">
-          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 9. april 2026
+          <strong>Forfatter:</strong> Pengepraten | <strong>Sist oppdatert:</strong> 19. juli 2026
           <br />
           Informasjonen kan endres. Sjekk alltid bankens egne nettsider for gjeldende 
           vilkår før du søker. Artikkelen inneholder annonselenker.

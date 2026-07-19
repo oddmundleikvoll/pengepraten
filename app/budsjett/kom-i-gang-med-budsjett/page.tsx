@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kom i gang med budsjett: En komplett guide for nordmenn 2026',
+  title: 'Kom i gang med budsjett: En komplett guide for nordmenn juli 2026',
   description: 'Lær hvordan du lager et budsjett som fungerer. Vi guider deg gjennom 50/30/20-regelen, faste vs variable utgifter, og gir deg en gratis mal å starte med.',
   keywords: ['budsjett', 'personlig økonomi', '50/30/20-regelen', 'budsjettering', 'sparepenger', 'budsjettmal'],
 }
@@ -21,7 +21,7 @@ export default function KomIGangMedBudsjett() {
             <span>Kom i gang med budsjett</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
-            Oppdatert april 2026
+            Oppdatert juli 2026
           </span>
           <h1 className="text-3xl md:text-4xl font-black mb-4">
             Kom i gang med budsjett: En komplett guide for nordmenn

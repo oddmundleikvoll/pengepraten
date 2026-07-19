@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste budsjettapper for Norge 2026 — vi har testet alle',
+  title: 'Beste budsjettapper for Norge juli 2026 — vi har testet alle',
   description: 'Vi har testet de beste budsjettappene for norske forhold. Spiff, Moneypenny, Budsjett.no og flere. Finn den beste appen for din økonomi.',
 }
 
@@ -20,7 +20,7 @@ export default function BudsjettApp() {
             <span>Budsjettapper</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-black mb-4">
-            Beste budsjettapper for Norge 2026 — vi har testet alle
+            Beste budsjettapper for Norge juli 2026 — vi har testet alle
           </h1>
           <p className="text-amber-100 text-xl max-w-2xl">
             En budsjettapp er bare så god som hvor ofte du faktisk bruker den. Vi har testet de mest populære appene — her er dommen.
@@ -367,7 +367,7 @@ export default function BudsjettApp() {
               <div className="flex items-center gap-3">
                 <span className="text-2xl">💰</span>
                 <div>
-                  <h3 className="font-bold text-gray-900 group-hover:text-amber-600">Høyrentekonto 2026</h3>
+                  <h3 className="font-bold text-gray-900 group-hover:text-amber-600">Høyrentekonto juli 2026</h3>
                   <p className="text-gray-500 text-sm">Få 5,2% på sparepengene dine</p>
                 </div>
               </div>
@@ -376,7 +376,7 @@ export default function BudsjettApp() {
         </section>
 
         <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 15. april 2026. App-funksjoner og priser kan endres. Sjekk app-leverandørenes nettsider for oppdaterte opplysninger.
+          Sist oppdatert: 19. juli 2026. App-funksjoner og priser kan endres. Sjekk app-leverandørenes nettsider for oppdaterte opplysninger.
         </p>
       </article>
     </>
