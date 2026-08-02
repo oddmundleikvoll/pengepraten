@@ -9,20 +9,20 @@ export const metadata: Metadata = {
 export default function Boliglansrente2026() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-accent-700 text-white py-12">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-primary-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/boliglan" className="hover:text-white">Boliglån</Link>
-            <span className="mx-2">/</span>
-            <span>Boliglånsrente 2026</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/boliglan" className="hover:text-forest transition-colors">Boliglån</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Boliglånsrente 2026</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Boliglånsrente 2026: Komplett guide til dagens renter
           </h1>
-          <p className="text-primary-100 text-lg max-w-2xl">
+          <p className="text-ink-muted text-lg max-w-2xl leading-relaxed">
             Oppdatert oversikt over boliglånsrentene i Norge. Sammenlign banker, 
             forstå Norges Bank-politikken, og lær hvordan du forhandler deg til 
             bedre vilkår.
@@ -326,7 +326,7 @@ export default function Boliglansrente2026() {
         <div className="my-6">
           <Link
             href="/verktøy/boliglånskalkulator"
-            className="inline-flex items-center gap-2 bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             Boliglånskalkulator →
           </Link>
@@ -432,7 +432,7 @@ export default function Boliglansrente2026() {
           </p>
           <Link
             href="/verktøy/boliglånskalkulator"
-            className="inline-flex items-center gap-2 bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             Beregn din beste rente →
           </Link>

@@ -304,16 +304,16 @@ export default function SparingPage() {
             </div>
 
             {/* CTA */}
-            <div className="bg-gradient-to-br from-green-600 to-green-800 text-white rounded-xl p-8 text-center">
-              <h2 className="text-2xl font-bold mb-3">Finn din beste sparekonto</h2>
-              <p className="text-green-100 max-w-xl mx-auto mb-6">
+            <div className="invert-block rounded-xl p-8 text-center">
+              <h2 className="text-2xl font-display font-medium mb-3">Finn din beste sparekonto</h2>
+              <p className="text-ink-muted max-w-xl mx-auto mb-6">
                 Sammenlign alle høyrentekontoer i Norge og finn den som gir deg mest avkastning. 
                 Opp til 4,65% rente med innskuddsgaranti. Artikkelen inneholder annonselenker.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/sparing/hoyrentekonto"
-                  className="inline-flex items-center gap-2 bg-white text-green-700 font-bold py-3 px-6 rounded-lg hover:bg-green-50 transition-colors"
+                  className="inline-flex items-center gap-2 bg-paper text-ink font-bold py-3 px-6 rounded-md hover:bg-paper-alt transition-colors"
                 >
                   Se høyrentekontoer
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -322,7 +322,7 @@ export default function SparingPage() {
                 </Link>
                 <Link
                   href="/verktøy/sparekalkulator"
-                  className="inline-flex items-center gap-2 bg-green-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-colors"
+                  className="inline-flex items-center gap-2 bg-forest text-paper font-bold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
                 >
                   Prøv sparekalkulator
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

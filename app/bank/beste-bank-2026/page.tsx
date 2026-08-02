@@ -47,38 +47,36 @@ export default function BesteBank2026() {
 
   return (
     <>
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/3" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-200 text-sm mb-6">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/bank">Bank</Link>
-            <span className="mx-2">/</span>
-            <span className="text-white">Beste bank 2026</span>
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 md:py-20 border-b border-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/bank" className="hover:text-forest transition-colors">Bank</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Beste bank 2026</span>
           </nav>
           <div className="flex flex-col lg:flex-row gap-10 items-center">
             <div className="flex-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-forest-soft text-forest rounded-full text-sm font-semibold mb-5">
                 <span>Sist oppdatert: 2. august 2026</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-display mb-4 leading-[1.05]">
                 Beste bank i Norge{' '}
-                <span className="text-amber-300">2026</span>
+                <span className="text-forest">2026</span>
               </h1>
-              <p className="text-green-100 text-lg md:text-xl max-w-2xl leading-relaxed">
+              <p className="text-ink-muted text-lg md:text-xl max-w-2xl leading-relaxed">
                 Hvilken bank er best for deg? Vi har testet og sammenlignet{' '}
-                <strong className="text-white">20+ norske banker</strong>{' '}
+                <strong className="text-ink">20+ norske banker</strong>{' '}
                 på sparing, lån, gebyrer og digital opplevelse. Her er vinnerne.
               </p>
             </div>
             {/* Quick stats */}
-            <div className="shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 min-w-[260px]">
-              <div className="text-sm font-semibold text-green-200 mb-3">Høyeste spare-rente</div>
-              <div className="text-5xl font-black text-amber-300 mb-1">4,65%</div>
-              <div className="text-green-200 text-sm mb-4">Svea Bank / Bank Norwegian — beste for sparing</div>
+            <div className="shrink-0 bg-paper-alt rounded-2xl border border-border p-6 min-w-[260px]">
+              <div className="text-sm font-semibold text-ink-muted mb-3">Høyeste spare-rente</div>
+              <div className="text-5xl font-display font-medium text-forest mb-1">4,65%</div>
+              <div className="text-ink-muted text-sm mb-4">Svea Bank / Bank Norwegian — beste for sparing</div>
               <div className="space-y-2">
                 {[
                   { label: 'Banker testet', value: '20+' },
@@ -86,8 +84,8 @@ export default function BesteBank2026() {
                   { label: 'Innskuddsgaranti', value: '100.000 €' },
                 ].map(item => (
                   <div key={item.label} className="flex justify-between text-sm">
-                    <span className="text-green-200">{item.label}</span>
-                    <span className="font-semibold text-white">{item.value}</span>
+                    <span className="text-ink-muted">{item.label}</span>
+                    <span className="font-semibold text-ink">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -121,12 +119,12 @@ export default function BesteBank2026() {
               { category: 'Beste digitale bank', winner: 'Sbanken', why: 'Markedsledende app og nettbank. Enkel, rask og intuitiv. Alt du trenger er tilgjengelig med noen få klikk.', rate: 'Topp app', color: 'from-cyan-400 to-cyan-500', badge: 'Digital' },
               { category: 'Beste tradisjonelle bank', winner: 'DNB', why: 'Norges største bank med filialer over hele landet. Beste for deg som vil ha personlig rådgivning og fysisk tilgjengelighet.', rate: 'Størst', color: 'from-gray-400 to-gray-500', badge: 'Tradisjonell' },
             ].map(card => (
-              <div key={card.category} className={`bg-gradient-to-br ${card.color} rounded-2xl p-6 text-white relative overflow-hidden`}>
-                <div className="absolute top-3 right-3 bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded-full">{card.badge}</div>
-                <div className="text-sm font-semibold text-white/80 mb-1">{card.category}</div>
+              <div key={card.category} className="bg-paper border border-border rounded-2xl p-6 relative overflow-hidden">
+                <div className="absolute top-3 right-3 bg-forest-soft text-forest text-xs font-bold px-2 py-1 rounded-full">{card.badge}</div>
+                <div className="text-sm font-semibold text-ink-muted mb-1">{card.category}</div>
                 <div className="text-2xl font-bold mb-1">{card.winner}</div>
-                <div className="text-3xl font-black mb-3">{card.rate}</div>
-                <p className="text-white/90 text-sm leading-relaxed">{card.why}</p>
+                <div className="text-3xl font-display font-medium text-forest mb-3">{card.rate}</div>
+                <p className="text-ink-muted text-sm leading-relaxed">{card.why}</p>
               </div>
             ))}
           </div>
@@ -153,7 +151,7 @@ export default function BesteBank2026() {
           <div className="hidden md:block bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-4">
             <table className="w-full">
               <thead>
-                <tr className="bg-gradient-to-r from-gray-800 to-gray-900 text-white text-sm">
+                <tr className="bg-paper text-ink text-sm border-b border-border">
                   <th className="text-left px-6 py-4 font-bold">Bank</th>
                   <th className="text-center px-4 py-4 font-bold">Rente</th>
                   <th className="text-center px-4 py-4 font-bold">Innskuddsgaranti</th>
@@ -168,13 +166,13 @@ export default function BesteBank2026() {
                     key={bank.name}
                     className={`
                       border-b border-gray-100 last:border-0
-                      hover:bg-green-50 transition-colors group
+                      hover:bg-forest-soft transition-colors group
                       ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}
                     `}
                   >
                     <td className="px-6 py-5">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white font-black text-sm shadow-sm shrink-0">
+                        <div className="w-10 h-10 bg-forest rounded-xl flex items-center justify-center text-paper font-black text-sm shadow-sm shrink-0">
                           {bank.name.charAt(0)}
                         </div>
                         <div>
@@ -184,7 +182,7 @@ export default function BesteBank2026() {
                       </div>
                     </td>
                     <td className="px-4 py-5 text-center">
-                      <div className="inline-flex items-center gap-1 bg-green-100 text-green-700 font-black text-xl px-3 py-1.5 rounded-lg">
+                      <div className="inline-flex items-center gap-1 bg-forest-soft text-forest font-black text-xl px-3 py-1.5 rounded-md">
                         {bank.rate.toFixed(2)}%
                       </div>
                     </td>
@@ -205,7 +203,7 @@ export default function BesteBank2026() {
                         href={bank.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 bg-green-600 hover:bg-green-700 text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow-md"
+                        className="inline-flex items-center gap-1.5 bg-forest hover:bg-forest-mid text-paper font-semibold text-sm px-4 py-2 rounded-md transition-colors shadow-sm hover:shadow-md"
                       >
                         {bank.cta}
                         <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -225,7 +223,7 @@ export default function BesteBank2026() {
               <div key={bank.name} className={`rounded-xl border p-5 ${i % 2 === 0 ? 'bg-white border-gray-200' : 'bg-gray-50 border-gray-100'}`}>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white font-black text-sm shadow-sm">
+                    <div className="w-10 h-10 bg-forest rounded-xl flex items-center justify-center text-paper font-black text-sm shadow-sm">
                       {bank.name.charAt(0)}
                     </div>
                     <div>
@@ -234,7 +232,7 @@ export default function BesteBank2026() {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-black text-green-700">{bank.rate.toFixed(2)}%</div>
+                    <div className="text-2xl font-display font-medium text-forest">{bank.rate.toFixed(2)}%</div>
                     <div className="text-xs text-gray-400">effektiv rente</div>
                   </div>
                 </div>
@@ -247,7 +245,7 @@ export default function BesteBank2026() {
                   href={bank.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full block text-center bg-green-600 hover:bg-green-700 text-white font-semibold text-sm py-2.5 rounded-lg transition-colors"
+                  className="w-full block text-center bg-forest hover:bg-forest-mid text-paper font-semibold text-sm py-2.5 rounded-md transition-colors"
                 >
                   {bank.cta} →
                 </a>
@@ -289,15 +287,15 @@ export default function BesteBank2026() {
         </section>
 
         {/* CTA TIL BYTTE-BANK */}
-        <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
+        <section className="bg-paper-alt rounded-2xl p-8 border border-border">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Vurderer du å bytte bank?</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-xl font-display font-medium text-ink mb-2">Vurderer du å bytte bank?</h3>
+              <p className="text-ink-muted leading-relaxed">
                 Vi har laget en komplett guide til hvordan du bytter bank steg for steg. Fra research til overføring av lønnskonto og automatiske trekk.
               </p>
             </div>
-            <Link href="/bank/bytte-bank" className="shrink-0 inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-green-900 font-extrabold px-6 py-3 rounded-xl shadow-md transition-all hover:scale-105">
+            <Link href="/bank/bytte-bank" className="shrink-0 inline-flex items-center gap-2 bg-amber-warm hover:opacity-90 text-paper font-extrabold px-6 py-3 rounded-md shadow-md transition-all">
               Les guiden: Slik bytter du bank →
             </Link>
           </div>
@@ -322,10 +320,10 @@ export default function BesteBank2026() {
           <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-gray-800 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Kriterie</th>
-                  <th className="text-left p-4 font-bold bg-green-600">Digital bank</th>
-                  <th className="text-left p-4 font-bold bg-gray-600">Tradisjonell bank</th>
+                  <th className="text-left p-4 font-bold bg-forest text-paper">Digital bank</th>
+                  <th className="text-left p-4 font-bold bg-ink text-paper">Tradisjonell bank</th>
                 </tr>
               </thead>
               <tbody>
@@ -386,7 +384,7 @@ export default function BesteBank2026() {
               <details key={i} className="group bg-white rounded-xl border border-gray-200 overflow-hidden">
                 <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-bold text-gray-800 hover:text-green-600 transition-colors list-none">
                   <span className="flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-green-100 text-green-700 text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                    <span className="w-6 h-6 rounded-full bg-forest-soft text-forest text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                     {faq.q}
                   </span>
                   <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -402,19 +400,17 @@ export default function BesteBank2026() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-10 text-white text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4" />
+        <section className="invert-block rounded-2xl p-10 text-center relative overflow-hidden">
           <div className="relative">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">Klar til å finne din beste bank?</h2>
-            <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-display font-medium mb-4">Klar til å finne din beste bank?</h2>
+            <p className="text-paper/80 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
               Bruk tabellen over for å sammenligne, eller les vår guide om hvordan du bytter bank steg for steg.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/bank/bytte-bank" className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-green-900 font-extrabold px-8 py-4 rounded-xl text-lg shadow-lg transition-all hover:scale-105">
+              <Link href="/bank/bytte-bank" className="inline-flex items-center justify-center gap-2 bg-amber-warm hover:opacity-90 text-paper font-extrabold px-8 py-4 rounded-md text-lg shadow-lg transition-all">
                 Slik bytter du bank →
               </Link>
-              <Link href="/sparing/hoyrentekonto" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-bold px-6 py-4 rounded-xl transition-colors border border-white/30">
+              <Link href="/sparing/hoyrentekonto" className="inline-flex items-center justify-center gap-2 bg-paper/10 hover:bg-paper/20 text-paper font-bold px-6 py-4 rounded-md transition-colors border border-paper/30">
                 Se beste høyrentekontoer
               </Link>
             </div>

@@ -11,20 +11,20 @@ export const metadata: Metadata = {
 export default function BudsjettApp() {
   return (
     <>
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-amber-500 to-orange-600 text-white py-16">
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-amber-100 text-sm mb-4">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/budsjett">Budsjett</Link>
-            <span className="mx-2">/</span>
-            <span>Budsjettapper</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/budsjett" className="hover:text-forest transition-colors">Budsjett</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Budsjettapper</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Beste budsjettapper for Norge 2026 — vi har testet alle
           </h1>
-          <p className="text-amber-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             En budsjettapp er bare så god som hvor ofte du faktisk bruker den. Vi har testet de mest populære appene — her er dommen.
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function BudsjettApp() {
           {/* SPIFF */}
           <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-4">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center text-white text-2xl flex-shrink-0">S</div>
+              <div className="w-16 h-16 bg-forest rounded-xl flex items-center justify-center text-paper text-2xl flex-shrink-0">S</div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <h3 className="font-bold text-xl text-gray-900">Spiff</h3>
@@ -106,7 +106,7 @@ export default function BudsjettApp() {
           {/* MONEYPENNY */}
           <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-4">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center text-white text-2xl flex-shrink-0">M</div>
+              <div className="w-16 h-16 bg-forest rounded-xl flex items-center justify-center text-paper text-2xl flex-shrink-0">M</div>
               <div className="flex-1">
                 <h3 className="font-bold text-xl text-gray-900 mb-1">Moneypenny</h3>
                 <p className="text-gray-500 text-sm mb-3">moneypenny.no</p>
@@ -129,7 +129,7 @@ export default function BudsjettApp() {
           {/* BUDSJETT.NO */}
           <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-4">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center text-white text-2xl flex-shrink-0">B</div>
+              <div className="w-16 h-16 bg-forest rounded-xl flex items-center justify-center text-paper text-2xl flex-shrink-0">B</div>
               <div className="flex-1">
                 <h3 className="font-bold text-xl text-gray-900 mb-1">Budsjett.no</h3>
                 <p className="text-gray-500 text-sm mb-3">budsjett.no</p>
@@ -310,22 +310,22 @@ export default function BudsjettApp() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span></span> Slik får du mest ut av en budsjettapp
           </h2>
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-200">
+          <div className="bg-paper-alt rounded-xl p-6 border border-border">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
                 <p className="text-gray-700"><strong>Sett av 30 minutter</strong> den første helgen til å sette opp appen ordentlig. Kategorisering tar litt tid i starten, men lønner seg.</p>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
                 <p className="text-gray-700"><strong>Sjekk ukentlig</strong> — etter et par uker vet du hvor pengene dine går. Det er selve poenget.</p>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
                 <p className="text-gray-700"><strong>Sett et konkret månedsmål</strong> — for eksempel "ikke bruke mer enn 8.000 kr på mat denne måneden."</p>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
                 <p className="text-gray-700"><strong>Automatiser sparingen</strong> — sett opp fast månedlig overføring til høyrentekonto rett etter lønning. Du sparer lettere når du "ikke ser" pengene.</p>
               </div>
             </div>
@@ -333,16 +333,16 @@ export default function BudsjettApp() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-black mb-4">Klar til å ta kontroll over forbruket ditt?</h2>
-          <p className="text-amber-100 mb-6 max-w-2xl mx-auto">
+        <section className="invert-block rounded-2xl p-8 text-center">
+          <h2 className="text-2xl font-display font-medium mb-4">Klar til å ta kontroll over forbruket ditt?</h2>
+          <p className="text-ink-muted mb-6 max-w-2xl mx-auto">
             En budsjettapp er bare verktøyet — innsatsen er din. Men med rett app på rett måte, kan du spare titusenvis i året.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/budsjett/kom-i-gang-med-budsjett" className="inline-block bg-white text-amber-600 font-bold px-6 py-3 rounded-lg hover:bg-amber-50 transition-colors">
+            <Link href="/budsjett/kom-i-gang-med-budsjett" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
               Kom i gang med budsjett
             </Link>
-            <Link href="/sparing/hoyrentekonto" className="inline-block bg-amber-400 text-amber-900 font-bold px-6 py-3 rounded-lg hover:bg-amber-300 transition-colors">
+            <Link href="/sparing/hoyrentekonto" className="inline-block bg-amber-warm text-paper font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">
               Sett sparepengene på høyrentekonto
             </Link>
           </div>

@@ -13,20 +13,20 @@ export default function SlikByggerDuSpareddel() {
       {/* Hero */}
       <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-100 text-sm mb-4">
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
             <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
             <span className="mx-2 text-border-strong">/</span>
             <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
             <span className="mx-2 text-border-strong">/</span>
             <span className="text-ink">Spareseddel</span>
           </nav>
-          <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-xs font-semibold bg-forest-soft text-forest rounded-full mb-4">
             Oppdatert april 2026
           </span>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Slik bygger du en spareseddel du faktisk følger
           </h1>
-          <p className="text-green-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             Flest nordmenn har et sparemål — men få når det. Her er oppskriften som faktisk fungerer, med konkrete verktøy du kan bruke i dag.
           </p>
         </div>
@@ -40,10 +40,10 @@ export default function SlikByggerDuSpareddel() {
         </p>
 
         {/* Visual: Spareillustrasjon */}
-        <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 my-8 text-center border border-green-100">
+        <div className="bg-forest-soft rounded-2xl p-8 my-8 text-center border border-forest/30">
           <div className="text-5xl mb-3"></div>
-          <p className="text-green-800 font-bold text-lg">Et klart mål + et system = resultat</p>
-          <p className="text-green-600 text-sm mt-1">Spareseddelen er ditt system. Målet er din destinasjon.</p>
+          <p className="text-forest font-display font-medium text-lg">Et klart mål + et system = resultat</p>
+          <p className="text-ink-muted text-sm mt-1">Spareseddelen er ditt system. Målet er din destinasjon.</p>
         </div>
 
         <h2>Hvorfor mislykkes de fleste med sparing?</h2>
@@ -252,9 +252,9 @@ export default function SlikByggerDuSpareddel() {
           Her er det viktigste tipset i hele guiden, og det tar to minutter å sette opp:
         </p>
 
-        <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 my-8 text-white">
-          <h3 className="font-black text-xl mb-3">Regelen: Spar først, aldri sist</h3>
-          <p className="text-green-50 text-lg leading-relaxed">
+        <div className="invert-block rounded-2xl p-8 my-8">
+          <h3 className="font-display font-medium text-xl mb-3">Regelen: Spar først, aldri sist</h3>
+          <p className="text-paper/80 text-lg leading-relaxed">
             Sett opp en fast bankoverføring som går til sparekontoen <strong>dagen etter lønning</strong>. 
             Beløpet skal være lik din «magiske sum» fra Steg 2. 
             <br /><br />
@@ -359,10 +359,10 @@ export default function SlikByggerDuSpareddel() {
             Vi har laget noen verktøy som gjør det enklere å holde spareseddelen:
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/sparing" className="inline-flex items-center gap-2 bg-primary-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors text-sm">
+            <Link href="/sparing" className="inline-flex items-center gap-2 bg-forest text-paper font-medium py-2 px-4 rounded-md hover:bg-forest-mid transition-colors text-sm">
                Finn beste sparekonto →
             </Link>
-            <Link href="/budsjett" className="inline-flex items-center gap-2 border border-primary-600 text-primary-600 font-medium py-2 px-4 rounded-lg hover:bg-primary-50 transition-colors text-sm">
+            <Link href="/budsjett" className="inline-flex items-center gap-2 border border-forest text-forest font-medium py-2 px-4 rounded-md hover:bg-forest-soft transition-colors text-sm">
               Budsjettramme →
             </Link>
           </div>

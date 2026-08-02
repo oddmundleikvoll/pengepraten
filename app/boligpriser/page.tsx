@@ -9,23 +9,23 @@ export const metadata: Metadata = {
 export default function BoligpriserPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-accent-700 text-white py-12">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-primary-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/boliglan" className="hover:text-white">Boliglån</Link>
-            <span className="mx-2">/</span>
-            <span>Boligpriser</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/boliglan" className="hover:text-forest transition-colors">Boliglån</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Boligpriser</span>
           </nav>
-          <div className="inline-block bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-amber-warm-soft text-amber-warm text-xs font-bold px-3 py-1 rounded-full mb-4">
             OPPDATERT MAI 2026
           </div>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Boligpriser mai 2026: Opp 1% i april — men Oslo bremser opp
           </h1>
-          <p className="text-primary-100 text-lg max-w-2xl">
+          <p className="text-ink-muted text-lg max-w-2xl leading-relaxed">
             Boligprisene steg 1% nasjonalt i april og er nå opp 5,6% hittil i år. 
             Samtidig advarer Eiendom Norge-sjef Henning Lauridsen om at Oslo kan 
             falle. Her er alt du trenger å vite før du kjøper eller selger.
@@ -266,7 +266,7 @@ export default function BoligpriserPage() {
           </p>
           <Link
             href="/verktøy/boliglånskalkulator"
-            className="inline-flex items-center gap-2 bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />

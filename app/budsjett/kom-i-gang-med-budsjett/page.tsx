@@ -10,23 +10,23 @@ export const metadata: Metadata = {
 export default function KomIGangMedBudsjett() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-amber-500 to-orange-600 text-white py-12">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-amber-100 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/budsjett" className="hover:text-white">Budsjett</Link>
-            <span className="mx-2">/</span>
-            <span>Kom i gang med budsjett</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/budsjett" className="hover:text-forest transition-colors">Budsjett</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Kom i gang med budsjett</span>
           </nav>
-          <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-xs font-semibold bg-forest-soft text-forest rounded-full mb-4">
             Oppdatert april 2026
           </span>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Kom i gang med budsjett: En komplett guide for nordmenn
           </h1>
-          <p className="text-amber-100 text-lg">
+          <p className="text-ink-muted text-lg leading-relaxed">
             Lær hvordan du lager et budsjett som faktisk fungerer. Fra 50/30/20-regelen 
             til praktiske tips — vi guider deg hele veien.
           </p>
@@ -404,7 +404,7 @@ export default function KomIGangMedBudsjett() {
           </p>
           <Link
             href="/budsjett"
-            className="inline-flex items-center gap-2 bg-primary-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-forest text-paper font-medium py-2 px-4 rounded-md hover:bg-forest-mid transition-colors"
           >
             Last ned gratis budsjettmal →
           </Link>

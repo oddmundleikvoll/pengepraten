@@ -98,44 +98,44 @@ export default function IndeksfondNybegynnere() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-gray-800 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Faktor</th>
-                  <th className="text-left p-4 font-bold bg-green-600">Indeksfond</th>
+                  <th className="text-left p-4 font-bold bg-forest text-paper">Indeksfond</th>
                   <th className="text-left p-4 font-bold">Aktivt forvaltet fond</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="p-4 font-semibold">Forvaltningskostnad</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">Lav (0,1-0,3%)</td>
-                  <td className="p-4 text-red-600">Høy (1-2%)</td>
+                  <td className="p-4 bg-forest-soft text-forest font-bold">Lav (0,1-0,3%)</td>
+                  <td className="p-4 text-amber-warm">Høy (1-2%)</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <td className="p-4 font- semibold">Sjanse for å slå markedet</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">Garantert markedsavkastning</td>
+                  <td className="p-4 bg-forest-soft text-forest font-bold">Garantert markedsavkastning</td>
                   <td className="p-4">Liten (de fleste taper)</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="p-4 font-semibold">Risiko</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">Spredt over mange selskaper</td>
+                  <td className="p-4 bg-forest-soft text-forest font-bold">Spredt over mange selskaper</td>
                   <td className="p-4">Avhengig av forvalter</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <td className="p-4 font-semibold">Tid du trenger å bruke</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">Minimal (kjøp og glem)</td>
+                  <td className="p-4 bg-forest-soft text-forest font-bold">Minimal (kjøp og glem)</td>
                   <td className="p-4">Mye (følg med)</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="p-4 font-semibold">Skatt ved salg</td>
-                  <td className="p-4 bg-green-50 text-green-700 font-bold">Utsatt til du selger</td>
+                  <td className="p-4 bg-forest-soft text-forest font-bold">Utsatt til du selger</td>
                   <td className="p-4">Samme</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div className="bg-gradient-to-br from-red-50 to-amber-50 rounded-xl p-5 border border-red-200 mb-6">
-            <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+          <div className="bg-amber-warm-soft rounded-xl p-5 border border-amber-warm/30 mb-6">
+            <h3 className="font-bold text-amber-warm mb-3 flex items-center gap-2">
               <span></span> Aktiv forvaltning: Fakta som sjelden snakkes om
             </h3>
             <p className="text-gray-700 text-sm mb-3">
@@ -158,7 +158,7 @@ export default function IndeksfondNybegynnere() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-blue-600 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Fond</th>
                   <th className="text-left p-4 font-bold">Type</th>
                   <th className="text-left p-4 font-bold">Kostnad (TER)</th>
@@ -169,26 +169,26 @@ export default function IndeksfondNybegynnere() {
                 <tr className="bg-white border-b border-gray-100">
                   <td className="p-4 font-semibold">KLP Aksjfond Global</td>
                   <td className="p-4 text-gray-600">Global indeks</td>
-                  <td className="p-4 text-blue-700 font-bold">0,20%</td>
-                  <td className="p-4 text-sm text-gray-600">KLP, Nordnet</td>
+                  <td className="p-4 text-forest font-bold">0,20%</td>
+                  <td className="p-4 text-sm text-ink-muted">KLP, Nordnet</td>
                 </tr>
                 <tr className="bg-blue-50 border-b border-gray-100">
                   <td className="p-4 font-semibold">DNB Global Indeks</td>
                   <td className="p-4 text-gray-600">Global indeks</td>
-                  <td className="p-4 text-blue-700 font-bold">0,25%</td>
-                  <td className="p-4 text-sm text-gray-600">DNB, Nordnet</td>
+                  <td className="p-4 text-forest font-bold">0,25%</td>
+                  <td className="p-4 text-sm text-ink-muted">DNB, Nordnet</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="p-4 font-semibold">Alfred Berg Index</td>
                   <td className="p-4 text-gray-600">Global indeks</td>
-                  <td className="p-4 text-blue-700 font-bold">0,30%</td>
-                  <td className="p-4 text-sm text-gray-600">Alfred Berg, Nordnet</td>
+                  <td className="p-4 text-forest font-bold">0,30%</td>
+                  <td className="p-4 text-sm text-ink-muted">Alfred Berg, Nordnet</td>
                 </tr>
                 <tr className="bg-blue-50 border-b border-gray-100">
                   <td className="p-4 font-semibold">iShares MSCI World</td>
                   <td className="p-4 text-gray-600">ETF, global</td>
-                  <td className="p-4 text-blue-700 font-bold">0,20%</td>
-                  <td className="p-4 text-sm text-gray-600">Nordnet, etc.</td>
+                  <td className="p-4 text-forest font-bold">0,20%</td>
+                  <td className="p-4 text-sm text-ink-muted">Nordnet, etc.</td>
                 </tr>
               </tbody>
             </table>
@@ -207,51 +207,51 @@ export default function IndeksfondNybegynnere() {
             La oss se på hva som skjer hvis du investerer 10.000 kroner hver måned i et indeksfond over 10 år — sammenlignet med å sette pengene på en sparekonto med 4% rente.
           </p>
 
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white mb-6">
-            <h3 className="font-bold text-green-400 mb-4">10 års sparing: 10.000 kr/mnd</h3>
+          <div className="invert-block rounded-xl p-6 mb-6">
+            <h3 className="font-bold text-amber-warm mb-4">10 års sparing: 10.000 kr/mnd</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h4 className="text-blue-400 font-bold mb-2">Indeksfond (7% årlig)</h4>
+                <h4 className="text-paper/70 font-bold mb-2">Indeksfond (7% årlig)</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">Ditt innskudd:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Ditt innskudd:</span>
                     <span className="font-semibold">1.200.000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">Verdiøkning:</span>
-                    <span className="font-bold text-green-400">+ 520.000 kr</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Verdiøkning:</span>
+                    <span className="font-bold text-amber-warm">+ 520.000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 font-bold bg-green-600/20 rounded px-2 py-1">
-                    <span className="text-green-400">Total verdi:</span>
-                    <span className="font-black text-green-400">1.720.000 kr</span>
+                  <div className="flex justify-between py-1 font-bold bg-forest/30 rounded px-2">
+                    <span className="text-amber-warm">Total verdi:</span>
+                    <span className="font-display font-medium text-amber-warm">1.720.000 kr</span>
                   </div>
                 </div>
               </div>
               <div>
-                <h4 className="text-gray-300 font-bold mb-2">Sparekonto (4% rente)</h4>
+                <h4 className="text-paper/70 font-bold mb-2">Sparekonto (4% rente)</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">Ditt innskudd:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Ditt innskudd:</span>
                     <span className="font-semibold">1.200.000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">Renteinntekter:</span>
-                    <span className="font-bold text-amber-400">+ 260.000 kr</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Renteinntekter:</span>
+                    <span className="font-bold text-paper/60">+ 260.000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 font-bold bg-gray-700/30 rounded px-2 py-1">
-                    <span className="text-gray-400">Total verdi:</span>
-                    <span className="font-black">1.460.000 kr</span>
+                  <div className="flex justify-between py-1 font-bold bg-paper/5 rounded px-2">
+                    <span className="text-paper/60">Total verdi:</span>
+                    <span className="font-display font-medium">1.460.000 kr</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="mt-4 p-3 bg-green-600/20 rounded-lg text-center">
-              <span className="font-bold text-green-400">Indeksfond ≈ 260.000 kr mer etter 10 år</span>
+            <div className="mt-4 p-3 bg-forest/30 rounded-lg text-center">
+              <span className="font-bold text-amber-warm">Indeksfond ≈ 260.000 kr mer etter 10 år</span>
             </div>
           </div>
 
-          <div className="bg-amber-50 rounded-xl p-5 border border-amber-200">
-            <h3 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
+          <div className="bg-amber-warm-soft rounded-xl p-5 border border-amber-warm/30">
+            <h3 className="font-bold text-amber-warm mb-2 flex items-center gap-2">
               Over 20 år blir forskjellen enorm
             </h3>
             <p className="text-gray-700 text-sm">
@@ -312,28 +312,28 @@ export default function IndeksfondNybegynnere() {
           </h2>
           <div className="space-y-4">
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Åpne konto hos en nettmegler</h3>
                 <p className="text-gray-600 text-sm">Nordnet, AksjeNorge eller lignende. Du trenger BankID og en norsk konto. Det tar 10 minutter.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Velg et globalt indeksfond</h3>
                 <p className="text-gray-600 text-sm">KLP Aksjfond Global eller iShares MSCI World er gode alternativer for norske investorer.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Sett opp månedlig sparing</h3>
                 <p className="text-gray-600 text-sm">Velg et fast beløp og en fast dato hver måned. Automatisk sparing er nøkkelen til å bygge formue over tid.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Glem det — i 10-20 år</h3>
                 <p className="text-gray-600 text-sm">Det beste du kan gjøre er å la pengene jobbe. Sjekk kontoen sjelden, aldri selg i panikk, og nyt resultatet.</p>
@@ -343,29 +343,29 @@ export default function IndeksfondNybegynnere() {
         </section>
 
         {/* IPS-HOOK */}
-        <div className="bg-indigo-50 rounded-xl p-5 border border-indigo-200">
-          <h3 className="font-bold text-indigo-800 mb-2 flex items-center gap-2">
+        <div className="bg-forest-soft rounded-xl p-5 border border-forest/30">
+          <h3 className="font-bold text-forest mb-2 flex items-center gap-2">
             <span></span> Visste du? IPS + indeksfond = kraftfull kombinasjon
           </h3>
-          <p className="text-gray-700 text-sm">
+          <p className="text-ink text-sm">
             Hvis du vil investere langsiktig (til pensjon), kan det være lurt å vurdere IPS (Individuell Pensjonssparing). Der kan du investere i indeksfond og få <strong>skattefradrag</strong> i tillegg til avkastningen. Les mer i vår IPS-guide.
           </p>
-          <Link href="/sparing/ips-individuell-pensjonssparing" className="inline-block mt-3 text-indigo-700 font-semibold text-sm hover:underline">
+          <Link href="/sparing/ips-individuell-pensjonssparing" className="inline-block mt-3 text-forest font-semibold text-sm hover:underline">
             → Les mer om IPS 2026
           </Link>
         </div>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-black mb-4">Klar til å la pengene vokse for deg?</h2>
-          <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+        <section className="invert-block rounded-2xl p-8 text-center">
+          <h2 className="text-2xl font-display font-medium mb-4">Klar til å la pengene vokse for deg?</h2>
+          <p className="text-paper/80 mb-6 max-w-2xl mx-auto">
             Et indeksfond er den enkleste veien til langsiktig formue. Start med 1.000 kr i måneden — du trenger ikke mer for å komme i gang.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/sparing/ips-individuell-pensjonssparing" className="inline-block bg-white text-blue-700 font-bold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+            <Link href="/sparing/ips-individuell-pensjonssparing" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
               Les om IPS (skattefradrag!)
             </Link>
-            <Link href="/sparing" className="inline-block bg-blue-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-400 transition-colors border border-blue-400">
+            <Link href="/sparing" className="inline-block bg-amber-warm text-paper font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">
                Flere spareguider
             </Link>
           </div>

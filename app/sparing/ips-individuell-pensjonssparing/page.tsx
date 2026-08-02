@@ -63,23 +63,23 @@ export default function IPSGuide() {
             Pengene kan plasseres i fond — aksjefond, indeksfond, obligasjonsfond — akkurat som med vanlig fondsparing. Men i motsetning til vanlig sparing, trekkes skattefradraget fra skatten din.
           </p>
 
-          <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-6 text-white mb-6">
-            <h3 className="font-bold text-indigo-200 mb-4 uppercase text-sm tracking-wide">Skattesystemet i IPS</h3>
+          <div className="invert-block rounded-2xl p-6 mb-6">
+            <h3 className="font-bold text-paper/70 mb-4 uppercase text-sm tracking-wide">Skattesystemet i IPS</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">26%</div>
-                <div className="text-indigo-200 text-sm">Grunnfradrag (skatt 22%)</div>
+                <div className="text-3xl font-display font-medium mb-1">26%</div>
+                <div className="text-paper/70 text-sm">Grunnfradrag (skatt 22%)</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">28%</div>
-                <div className="text-indigo-200 text-sm">Mellomtrinn (skatt 22%)</div>
+                <div className="text-3xl font-display font-medium mb-1">28%</div>
+                <div className="text-paper/70 text-sm">Mellomtrinn (skatt 22%)</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">40%</div>
-                <div className="text-indigo-200 text-sm">Øvre trinn (skatt 22%)</div>
+                <div className="text-3xl font-display font-medium mb-1">40%</div>
+                <div className="text-paper/70 text-sm">Øvre trinn (skatt 22%)</div>
               </div>
             </div>
-            <p className="text-indigo-200 text-sm mt-4 text-center">
+            <p className="text-paper/70 text-sm mt-4 text-center">
               Fradragene avhenger av inntekten din. Høy inntekt = høyere fradragssats.
             </p>
           </div>
@@ -194,10 +194,10 @@ export default function IPSGuide() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-gray-800 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Parameter</th>
-                  <th className="text-left p-4 font-bold bg-indigo-600">IPS</th>
-                  <th className="text-left p-4 font-bold bg-green-600">BSU</th>
+                  <th className="text-left p-4 font-bold bg-amber-warm text-paper">IPS</th>
+                  <th className="text-left p-4 font-bold bg-forest text-paper">BSU</th>
                   <th className="text-left p-4 font-bold">Vanlig sparekonto</th>
                 </tr>
               </thead>
@@ -299,7 +299,7 @@ export default function IPSGuide() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-indigo-600 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Fond</th>
                   <th className="text-left p-4 font-bold">Type</th>
                   <th className="text-left p-4 font-bold">Kostnad</th>
@@ -344,24 +344,24 @@ export default function IPSGuide() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <Calculator className="w-5 h-5 text-blue-600" /> Langsiktig eksempel: 20 års IPS-sparing
           </h2>
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white mb-6">
-            <h3 className="font-bold text-indigo-400 mb-4">10.000 kr/måned i IPSfond over 20 år</h3>
+          <div className="invert-block rounded-xl p-6 mb-6">
+            <h3 className="font-bold text-amber-warm mb-4">10.000 kr/måned i IPSfond over 20 år</h3>
             <div className="space-y-2 text-sm">
-              <div className="flex justify-between py-2 border-b border-gray-700">
-                <span className="text-gray-300">Ditt totale innskudd:</span>
+              <div className="flex justify-between py-2 border-b border-paper/10">
+                <span className="text-paper/70">Ditt totale innskudd:</span>
                 <span className="font-semibold">2.400.000 kr</span>
               </div>
-              <div className="flex justify-between py-2 border-b border-gray-700">
-                <span className="text-gray-300">Skattefradrag mottatt (30% snitt):</span>
-                <span className="font-bold text-green-400">+ 720.000 kr</span>
+              <div className="flex justify-between py-2 border-b border-paper/10">
+                <span className="text-paper/70">Skattefradrag mottatt (30% snitt):</span>
+                <span className="font-bold text-amber-warm">+ 720.000 kr</span>
               </div>
-              <div className="flex justify-between py-2 border-b border-gray-700">
-                <span className="text-gray-300">Fondavkastning (~7%):</span>
-                <span className="font-bold text-green-400">+ ~1.900.000 kr</span>
+              <div className="flex justify-between py-2 border-b border-paper/10">
+                <span className="text-paper/70">Fondavkastning (~7%):</span>
+                <span className="font-bold text-amber-warm">+ ~1.900.000 kr</span>
               </div>
-              <div className="flex justify-between py-2 font-bold bg-green-600/20 rounded px-3 py-3">
-                <span className="text-green-400">Total verdi ved pensjon:</span>
-                <span className="font-black text-green-400 text-lg">~5.000.000 kr</span>
+              <div className="flex justify-between py-2 font-bold bg-forest/30 rounded px-3">
+                <span className="text-amber-warm">Total verdi ved pensjon:</span>
+                <span className="font-display font-medium text-amber-warm text-lg">~5.000.000 kr</span>
               </div>
             </div>
           </div>
@@ -379,35 +379,35 @@ export default function IPSGuide() {
           </h2>
           <div className="space-y-4">
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Sjekk om du har fylt BSU-kvoten</h3>
                 <p className="text-gray-600 text-sm">Er du under 34? Fyll BSU først — det er bedre enn IPS for unge.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Velg en IPS-leverandør</h3>
                 <p className="text-gray-600 text-sm">KLP, DNB, Nordea og flere tilbyr IPS. Sjekk gebyrer og fondutvalg. Noen tilbyr IPS direkte, andre via fondsparing.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Velg fond</h3>
                 <p className="text-gray-600 text-sm">For langsiktig sparing anbefales et globalt indeksfond (som KLP Aksjfond Global). Start aggressivt, flytt til mer defensive fond de siste 5-10 årene før pensjon.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Sett opp månedlig sparing</h3>
                 <p className="text-gray-600 text-sm">Start med et beløp du er komfortabel med. 1.000-2.000 kr/måned er et fint utgangspunkt. Automatiser det.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">5</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">5</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Glem det i 20-30 år</h3>
                 <p className="text-gray-600 text-sm">IPS krever tålmodighet. Pengene er bundet, så jo lengre tidshorisont, desto bedre. Fondet vil svinge — ikke selg i panikk.</p>
@@ -455,16 +455,16 @@ export default function IPSGuide() {
         </div>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-indigo-700 to-purple-800 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-black mb-4">Klar til å bygge din pensjon smartere?</h2>
-          <p className="text-indigo-200 mb-6 max-w-2xl mx-auto">
+        <section className="invert-block rounded-2xl p-8 text-center">
+          <h2 className="text-2xl font-display font-medium mb-4">Klar til å bygge din pensjon smartere?</h2>
+          <p className="text-paper/80 mb-6 max-w-2xl mx-auto">
             IPS er ikke for alle, men for de som har råd til å binde pengene sine, er det en av de beste spareformene i Norge. Start med 1.000 kr/måned og øk gradvis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/sparing/indeksfond-nybegynnere" className="inline-block bg-white text-indigo-700 font-bold px-6 py-3 rounded-lg hover:bg-indigo-50 transition-colors">
+            <Link href="/sparing/indeksfond-nybegynnere" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
               Les om indeksfond
             </Link>
-            <Link href="/sparing" className="inline-block bg-indigo-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-indigo-400 transition-colors border border-indigo-400">
+            <Link href="/sparing" className="inline-block bg-amber-warm text-paper font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">
                Flere spareguider
             </Link>
           </div>

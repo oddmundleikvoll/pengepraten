@@ -9,23 +9,23 @@ export const metadata: Metadata = {
 export default function NorgesBankHeverRentenMai2026() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-accent-700 text-white py-12">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-primary-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/boliglan" className="hover:text-white">Boliglån</Link>
-            <span className="mx-2">/</span>
-            <span>Norges Bank hever renten mai 2026</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/boliglan" className="hover:text-forest transition-colors">Boliglån</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Norges Bank hever renten mai 2026</span>
           </nav>
-          <div className="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-forest-soft text-forest text-xs font-bold px-3 py-1 rounded-full mb-4">
             NYHET 7. MAI 2026
           </div>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Norges Bank hever styringsrenten til 4,25%
           </h1>
-          <p className="text-primary-100 text-lg max-w-2xl">
+          <p className="text-ink-muted text-lg max-w-2xl leading-relaxed">
             Etter rentemøtet 7. mai 2026 heves styringsrenten fra 4,00 % til 4,25 %. 
             Dette er første renteheving på over ett år. Her er hva det betyr for din 
             økonomi — med konkrete tall.
@@ -222,7 +222,7 @@ export default function NorgesBankHeverRentenMai2026() {
           </p>
           <Link
             href="/verktøy/boliglånskalkulator"
-            className="inline-flex items-center gap-2 bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             Boliglånskalkulator →
           </Link>

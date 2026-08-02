@@ -119,23 +119,23 @@ export default function NorgesBankRentevedtakAugust2026() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-accent-700 text-white py-12">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-primary-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing" className="hover:text-white">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span>Norges Bank 13. august 2026</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Norges Bank 13. august 2026</span>
           </nav>
-          <div className="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-forest-soft text-forest text-xs font-bold px-3 py-1 rounded-full mb-4">
             RENTEVEDTAK 13. AUGUST
           </div>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Norges Bank 13. august: Dette bør du gjøre med sparepengene
           </h1>
-          <p className="text-primary-100 text-lg max-w-2xl">
+          <p className="text-ink-muted text-lg max-w-2xl leading-relaxed">
             Torsdag 13. august kl. 10:00 bestemmer Norges Bank om styringsrenten
             blir stående på 4,25 % eller heves videre. Her er hva det betyr —
             og hva du kan gjøre med pengene dine nå.

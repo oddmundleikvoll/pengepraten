@@ -52,15 +52,15 @@ export default function MinBoliglanPage() {
   if (!data) {
     return (
       <>
-        <section className="bg-gradient-to-br from-primary-600 to-accent-700 text-white py-12">
+        <section className="bg-paper text-ink py-12 border-b border-border">
           <div className="max-w-2xl mx-auto px-4 sm:px-6">
-            <nav className="text-primary-200 text-sm mb-4">
-              <Link href="/" className="hover:text-white">Hjem</Link>
-              <span className="mx-2">/</span>
-              <span>Min boliglånsrente</span>
+            <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+              <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+              <span className="mx-2 text-border-strong">/</span>
+              <span className="text-ink">Min boliglånsrente</span>
             </nav>
-            <h1 className="text-3xl font-black mb-2">Min boliglånsrente</h1>
-            <p className="text-primary-100">Du har ikke registrert ditt boliglån enda.</p>
+            <h1 className="text-3xl font-medium font-display leading-[1.08] mb-2">Min boliglånsrente</h1>
+            <p className="text-ink-muted">Du har ikke registrert ditt boliglån enda.</p>
           </div>
         </section>
         <section className="max-w-2xl mx-auto px-4 sm:px-6 py-12">
@@ -93,31 +93,31 @@ export default function MinBoliglanPage() {
   )
 
   const isAbove = calc.isAboveAverage
-  const diffColor = isAbove ? 'text-orange-600' : 'text-primary-600'
-  const diffBg = isAbove ? 'bg-orange-50' : 'bg-primary-50'
-  const diffDot = isAbove ? 'bg-orange-500' : 'bg-primary-500'
+  const diffColor = isAbove ? 'text-amber-warm' : 'text-forest'
+  const diffBg = isAbove ? 'bg-amber-warm-soft' : 'bg-forest-soft'
+  const diffDot = isAbove ? 'bg-amber-warm' : 'bg-forest'
   const diffLabel = isAbove ? 'over gjennomsnittet' : 'under gjennomsnittet'
 
   return (
     <>
-      <section className="bg-gradient-to-br from-primary-600 to-accent-700 text-white py-12">
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <nav className="text-primary-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <span>Min boliglånsrente</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Min boliglånsrente</span>
           </nav>
           <div className="flex items-start justify-between">
             <div>
-              <h1 className="text-3xl font-black mb-2">Min boliglånsrente</h1>
-              <p className="text-primary-100 text-sm">
+              <h1 className="text-3xl font-medium font-display leading-[1.08] mb-2">Min boliglånsrente</h1>
+              <p className="text-ink-muted text-sm">
                 Registrert {new Date(data.createdAt).toLocaleDateString('nb-NO')}
               </p>
             </div>
             <div className="flex gap-2">
               <button
                 onClick={handleEdit}
-                className="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-sm font-medium py-2 px-3 rounded-lg transition-colors"
+                className="flex items-center gap-1.5 bg-paper-alt hover:bg-forest-soft text-ink text-sm font-medium py-2 px-3 rounded-md transition-colors border border-border"
               >
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
@@ -127,7 +127,7 @@ export default function MinBoliglanPage() {
               {!deleteConfirm ? (
                 <button
                   onClick={() => setDeleteConfirm(true)}
-                  className="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-sm font-medium py-2 px-3 rounded-lg transition-colors"
+                  className="flex items-center gap-1.5 bg-paper-alt hover:bg-forest-soft text-ink text-sm font-medium py-2 px-3 rounded-md transition-colors border border-border"
                 >
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -135,17 +135,17 @@ export default function MinBoliglanPage() {
                   Slett
                 </button>
               ) : (
-                <div className="flex items-center gap-1.5 bg-red-500/20 border border-red-400/30 rounded-lg p-1.5">
-                  <span className="text-red-200 text-xs px-1">Slett?</span>
+                <div className="flex items-center gap-1.5 bg-amber-warm-soft border border-amber-warm/30 rounded-md p-1.5">
+                  <span className="text-amber-warm text-xs px-1 font-medium">Slett?</span>
                   <button
                     onClick={handleDelete}
-                    className="bg-red-500 hover:bg-red-600 text-white text-xs font-medium py-1 px-2 rounded transition-colors"
+                    className="bg-amber-warm hover:opacity-90 text-paper text-xs font-medium py-1 px-2 rounded transition-opacity"
                   >
                     Ja
                   </button>
                   <button
                     onClick={() => setDeleteConfirm(false)}
-                    className="bg-white/10 hover:bg-white/20 text-white text-xs font-medium py-1 px-2 rounded transition-colors"
+                    className="bg-paper-alt hover:bg-forest-soft text-ink text-xs font-medium py-1 px-2 rounded transition-colors"
                   >
                     Nei
                   </button>
@@ -190,12 +190,12 @@ export default function MinBoliglanPage() {
           {isAbove && (
             <div className="p-6 border-t border-gray-100">
               <h3 className="text-sm font-semibold text-norsk-dark mb-3">Kostnad av forskjellen</h3>
-              <div className="bg-orange-50 rounded-xl p-4 mb-4">
+              <div className="bg-amber-warm-soft rounded-xl p-4 mb-4 border border-amber-warm/30">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-2xl font-black text-orange-600">
+                  <span className="text-2xl font-display font-medium text-amber-warm">
                     +{calc.yearlyCostDifference.toLocaleString('nb-NO')} kr/år
                   </span>
-                  <span className="text-sm text-orange-500">
+                  <span className="text-sm text-amber-warm/70">
                     (ca +{Math.round(calc.monthlyCostDifference).toLocaleString('nb-NO')} kr/mnd)
                   </span>
                 </div>
@@ -310,14 +310,14 @@ export default function MinBoliglanPage() {
         </div>
 
         {/* CTA to article */}
-        <div className="bg-gradient-to-br from-primary-50 to-accent-50 rounded-xl p-6 border border-primary-100">
-          <h3 className="font-semibold text-norsk-dark mb-1">Vil du refinansiere?</h3>
-          <p className="text-sm text-gray-600 mb-3">
+        <div className="bg-paper-alt rounded-xl p-6 border border-border">
+          <h3 className="font-display font-medium text-ink mb-1">Vil du refinansiere?</h3>
+          <p className="text-sm text-ink-muted mb-3">
             Les vår guide til refinansiering og se hvordan du kan flytte boliglånet til en bedre rente.
           </p>
           <Link
             href="/lan/refinansiering-spar-paa-gjelden"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-forest hover:text-forest-mid"
           >
             Les om refinansiering
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

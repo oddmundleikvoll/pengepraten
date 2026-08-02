@@ -10,37 +10,35 @@ export const metadata: Metadata = {
 export default function SamleLanPage() {
   return (
     <>
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/3" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-200 text-sm mb-6">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/lan">Lån</Link>
-            <span className="mx-2">/</span>
-            <span className="text-white">Samle lån</span>
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 md:py-20 border-b border-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/lan" className="hover:text-forest transition-colors">Lån</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Samle lån</span>
           </nav>
           <div className="flex flex-col lg:flex-row gap-10 items-center">
             <div className="flex-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-forest-soft text-forest rounded-full text-sm font-semibold mb-5">
                 <span>Oppdatert mai 2026</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-display mb-4 leading-[1.05]">
                 Samle lån:{' '}
-                <span className="text-amber-300">Sparer du tusenvis?</span>
+                <span className="text-forest">Sparer du tusenvis?</span>
               </h1>
-              <p className="text-green-100 text-lg md:text-xl max-w-2xl leading-relaxed">
+              <p className="text-ink-muted text-lg md:text-xl max-w-2xl leading-relaxed">
                 Har du flere lån og kredittkortgjeld? Å samle alt til ett lån med lavere rente kan spare deg for{' '}
-                <strong className="text-white">10.000+ kroner i året</strong>.
+                <strong className="text-ink">10.000+ kroner i året</strong>.
               </p>
             </div>
             {/* Quick stats */}
-            <div className="shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 min-w-[260px]">
-              <div className="text-sm font-semibold text-green-200 mb-3">Typisk sparing</div>
-              <div className="text-5xl font-black text-amber-300 mb-1">12.000</div>
-              <div className="text-green-200 text-sm mb-4">kr/år ved 200.000 kr gjeld</div>
+            <div className="shrink-0 bg-paper-alt rounded-2xl border border-border p-6 min-w-[260px]">
+              <div className="text-sm font-semibold text-ink-muted mb-3">Typisk sparing</div>
+              <div className="text-5xl font-display font-medium text-forest mb-1">12.000</div>
+              <div className="text-ink-muted text-sm mb-4">kr/år ved 200.000 kr gjeld</div>
               <div className="space-y-2">
                 {[
                   { label: 'Før', value: '14–22% rente' },
@@ -48,8 +46,8 @@ export default function SamleLanPage() {
                   { label: 'Tidsbruk', value: '15 minutter' },
                 ].map(item => (
                   <div key={item.label} className="flex justify-between text-sm">
-                    <span className="text-green-200">{item.label}</span>
-                    <span className="font-semibold text-white">{item.value}</span>
+                    <span className="text-ink-muted">{item.label}</span>
+                    <span className="font-semibold text-ink">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -156,25 +154,23 @@ export default function SamleLanPage() {
           </div>
 
           {/* SPARING */}
-          <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-8 text-white text-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/4" />
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4" />
+          <div className="invert-block rounded-2xl p-8 text-center relative overflow-hidden">
             <div className="relative">
-              <div className="text-sm font-semibold text-green-200 mb-2">Din årlige sparing</div>
-              <div className="text-5xl md:text-6xl font-black text-amber-300 mb-2">19.250 kr</div>
-              <div className="text-green-100 mb-4">per år med samlelån</div>
+              <div className="text-sm font-semibold text-paper/70 mb-2">Din årlige sparing</div>
+              <div className="text-5xl md:text-6xl font-display font-medium text-amber-warm mb-2">19.250 kr</div>
+              <div className="text-paper/80 mb-4">per år med samlelån</div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-lg mx-auto text-sm">
-                <div className="bg-white/10 rounded-lg p-3">
-                  <div className="font-bold text-white">5 år</div>
-                  <div className="text-green-200">≈ 96.000 kr spart</div>
+                <div className="bg-paper/10 rounded-lg p-3">
+                  <div className="font-bold text-paper">5 år</div>
+                  <div className="text-paper/70">≈ 96.000 kr spart</div>
                 </div>
-                <div className="bg-white/10 rounded-lg p-3">
-                  <div className="font-bold text-white">10 år</div>
-                  <div className="text-green-200">≈ 193.000 kr spart</div>
+                <div className="bg-paper/10 rounded-lg p-3">
+                  <div className="font-bold text-paper">10 år</div>
+                  <div className="text-paper/70">≈ 193.000 kr spart</div>
                 </div>
-                <div className="bg-white/10 rounded-lg p-3">
-                  <div className="font-bold text-white">Per måned</div>
-                  <div className="text-green-200">≈ 1.600 kr mindre</div>
+                <div className="bg-paper/10 rounded-lg p-3">
+                  <div className="font-bold text-paper">Per måned</div>
+                  <div className="text-paper/70">≈ 1.600 kr mindre</div>
                 </div>
               </div>
             </div>
@@ -192,11 +188,11 @@ export default function SamleLanPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-gray-800 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Gjeld</th>
                   <th className="text-left p-4 font-bold">Før (snittrente)</th>
                   <th className="text-left p-4 font-bold">Etter (samlelån)</th>
-                  <th className="text-left p-4 font-bold bg-green-600">Årlig sparing</th>
+                  <th className="text-left p-4 font-bold bg-forest text-paper">Årlig sparing</th>
                 </tr>
               </thead>
               <tbody>
@@ -234,7 +230,7 @@ export default function SamleLanPage() {
               { n: '4', title: 'Betal ut gammel gjeld', desc: 'Når samlelånet er godkjent, bruk pengene til å betale ut alle gamle lån og kredittkort. Husk å si opp kredittkortene så du ikke bygger opp ny gjeld.' },
             ].map(item => (
               <div key={item.n} className="flex items-start gap-5 bg-white rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md transition-all">
-                <div className="w-11 h-11 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-sm">{item.n}</div>
+                <div className="w-11 h-11 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-sm">{item.n}</div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
@@ -259,7 +255,7 @@ export default function SamleLanPage() {
               <details key={i} className="group bg-white rounded-xl border border-gray-200 overflow-hidden">
                 <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-bold text-gray-800 hover:text-green-600 transition-colors list-none">
                   <span className="flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-green-100 text-green-700 text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                    <span className="w-6 h-6 rounded-full bg-forest-soft text-forest text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                     {faq.q}
                   </span>
                   <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,19 +271,17 @@ export default function SamleLanPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-10 text-white text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4" />
+        <section className="invert-block rounded-2xl p-10 text-center relative overflow-hidden">
           <div className="relative">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">Klar til å spare tusenvis?</h2>
-            <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-display font-medium mb-4">Klar til å spare tusenvis?</h2>
+            <p className="text-paper/80 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
               Et samlelån tar 15 minutter å søke om, men kan spare deg for hundretusener over lånets levetid. Start i dag.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/verktøy/lånekalkulator" className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-green-900 font-extrabold px-8 py-4 rounded-xl text-lg shadow-lg transition-all hover:scale-105">
+              <Link href="/verktøy/lånekalkulator" className="inline-flex items-center justify-center gap-2 bg-amber-warm hover:opacity-90 text-paper font-extrabold px-8 py-4 rounded-md text-lg shadow-lg transition-all">
                 Prøv lånekalkulatoren
               </Link>
-              <Link href="/lan/refinansiering-spar-paa-gjelden" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-bold px-6 py-4 rounded-xl transition-colors border border-white/30">
+              <Link href="/lan/refinansiering-spar-paa-gjelden" className="inline-flex items-center justify-center gap-2 bg-paper/10 hover:bg-paper/20 text-paper font-bold px-6 py-4 rounded-md transition-colors border border-paper/30">
                  Alt om refinansiering
               </Link>
             </div>

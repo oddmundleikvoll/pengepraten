@@ -10,23 +10,21 @@ export const metadata: Metadata = {
 export default function SparekalkulatorPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-green-600 via-emerald-600 to-green-700 text-white py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/3" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-200 text-sm mb-6">
-            <a href="/">Hjem</a>
-            <span className="mx-2">/</span>
-            <a href="/sparing">Sparing</a>
-            <span className="mx-2">/</span>
-            <span className="text-white">Sparekalkulator</span>
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 md:py-20 border-b border-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <a href="/" className="hover:text-forest transition-colors">Hjem</a>
+            <span className="mx-2 text-border-strong">/</span>
+            <a href="/sparing" className="hover:text-forest transition-colors">Sparing</a>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Sparekalkulator</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-display leading-[1.05] mb-4">
             Sparekalkulator med{' '}
-            <span className="text-amber-300">mål</span>
+            <span className="text-forest">mål</span>
           </h1>
-          <p className="text-green-100 text-lg md:text-xl max-w-2xl leading-relaxed">
+          <p className="text-ink-muted text-lg md:text-xl max-w-2xl leading-relaxed">
             Hvor lang tid tar det egentlig å nå sparemålet ditt? Beregn nøyaktig hvor lenge du må spare — og hvor mye renteinntekt du kan tjene på en høyrentekonto.
           </p>
         </div>

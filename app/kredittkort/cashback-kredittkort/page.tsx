@@ -9,20 +9,20 @@ export const metadata: Metadata = {
 export default function CashbackKredittkort() {
   return (
     <>
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-accent-600 to-blue-700 text-white py-16">
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-blue-100 text-sm mb-4">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/kredittkort">Kredittkort</Link>
-            <span className="mx-2">/</span>
-            <span>Cashback Kredittkort</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/kredittkort" className="hover:text-forest transition-colors">Kredittkort</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Cashback Kredittkort</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Cashback Kredittkort: Få opptil 4% tilbake på alt du handler i 2026
           </h1>
-          <p className="text-blue-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             Få penger tilbake på hvert kjøp. Vi viser deg hvordan cashback fungerer og hvilke norske kort som gir mest.
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function CashbackKredittkort() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-accent-600 text-white">
+                <tr className="bg-forest text-paper">
                   <th className="text-left p-4 font-bold">Kort</th>
                   <th className="text-left p-4 font-bold">Cashback</th>
                   <th className="text-left p-4 font-bold">Maks/category</th>
@@ -194,7 +194,7 @@ export default function CashbackKredittkort() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-gray-800 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Type</th>
                   <th className="text-left p-4 font-bold">Passer for</th>
                   <th className="text-left p-4 font-bold">Fordeler</th>
@@ -224,9 +224,9 @@ export default function CashbackKredittkort() {
             </table>
           </div>
 
-          <div className="bg-gradient-to-br from-accent-500 to-blue-600 rounded-xl p-6 text-white">
-            <h3 className="font-bold text-lg mb-3">Vårt råd: Kombiner to kort</h3>
-            <p className="text-blue-100 leading-relaxed">
+          <div className="invert-block rounded-xl p-6">
+            <h3 className="font-display font-medium text-lg mb-3">Vårt råd: Kombiner to kort</h3>
+            <p className="text-paper/80 leading-relaxed">
               De fleste bør ha <strong>ett cashback-kort</strong> for daglig bruk og <strong>ett reisekort</strong> (f.eks. SAS-kortet) hvis de reiser mye. Da får du best av begge verdener.
             </p>
           </div>
@@ -286,46 +286,46 @@ export default function CashbackKredittkort() {
             <span></span> Beste cashback-kort for ulike behov
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200">
+            <div className="bg-paper-alt rounded-xl p-5 border border-border">
               <div className="flex items-center gap-3 mb-3">
-                <h3 className="font-bold text-gray-900">Mat og dagligvare</h3>
+                <h3 className="font-bold text-ink">Mat og dagligvare</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">Coop Mastercard og reisekort med bonus på matkjøp</p>
+              <p className="text-ink-muted text-sm mb-3">Coop Mastercard og reisekort med bonus på matkjøp</p>
               <div className="text-sm">
-                <span className="font-bold text-green-700">Opptil 2% tilbake</span>
-                <span className="text-gray-400"> på matvarer</span>
+                <span className="font-bold text-forest">Opptil 2% tilbake</span>
+                <span className="text-ink-muted"> på matvarer</span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-accent-50 rounded-xl p-5 border border-blue-200">
+            <div className="bg-paper-alt rounded-xl p-5 border border-border">
               <div className="flex items-center gap-3 mb-3">
-                <h3 className="font-bold text-gray-900">Drivstoff</h3>
+                <h3 className="font-bold text-ink">Drivstoff</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">REITAN og Norwegian Bank har god cashback på drivstoff</p>
+              <p className="text-ink-muted text-sm mb-3">REITAN og Norwegian Bank har god cashback på drivstoff</p>
               <div className="text-sm">
-                <span className="font-bold text-blue-700">Opptil 2-3% tilbake</span>
-                <span className="text-gray-400"> på drivstoff</span>
+                <span className="font-bold text-forest">Opptil 2-3% tilbake</span>
+                <span className="text-ink-muted"> på drivstoff</span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-5 border border-amber-200">
+            <div className="bg-paper-alt rounded-xl p-5 border border-border">
               <div className="flex items-center gap-3 mb-3">
                 
-                <h3 className="font-bold text-gray-900">Reise og fly</h3>
+                <h3 className="font-bold text-ink">Reise og fly</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">SAS Mastercard og Eurocard gir bonuspoeng på reise</p>
+              <p className="text-ink-muted text-sm mb-3">SAS Mastercard og Eurocard gir bonuspoeng på reise</p>
               <div className="text-sm">
-                <span className="font-bold text-amber-700">Opptil 4% tilbake</span>
-                <span className="text-gray-400"> på reisebestilling</span>
+                <span className="font-bold text-amber-warm">Opptil 4% tilbake</span>
+                <span className="text-ink-muted"> på reisebestilling</span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-purple-50 to-fuchsia-50 rounded-xl p-5 border border-purple-200">
+            <div className="bg-paper-alt rounded-xl p-5 border border-border">
               <div className="flex items-center gap-3 mb-3">
                 
-                <h3 className="font-bold text-gray-900">Shopping online</h3>
+                <h3 className="font-bold text-ink">Shopping online</h3>
               </div>
-              <p className="text-gray-600 text-sm mb-3">Apple Card og spesialtilbud fra norske banker</p>
+              <p className="text-ink-muted text-sm mb-3">Apple Card og spesialtilbud fra norske banker</p>
               <div className="text-sm">
-                <span className="font-bold text-purple-700">Opptil 3% tilbake</span>
-                <span className="text-gray-400"> på netthandel</span>
+                <span className="font-bold text-amber-warm">Opptil 3% tilbake</span>
+                <span className="text-ink-muted"> på netthandel</span>
               </div>
             </div>
           </div>
@@ -336,63 +336,63 @@ export default function CashbackKredittkort() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             Regnestykket: Hvor mye får du tilbake?
           </h2>
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white">
-            <h3 className="font-bold text-lg mb-6">Effektiv cashback basert på årlig forbruk</h3>
+          <div className="invert-block rounded-xl p-6">
+            <h3 className="font-display font-medium text-lg mb-6">Effektiv cashback basert på årlig forbruk</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-              <div className="bg-white/10 rounded-xl p-4">
-                <h4 className="font-bold text-blue-300 mb-3"> 50 000 kr/år</h4>
+              <div className="bg-paper/10 rounded-xl p-4">
+                <h4 className="font-bold text-paper/80 mb-3"> 50 000 kr/år</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between py-1 border-b border-white/10">
-                    <span className="text-gray-300">Cashback 2%</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Cashback 2%</span>
                     <span className="font-semibold">1 000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-white/10">
-                    <span className="text-gray-300">Årsavgift (gjennomsnitt)</span>
-                    <span className="font-semibold text-red-400">- 200 kr</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Årsavgift (gjennomsnitt)</span>
+                    <span className="font-semibold text-amber-warm">- 200 kr</span>
                   </div>
                   <div className="flex justify-between py-1 font-bold">
-                    <span className="text-white">Netto tilbake:</span>
-                    <span className="text-green-400">800 kr</span>
+                    <span className="text-paper">Netto tilbake:</span>
+                    <span className="text-amber-warm">800 kr</span>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/10 rounded-xl p-4">
-                <h4 className="font-bold text-blue-300 mb-3"> 100 000 kr/år</h4>
+              <div className="bg-paper/10 rounded-xl p-4">
+                <h4 className="font-bold text-paper/80 mb-3"> 100 000 kr/år</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between py-1 border-b border-white/10">
-                    <span className="text-gray-300">Cashback 2.5%</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Cashback 2.5%</span>
                     <span className="font-semibold">2 500 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-white/10">
-                    <span className="text-gray-300">Årsavgift</span>
-                    <span className="font-semibold text-red-400">- 200 kr</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Årsavgift</span>
+                    <span className="font-semibold text-amber-warm">- 200 kr</span>
                   </div>
                   <div className="flex justify-between py-1 font-bold">
-                    <span className="text-white">Netto tilbake:</span>
-                    <span className="text-green-400">2 300 kr</span>
+                    <span className="text-paper">Netto tilbake:</span>
+                    <span className="text-amber-warm">2 300 kr</span>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/10 rounded-xl p-4">
-                <h4 className="font-bold text-blue-300 mb-3"> 200 000 kr/år</h4>
+              <div className="bg-paper/10 rounded-xl p-4">
+                <h4 className="font-bold text-paper/80 mb-3"> 200 000 kr/år</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between py-1 border-b border-white/10">
-                    <span className="text-gray-300">Cashback 3%</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Cashback 3%</span>
                     <span className="font-semibold">6 000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-white/10">
-                    <span className="text-gray-300">Årsavgift</span>
-                    <span className="font-semibold text-red-400">- 200 kr</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">Årsavgift</span>
+                    <span className="font-semibold text-amber-warm">- 200 kr</span>
                   </div>
                   <div className="flex justify-between py-1 font-bold">
-                    <span className="text-white">Netto tilbake:</span>
-                    <span className="text-green-400">5 800 kr</span>
+                    <span className="text-paper">Netto tilbake:</span>
+                    <span className="text-amber-warm">5 800 kr</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-accent-600/30 rounded-lg p-4 text-center">
-              <span className="font-bold text-accent-300"> Med 200 000 kr i årlig forbruk kan du tjene opptil 5 800 kr i cashback!</span>
+            <div className="bg-forest/30 rounded-lg p-4 text-center">
+              <span className="font-bold text-amber-warm"> Med 200 000 kr i årlig forbruk kan du tjene opptil 5 800 kr i cashback!</span>
             </div>
           </div>
         </section>
@@ -426,46 +426,46 @@ export default function CashbackKredittkort() {
           </div>
 
           {/* SJEKKLISTE */}
-          <div className="bg-gradient-to-br from-accent-100 to-blue-100 rounded-xl p-6">
-            <h3 className="font-bold text-accent-800 mb-4 flex items-center gap-2">
+          <div className="bg-paper-alt rounded-xl p-6 border border-border">
+            <h3 className="font-display font-medium text-ink mb-4 flex items-center gap-2">
               Din cashback-sjekkliste
             </h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-6 h-6 rounded-full bg-accent-600 text-white flex items-center justify-center text-xs font-bold"></div>
-                <span className="text-gray-800">Velg et kort med cashback på dine viktigste kategorier</span>
+              <div className="flex items-center gap-3 bg-paper-surface rounded-lg p-3">
+                <div className="w-6 h-6 rounded-full bg-forest text-paper flex items-center justify-center text-xs font-bold"></div>
+                <span className="text-ink">Velg et kort med cashback på dine viktigste kategorier</span>
               </div>
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-6 h-6 rounded-full bg-accent-600 text-white flex items-center justify-center text-xs font-bold"></div>
-                <span className="text-gray-800">Sett opp purring/påminnelse for betaling</span>
+              <div className="flex items-center gap-3 bg-paper-surface rounded-lg p-3">
+                <div className="w-6 h-6 rounded-full bg-forest text-paper flex items-center justify-center text-xs font-bold"></div>
+                <span className="text-ink">Sett opp purring/påminnelse for betaling</span>
               </div>
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-6 h-6 rounded-full bg-accent-600 text-white flex items-center justify-center text-xs font-bold"></div>
-                <span className="text-gray-800">Aldri la saldoen være større enn du kan betale</span>
+              <div className="flex items-center gap-3 bg-paper-surface rounded-lg p-3">
+                <div className="w-6 h-6 rounded-full bg-forest text-paper flex items-center justify-center text-xs font-bold"></div>
+                <span className="text-ink">Aldri la saldoen være større enn du kan betale</span>
               </div>
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-6 h-6 rounded-full bg-accent-600 text-white flex items-center justify-center text-xs font-bold"></div>
-                <span className="text-gray-800">Sjekk årsavgift vs. cashback — det må lønne seg</span>
+              <div className="flex items-center gap-3 bg-paper-surface rounded-lg p-3">
+                <div className="w-6 h-6 rounded-full bg-forest text-paper flex items-center justify-center text-xs font-bold"></div>
+                <span className="text-ink">Sjekk årsavgift vs. cashback — det må lønne seg</span>
               </div>
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-6 h-6 rounded-full bg-accent-600 text-white flex items-center justify-center text-xs font-bold"></div>
-                <span className="text-gray-800">Bytt kort hvis bedre alternativ dukker opp</span>
+              <div className="flex items-center gap-3 bg-paper-surface rounded-lg p-3">
+                <div className="w-6 h-6 rounded-full bg-forest text-paper flex items-center justify-center text-xs font-bold"></div>
+                <span className="text-ink">Bytt kort hvis bedre alternativ dukker opp</span>
               </div>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-accent-600 to-blue-700 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-black mb-4">Klar til å la cashback jobbe for deg?</h2>
-          <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+        <section className="invert-block rounded-2xl p-8 text-center">
+          <h2 className="text-2xl font-display font-medium mb-4">Klar til å la cashback jobbe for deg?</h2>
+          <p className="text-paper/80 mb-6 max-w-2xl mx-auto">
             Med riktig cashback-kort kan du få tusenvis av kroner tilbake hvert år — helt uten å endre forbruket ditt.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/kredittkort/beste-kredittkort-norge-2026" className="inline-block bg-white text-accent-700 font-bold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+            <Link href="/kredittkort/beste-kredittkort-2026" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
               Sammenlign kredittkort
             </Link>
-            <Link href="/kredittkort/kredittkort-uten-arsavgift" className="inline-block bg-accent-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-accent-400 transition-colors border border-accent-400">
+            <Link href="/kredittkort/kredittkort-uten-arsavgift" className="inline-block bg-amber-warm text-paper font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">
                Sjekk gebyrfrie kort
             </Link>
           </div>

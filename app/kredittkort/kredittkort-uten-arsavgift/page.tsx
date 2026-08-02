@@ -9,19 +9,20 @@ export const metadata: Metadata = {
 export default function KredittkortUtenArsavgift() {
   return (
     <>
-      <section className="bg-gradient-to-br from-accent-600 to-accent-800 text-white py-12">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-accent-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/kredittkort" className="hover:text-white">Kredittkort</Link>
-            <span className="mx-2">/</span>
-            <span>Kredittkort uten årsavgift</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/kredittkort" className="hover:text-forest transition-colors">Kredittkort</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Kredittkort uten årsavgift</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Kredittkort uten årsavgift
           </h1>
-          <p className="text-accent-100 text-lg">
+          <p className="text-ink-muted text-lg leading-relaxed">
             Er det like bra som det høres ut? Vi forklarer hva du faktisk får, 
             og hvilke fallgruber du bør unngå.
           </p>

@@ -10,23 +10,23 @@ export const metadata: Metadata = {
 export default function KredittscoreNorge() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-accent-600 to-blue-700 text-white py-16">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-blue-100 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/kredittkort" className="hover:text-white">Kredittkort</Link>
-            <span className="mx-2">/</span>
-            <span>Kredittscore i Norge</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/kredittkort" className="hover:text-forest transition-colors">Kredittkort</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Kredittscore i Norge</span>
           </nav>
-          <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-xs font-semibold bg-forest-soft text-forest rounded-full mb-4">
             Oppdatert april 2026
           </span>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Kredittscore i Norge
           </h1>
-          <p className="text-blue-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             Hvordan det fungerer — og hvordan du forbedrer din egen. Alt du trenger å vite for 2026.
           </p>
         </div>
@@ -44,12 +44,12 @@ export default function KredittscoreNorge() {
         </p>
 
         {/* Visual intro */}
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 my-8 border border-blue-100">
+        <div className="bg-paper-alt rounded-2xl p-8 my-8 border border-border">
           <div className="flex items-center gap-4 mb-4">
             <div className="text-5xl"></div>
             <div>
-              <p className="text-blue-800 font-bold text-lg">Kredittscore forklarert</p>
-              <p className="text-blue-600 text-sm">
+              <p className="text-ink font-display font-medium text-lg">Kredittscore forklarert</p>
+              <p className="text-ink-muted text-sm">
                 En vurdering av din økonomiske pålitelighet basert på betalingshistorikk, 
                 gjeld, inntekt og andre faktorer. Jo høyere score, jo bedre lånevilkår får du.
               </p>
@@ -280,7 +280,7 @@ export default function KredittscoreNorge() {
             }
           ].map((item) => (
             <div key={item.num} className="flex gap-4 bg-white border border-gray-200 rounded-xl p-5">
-              <div className="flex-shrink-0 w-10 h-10 bg-accent-600 rounded-full flex items-center justify-center text-white font-black text-lg">{item.num}</div>
+              <div className="flex-shrink-0 w-10 h-10 bg-forest rounded-full flex items-center justify-center text-paper font-black text-lg">{item.num}</div>
               <div>
                 <h4 className="font-bold text-norsk-dark">{item.title}</h4>
                 <p className="text-gray-600 text-sm mt-1 mb-2">{item.desc}</p>
@@ -410,7 +410,7 @@ export default function KredittscoreNorge() {
             på din økonomiske atferd. Start i dag med én av disse handlingene:
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/lan" className="inline-flex items-center gap-2 bg-primary-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors text-sm">
+            <Link href="/lan" className="inline-flex items-center gap-2 bg-forest text-paper font-medium py-2 px-4 rounded-md hover:bg-forest-mid transition-colors text-sm">
               Sjekk beste forbrukslån →
             </Link>
             <Link href="/kredittkort" className="inline-flex items-center gap-2 border border-primary-600 text-primary-600 font-medium py-2 px-4 rounded-lg hover:bg-primary-50 transition-colors text-sm">

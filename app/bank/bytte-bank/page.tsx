@@ -9,20 +9,20 @@ export const metadata: Metadata = {
 export default function BytteBank() {
   return (
     <>
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-teal-600 to-cyan-700 text-white py-16">
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-teal-100 text-sm mb-4">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
             <span>Bank</span>
-            <span className="mx-2">/</span>
-            <span>Bytte bank</span>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Bytte bank</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Slik bytter du bank i Norge — guiden for 2026
           </h1>
-          <p className="text-teal-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             Bytte av bank er enklere enn du tror — og ofte verdt titusenvis av kroner i året. Her er hele prosessen.
           </p>
         </div>
@@ -75,10 +75,10 @@ export default function BytteBank() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-gray-800 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Bankgebyr-type</th>
                   <th className="text-left p-4 font-bold">Gammel bank ()</th>
-                  <th className="text-left p-4 font-bold bg-green-600">Digital bank</th>
+                  <th className="text-left p-4 font-bold bg-forest text-paper">Digital bank</th>
                   <th className="text-left p-4 font-bold">Besparelse</th>
                 </tr>
               </thead>
@@ -127,14 +127,14 @@ export default function BytteBank() {
 
           <div className="space-y-4">
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Sjekk hva du har i dag</h3>
                 <p className="text-gray-600 text-sm">Noter alle dine betalingsoppdrag, faste overføringer, avtalegiro og sparing. Du trenger ikke si opp noe enda.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Sjekk boliglånsrenten din</h3>
                 <p className="text-gray-600 text-sm">Ringer du banken og ber om 0,5% lavere rente? Det er ofte nok til å få ja. Men hvis de sier nei, er det god grunn til å bytte.</p>
@@ -144,28 +144,28 @@ export default function BytteBank() {
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Velg ny bank og åpne konto</h3>
                 <p className="text-gray-600 text-sm">Gå til nettsiden til banken (f.eks. Sbanken, Nordea, DNB) og velg "åpne konto". Du trenger BankID og en norsk folkeregistrert adresse. Prosessen tar 10-15 minutter.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Spør om flytting av betalingsoppdrag</h3>
                 <p className="text-gray-600 text-sm">Mange banker tilbyr å flytte dine faste betalingsoppdrag automatisk. Bare spør når du åpner kontoen. Alternativt gjør du det selv i nettbanken.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">5</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">5</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Overfør saldo og legg om lønn</h3>
                 <p className="text-gray-600 text-sm">Flytt sparepengene fra gammel til ny konto. Deretter ber du arbeidsgiveren om å legge om lønnskonto til den nye banken (eller gjør det selv i din nettbank).</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
-              <div className="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">6</div>
+              <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">6</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Lukk gammel konto (valgfritt)</h3>
                 <p className="text-gray-600 text-sm">Når alt er flyttet, kan du bestille nedleggelse av den gamle kontoen. Mange velger å beholde den gamle kontoen en stund først — bare for sikkerhets skyld.</p>
@@ -269,16 +269,16 @@ export default function BytteBank() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-teal-600 to-cyan-700 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-black mb-4">Klar til å bytte — eller bare undersøke?</h2>
-          <p className="text-teal-100 mb-6 max-w-2xl mx-auto">
+        <section className="invert-block rounded-2xl p-8 text-center">
+          <h2 className="text-2xl font-display font-medium mb-4">Klar til å bytte — eller bare undersøke?</h2>
+          <p className="text-paper/80 mb-6 max-w-2xl mx-auto">
             Bytte av bank tar en helg og kan spare deg tusenvis i året. Men først: sjekk om din nåværende bank kan tilby deg bedre vilkår. Forhandle først — bytt hvis de ikke matcher.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/lan/hvor-mye-boliglan-kan-jeg-fa" className="inline-block bg-white text-teal-700 font-bold px-6 py-3 rounded-lg hover:bg-teal-50 transition-colors">
+            <Link href="/lan/hvor-mye-boliglan-kan-jeg-fa" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
               Sjekk din lånekraft
             </Link>
-            <Link href="/sparing/hoyrentekonto" className="inline-block bg-teal-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-teal-400 transition-colors border border-teal-400">
+            <Link href="/sparing/hoyrentekonto" className="inline-block bg-amber-warm text-paper font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">
               Sett sparepengene på høyrentekonto
             </Link>
           </div>

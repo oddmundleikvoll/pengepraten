@@ -171,20 +171,20 @@ export default function BSUGuide() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             10% skattefradrag forklart — statens gave
           </h2>
-          <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 text-white mb-6">
-            <h3 className="font-bold text-green-100 mb-3 uppercase text-sm tracking-wide">Skattefradraget på én titt</h3>
+          <div className="invert-block rounded-2xl p-6 mb-6">
+            <h3 className="font-bold text-paper/70 mb-3 uppercase text-sm tracking-wide">Skattefradraget på én titt</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">10%</div>
-                <div className="text-green-100 text-sm">Skattefradrag per krone</div>
+                <div className="text-3xl font-display font-medium mb-1">10%</div>
+                <div className="text-paper/70 text-sm">Skattefradrag per krone</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">27 500 kr</div>
-                <div className="text-green-100 text-sm">Maks årlig innskudd</div>
+                <div className="text-3xl font-display font-medium mb-1">27 500 kr</div>
+                <div className="text-paper/70 text-sm">Maks årlig innskudd</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black mb-1">2 750 kr</div>
-                <div className="text-green-100 text-sm">Maksimalt fradrag per år</div>
+                <div className="text-3xl font-display font-medium mb-1">2 750 kr</div>
+                <div className="text-paper/70 text-sm">Maksimalt fradrag per år</div>
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@ export default function BSUGuide() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-green-600 text-white">
+                <tr className="bg-forest text-paper">
                   <th className="text-left p-4 font-bold">Bank</th>
                   <th className="text-left p-4 font-bold">BSU-rente</th>
                   <th className="text-left p-4 font-bold">Maksimalt innskudd</th>
@@ -485,26 +485,26 @@ export default function BSUGuide() {
           </div>
 
           {/* MAKS-INN SKJEMA */}
-          <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl p-6 mt-6">
-            <h3 className="font-bold text-green-800 mb-4 flex items-center gap-2">
+          <div className="bg-forest-soft rounded-xl p-6 mt-6 border border-forest/30">
+            <h3 className="font-bold text-forest mb-4 flex items-center gap-2">
               <span></span> Slik fyller du BSU-kvoten fullstendig
             </h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-sm">1</div>
-                <span className="text-gray-800"><strong>Mål:</strong> 27 500 kr per kalenderår</span>
+              <div className="flex items-center gap-3 bg-paper rounded-lg p-3">
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm">1</div>
+                <span className="text-ink"><strong>Mål:</strong> 27 500 kr per kalenderår</span>
               </div>
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-sm">2</div>
-                <span className="text-gray-800"><strong>Månedlig sparing:</strong> 2 292 kr/måned</span>
+              <div className="flex items-center gap-3 bg-paper rounded-lg p-3">
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm">2</div>
+                <span className="text-ink"><strong>Månedlig sparing:</strong> 2 292 kr/måned</span>
               </div>
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-sm">3</div>
-                <span className="text-gray-800"><strong>Skattefradrag:</strong> 2 750 kr (10% av 27 500)</span>
+              <div className="flex items-center gap-3 bg-paper rounded-lg p-3">
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm">3</div>
+                <span className="text-ink"><strong>Skattefradrag:</strong> 2 750 kr (10% av 27 500)</span>
               </div>
-              <div className="flex items-center gap-3 bg-white rounded-lg p-3">
-                <div className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-sm">4</div>
-                <span className="text-gray-800"><strong>Total effekt:</strong> 27 500 + 2 750 + renter ≈ 31 250+ kr</span>
+              <div className="flex items-center gap-3 bg-paper rounded-lg p-3">
+                <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm">4</div>
+                <span className="text-ink"><strong>Total effekt:</strong> 27 500 + 2 750 + renter ≈ 31 250+ kr</span>
               </div>
             </div>
           </div>
@@ -521,9 +521,9 @@ export default function BSUGuide() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
               <thead>
-                <tr className="bg-gray-800 text-white">
+                <tr className="bg-paper text-ink border-b border-border">
                   <th className="text-left p-4 font-bold">Parameter</th>
-                  <th className="text-left p-4 font-bold bg-green-600">BSU (anbefalt)</th>
+                  <th className="text-left p-4 font-bold bg-forest text-paper">BSU (anbefalt)</th>
                   <th className="text-left p-4 font-bold">Vanlig sparekonto</th>
                 </tr>
               </thead>
@@ -559,54 +559,54 @@ export default function BSUGuide() {
           <p className="text-sm text-gray-500 mb-6">*Du kan spare mer enn 27 500 kr, men da uten skattefradrag. Det kan fortsatt være lurt å spare videre på vanlig sparekonto.</p>
 
           {/* STOR TABELL */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white">
-            <h3 className="font-bold mb-4">5-års vs. 10-års sparing: BSU vs. vanlig konto</h3>
+          <div className="invert-block rounded-xl p-6">
+            <h3 className="font-display font-medium mb-4">5-års vs. 10-års sparing: BSU vs. vanlig konto</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h4 className="text-green-400 font-bold mb-2">Med BSU (27 500 kr/år)</h4>
+                <h4 className="text-amber-warm font-bold mb-2">Med BSU (27 500 kr/år)</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 1:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 1:</span>
                     <span className="font-semibold">31 250 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 3:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 3:</span>
                     <span className="font-semibold">96 800 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 5:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 5:</span>
                     <span className="font-semibold">165 000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 10:</span>
-                    <span className="font-bold text-green-400">360 000 kr</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 10:</span>
+                    <span className="font-bold text-amber-warm">360 000 kr</span>
                   </div>
                 </div>
               </div>
               <div>
-                <h4 className="text-gray-300 font-bold mb-2">Vanlig konto (27 500 kr/år, 4%)</h4>
+                <h4 className="text-paper/70 font-bold mb-2">Vanlig konto (27 500 kr/år, 4%)</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 1:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 1:</span>
                     <span className="font-semibold">28 600 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 3:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 3:</span>
                     <span className="font-semibold">87 500 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 5:</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 5:</span>
                     <span className="font-semibold">148 000 kr</span>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-gray-700">
-                    <span className="text-gray-300">År 10:</span>
-                    <span className="font-bold text-amber-400">310 000 kr</span>
+                  <div className="flex justify-between py-1 border-b border-paper/10">
+                    <span className="text-paper/70">År 10:</span>
+                    <span className="font-bold text-paper/60">310 000 kr</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="mt-4 p-3 bg-green-600/20 rounded-lg text-center">
-              <span className="font-bold text-green-400">BSU gir deg ~50 000 kr mer etter 10 år!</span>
+            <div className="mt-4 p-3 bg-forest/30 rounded-lg text-center">
+              <span className="font-bold text-amber-warm">BSU gir deg ~50 000 kr mer etter 10 år!</span>
             </div>
           </div>
         </section>
@@ -687,16 +687,16 @@ export default function BSUGuide() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-black mb-4">Klar til å ta kontroll over din økonomiske fremtid?</h2>
-          <p className="text-green-100 mb-6 max-w-2xl mx-auto">
+        <section className="invert-block rounded-2xl p-8 text-center">
+          <h2 className="text-2xl font-display font-medium mb-4">Klar til å ta kontroll over din økonomiske fremtid?</h2>
+          <p className="text-paper/80 mb-6 max-w-2xl mx-auto">
             BSU er den beste spareformen for unge i Norge. Start i dag og la staten jobbe for deg.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/verktøy/boliglanskalkulator" className="inline-block bg-white text-green-700 font-bold px-6 py-3 rounded-lg hover:bg-green-50 transition-colors">
+            <Link href="/verktøy/boliglanskalkulator" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
               Boliglånskalkulator
             </Link>
-            <Link href="/sparing" className="inline-block bg-green-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-green-400 transition-colors border border-green-400">
+            <Link href="/sparing" className="inline-block bg-amber-warm text-paper font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">
                Flere spareguider
             </Link>
           </div>

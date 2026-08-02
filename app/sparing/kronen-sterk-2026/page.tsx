@@ -19,7 +19,7 @@ export default function KronenSterk2026() {
             <span className="mx-2 text-border-strong">/</span>
             <span className="text-ink">Kronen sterk 2026</span>
           </nav>
-          <div className="inline-block bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-amber-warm-soft text-amber-warm text-xs font-bold px-3 py-1 rounded-full mb-4">
             ØKONOMINYHET MAI 2026
           </div>
           <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">

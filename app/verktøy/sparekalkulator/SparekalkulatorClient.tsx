@@ -139,8 +139,8 @@ export default function SparekalkulatorClient() {
                     className={`
                       flex flex-col items-center gap-1 px-3 py-3 rounded-xl border text-sm font-medium transition-all
                       ${goalType === g
-                        ? 'bg-green-600 text-white border-green-600 shadow-sm'
-                        : 'bg-white text-gray-600 border-gray-200 hover:border-green-300 hover:bg-green-50'
+                        ? 'bg-forest text-paper border-forest shadow-sm'
+                        : 'bg-paper text-ink-muted border-border hover:border-forest hover:bg-forest-soft'
                       }
                     `}
                   >
@@ -231,31 +231,31 @@ export default function SparekalkulatorClient() {
           {/* Right column: results */}
           <div className="space-y-4">
             {/* Goal badge */}
-            <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 text-white">
-              <div className="text-sm text-green-200 font-medium mb-1">Ditt sparemål</div>
+            <div className="invert-block rounded-2xl p-6">
+              <div className="text-sm text-paper/70 font-medium mb-1">Ditt sparemål</div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-3xl">{GOAL_ICONS[goalType]}</span>
-                <div className="text-2xl font-black">{goalLabel}</div>
+                <div className="text-2xl font-display font-medium">{goalLabel}</div>
               </div>
-              <div className="text-4xl font-black">{formatCurrency(results.target)}</div>
+              <div className="text-4xl font-display font-medium">{formatCurrency(results.target)}</div>
             </div>
 
             {/* Key results */}
             {results.monthly > 0 && (
               <div className="bg-white rounded-2xl border border-gray-200 p-5 space-y-3">
                 {/* Time result */}
-                <div className={`rounded-xl p-4 ${results.reachedOnTime ? 'bg-green-50 border border-green-200' : 'bg-amber-50 border border-amber-200'}`}>
-                  <div className="text-xs text-gray-500 mb-1">
+                <div className={`rounded-xl p-4 ${results.reachedOnTime ? 'bg-forest-soft border border-forest/30' : 'bg-amber-warm-soft border border-amber-warm/30'}`}>
+                  <div className="text-xs text-ink-muted mb-1">
                     {results.reachedOnTime ? ' Du når målet!' : ' Du når ikke målet på tiden'}
                   </div>
                   <div className="flex items-end gap-2">
-                    <span className={`text-3xl font-black ${results.reachedOnTime ? 'text-green-600' : 'text-amber-600'}`}>
+                    <span className={`text-3xl font-display font-medium ${results.reachedOnTime ? 'text-forest' : 'text-amber-warm'}`}>
                       {results.actualMonths > 0 ? Math.ceil(results.actualMonths) : '—'}
                     </span>
-                    <span className="text-lg text-gray-500 mb-1">måneder</span>
+                    <span className="text-lg text-ink-muted mb-1">måneder</span>
                   </div>
                   {results.actualMonths > 0 && (
-                    <div className="text-sm text-gray-500 mt-1">
+                    <div className="text-sm text-ink-muted mt-1">
                       Det tar ~{Math.floor(results.actualMonths / 12)} år og {Math.round(results.actualMonths % 12)} måneder å nå målet
                     </div>
                   )}
@@ -298,9 +298,9 @@ export default function SparekalkulatorClient() {
             {results.projectionPoints.length > 0 && (
               <div className="bg-gray-50 rounded-xl p-5 border border-gray-100">
                 <div className="text-xs font-semibold text-gray-500 mb-3 uppercase tracking-wide">Progresjon</div>
-                <div className="h-4 bg-gray-200 rounded-full overflow-hidden mb-2">
+                <div className="h-4 bg-paper-alt rounded-full overflow-hidden mb-2">
                   <div
-                    className="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full transition-all duration-500"
+                    className="h-full bg-forest rounded-full transition-all duration-500"
                     style={{ width: `${Math.min(100, progressPct)}%` }}
                   />
                 </div>
@@ -327,7 +327,7 @@ export default function SparekalkulatorClient() {
               const isTarget = pt.amount >= results.target
               return (
                 <div key={i} className="flex-1 flex flex-col items-center gap-1">
-                  <div className="w-full bg-gradient-to-t from-green-500 to-emerald-400 rounded-t-sm min-h-[4px]" style={{ height: `${Math.min(100, pct)}%` }} />
+                  <div className="w-full bg-forest rounded-t-sm min-h-[4px]" style={{ height: `${Math.min(100, pct)}%` }} />
                 </div>
               )
             })}
@@ -342,7 +342,7 @@ export default function SparekalkulatorClient() {
           {/* Legend */}
           <div className="flex gap-6 mt-4 pt-4 border-t border-gray-100">
             <div className="flex items-center gap-2 text-xs text-gray-600">
-              <div className="w-3 h-3 bg-gradient-to-t from-green-500 to-emerald-400 rounded-sm" />
+              <div className="w-3 h-3 bg-forest rounded-sm" />
               <span>Sparing + renter</span>
             </div>
             <div className="flex items-center gap-2 text-xs text-gray-600">
@@ -354,16 +354,15 @@ export default function SparekalkulatorClient() {
       )}
 
       {/* CTA */}
-      <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-8 text-white text-center relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/4" />
+      <div className="invert-block rounded-2xl p-8 text-center relative overflow-hidden">
         <div className="relative">
-          <h3 className="text-2xl font-black mb-2">Klar til å nå {goalLabel.toLowerCase()}?</h3>
-          <p className="text-green-100 mb-6 max-w-lg mx-auto leading-relaxed">
+          <h3 className="text-2xl font-display font-medium mb-2">Klar til å nå {goalLabel.toLowerCase()}?</h3>
+          <p className="text-paper/80 mb-6 max-w-lg mx-auto leading-relaxed">
             Sammenlign de beste høyrentekontoene og finn den som gir deg høyest rente på sparingen din.
           </p>
           <a
             href="/sparing/hoyrentekonto"
-            className="inline-flex items-center gap-2 bg-white text-green-700 font-bold px-8 py-4 rounded-xl text-lg shadow-lg hover:bg-green-50 transition-all hover:scale-105"
+            className="inline-flex items-center gap-2 bg-paper text-ink font-bold px-8 py-4 rounded-md text-lg shadow-lg hover:bg-paper-alt transition-all"
           >
             <BarChart3 className="w-5 h-5" /> Se beste høyrentekontoer
           </a>

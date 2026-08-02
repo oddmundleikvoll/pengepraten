@@ -20,7 +20,7 @@ export default function SpareplanGuide() {
             <span className="mx-2 text-border-strong">/</span>
             <span className="text-ink">Spareplan guide</span>
           </nav>
-          <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-xs font-semibold bg-forest-soft text-forest rounded-full mb-4">
             Oppdatert april 2026
           </span>
           <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
@@ -287,7 +287,7 @@ export default function SpareplanGuide() {
           </p>
           <Link
             href="/budsjett"
-            className="inline-flex items-center gap-2 bg-primary-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-forest text-paper font-medium py-2 px-4 rounded-md hover:bg-forest-mid transition-colors"
           >
             Last ned gratis budsjettmal →
           </Link>

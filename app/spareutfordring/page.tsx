@@ -17,44 +17,40 @@ export default function SpareutfordringPage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="relative bg-gradient-to-br from-green-600 via-emerald-600 to-green-700 text-white overflow-hidden">
-        {/* Decorative circles */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/3" />
-
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="relative bg-paper text-ink overflow-hidden border-b border-border">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
           {/* Breadcrumb */}
-          <nav className="text-green-200 text-sm mb-6">
-            <Link href="/" className="hover:text-white transition-colors">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing" className="hover:text-white transition-colors">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span className="text-white">52-ukers Spareutfordring</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">52-ukers Spareutfordring</span>
           </nav>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
-                <Flame className="w-6 h-6 text-amber-300" />
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-warm-soft text-amber-warm rounded-full text-sm font-semibold mb-6">
+                <Flame className="w-6 h-6" />
                 <span>Norges morsomste spareutfordring</span>
               </div>
 
               {/* Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-display leading-[1.05] mb-6">
                 Spar{' '}
                 <span className="relative inline-block">
-                  <span className="relative z-10 text-amber-300">{totalDisplay} kr</span>
-                  <span className="absolute -bottom-1 left-0 right-0 h-3 bg-amber-400/40 rounded skew-x-[-2deg]" />
+                  <span className="relative z-10 text-forest">{totalDisplay} kr</span>
+                  <span className="absolute -bottom-1 left-0 right-0 h-3 bg-amber-warm/40 rounded skew-x-[-2deg]" />
                 </span>{' '}
                 på 52 uker
               </h1>
 
-              <p className="text-lg md:text-xl text-green-100 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg md:text-xl text-ink-muted leading-relaxed mb-8 max-w-lg">
                 Metoden er enkel: start på 50 kr i uka, øk med 50 kr hver uke.
                 Etter 52 uker har du spart{' '}
-                <strong className="text-white">{totalDisplay} kr</strong> — uten å
+                <strong className="text-ink">{totalDisplay} kr</strong> — uten å
                 tømme lommeboken.
               </p>
 
@@ -62,7 +58,7 @@ export default function SpareutfordringPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#start"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-300 text-green-900 font-extrabold rounded-xl text-lg shadow-lg shadow-amber-400/30 transition-all hover:scale-105"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-warm hover:opacity-90 text-paper font-extrabold rounded-md text-lg shadow-lg transition-all"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -71,7 +67,7 @@ export default function SpareutfordringPage() {
                 </a>
                 <a
                   href="#slik-fungerer-det"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-xl text-base transition-all border border-white/20"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-paper-alt hover:bg-forest-soft text-ink font-semibold rounded-md text-base transition-all border border-border"
                 >
                   Les mer
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,14 +81,14 @@ export default function SpareutfordringPage() {
             <div className="hidden lg:block">
               <div className="relative">
                 {/* Floating week cards */}
-                <div className="grid grid-cols-4 gap-3 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                <div className="grid grid-cols-4 gap-3 p-6 bg-paper-alt rounded-2xl border border-border">
                   {[1, 2, 3, 4, 5, 6, 7, 8].map(w => {
                     const amt = getWeekAmount(w)
                     return (
-                      <div key={w} className="bg-white/20 rounded-xl p-3 text-center backdrop-blur-sm">
-                        <div className="text-[10px] font-bold text-green-200 mb-0.5">Uke {w}</div>
-                        <div className="text-sm font-black text-white">{amt.toLocaleString('nb-NO')} kr</div>
-                        <div className="text-[9px] text-green-200 mt-0.5">→ {getTotalUpTo(w).toLocaleString('nb-NO')} kr</div>
+                      <div key={w} className="bg-paper rounded-xl p-3 text-center border border-border">
+                        <div className="text-[10px] font-bold text-ink-muted mb-0.5">Uke {w}</div>
+                        <div className="text-sm font-display font-medium text-ink">{amt.toLocaleString('nb-NO')} kr</div>
+                        <div className="text-[9px] text-ink-muted mt-0.5">→ {getTotalUpTo(w).toLocaleString('nb-NO')} kr</div>
                       </div>
                     )
                   })}
@@ -195,31 +191,31 @@ export default function SpareutfordringPage() {
       </section>
 
       {/* Social proof / testimonial */}
-      <section className="bg-gradient-to-br from-green-50 to-emerald-50 py-16">
+      <section className="bg-paper-alt py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-green-100 text-center">
+          <div className="bg-paper rounded-3xl p-8 md:p-12 shadow-sm border border-border text-center">
             <div className="text-5xl mb-6"></div>
-            <blockquote className="text-xl md:text-2xl font-medium text-gray-800 leading-relaxed mb-8">
+            <blockquote className="text-xl md:text-2xl font-medium text-ink leading-relaxed mb-8">
               &ldquo;Jeg trodde det var umulig å spare så mye. Men med 52-ukers
               utfordringen merket jeg knapt at pengene forsvant. Etter 6 måneder
               hadde jeg spart mer enn jeg hadde gjort på 3 år på vanlig vis.&rdquo;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
-              <div className="w-14 h-14 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
+              <div className="w-14 h-14 bg-forest rounded-full flex items-center justify-center text-paper text-xl font-bold">
                 M
               </div>
               <div className="text-left">
-                <div className="font-bold text-gray-900">Mari</div>
-                <div className="text-gray-500 text-sm">34 år, Oslo</div>
+                <div className="font-bold text-ink">Mari</div>
+                <div className="text-ink-muted text-sm">34 år, Oslo</div>
               </div>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-100">
+            <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border">
               {[
-                { value: '68 900 kr', label: 'Mulig å spare', color: 'text-green-600' },
-                { value: '50 kr', label: 'Start-beløp', color: 'text-gray-900' },
-                { value: '52 uker', label: 'Tidsramme', color: 'text-gray-900' },
+                { value: '68 900 kr', label: 'Mulig å spare', color: 'text-forest' },
+                { value: '50 kr', label: 'Start-beløp', color: 'text-ink' },
+                { value: '52 uker', label: 'Tidsramme', color: 'text-ink' },
               ].map(stat => (
                 <div key={stat.label} className="text-center">
                   <div className={`text-2xl md:text-3xl font-black ${stat.color} mb-1`}>{stat.value}</div>
@@ -314,18 +310,18 @@ export default function SpareutfordringPage() {
       </section>
 
       {/* CTA footer */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-black mb-4">
+      <section className="invert-block py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-medium mb-4">
             Klar til å spare {totalDisplay} kr?
           </h2>
-          <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-paper/80 text-lg mb-8 max-w-2xl mx-auto">
             Om 52 uker vil du se tilbake og tenke: "Hvorfor startet jeg ikke i dag?"
             Start nå — det tar bare ett klikk.
           </p>
           <a
             href="#start"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-300 text-green-900 font-extrabold rounded-xl text-lg shadow-lg transition-all hover:scale-105"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-amber-warm hover:opacity-90 text-paper font-extrabold rounded-md text-lg shadow-lg transition-all"
           >
             Start 52-ukers Spareutfordring
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

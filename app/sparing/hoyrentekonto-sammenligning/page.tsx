@@ -366,7 +366,7 @@ export default function HoyrentekontoSammenligning() {
           </p>
           <a
             href="/email-capture"
-            className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             Registrér deg for gratis varsel →
           </a>

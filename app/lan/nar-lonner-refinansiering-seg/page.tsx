@@ -10,23 +10,23 @@ export const metadata: Metadata = {
 export default function RefinansieringForFolkFlest() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-green-600 to-blue-700 text-white py-16">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-100 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/lan" className="hover:text-white">Lån</Link>
-            <span className="mx-2">/</span>
-            <span>Når lønner refinansiering seg</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/lan" className="hover:text-forest transition-colors">Lån</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Når lønner refinansiering seg</span>
           </nav>
-          <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-xs font-semibold bg-forest-soft text-forest rounded-full mb-4">
             Oppdatert april 2026
           </span>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Refinansiering for folk flest
           </h1>
-          <p className="text-green-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             Når det lønner seg — og når du heller bør la det være. En ærlig gjennomgang.
           </p>
         </div>
@@ -43,12 +43,12 @@ export default function RefinansieringForFolkFlest() {
         </p>
 
         {/* Visual intro */}
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 my-8 border border-green-100">
+        <div className="bg-paper-alt rounded-2xl p-8 my-8 border border-border">
           <div className="flex items-center gap-4 mb-4">
             <div className="text-5xl"></div>
             <div>
-              <p className="text-green-800 font-bold text-lg">Kjernen i refinansiering</p>
-              <p className="text-green-600 text-sm">Bytt ett dyrt lån med ett billigere — eller samle mange dyre lån til ett mindre dyrt.</p>
+              <p className="text-ink font-display font-medium text-lg">Kjernen i refinansiering</p>
+              <p className="text-ink-muted text-sm">Bytt ett dyrt lån med ett billigere — eller samle mange dyre lån til ett mindre dyrt.</p>
             </div>
           </div>
         </div>
@@ -337,7 +337,7 @@ export default function RefinansieringForFolkFlest() {
             deg med å finne det beste tilbudet for din situasjon.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/lan" className="inline-flex items-center gap-2 bg-primary-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors text-sm">
+            <Link href="/lan" className="inline-flex items-center gap-2 bg-forest text-paper font-medium py-2 px-4 rounded-md hover:bg-forest-mid transition-colors text-sm">
               Se alle lånetyper →
             </Link>
             <Link href="/lan/refinansiering-spar-paa-gjelden" className="inline-flex items-center gap-2 border border-primary-600 text-primary-600 font-medium py-2 px-4 rounded-lg hover:bg-primary-50 transition-colors text-sm">
