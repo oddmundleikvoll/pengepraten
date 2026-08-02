@@ -1,7 +1,35 @@
 import type { Metadata } from 'next'
+import { Fraunces, DM_Sans, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+
+/**
+ * Nordic Clarity type system — loaded once at the root via next/font.
+ * Variables are exposed to globals.css through --font-fraunces,
+ * --font-dm-sans and --font-jetbrains.
+ */
+const fraunces = Fraunces({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-fraunces',
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-dm-sans',
+  weight: ['400', '500', '600', '700'],
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jetbrains',
+  weight: ['400', '500', '600'],
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://pengepraten.no'),
@@ -48,7 +76,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nb">
+    <html lang="nb" className={`${fraunces.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         {/* Google tag (gtag.js) */}
@@ -64,7 +92,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-white">
+      <body className="min-h-screen flex flex-col bg-paper text-ink">
         <Header />
         <main className="flex-1">
           {children}
