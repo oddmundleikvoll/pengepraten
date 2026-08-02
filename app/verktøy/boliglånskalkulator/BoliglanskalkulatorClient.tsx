@@ -4,9 +4,9 @@ import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 
 /*
- * SOURCES — Boliglånsrenter (mai 2026):
- * - Norges Bank styringsrente: 4,25% (hevet fra 4,00% 7. mai 2026)
- * - Neste rentemøte: 18. juni 2026
+ * SOURCES — Boliglånsrenter (august 2026):
+ * - Norges Bank styringsrente: 4,25% (hevet fra 4,00% 7. mai 2026, holdt uendret 17. juni 2026)
+ * - Neste rentemøte: 13. august 2026
  * - DNB: Flytende ~4,95-5,35%, 3-års binding ~4,80-5,15%, 5-års binding ~4,65-5,00%
  * - Nordea: Flytende ~5,00-5,40%, 3-års binding ~4,85-5,20%, 5-års binding ~4,70-5,05%
  * - SpareBank1: Flytende ~4,85-5,25%, 3-års binding ~4,70-5,05%, 5-års binding ~4,55-4,90%
@@ -16,7 +16,7 @@ import Link from 'next/link'
  * - Sbanken: Flytende 4,79-5,08% (effektiv 4,90-5,20%)
  * - BN Bank: Flytende 5,04-5,45% (effektiv 5,19-5,64%)
  *
- * Typisk boliglånsrente i Norge mai 2026:
+ * Typisk boliglånsrente i Norge august 2026:
  * - Flytende rente: 4,80-5,40% (nominell)
  * - Bundet 3 år: 4,65-5,05%
  * - Bundet 5 år: 4,50-4,90%
@@ -529,7 +529,7 @@ export default function BoliglanskalkulatorClient() {
 
             {/* Rate type info */}
             <div className="bg-gray-50 rounded-xl p-4">
-              <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">Rentehistorikk (mai 2026)</h3>
+              <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">Rentehistorikk (august 2026)</h3>
               <div className="space-y-2">
                 {[
                   { type: 'Flytende', range: '4,80–5,40%', banks: 'DNB, Nordea, SpareBank1, OBOS, Storebrand' },
@@ -544,7 +544,7 @@ export default function BoliglanskalkulatorClient() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-3">Kilder: Bankenes nettsider, Finansportalen. Oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026. Renter kan variere etter kredittscore og belåningsgrad.</p>
+              <p className="text-xs text-gray-400 mt-3">Kilder: Bankenes nettsider, Finansportalen. Oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026 (uendret 17. juni 2026). Neste rentemøte 13. august 2026. Renter kan variere etter kredittscore og belåningsgrad.</p>
             </div>
           </div>
         </div>
@@ -671,8 +671,8 @@ export default function BoliglanskalkulatorClient() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               ),
-              title: 'Oppdatert mai 2026',
-              desc: 'Rentene er oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026, basert på reelle tilbud fra norske banker.',
+              title: 'Oppdatert august 2026',
+              desc: 'Rentene er oppdatert etter Norges Banks renteheving til 4,25% 7. mai 2026 (holdt uendret 17. juni 2026), basert på reelle tilbud fra norske banker. Neste rentemøte 13. august 2026.',
               color: 'bg-green-50',
               iconColor: 'text-green-600',
             },

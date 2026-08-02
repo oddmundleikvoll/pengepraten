@@ -49,8 +49,10 @@ export default function NorgesBankHeverRentenMai2026() {
           pengepolitikk er nødvendig for å sikre at inflasjonen kommer ned og blir der.
         </p>
         <p>
-          Neste rentebeslutning offentliggjøres <strong>18. juni 2026</strong>. 
-          Det er åtte rentemøter i året, og komiteen består av fem medlemmer.
+          Neste rentebeslutning offentliggjøres <strong>13. august 2026</strong> kl. 10:00. 
+          Det er åtte rentemøter i året, og komiteen består av fem medlemmer. 
+          Rentemøtet 17. juni 2026 holdt renten uendret på 4,25 %, men strammet 
+          samtidig signalene i rentebanen.
         </p>
 
         {/* Konkret effekt */}
@@ -163,8 +165,10 @@ export default function NorgesBankHeverRentenMai2026() {
           rentebanen fremover?
         </p>
         <ul>
-          <li><strong>Juni 2026:</strong> Neste rentemøte 18. juni. Markedet priser inn 
-            omtrent 50/50 sjanse for ytterligere heving eller uendret rente.</li>
+          <li><strong>Juni 2026:</strong> Rentemøtet 17. juni holdt renten uendret på 4,25 %. 
+            Komiteen strammet signalene i rentebanen — «i overkant av 4,5 %» ved utgangen av 2026.</li>
+          <li><strong>August 2026:</strong> Nestse rentemøte 13. august. Markedet priser inn 
+            omtrent 50 % sannsynlighet for heving til 4,50 % på dette møtet.</li>
           <li><strong>Høsten 2026:</strong> Hvis inflasjonen faller tilbake mot 2 %, kan 
             renten holdes stabil eller justeres nedover.</li>
           <li><strong>2027:</strong> De fleste analytikere venter styringsrente på 

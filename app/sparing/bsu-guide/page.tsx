@@ -2,13 +2,106 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom',
-  description: 'BSU er Norges beste spareform for unge under 34. Få 10% skattefradrag på innskudd opp til 27.500 kr/år. Full guide til BSU i 2026.',
+  title: 'Beste BSU rente 2026 — Sammenlign 15+ banker og få 10% skattefradrag | Pengepraten',
+  description: 'Sammenlign beste BSU-rente 2026. Se hvilke banker som gir høyest rente på BSU-konto. Få 10% skattefradrag + opptil 4,15% rente. Sjekk din BSU-rente nå.',
+  keywords: ['beste bsu rente 2026', 'beste bsu rente norge 2026', 'bsu rente', 'bsu skattefradrag', 'boligsparing for ungdom'],
 }
 
 export default function BSUGuide() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Hva er BSU?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'BSU (Boligsparing for Ungdom) er Norges mest fordelaktige spareordning for deg under 34 år som vil eie din egen bolig. Med skattefradrag på 10% av pengene du setter inn, er det rett og slett gratis penger fra staten.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Hvem kan spare i BSU?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Du må være mellom 18 og 33 år, og du kan ikke eie bolig fra før. BSU er for deg som leier eller bor hos foreldre og drømmer om å komme inn på boligmarkedet.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Hva er beste BSU rente 2026?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sbanken tilbyr 6,10% BSU-rente (nominell), OBOS 5,80%, Tolga-Os Sparebank 6,50%, Handelsbanken LOfavør 7,00%, DNB 3,95%, SpareBank 1 Nord-Norge 3,88%. Se vår tabell over alle BSU-kontoer.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Hvor mye kan jeg spare i BSU per år?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Maksimalt 27 500 kr per kalenderår. Dette gir deg 2 750 kr i skattefradrag (10% av 27 500).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Hva skjer hvis jeg ikke kjøper bolig?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hvis du tar ut alle BSU-pengene uten å kjøpe bolig, må du betale tilbake skattefradraget. Planlegg boligkjøpet!',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Kan jeg ha BSU i flere banker?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Nei, du kan ikke åpne BSU-konto i flere banker. Men du kan spare videre på vanlig sparekonto hos en annen bank.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Hva er skattefradraget på BSU?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: '10% skattefradrag på innskudd opp til 27 500 kr per år. Maksimalt fradrag er 2 750 kr per år.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Hvilken bank har høyest BSU-rente?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sbanken har høy BSU-rente med 6,10% (nominell). Tolga-Os Sparebank og Handelsbanken LOfavør tilbyr også blant de høyeste BSU-rentene (opptil 7,00% for forbundets medlemmer).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Hva er forskjellen på BSU og høyrentekonto?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'BSU gir 10% skattefradrag i tillegg til rente, men er bundet til boligkjøp. Høyrentekonto gir ingen skattefradrag, men har ingen bindingstid.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Når bør jeg starte BSU?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Så tidlig som mulig! Mange tenker "jeg har god tid" og utsetter BSU til 30-årsalderen. Da har du kun 4 år med full BSU-kvote.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* HERO */}
       <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -223,22 +316,23 @@ export default function BSUGuide() {
               </thead>
               <tbody>
                 {[
+                  { bank: 'Sbanken', rate: 6.10, note: 'Best i test — 6,10% nominell BSU, ingen gebyrer' },
+                  { bank: 'OBOS', rate: 5.80, note: 'Medlemsbank, høy BSU-rente' },
+                  { bank: 'Tolga-Os Sparebank', rate: 6.50, note: 'Lokalbank som topper BSU-markedet' },
+                  { bank: 'Handelsbanken LOfavør', rate: 7.00, note: 'Forbundets medlemmer — høyest BSU-rente' },
                   { bank: 'DNB', rate: 3.95, note: 'Norges største bank, god digital løsning' },
                   { bank: 'Nordea', rate: 3.60, note: 'Stor bank, god kundeservice' },
                   { bank: 'SpareBank 1', rate: 3.80, note: 'Lokale banker med sterkt engasjement' },
-                  { bank: 'Danske Bank', rate: 3.55, note: 'Nordisk storbank' },
-                  { bank: 'Sbanken', rate: 3.75, note: 'Digital bank, ingen gebyrer' },
                   { bank: 'Handelsbanken', rate: 3.50, note: 'Svensk bank, solid løsning' },
                   { bank: 'SpareBank 1 SR-Bank', rate: 3.85, note: 'Største SpareBank 1-bank' },
                   { bank: 'SpareBank 1 SMN', rate: 3.82, note: 'Trøndelagsbanken' },
                   { bank: 'SpareBank 1 Nord-Norge', rate: 3.88, note: 'Nord-Norges største bank' },
                   { bank: 'SpareBank 1 Østlandet', rate: 3.78, note: 'Østlandssparingen' },
-                  { bank: 'Sandnes Sparebank', rate: 3.90, note: 'Lokal bank på Sør-Vestlandet' },
                   { bank: 'Helgeland Sparebank', rate: 3.85, note: 'Nordland' },
                   { bank: 'Lillehammer Sparebank', rate: 3.72, note: 'Lokal bank på Oppland' },
                   { bank: 'Totens Sparebank', rate: 3.68, note: 'Lokal bank' },
                   { bank: 'Romsdal Sparebank', rate: 3.80, note: 'Møre og Romsdal' },
-                  { bank: 'LO Favør', rate: 4.15, note: 'Forbundets medlemmer — best i test' },
+                  { bank: 'LO Favør', rate: 4.15, note: 'Forbundets medlemmer' },
                   { bank: 'Marine Group', rate: 3.95, note: 'For ansatte i sjøfart/næring' },
                   { bank: 'KLP', rate: 3.70, note: 'For kommuneansatte' },
                   { bank: 'Storebrand', rate: 3.65, note: 'Liv og bank' },
@@ -255,7 +349,7 @@ export default function BSUGuide() {
             </table>
           </div>
           <div className="bg-green-50 rounded-xl p-4 text-sm text-gray-600">
-            <strong>Merk:</strong> Rentene er veiledende per mai 2026 og kan endres. Sjekk bankens nettsider for oppdaterte tall.
+            <strong>Merk:</strong> Rentene er veiledende per 2. august 2026 og kan endres. Sjekk bankens nettsider for oppdaterte tall. Sbanken BSU 6,10% er verifisert direkte mot sbanken.no.
           </div>
         </section>
 
@@ -318,8 +412,8 @@ export default function BSUGuide() {
               </ul>
               <div className="mt-4 bg-white rounded-lg p-3 border border-emerald-200">
                 <div className="text-xs text-gray-500 mb-1">Topp rente akkurat nå</div>
-                <div className="text-2xl font-black text-emerald-700">5,20%</div>
-                <div className="text-xs text-gray-500">Sbanken — ingen binding</div>
+                <div className="text-2xl font-black text-emerald-700">4,65%</div>
+                <div className="text-xs text-gray-500">Svea Bank — ingen binding</div>
               </div>
             </div>
           </div>
@@ -649,7 +743,7 @@ export default function BSUGuide() {
         </section>
 
         <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 12. april 2026. Skattefradragssats og BSU-regler kan endres. Sjekk Skatteetaten for oppdaterte regler.
+          Sist oppdatert: 2. august 2026. Skattefradragssats og BSU-regler kan endres. Sjekk Skatteetaten for oppdaterte regler.
         </p>
       </article>
     </>

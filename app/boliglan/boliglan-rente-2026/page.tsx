@@ -38,10 +38,10 @@ export default function Boliglansrente2026() {
           på å velge feil bank.
         </p>
         <p className="text-gray-600 mb-8">
-          Per mai 2026 har Norges Bank hevet styringsrenten fra 4,00 % til 4,25 % etter rentemøtet 7. mai 2026. Boliglånsrentene i Norge ligger i intervallet 4,7 % til 5,5 % avhengig av bank, profil og forhandlingsdyktighet. Neste rentebeslutning kommer 18. juni 2026.
+          Per august 2026 ligger styringsrenten på 4,25 % etter Norges Banks renteheving fra 4,00 % til 4,25 % ved rentemøtet 7. mai 2026. Rentemøtet 17. juni 2026 holdt renten uendret. Boliglånsrentene i Norge ligger i intervallet 4,7 % til 5,5 % avhengig av bank, profil og forhandlingsdyktighet. Neste rentebeslutning kommer 13. august 2026.
         </p>
 
-        <h2>Gjeldende boliglånsrenter (mai 2026)</h2>
+        <h2>Gjeldende boliglånsrenter (august 2026)</h2>
         <p className="text-sm text-gray-500 mb-4">
           Tabellen under viser nominelle boliglånsrenter fra de største norske bankene 
           etter Norges Banks renteheving 7. mai 2026. Legg merke til at effektiv rente alltid er høyere på grunn av gebyrer og 
@@ -117,7 +117,7 @@ export default function Boliglansrente2026() {
           </table>
         </div>
         <p className="text-xs text-gray-500 mb-8">
-          * Oppdatert mai 2026 etter Norges Banks renteheving til 4,25 %. Rentene er veiledende og kan variere basert på 
+          * Sist oppdatert 2. august 2026 etter Norges Banks renteheving til 4,25 % i mai 2026 og uendret rente 17. juni 2026. Rentene er veiledende og kan variere basert på 
           din økonomiske situasjon, belåningsgrad og lånebeløp. Kontakt banken direkte for et personlig tilbud.
         </p>
 
@@ -185,7 +185,7 @@ export default function Boliglansrente2026() {
           i Norge — inkludert boliglånsrenten din.
         </p>
 
-        <h3>Siste rentebeslutning (mai 2026)</h3>
+        <h3>Siste rentebeslutning (juni 2026)</h3>
         <p>
           Norges Bank hevet styringsrenten fra 4,00 % til 4,25 % ved rentemøtet 7. mai 2026.
           Dette er første renteheving på over ett år, etter en periode med rentekutt.
@@ -193,14 +193,17 @@ export default function Boliglansrente2026() {
           enn ventet, og at økonomien tåler en litt strammere pengepolitikk.
         </p>
         <p>
-          Neste rentebeslutning offentliggjøres <strong>18. juni 2026</strong>. Markedet 
-          priser inn omtrent 50/50 sjanse for ytterligere heving, eller at renten holdes 
-          uendret på 4,25 %.
+          Rentemøtet 17. juni 2026 holdt renten uendret på 4,25 % (komiteen enstemmig), 
+          men strammet signalene i rentebanen — nå «i overkant av 4,5 %» ved utgangen av 2026.
+        </p>
+        <p>
+          Neste rentebeslutning offentliggjøres <strong>13. august 2026</strong> kl. 10:00. Markedet 
+          priser inn omtrent 50 % sannsynlighet for heving til 4,50 % på dette møtet.
         </p>
 
         <h3>Hva ekspertene tror om fremtiden</h3>
         <p>
-          Etter rentehevingen i mai 2026 er det usikkert hvilken vei renten går. 
+          Etter rentehevingen i mai 2026 og uendret rente i juni 2026 er det usikkert hvilken vei renten går. 
           De fleste analytikere venter at styringsrenten holdes på 4,25 % gjennom 
           sommeren, med mulig justering nedover mot høsten hvis inflasjonen faller 
           tilbake mot 2 %-målet. Enkelte spår styringsrente på 3,75-4,00 % ved 
@@ -258,7 +261,7 @@ export default function Boliglansrente2026() {
 
         <h3>Hva lønner seg akkurat nå?</h3>
         <p>
-          Med styringsrenten på 4,25 % etter hevingen i mai 2026 og usikkerhet om 
+          Med styringsrenten på 4,25 % etter hevingen i mai 2026 og uendret rente i juni 2026, og usikkerhet om 
           fremtidig renteutvikling, er flytende rente fortsatt det vanligste valget. 
           Du betaler en premie for fastrente (gjerne 0,5-1,0 prosentpoeng høyere), 
           og den premien er vanskelig å forsvare hvis rentene kan gå begge veier.
@@ -382,7 +385,7 @@ export default function Boliglansrente2026() {
 
         <h3>Er 5 års fastrente verdt det i dagens marked?</h3>
         <p>
-          Avhengig av din risikovillighet og budsjettsituasjon. I mai 2026 med 
+          Avhengig av din risikovillighet og budsjettsituasjon. I august 2026 med 
           styringsrente på 4,25 % og usikker fremtidsutsikt, er flytende rente trolig 
           smartere for de fleste. Men hvis du verdsetter forutsigbarhet høyt, er 5 års 
           fastrente et akseptabelt kompromiss.
@@ -410,7 +413,7 @@ export default function Boliglansrente2026() {
           kroner betyr over 100.000 kroner over 10 år.
         </p>
         <p>
-          I mai 2026 ligger boliglånsrentene mellom 4,7 % og 5,5 % avhengig av 
+          I august 2026 ligger boliglånsrentene mellom 4,7 % og 5,5 % avhengig av 
           bank og din situasjon. OBOS og Sbanken tenderer mot de laveste, 
           mens de tradisjonelle storbankene ligger litt høyere.
         </p>
@@ -462,7 +465,7 @@ export default function Boliglansrente2026() {
         </div>
 
         <p className="text-xs text-gray-400 mt-8">
-          Sist oppdatert: mai 2026. Rentene er veiledende og kan endres.
+          Sist oppdatert: 2. august 2026. Rentene er veiledende og kan endres.
         </p>
       </article>
     </>

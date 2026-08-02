@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste sparekonto i Norge 2026 — de beste rentene nå',
-  description: 'Med inflasjonen som spiser av sparepengene dine, er det viktigere enn noensinne å plassere pengene der de faktisk vokser. Her er vår oppdaterte oversikt.',
+  title: 'Beste sparekonto i Norge august 2026 — de beste rentene nå',
+  description: 'Med inflasjonen som spiser av sparepengene dine, er det viktigere enn noensinne å plassere pengene der de faktisk vokser. Her er vår oppdaterte oversikt for august 2026.',
 }
 
 export default function BesteSparekonto2026() {
@@ -48,34 +48,34 @@ export default function BesteSparekonto2026() {
           <li><strong>Ingen risiko:</strong> I motsetning til aksjer, er innskudd garantert</li>
         </ul>
 
-        <h2>Beste sparekontoer i Norge 2026</h2>
+        <h2>Beste sparekontoer i Norge august 2026</h2>
 
-        <h3>Sbanken Sparekonto</h3>
+        <h3>Svea Bank Sparekonto</h3>
         <p>
-          Sbanken (tidligere Skandiabanken) har lenge vært blant de beste på renter. 
-          Deres sparekonto gir god rente uten bindingstid eller gebyrer.
+          Svea Bank topper listen i august 2026 med 4,65 % rente. Svensk nettbank uten 
+          bindingstid og ubegrenset uttak. Eksisterende kunder får ny rente 27.08.26.
         </p>
         <p>
-          <strong>Styrker:</strong> Konkurransedyktig rente, ingen binding, ingen gebyrer, 
-          god digital bank.
+          <strong>Styrker:</strong> Høyest rente på markedet, ingen binding, ingen gebyrer, 
+          fri tilgang til pengene.
         </p>
 
-        <h3>Bluestep Sparekonto</h3>
+        <h3>OBOS Sparekonto Langsiktig</h3>
         <p>
-          Bluestep er en utfordrer på det norske markedet som ofte byr på blant de 
-          høyeste rentene. Verdt å sjekke for de som vil maksimere renteinntektene.
+          OBOS tilbyr 4,55 % rente på Sparekonto Langsiktig, fra første krone. Som 
+          medlemsbank kan OBOS-medlemskap gi ytterligere fordeler.
         </p>
 
-        <h3>Sparebank 1 Østlandet</h3>
+        <h3>Nordax Sparekonto Smart</h3>
         <p>
-          Mange Sparebank 1-banker tilbyr gode sparekontoer, spesielt for eksisterende 
-          kunder. Sjekk din lokale Sparebank 1 for aktuelle renter.
+          Nordax (NOBA Bank Group) tilbyr 4,50 % på Sparekonto Smart — et nytt konsept 
+          med høyere rente og fri tilgang.
         </p>
 
-        <h3>BN Bank Sparekonto</h3>
+        <h3>BN Bank Høyrentekonto</h3>
         <p>
-          BN Bank er en nettbank som ofte ligger i teten når det gjelder renter. 
-          Enkel å bruke og god kundeservice.
+          BN Bank tilbyr inntil 4,49 % på Høyrentekonto. Begrenset uttak, men 
+          månedlig kapitalisering. Solid nettbank.
         </p>
 
         <h2>Sammenligning av renter</h2>
@@ -91,26 +91,38 @@ export default function BesteSparekonto2026() {
             </thead>
             <tbody>
               <tr>
-                <td className="p-3 border font-medium">Sbanken</td>
-                <td className="p-3 border">3,50%</td>
+                <td className="p-3 border font-medium">Svea Bank</td>
+                <td className="p-3 border font-bold text-green-700">4,65%</td>
                 <td className="p-3 border">Ingen</td>
                 <td className="p-3 border">0 kr</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border font-medium">Bluestep</td>
-                <td className="p-3 border">3,75%</td>
+                <td className="p-3 border font-medium">OBOS Sparekonto Langsiktig</td>
+                <td className="p-3 border font-bold text-green-700">4,55%</td>
                 <td className="p-3 border">Ingen</td>
                 <td className="p-3 border">0 kr</td>
               </tr>
               <tr>
-                <td className="p-3 border font-medium">BN Bank</td>
-                <td className="p-3 border">3,40%</td>
+                <td className="p-3 border font-medium">Nordax Sparekonto Smart</td>
+                <td className="p-3 border font-bold text-green-700">4,50%</td>
                 <td className="p-3 border">Ingen</td>
                 <td className="p-3 border">0 kr</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="p-3 border font-medium">Sparebank 1</td>
-                <td className="p-3 border">3,25%</td>
+                <td className="p-3 border font-medium">BN Bank Høyrentekonto</td>
+                <td className="p-3 border font-bold text-green-700">4,49%</td>
+                <td className="p-3 border">Ingen</td>
+                <td className="p-3 border">0 kr</td>
+              </tr>
+              <tr>
+                <td className="p-3 border font-medium">Nordea Sparekonto Ekstra</td>
+                <td className="p-3 border font-bold text-green-700">4,35%</td>
+                <td className="p-3 border">Ingen</td>
+                <td className="p-3 border">0 kr</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border font-medium">Sbanken (over 500k)</td>
+                <td className="p-3 border font-bold text-green-700">4,09%</td>
                 <td className="p-3 border">Ingen</td>
                 <td className="p-3 border">0 kr</td>
               </tr>
@@ -118,8 +130,8 @@ export default function BesteSparekonto2026() {
           </table>
         </div>
         <p className="text-sm text-gray-500">
-          Merk: Rentene er veiledende per januar 2026 og kan endres. Sjekk bankens 
-          nettside for oppdaterte renter.
+          Merk: Rentene er veiledende per 2. august 2026 og kan endres. Sjekk bankens 
+          nettside for oppdaterte renter. Kilder: bankenes egne sider, Finansportalen.
         </p>
 
         <h2>BSU — ekstra gunstig for deg under 34</h2>
@@ -163,7 +175,7 @@ export default function BesteSparekonto2026() {
         <div className="bg-green-50 rounded-xl p-6 my-8">
           <h3 className="font-bold text-norsk-dark mb-2">Vår anbefaling</h3>
           <p className="text-gray-700">
-            For de fleste er <strong>Sbanken</strong> eller <strong>Bluestep</strong> gode 
+            For de fleste er <strong>Svea Bank</strong> eller <strong>OBOS Sparekonto Langsiktig</strong> gode 
             valg med konkurransedyktige renter og ingen bindingstid. Er du under 34 år, 
             prioriter <strong>BSU</strong> først — skattefradraget gjør det til den beste 
             spareformen for unge boligkjøpere.
@@ -171,7 +183,7 @@ export default function BesteSparekonto2026() {
         </div>
 
         <p className="text-sm text-gray-500 mt-8">
-          Sist oppdatert: 1. mars 2026. Rentene er veiledende og kan endres. 
+          Sist oppdatert: 2. august 2026. Rentene er veiledende og kan endres. 
           Sjekk alltid bankens egne nettsider for gjeldende renter og vilkår.
         </p>
       </article>
