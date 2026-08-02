@@ -11,14 +11,14 @@ export default function SlikByggerDuSpareddel() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16">
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <nav className="text-green-100 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing" className="hover:text-white">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span>Spareseddel</span>
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Spareseddel</span>
           </nav>
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-white/20 rounded-full mb-4">
             Oppdatert april 2026

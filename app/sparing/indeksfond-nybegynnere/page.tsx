@@ -10,19 +10,19 @@ export default function IndeksfondNybegynnere() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-16">
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-blue-100 text-sm mb-4">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span>Indeksfond</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Indeksfond</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             Indeksfond for nybegynnere: Slik kommer du i gang med fond i 2026
           </h1>
-          <p className="text-blue-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             Du trenger verken å være rik eller ha en finansutdannelse for å investere. Med et indeksfond kan du bygge formue over tid — trygt og rimelig.
           </p>
         </div>

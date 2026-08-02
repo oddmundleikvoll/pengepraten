@@ -54,15 +54,16 @@ const tools = [
 export default function VerktoyPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-norsk-dark via-norsk-blue to-accent-700 text-white py-16">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <nav className="text-gray-300 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <span>Verktøy</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Verktøy</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">Verktøy</h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">Verktøy</h1>
+          <p className="text-xl text-ink-muted max-w-2xl leading-relaxed">
             Gratis verktøy for å ta bedre økonomiske beslutninger. Ingen registrering, 
             ingen spam — bare nyttige verktøy.
           </p>

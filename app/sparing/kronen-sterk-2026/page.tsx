@@ -10,22 +10,22 @@ export default function KronenSterk2026() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-600 to-green-800 text-white py-12">
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing" className="hover:text-white">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span>Kronen sterk 2026</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Kronen sterk 2026</span>
           </nav>
           <div className="inline-block bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
             ØKONOMINYHET MAI 2026
           </div>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Kronen er sterkere enn på årevis: 5 måter å utnytte det på
           </h1>
-          <p className="text-green-100 text-lg max-w-2xl">
+          <p className="text-ink-muted text-lg leading-relaxed max-w-2xl">
             Norske kronen er på det sterkeste nivået på flere år — og det betyr noe 
             konkret for lommeboka di. Her er fem praktiske måter å dra nytte av det på.
           </p>

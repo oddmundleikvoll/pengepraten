@@ -50,19 +50,20 @@ export default function LanekalkulatorClient() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-norsk-dark via-norsk-blue to-accent-700 text-white py-12">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-gray-300 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/verktøy" className="hover:text-white">Verktøy</Link>
-            <span className="mx-2">/</span>
-            <span>Forbrukslånskalkulator</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/verktøy" className="hover:text-forest transition-colors">Verktøy</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Forbrukslånskalkulator</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Forbrukslånskalkulator
           </h1>
-          <p className="text-gray-300 text-lg">
+          <p className="text-ink-muted text-lg leading-relaxed">
             Beregn nøyaktig hvor mye et lån vil koste deg. Se månedlig kostnad, 
             total rente og effektiv rente.
           </p>

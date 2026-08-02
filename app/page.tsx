@@ -46,9 +46,9 @@ const categoryLinks = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-norsk-blue text-white overflow-hidden">
-        {/* Hero background image - full bleed */}
+      {/* Hero Section — Nordic Clarity editorial (image kept, overlay lifted to warm paper wash) */}
+      <section className="relative bg-paper text-ink overflow-hidden">
+        {/* Hero background image - full bleed (kept as content) */}
         <div className="absolute inset-0">
           <Image
             src="/hero-control.png"
@@ -59,26 +59,26 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#002772]/70 to-[#002772]/60" />
+        {/* Paper-tinted overlay (replaces dark-blue wash, keeps image visible behind ink text) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-paper/85 via-paper/55 to-paper/20" />
 
 
-        {/* Subtle glow accents */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-20 w-96 h-96 bg-primary-300 rounded-full blur-3xl" />
+        {/* Subtle forest glow accents (editorial warmth, not bank-blue) */}
+        <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-forest rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-20 w-96 h-96 bg-amber-warm rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6">
+            <h1 className="text-4xl md:text-6xl font-medium font-display leading-[1.05] mb-6">
               Få kontroll på{' '}
-              <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+              <span className="text-forest">
                 pengene dine
               </span>
             </h1>
 
-            <p className="text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl">
+            <p className="text-xl text-ink-muted mb-8 leading-relaxed max-w-2xl">
               Pengepraten er Norges mest nyttige nettside for personlig økonomi. 
               Vi gir deg verktøyene, guidene og sammenligningene du trenger for å ta 
               smartere økonomiske beslutninger — helt gratis.
@@ -87,7 +87,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#last-ned"
-                className="inline-flex items-center justify-center gap-2 bg-white text-norsk-blue font-bold py-4 px-8 rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
+                className="inline-flex items-center justify-center gap-2 bg-forest text-white font-bold py-4 px-8 rounded-md hover:bg-forest-mid transition-colors shadow-lg"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -96,13 +96,13 @@ export default function HomePage() {
               </a>
               <Link
                 href="/verktøy/lånekalkulator"
-                className="inline-flex items-center justify-center gap-2 bg-primary-500 text-white font-semibold py-4 px-6 rounded-xl hover:bg-primary-600 transition-colors text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-white text-forest border border-forest font-semibold py-4 px-6 rounded-md hover:bg-forest-soft transition-colors text-sm"
               >
                 Forbrukslånskalkulator →
               </Link>
               <Link
                 href="/verktøy/boliglånskalkulator"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-semibold py-4 px-6 rounded-xl hover:bg-white/10 transition-colors text-sm"
+                className="inline-flex items-center justify-center gap-2 border-2 border-ink/20 text-ink font-semibold py-4 px-6 rounded-md hover:bg-ink/5 transition-colors text-sm"
               >
                 Boliglånskalkulator →
               </Link>
@@ -219,21 +219,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Loan Calculator CTA */}
-      <section className="bg-gradient-to-br from-norsk-dark to-norsk-blue py-16">
+      {/* Loan Calculator CTA — Nordic Clarity editorial (paper bg, surface cards, forest CTA) */}
+      <section className="bg-paper py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-6">
             {/* Forbrukslån */}
-            <div className="flex flex-col sm:flex-row items-center gap-6 bg-white/10 backdrop-blur rounded-xl p-6">
-              <div className="flex-1 text-white">
-                <h2 className="text-xl font-bold mb-2">Forbrukslån</h2>
-                <p className="text-gray-300 text-sm leading-relaxed">
+            <div className="flex flex-col sm:flex-row items-center gap-6 bg-paper-surface rounded-xl p-6 border border-border">
+              <div className="flex-1">
+                <h2 className="font-display text-2xl font-medium text-ink mb-2">Forbrukslån</h2>
+                <p className="text-ink-muted text-sm leading-relaxed">
                   Beregn månedlig kostnad for usikret lån — med alle renter og gebyrer.
                 </p>
               </div>
               <Link
                 href="/verktøy/lånekalkulator"
-                className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-norsk-blue font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors shadow-lg text-sm"
+                className="flex-shrink-0 inline-flex items-center gap-2 bg-forest text-white font-bold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors shadow-sm text-sm"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -243,16 +243,16 @@ export default function HomePage() {
             </div>
 
             {/* Boliglån */}
-            <div className="flex flex-col sm:flex-row items-center gap-6 bg-white/10 backdrop-blur rounded-xl p-6">
-              <div className="flex-1 text-white">
-                <h2 className="text-xl font-bold mb-2">Boliglån</h2>
-                <p className="text-gray-300 text-sm leading-relaxed">
+            <div className="flex flex-col sm:flex-row items-center gap-6 bg-paper-surface rounded-xl p-6 border border-border">
+              <div className="flex-1">
+                <h2 className="font-display text-2xl font-medium text-ink mb-2">Boliglån</h2>
+                <p className="text-ink-muted text-sm leading-relaxed">
                   Beregn månedlig kostnad og effektiv rente for boliglån med nedbetalingsplan.
                 </p>
               </div>
               <Link
                 href="/verktøy/boliglånskalkulator"
-                className="flex-shrink-0 inline-flex items-center gap-2 bg-primary-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-primary-600 transition-colors shadow-lg text-sm"
+                className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-forest border border-forest font-bold py-3 px-6 rounded-md hover:bg-forest-soft transition-colors shadow-sm text-sm"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />

@@ -11,20 +11,20 @@ export const metadata: Metadata = {
 export default function IPSGuide() {
   return (
     <>
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-indigo-700 to-purple-800 text-white py-16">
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-indigo-200 text-sm mb-4">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span>IPS</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">IPS</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             IPS 2026: Alt du trenger å vite om Individuell Pensjonssparing
           </h1>
-          <p className="text-indigo-200 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             IPS er en av Norges mest underspilte spareformer. Med skattefradrag pluss fond-avkastning kan du få 26-40% av pengene tilbake fra staten — før du tjener en eneste krone.
           </p>
         </div>
@@ -144,23 +144,23 @@ export default function IPSGuide() {
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold mt-0.5"></span>
-                  <span>Du er over 18 år</span>
+                  <span className="text-ink">Du er over 18 år</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold mt-0.5"></span>
-                  <span>Du har inntekt over 50.000 kr/år</span>
+                  <span className="text-ink">Du har inntekt over 50.000 kr/år</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold mt-0.5"></span>
-                  <span>Du har minst 5-10 år til pensjon</span>
+                  <span className="text-ink">Du har minst 5-10 år til pensjon</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold mt-0.5"></span>
-                  <span>Du vil ha mer enn vanlig sparing</span>
+                  <span className="text-ink">Du vil ha mer enn vanlig sparing</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold mt-0.5"></span>
-                  <span>Du har fylt BSU-kvoten (27.500 kr)</span>
+                  <span className="text-ink">Du har fylt BSU-kvoten (27.500 kr)</span>
                 </li>
               </ul>
             </div>
@@ -170,16 +170,16 @@ export default function IPSGuide() {
               </h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li className="flex items-start gap-2">
-                  <span>Du er under 34 og kan spare i BSU (bedre)</span>
+                  <span className="text-ink">Du er under 34 og kan spare i BSU (bedre)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span>Du trenger pengene de nærmeste 5-10 årene</span>
+                  <span className="text-ink">Du trenger pengene de nærmeste 5-10 årene</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span>Du har svært lav inntekt (lite skattefordel)</span>
+                  <span className="text-ink">Du har svært lav inntekt (lite skattefordel)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span>Du liker ikke å ha pengene bundet</span>
+                  <span className="text-ink">Du liker ikke å ha pengene bundet</span>
                 </li>
               </ul>
             </div>

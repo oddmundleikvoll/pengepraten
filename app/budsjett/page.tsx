@@ -10,15 +10,16 @@ export const metadata: Metadata = {
 export default function BudsjettPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-amber-500 to-orange-600 text-white py-16">
+      {/* Hero — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <nav className="text-amber-100 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <span>Budsjett</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Budsjett</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">Budsjett</h1>
-          <p className="text-xl text-amber-100 max-w-2xl">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">Budsjett</h1>
+          <p className="text-xl text-ink-muted max-w-2xl leading-relaxed">
             Ta kontroll over økonomien med våre gratis budsjettmaler og verktøy.
           </p>
         </div>

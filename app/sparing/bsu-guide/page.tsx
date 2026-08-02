@@ -102,20 +102,20 @@ export default function BSUGuide() {
         }}
       />
 
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16">
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-100 text-sm mb-4">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span>BSU Guide</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">BSU Guide</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-black mb-4">
+          <h1 className="text-3xl md:text-5xl font-medium font-display leading-[1.08] mb-4">
             BSU 2026: Alt du trenger å vite om Boligsparing for Ungdom
           </h1>
-          <p className="text-green-100 text-xl max-w-2xl">
+          <p className="text-ink-muted text-xl max-w-2xl leading-relaxed">
             Norges beste spareform for unge boligkjøpere. Lær hvordan du får <strong>10% skattefradrag</strong> på pengene dine.
           </p>
         </div>
@@ -368,19 +368,19 @@ export default function BSUGuide() {
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold"></span>
-                  <span>Du er mellom 18 og 33 år</span>
+                  <span className="text-ink">Du er mellom 18 og 33 år</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold"></span>
-                  <span>Du planlegger å kjøpe bolig i fremtiden</span>
+                  <span className="text-ink">Du planlegger å kjøpe bolig i fremtiden</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold"></span>
-                  <span>Du vil ha 10% skattefradrag (opptil 2 750 kr/år)</span>
+                  <span className="text-ink">Du vil ha 10% skattefradrag (opptil 2 750 kr/år)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold"></span>
-                  <span>Du tåler at pengene er bundet til boligkjøp</span>
+                  <span className="text-ink">Du tåler at pengene er bundet til boligkjøp</span>
                 </li>
               </ul>
               <div className="mt-4 bg-white rounded-lg p-3 border border-green-200">
@@ -395,19 +395,19 @@ export default function BSUGuide() {
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-600 font-bold"></span>
-                  <span>Du er 34+ år (eller har allerede bolig)</span>
+                  <span className="text-ink">Du er 34+ år (eller har allerede bolig)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-600 font-bold"></span>
-                  <span>Du vil ha full fleksibilitet — ta ut når som helst</span>
+                  <span className="text-ink">Du vil ha full fleksibilitet — ta ut når som helst</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-600 font-bold"></span>
-                  <span>Du sparer til andre mål (bil, reise, buffer)</span>
+                  <span className="text-ink">Du sparer til andre mål (bil, reise, buffer)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-600 font-bold"></span>
-                  <span>Du vil kunne spare mer enn 27 500 kr/år</span>
+                  <span className="text-ink">Du vil kunne spare mer enn 27 500 kr/år</span>
                 </li>
               </ul>
               <div className="mt-4 bg-white rounded-lg p-3 border border-emerald-200">

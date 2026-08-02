@@ -139,37 +139,35 @@ export default function Hoyrentekonto() {
         }}
       />
 
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/3" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-200 text-sm mb-6">
-            <Link href="/">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span className="text-white">Høyrentekonto</span>
+      {/* HERO — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-16 md:py-20 border-b border-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Høyrentekonto</span>
           </nav>
           <div className="flex flex-col lg:flex-row gap-10 items-center">
             <div className="flex-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/15 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm">
-                <span>Sist oppdatert: 2. august 2026</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-forest-soft rounded-full text-sm font-medium mb-5 text-forest">
+                Sist oppdatert: 2. august 2026
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-display leading-[1.05] mb-4">
                 Beste høyrentekonto{' '}
-                <span className="text-amber-300">akkurat nå</span>
+                <span className="text-amber-warm">akkurat nå</span>
               </h1>
-              <p className="text-green-100 text-lg md:text-xl max-w-2xl leading-relaxed">
+              <p className="text-ink-muted text-lg leading-relaxed md:text-xl max-w-2xl">
                 Svært få nordmenn bruker høyrentekonto. Det er synd — forskjellen mellom 0% og 4,65% rente på 100.000 kroner er{' '}
-                <strong className="text-white">4.650 kroner i året</strong>.
+                <strong className="text-ink">4.650 kroner i året</strong>.
               </p>
             </div>
             {/* Quick stats */}
-            <div className="shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 min-w-[260px]">
-              <div className="text-sm font-semibold text-green-200 mb-3">Topp rente akkurat nå</div>
-              <div className="text-5xl font-black text-amber-300 mb-1">4,65%</div>
-              <div className="text-green-200 text-sm mb-4">Svea Bank / Bank Norwegian Sparekonto 31 — august 2026</div>
+            <div className="shrink-0 bg-paper-surface rounded-2xl border border-border p-6 min-w-[260px]">
+              <div className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-3">Topp rente akkurat nå</div>
+              <div className="text-5xl font-medium font-mono text-forest mb-1">4,65%</div>
+              <div className="text-ink-muted text-sm mb-4">Svea Bank / Bank Norwegian Sparekonto 31 — august 2026</div>
               <div className="space-y-2">
                 {[
                   { label: 'Innskuddsgaranti', value: '100.000 €' },
@@ -177,8 +175,8 @@ export default function Hoyrentekonto() {
                   { label: 'Bindingstid', value: 'Ingen' },
                 ].map(item => (
                   <div key={item.label} className="flex justify-between text-sm">
-                    <span className="text-green-200">{item.label}</span>
-                    <span className="font-semibold text-white">{item.value}</span>
+                    <span className="text-ink-muted">{item.label}</span>
+                    <span className="font-semibold text-ink">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -210,7 +208,7 @@ export default function Hoyrentekonto() {
               <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Innskuddsgaranti på alle</span>
+              <span className="text-ink">Innskuddsgaranti på alle</span>
             </div>
           </div>
 
@@ -324,7 +322,7 @@ export default function Hoyrentekonto() {
             <svg className="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
             </svg>
-            <span>Rentene er flytende og kan endres. Sjekk bankens nettsider for oppdaterte tall. Alle kontoer er dekket av norsk innskuddsgaranti (100.000 euro per person per bank).</span>
+            <span className="text-ink">Rentene er flytende og kan endres. Sjekk bankens nettsider for oppdaterte tall. Alle kontoer er dekket av norsk innskuddsgaranti (100.000 euro per person per bank).</span>
           </div>
         </section>
 
@@ -509,15 +507,15 @@ export default function Hoyrentekonto() {
             </h3>
             <div className="space-y-2.5 text-gray-700">
               <div className="flex justify-between py-2 border-b border-red-100">
-                <span>Penger på brukskonto:</span>
+                <span className="text-ink">Penger på brukskonto:</span>
                 <span className="font-bold text-gray-900">100.000 kr</span>
               </div>
               <div className="flex justify-between py-2 border-b border-red-100">
-                <span>Inflasjon (3%):</span>
+                <span className="text-ink">Inflasjon (3%):</span>
                 <span className="font-bold text-red-700">- 3.000 kr i verdi</span>
               </div>
               <div className="flex justify-between py-2 border-b border-red-100">
-                <span>Renteinntekt (0%):</span>
+                <span className="text-ink">Renteinntekt (0%):</span>
                 <span className="font-bold">+ 0 kr</span>
               </div>
               <div className="flex justify-between bg-red-100 rounded-lg px-4 py-3 mt-2">
@@ -651,7 +649,7 @@ export default function Hoyrentekonto() {
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4" />
           <div className="relative">
             <h2 className="text-3xl md:text-4xl font-black mb-4">Klar til å la pengene jobbe for deg?</h2>
-            <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-ink-muted text-lg leading-relaxed mb-8 max-w-2xl mx-auto leading-relaxed">
               En høyrentekonto tar 15 minutter å sette opp og kan gi deg tusenvis av kroner mer i året — helt uten risiko.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

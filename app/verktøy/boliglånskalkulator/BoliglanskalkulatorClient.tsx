@@ -238,20 +238,20 @@ export default function BoliglanskalkulatorClient() {
 
   return (
     <>
-      {/* Hero + SEO Section */}
-      <section className="bg-gradient-to-br from-norsk-dark via-norsk-blue to-accent-700 text-white py-12">
+      {/* Hero + SEO Section — Nordic Clarity editorial */}
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-gray-300 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/verktøy" className="hover:text-white">Verktøy</Link>
-            <span className="mx-2">/</span>
-            <span>Boliglånskalkulator</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/verktøy" className="hover:text-forest transition-colors">Verktøy</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Boliglånskalkulator</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Boliglånskalkulator — Boliglån i Norge
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl">
+          <p className="text-ink-muted text-lg max-w-2xl leading-relaxed">
             Beregn nøyaktig månedlig kostnad, total lånekostnad og effektiv rente for ditt
             boliglån. Oppdatert med dagens boliglånsrenter fra norske banker.
           </p>
@@ -553,9 +553,9 @@ export default function BoliglanskalkulatorClient() {
         {result && result.schedule.length > 0 && (
           <div className="mt-12">
             <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-              <div className="bg-gradient-to-r from-norsk-dark to-norsk-blue px-6 py-4">
-                <h2 className="text-xl font-bold text-white">Nedbetalingsplan</h2>
-                <p className="text-gray-300 text-sm mt-1">
+              <div className="bg-paper-alt border-b border-border px-6 py-4">
+                <h2 className="text-xl font-medium font-display text-ink">Nedbetalingsplan</h2>
+                <p className="text-ink-muted text-sm mt-1">
                   De første 12 månedene + siste måned ({repaymentYears} år = {termMonths} måneder)
                 </p>
               </div>

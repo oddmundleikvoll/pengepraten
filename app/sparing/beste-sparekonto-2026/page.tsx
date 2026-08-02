@@ -9,19 +9,19 @@ export const metadata: Metadata = {
 export default function BesteSparekonto2026() {
   return (
     <>
-      <section className="bg-gradient-to-br from-green-600 to-green-800 text-white py-12">
+      <section className="bg-paper text-ink py-12 border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <nav className="text-green-200 text-sm mb-4">
-            <Link href="/" className="hover:text-white">Hjem</Link>
-            <span className="mx-2">/</span>
-            <Link href="/sparing" className="hover:text-white">Sparing</Link>
-            <span className="mx-2">/</span>
-            <span>Beste sparekonto 2026</span>
+          <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
+            <span className="mx-2 text-border-strong">/</span>
+            <span className="text-ink">Beste sparekonto 2026</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-black mb-4">
+          <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
             Beste sparekonto i Norge 2026
           </h1>
-          <p className="text-green-100 text-lg">
+          <p className="text-ink-muted text-lg leading-relaxed">
             De beste rentene akkurat nå. Med inflasjon på rundt 3% er det 
             kritisk å velge riktig sparekonto.
           </p>
