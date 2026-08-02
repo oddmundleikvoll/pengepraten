@@ -2,6 +2,26 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/artikler/norges-bank-rentevedtak-august-2026',
+    title: 'Norges Bank 13. august: Dette bør du gjøre med sparepengene',
+    excerpt: 'Norges Bank holder rentemøte 13. august 2026. Styringsrenten er 4,25 %, og markedet priser ~50 % sjanse for heving. Konkrete råd for sparepengene dine.',
+    category: 'Sparing',
+    date: '2026-08-02',
+    readTime: '9 min',
+    pillar: 'sparing',
+    relatedArticles: ['/sparing/hoyrentekonto', '/sparing/bsu-guide', '/artikler/norges-bank-hever-renten-mai-2026'],
+  },
+  {
+    slug: '/bank/beste-bank-2026',
+    title: 'Beste bank i Norge 2026: Test og sammenligning',
+    excerpt: 'Vi har testet og sammenlignet de beste bankene i Norge 2026. Se hvilken bank som vinner på sparing, lån, gebyrer og brukskonto — og hvor du bør bytte.',
+    category: 'Bank',
+    date: '2026-05-24',
+    readTime: '10 min',
+    pillar: 'bank',
+    relatedArticles: ['/bank/bytte-bank', '/sparing/hoyrentekonto'],
+  },
+  {
     slug: '/sparing/kronen-sterk-2026',
     title: 'Kronen er sterkere enn på årevis: 5 måter å utnytte det på',
     excerpt: 'Norske kronen er på det sterkeste nivået på flere år. Slik utnytter du det: billigere netthandel, ferie i USA/Europa, investeringer og feriesparing. 5 konkrete tips for vanlige nordmenn.',
