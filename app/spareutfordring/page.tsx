@@ -95,7 +95,7 @@ export default function SpareutfordringPage() {
                 </div>
                 {/* Total callout */}
                 <div className="mt-3 text-center">
-                  <div className="inline-flex items-center gap-2 px-5 py-2 bg-amber-400 text-green-900 font-black rounded-full text-sm shadow-lg">
+                  <div className="inline-flex items-center gap-2 px-5 py-2 bg-amber-warm text-paper font-black rounded-full text-sm shadow-lg">
                     <span>Totalt: {totalDisplay} kr</span>
                     <PartyPopper className="w-5 h-5" />
                   </div>
@@ -109,10 +109,10 @@ export default function SpareutfordringPage() {
       {/* How it works */}
       <section id="slik-fungerer-det" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 scroll-mt-20">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-black text-ink mb-4">
             Slik fungerer det
           </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+          <p className="text-ink-muted text-lg max-w-2xl mx-auto">
             Du trenger ikke et stort budsjett for å spare mye. 52-ukers utfordringen
             vokser sakte, men sikkert — og du merker knapt at pengene forsvinner.
           </p>
@@ -139,50 +139,50 @@ export default function SpareutfordringPage() {
               desc: 'Etter 52 uker har du spart totalt 68 900 kr — uten å ha kjent det særlig på forbruket.',
             },
           ].map(item => (
-            <div key={item.step} className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-md hover:border-green-200 transition-all">
+            <div key={item.step} className="bg-paper-surface rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-forest/30 transition-all">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl">
+                <div className="w-12 h-12 bg-forest-soft rounded-xl flex items-center justify-center text-2xl text-forest">
                   {item.icon}
                 </div>
-                <span className="text-4xl font-black text-green-100">{item.step}</span>
+                <span className="text-4xl font-black text-forest-soft">{item.step}</span>
               </div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+              <h3 className="font-bold text-ink text-lg mb-2">{item.title}</h3>
+              <p className="text-ink-muted text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
 
         {/* Amount preview table */}
-        <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm mb-16">
-          <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
-            <h3 className="font-bold text-gray-900">Uke-fordeling (de første 13 ukene)</h3>
-            <span className="text-xs text-gray-400 font-medium">Beløpene øker med 50 kr per uke</span>
+        <div className="bg-paper-surface rounded-2xl border border-border overflow-hidden shadow-sm mb-16">
+          <div className="px-6 py-4 border-b border-border flex items-center justify-between">
+            <h3 className="font-bold text-ink">Uke-fordeling (de første 13 ukene)</h3>
+            <span className="text-xs text-ink-subtle font-medium">Beløpene øker med 50 kr per uke</span>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="bg-green-50">
+              <thead className="bg-paper-alt">
                 <tr>
-                  <th className="px-6 py-3 text-left font-semibold text-gray-700">Uke</th>
-                  <th className="px-6 py-3 text-right font-semibold text-gray-700">Beløp</th>
-                  <th className="px-6 py-3 text-right font-semibold text-gray-700">Akkumulert</th>
+                  <th className="px-6 py-3 text-left font-semibold text-ink">Uke</th>
+                  <th className="px-6 py-3 text-right font-semibold text-ink">Beløp</th>
+                  <th className="px-6 py-3 text-right font-semibold text-ink">Akkumulert</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-50">
+              <tbody className="divide-y divide-border">
                 {Array.from({ length: 13 }, (_, i) => i + 1).map(w => (
-                  <tr key={w} className={w % 2 === 0 ? 'bg-gray-50/50' : ''}>
-                    <td className="px-6 py-3 font-medium text-gray-700">Uke {w}</td>
-                    <td className="px-6 py-3 text-right font-bold text-green-600">
+                  <tr key={w} className={w % 2 === 0 ? 'bg-paper-alt/50' : ''}>
+                    <td className="px-6 py-3 font-medium text-ink">Uke {w}</td>
+                    <td className="px-6 py-3 text-right font-bold text-forest">
                       {getWeekAmount(w).toLocaleString('nb-NO')} kr
                     </td>
-                    <td className="px-6 py-3 text-right font-semibold text-gray-900">
+                    <td className="px-6 py-3 text-right font-semibold text-ink">
                       {getTotalUpTo(w).toLocaleString('nb-NO')} kr
                     </td>
                   </tr>
                 ))}
-                <tr className="bg-green-50 border-t-2 border-green-200">
-                  <td className="px-6 py-3 font-bold text-gray-800">... og 39 uker til</td>
-                  <td className="px-6 py-3 text-right font-bold text-green-700">opptil 2 600 kr</td>
-                  <td className="px-6 py-3 text-right font-black text-green-700">{totalDisplay} kr</td>
+                <tr className="bg-forest-soft border-t-2 border-forest/20">
+                  <td className="px-6 py-3 font-bold text-ink">... og 39 uker til</td>
+                  <td className="px-6 py-3 text-right font-bold text-forest">opptil 2 600 kr</td>
+                  <td className="px-6 py-3 text-right font-black text-forest">{totalDisplay} kr</td>
                 </tr>
               </tbody>
             </table>
@@ -219,7 +219,7 @@ export default function SpareutfordringPage() {
               ].map(stat => (
                 <div key={stat.label} className="text-center">
                   <div className={`text-2xl md:text-3xl font-black ${stat.color} mb-1`}>{stat.value}</div>
-                  <div className="text-xs text-gray-400 font-medium">{stat.label}</div>
+                  <div className="text-xs text-ink-subtle font-medium">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -230,10 +230,10 @@ export default function SpareutfordringPage() {
       {/* Interactive App */}
       <section id="start" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 scroll-mt-20">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-            Start utfordringen nå — <span className="text-green-600">i din browser</span>
+          <h2 className="text-3xl md:text-4xl font-black text-ink mb-4">
+            Start utfordringen nå — <span className="text-forest">i din browser</span>
           </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+          <p className="text-ink-muted text-lg max-w-2xl mx-auto">
             Følg med på fremgangen din rett her. Klikk på ukene etter hvert som du
             fullfører dem — alt lagres lokalt i din browser.
           </p>
@@ -243,13 +243,13 @@ export default function SpareutfordringPage() {
       </section>
 
       {/* Download section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-paper-alt py-16 border-y border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
+            <h2 className="text-2xl md:text-3xl font-black text-ink mb-3">
               Vil du ha oversikten offline?
             </h2>
-            <p className="text-gray-500">
+            <p className="text-ink-muted">
               Last ned en PDF du kan skrive ut, eller en CSV til Excel og Google Sheets.
             </p>
           </div>
@@ -268,7 +268,7 @@ export default function SpareutfordringPage() {
 
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-        <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-8 text-center">
+        <h2 className="text-2xl md:text-3xl font-black text-ink mb-8 text-center">
           Ofte stilte spørsmål
         </h2>
         <div className="space-y-4">
@@ -294,14 +294,14 @@ export default function SpareutfordringPage() {
               a: 'Med dagens rentenivå (rundt 4-5% på høyrentekonto) bør avkastningen være høyere enn inflasjonen. Pengene dine vokser altså i reelle termer — spesielt sammenlignet med å la de stå på en vanlig brukskonto med 0% rente.',
             },
           ].map((faq, i) => (
-            <details key={i} className="group bg-white rounded-xl border border-gray-100 overflow-hidden">
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-800 hover:text-green-600 transition-colors list-none">
+            <details key={i} className="group bg-paper-surface rounded-xl border border-border overflow-hidden">
+              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-ink hover:text-forest transition-colors list-none">
                 <span>{faq.q}</span>
-                <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-ink-subtle group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <div className="px-6 pb-5 text-gray-500 text-sm leading-relaxed border-t border-gray-50 pt-4">
+              <div className="px-6 pb-5 text-ink-muted text-sm leading-relaxed border-t border-border pt-4">
                 {faq.a}
               </div>
             </details>

@@ -61,7 +61,7 @@ export default function SpareutfordringApp({ embedded = false }: Spareutfordring
   if (!loaded) {
     return (
       <div className="flex items-center justify-center py-20">
-        <div className="w-8 h-8 border-3 border-green-200 border-t-green-600 rounded-full animate-spin" />
+        <div className="w-8 h-8 border-3 border-forest-soft border-t-forest rounded-full animate-spin" />
       </div>
     )
   }
@@ -81,8 +81,8 @@ export default function SpareutfordringApp({ embedded = false }: Spareutfordring
               className={`
                 px-4 py-2 rounded-full text-sm font-semibold transition-all
                 ${filter === f
-                  ? 'bg-green-600 text-white shadow-sm'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  ? 'bg-forest text-paper shadow-sm'
+                  : 'bg-paper-alt text-ink-muted hover:bg-forest-soft'
                 }
               `}
             >
@@ -107,21 +107,21 @@ export default function SpareutfordringApp({ embedded = false }: Spareutfordring
 
       {/* Empty state for filter */}
       {filteredWeeks.length === 0 && (
-        <div className="text-center py-12 text-gray-400">
+        <div className="text-center py-12 text-ink-subtle">
           {filter === 'done' ? 'Ingen uker fullført ennå — kom i gang!' : 'Alle uker er fullført!'}
         </div>
       )}
 
       {/* Motivational banner when done */}
       {weeksCompleted.length === 52 && (
-        <div className="bg-gradient-to-r from-amber-400 to-amber-500 rounded-2xl p-6 text-center text-amber-900">
+        <div className="bg-amber-warm rounded-2xl p-6 text-center text-paper">
           <div className="text-4xl mb-2">
-            <svg className="w-10 h-10 mx-auto text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-10 h-10 mx-auto text-paper" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
             </svg>
           </div>
           <h3 className="text-xl font-black mb-1">Utfordringen er fullført!</h3>
-          <p className="text-amber-800 font-medium">
+          <p className="text-paper font-medium">
             Du har spart <strong className="text-2xl">{totalSaved.toLocaleString('nb-NO')} kr</strong> på 52 uker.
             Det er {TOTAL_CHALLENGE.toLocaleString('nb-NO')} kr du nå har investert i din fremtid!
           </p>

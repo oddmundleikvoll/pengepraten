@@ -18,28 +18,28 @@ const categoryLinks = [
     label: 'Kredittkort',
     desc: 'Sammenlign beste kort',
     icon: <CreditCard className="w-8 h-8" />,
-    color: 'bg-accent-50 text-accent-700',
+    color: 'bg-forest-soft text-forest',
   },
   {
     href: '/lan',
     label: 'Forbrukslån',
     desc: 'Finn billigste lån',
     icon: <Landmark className="w-8 h-8" />,
-    color: 'bg-primary-50 text-primary-700',
+    color: 'bg-paper-alt text-ink',
   },
   {
     href: '/sparing',
     label: 'Sparing',
     desc: 'Beste sparekonto',
     icon: <PiggyBank className="w-8 h-8" />,
-    color: 'bg-green-50 text-green-700',
+    color: 'bg-forest-soft text-forest',
   },
   {
     href: '/budsjett',
     label: 'Budsjett',
     desc: 'Maler og verktøy',
     icon: <BarChart3 className="w-8 h-8" />,
-    color: 'bg-amber-50 text-amber-700',
+    color: 'bg-amber-warm-soft text-amber-warm',
   },
 ]
 
@@ -112,7 +112,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-white border-b border-gray-100">
+      <section className="bg-paper-surface border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
@@ -122,8 +122,8 @@ export default function HomePage() {
               { value: '2026', label: 'Oppdatert for 2026' },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="text-2xl md:text-3xl font-black text-primary-600">{stat.value}</div>
-                <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
+                <div className="text-2xl md:text-3xl font-black text-forest">{stat.value}</div>
+                <div className="text-sm text-ink-muted mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -134,13 +134,13 @@ export default function HomePage() {
       <section id="last-ned" className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-block px-3 py-1 text-xs font-semibold bg-primary-100 text-primary-700 rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-semibold bg-forest-soft text-forest rounded-full mb-4">
               Populært verktøy
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-norsk-dark mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-ink mb-4">
               Ta kontroll over økonomien med en gang
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-ink-muted leading-relaxed mb-6">
               Last ned vår gratis budsjettmal og se hvor pengene dine faktisk går. 
               Malen er ferdig satt opp med norske kategorier, automatiske beregninger, 
               og et oppsett du kan bruke med en gang — i Google Sheets eller Excel.
@@ -153,12 +153,12 @@ export default function HomePage() {
                 'Brukt av over 2.000 nordmenn',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-5 h-5 rounded-full bg-forest-soft flex items-center justify-center flex-shrink-0">
+                    <svg className="w-3 h-3 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-gray-700 text-sm">{item}</span>
+                  <span className="text-ink-muted text-sm">{item}</span>
                 </div>
               ))}
             </div>
@@ -170,9 +170,9 @@ export default function HomePage() {
       </section>
 
       {/* Category links */}
-      <section className="bg-gray-50 border-t border-b border-gray-100 py-16">
+      <section className="bg-paper-alt border-t border-b border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-norsk-dark mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-ink mb-8 text-center">
             Utforsk det du trenger hjelp med
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -195,11 +195,11 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-norsk-dark">Siste artikler</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-ink">Siste artikler</h2>
           </div>
           <Link
             href="/kredittkort"
-            className="hidden md:inline-flex items-center gap-1 text-primary-600 font-medium hover:text-primary-700"
+            className="hidden md:inline-flex items-center gap-1 text-forest font-medium hover:text-forest-mid"
           >
             Se alle artikler
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,7 +213,7 @@ export default function HomePage() {
           ))}
         </div>
         <div className="mt-8 text-center md:hidden">
-          <Link href="/kredittkort" className="text-primary-600 font-medium">
+          <Link href="/kredittkort" className="text-forest font-medium">
             Se alle artikler →
           </Link>
         </div>
@@ -266,9 +266,9 @@ export default function HomePage() {
 
       {/* About section */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-        <div className="bg-gray-50 rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-norsk-dark mb-4">Hva er Pengepraten?</h2>
-          <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+        <div className="bg-paper-alt rounded-2xl p-8 md:p-12 text-center border border-border">
+          <h2 className="text-2xl md:text-3xl font-bold text-ink mb-4">Hva er Pengepraten?</h2>
+          <p className="text-ink-muted leading-relaxed max-w-2xl mx-auto">
             Pengepraten er en uavhengig norsk nettside som hjelper nordmenn med å ta 
             bedre økonomiske beslutninger. Vi lager verktøy, guider og sammenligninger 
             som er enkle å forstå — uten bankspråk eller skjulte agendaer. Alt vi lager 

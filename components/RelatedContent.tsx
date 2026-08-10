@@ -17,8 +17,8 @@ export default function RelatedContent({ tools, articles }: RelatedContentProps)
       {/* Related Tools */}
       {tools && tools.length > 0 && (
         <div>
-          <h3 className="text-lg font-bold text-norsk-dark mb-4 flex items-center gap-2">
-            <Wrench className="w-5 h-5 text-primary-600" />
+          <h3 className="text-lg font-bold text-ink mb-4 flex items-center gap-2">
+            <Wrench className="w-5 h-5 text-forest" />
             Relaterte verktøy
           </h3>
           <div className="grid md:grid-cols-2 gap-4">
@@ -26,13 +26,13 @@ export default function RelatedContent({ tools, articles }: RelatedContentProps)
               <Link
                 key={tool.href}
                 href={tool.href}
-                className="group block bg-white rounded-xl border border-gray-100 p-5 hover:shadow-md hover:border-primary-200 transition-all"
+                className="group block bg-paper-surface rounded-xl border border-border p-5 hover:shadow-md hover:border-forest/30 transition-all"
               >
-                <h4 className="font-semibold text-norsk-dark group-hover:text-primary-600 transition-colors mb-1">
+                <h4 className="font-semibold text-ink group-hover:text-forest transition-colors mb-1">
                   {tool.title}
                 </h4>
-                <p className="text-sm text-gray-500">{tool.description}</p>
-                <div className="mt-3 flex items-center text-sm text-primary-600 font-medium">
+                <p className="text-sm text-ink-muted">{tool.description}</p>
+                <div className="mt-3 flex items-center text-sm text-forest font-medium">
                   <span>Prøv verktøyet</span>
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -45,8 +45,8 @@ export default function RelatedContent({ tools, articles }: RelatedContentProps)
       {/* Related Articles */}
       {articles && articles.length > 0 && (
         <div>
-          <h3 className="text-lg font-bold text-norsk-dark mb-4 flex items-center gap-2">
-            <FileText className="w-5 h-5 text-primary-600" />
+          <h3 className="text-lg font-bold text-ink mb-4 flex items-center gap-2">
+            <FileText className="w-5 h-5 text-forest" />
             Relaterte artikler
           </h3>
           <div className="grid md:grid-cols-2 gap-4">
@@ -54,16 +54,16 @@ export default function RelatedContent({ tools, articles }: RelatedContentProps)
               <Link
                 key={article.slug}
                 href={article.slug}
-                className="group block bg-white rounded-xl border border-gray-100 p-5 hover:shadow-md hover:border-primary-200 transition-all"
+                className="group block bg-paper-surface rounded-xl border border-border p-5 hover:shadow-md hover:border-forest/30 transition-all"
               >
-                <span className="inline-block px-2 py-0.5 text-xs font-medium bg-primary-50 text-primary-700 rounded-full mb-2">
+                <span className="inline-block px-2 py-0.5 text-xs font-medium bg-forest-soft text-forest rounded-full mb-2">
                   {article.category}
                 </span>
-                <h4 className="font-semibold text-norsk-dark group-hover:text-primary-600 transition-colors mb-1">
+                <h4 className="font-semibold text-ink group-hover:text-forest transition-colors mb-1">
                   {article.title}
                 </h4>
-                <p className="text-sm text-gray-500 line-clamp-2">{article.excerpt}</p>
-                <div className="mt-3 flex items-center text-sm text-primary-600 font-medium">
+                <p className="text-sm text-ink-muted line-clamp-2">{article.excerpt}</p>
+                <div className="mt-3 flex items-center text-sm text-forest font-medium">
                   <span>Les mer</span>
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>

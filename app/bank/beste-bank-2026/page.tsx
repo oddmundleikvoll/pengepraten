@@ -98,15 +98,15 @@ export default function BesteBank2026() {
       <article className="max-w-5xl mx-auto px-4 sm:px-6 py-12 article-content space-y-10">
 
         {/* INTRO */}
-        <div className="bg-green-50 rounded-2xl p-7 border-l-4 border-green-600">
-          <p className="text-lg text-gray-800 leading-relaxed">
+        <div className="bg-forest-soft rounded-2xl p-7 border-l-4 border-forest">
+          <p className="text-lg text-ink leading-relaxed">
             <strong>Å velge riktig bank</strong> kan spare deg for tusenvis av kroner i året. Forskjellen mellom beste og verste bank på sparing, lån og gebyrer er enorm. Her er den komplette guiden til beste bank i Norge 2026 — uansett hva du trenger.
           </p>
         </div>
 
         {/* KATEGORIVINNERE */}
         <section>
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl md:text-3xl font-black text-ink mb-6 flex items-center gap-2">
             Vinnerne etter kategori
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -134,13 +134,13 @@ export default function BesteBank2026() {
         <section>
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
             <div>
-              <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-2 flex items-center gap-2">
+              <h2 className="text-2xl md:text-3xl font-black text-ink mb-2 flex items-center gap-2">
                 Sammenligning: Spare-rente per bank
               </h2>
-              <p className="text-gray-500">Sist oppdatert: 2. august 2026 — klikk på banken for å åpne konto</p>
+              <p className="text-ink-muted">Sist oppdatert: 2. august 2026 — klikk på banken for å åpne konto</p>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-400 shrink-0">
-              <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-center gap-2 text-sm text-ink-subtle shrink-0">
+              <svg className="w-4 h-4 text-forest" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <span>Innskuddsgaranti på alle</span>
@@ -148,7 +148,7 @@ export default function BesteBank2026() {
           </div>
 
           {/* Desktop table */}
-          <div className="hidden md:block bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-4">
+          <div className="hidden md:block bg-paper-surface rounded-2xl border border-border shadow-sm overflow-hidden mb-4">
             <table className="w-full">
               <thead>
                 <tr className="bg-paper text-ink text-sm border-b border-border">
@@ -165,9 +165,9 @@ export default function BesteBank2026() {
                   <tr
                     key={bank.name}
                     className={`
-                      border-b border-gray-100 last:border-0
+                      border-b border-border last:border-0
                       hover:bg-forest-soft transition-colors group
-                      ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}
+                      ${i % 2 === 0 ? 'bg-paper-surface' : 'bg-paper-alt/50'}
                     `}
                   >
                     <td className="px-6 py-5">
@@ -176,8 +176,8 @@ export default function BesteBank2026() {
                           {bank.name.charAt(0)}
                         </div>
                         <div>
-                          <div className="font-bold text-gray-900">{bank.name}</div>
-                          <div className="text-xs text-gray-400">{bank.type}</div>
+                          <div className="font-bold text-ink">{bank.name}</div>
+                          <div className="text-xs text-ink-subtle">{bank.type}</div>
                         </div>
                       </div>
                     </td>
@@ -187,14 +187,14 @@ export default function BesteBank2026() {
                       </div>
                     </td>
                     <td className="px-4 py-5 text-center">
-                      <span className="text-sm text-gray-600">{bank.guarantee}</span>
+                      <span className="text-sm text-ink-muted">{bank.guarantee}</span>
                     </td>
                     <td className="px-4 py-5 text-center">
-                      <span className="text-sm text-gray-600">{bank.minDeposit}</span>
+                      <span className="text-sm text-ink-muted">{bank.minDeposit}</span>
                     </td>
                     <td className="px-4 py-5 text-center">
                       <div className="flex flex-col items-center gap-1">
-                        <span className="text-sm font-medium text-gray-700">{bank.access}</span>
+                        <span className="text-sm font-medium text-ink">{bank.access}</span>
                         <StarRating />
                       </div>
                     </td>
@@ -220,26 +220,26 @@ export default function BesteBank2026() {
           {/* Mobile cards */}
           <div className="md:hidden grid gap-3">
             {BANKS.map((bank, i) => (
-              <div key={bank.name} className={`rounded-xl border p-5 ${i % 2 === 0 ? 'bg-white border-gray-200' : 'bg-gray-50 border-gray-100'}`}>
+              <div key={bank.name} className={`rounded-xl border p-5 ${i % 2 === 0 ? 'bg-paper-surface border-border' : 'bg-paper-alt border-border'}`}>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-forest rounded-xl flex items-center justify-center text-paper font-black text-sm shadow-sm">
                       {bank.name.charAt(0)}
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900">{bank.name}</div>
-                      <div className="text-xs text-gray-400">{bank.type}</div>
+                      <div className="font-bold text-ink">{bank.name}</div>
+                      <div className="text-xs text-ink-subtle">{bank.type}</div>
                     </div>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-display font-medium text-forest">{bank.rate.toFixed(2)}%</div>
-                    <div className="text-xs text-gray-400">effektiv rente</div>
+                    <div className="text-xs text-ink-subtle">effektiv rente</div>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-2 mb-4 text-sm">
-                  <div className="flex justify-between"><span className="text-gray-500">Garanti:</span><span className="font-medium">{bank.guarantee}</span></div>
-                  <div className="flex justify-between"><span className="text-gray-500">Minst:</span><span className="font-medium">{bank.minDeposit}</span></div>
-                  <div className="flex justify-between"><span className="text-gray-500">Tilgang:</span><span className="font-medium">{bank.access}</span></div>
+                  <div className="flex justify-between"><span className="text-ink-muted">Garanti:</span><span className="font-medium">{bank.guarantee}</span></div>
+                  <div className="flex justify-between"><span className="text-ink-muted">Minst:</span><span className="font-medium">{bank.minDeposit}</span></div>
+                  <div className="flex justify-between"><span className="text-ink-muted">Tilgang:</span><span className="font-medium">{bank.access}</span></div>
                 </div>
                 <a
                   href={bank.url}
@@ -253,7 +253,7 @@ export default function BesteBank2026() {
             ))}
           </div>
 
-          <div className="bg-gray-100 rounded-xl p-4 text-sm text-gray-500 flex items-center gap-2 mt-4">
+          <div className="bg-paper-alt rounded-xl p-4 text-sm text-ink-muted flex items-center gap-2 mt-4 border border-border">
             <svg className="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
             </svg>
@@ -263,7 +263,7 @@ export default function BesteBank2026() {
 
         {/* HVORFOR BYTTE BANK */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-ink mb-4 flex items-center gap-2">
             Hvorfor vurdere å bytte bank?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -272,15 +272,15 @@ export default function BesteBank2026() {
               { icon: '🏠', title: 'Lavere lånerente', desc: 'Selv 0,5% lavere rente på et boliglån på 3 millioner sparer deg 15.000 kr i året.' },
               { icon: '📱', title: 'Bedre digital opplevelse', desc: 'Moderne apper gjør det enklere å spare, betale og holde oversikt. Noen banker er 10 år foran andre.' },
             ].map(item => (
-              <div key={item.title} className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm hover:shadow-md hover:border-green-200 transition-all">
+              <div key={item.title} className="bg-paper-surface rounded-xl p-5 border border-border shadow-sm hover:shadow-md hover:border-forest/30 transition-all">
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="font-bold text-ink mb-2">{item.title}</h3>
+                <p className="text-ink-muted text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
-          <div className="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
-            <p className="text-gray-800 leading-relaxed">
+          <div className="bg-forest-soft rounded-xl p-6 border-l-4 border-forest">
+            <p className="text-ink leading-relaxed">
               <strong>De fleste nordmenn bytter aldri bank.</strong> Det er synd — fordi konkurransen er hard og forskjellene er store. En time med research og et bytte kan spare deg for titusenvis av kroner over livet.
             </p>
           </div>
@@ -310,14 +310,14 @@ export default function BesteBank2026() {
 
         {/* DIGITAL VS TRADISJONELL */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-ink mb-4 flex items-center gap-2">
             Digital bank vs. tradisjonell bank
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className="text-ink leading-relaxed mb-6">
             Skal du velge en ren digital bank som Sbanken, eller en tradisjonell storbank som DNB? Svaret avhenger av hva du verdsetter mest.
           </p>
 
-          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
+          <div className="bg-paper-surface rounded-2xl border border-border shadow-sm overflow-hidden mb-6">
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-paper text-ink border-b border-border">
@@ -336,10 +336,10 @@ export default function BesteBank2026() {
                   { label: 'Boliglån', digital: 'Ofte ikke tilbudt', trad: 'Fullt lånetilbud' },
                   { label: 'Best for', digital: 'Sparing, brukskonto', trad: 'Lån, komplett økonomi' },
                 ].map((row, i) => (
-                  <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
-                    <td className="p-4 font-semibold text-gray-800">{row.label}</td>
-                    <td className="p-4 text-gray-700">{row.digital}</td>
-                    <td className="p-4 text-gray-700">{row.trad}</td>
+                  <tr key={i} className={`border-b border-border ${i % 2 === 0 ? 'bg-paper-surface' : 'bg-paper-alt/50'}`}>
+                    <td className="p-4 font-semibold text-ink">{row.label}</td>
+                    <td className="p-4 text-ink-muted">{row.digital}</td>
+                    <td className="p-4 text-ink-muted">{row.trad}</td>
                   </tr>
                 ))}
               </tbody>
@@ -347,18 +347,18 @@ export default function BesteBank2026() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-600">
-              <h3 className="font-bold text-green-800 mb-2">Velg digital bank hvis:</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
+            <div className="bg-forest-soft rounded-xl p-5 border-l-4 border-forest">
+              <h3 className="font-bold text-forest mb-2">Velg digital bank hvis:</h3>
+              <ul className="space-y-1 text-sm text-ink">
                 <li>• Du primært trenger sparekonto og brukskonto</li>
                 <li>• Du vil ha høyest mulig rente</li>
                 <li>• Du foretrekker app og nettbank</li>
                 <li>• Du er komfortabel med selvbetjening</li>
               </ul>
             </div>
-            <div className="bg-gray-50 rounded-xl p-5 border-l-4 border-gray-600">
-              <h3 className="font-bold text-gray-800 mb-2">Velg tradisjonell bank hvis:</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
+            <div className="bg-paper-alt rounded-xl p-5 border-l-4 border-border-strong">
+              <h3 className="font-bold text-ink mb-2">Velg tradisjonell bank hvis:</h3>
+              <ul className="space-y-1 text-sm text-ink">
                 <li>• Du trenger boliglån eller andre lån</li>
                 <li>• Du vil ha personlig rådgivning</li>
                 <li>• Du verdsetter fysiske filialer</li>
@@ -370,7 +370,7 @@ export default function BesteBank2026() {
 
         {/* VANLIGE SPØRSMÅL */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-ink mb-4 flex items-center gap-2">
             Vanlige spørsmål
           </h2>
           <div className="space-y-4">
@@ -381,17 +381,17 @@ export default function BesteBank2026() {
               { q: 'Hvilken bank er best for boliglån?', a: 'SpareBank 1 SR-Bank og DNB er ofte sterke på boliglån med konkurransedyktige renter. Men det varierer — be alltid om tilbud fra minst 3 banker når du skal ta opp boliglån. (Danske Bank er ikke lenger i privatmarkedet etter salget til Nordea.)' },
               { q: 'Hva med gebyrer på brukskonto?', a: 'Sbanken og flere digitale banker har null gebyrer. Tradisjonelle banker tar ofte 20–50 kr/mnd for brukskonto, kort og nettbank. På et år blir det 240–600 kr — mer enn du kanskje tror.' },
             ].map((faq, i) => (
-              <details key={i} className="group bg-white rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-bold text-gray-800 hover:text-green-600 transition-colors list-none">
+              <details key={i} className="group bg-paper-surface rounded-xl border border-border overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-bold text-ink hover:text-forest transition-colors list-none">
                   <span className="flex items-center gap-2">
                     <span className="w-6 h-6 rounded-full bg-forest-soft text-forest text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                     {faq.q}
                   </span>
-                  <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-ink-subtle group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                <div className="px-6 pb-5 text-ink-muted text-sm leading-relaxed border-t border-border pt-4">
                   {faq.a}
                 </div>
               </details>
@@ -419,8 +419,8 @@ export default function BesteBank2026() {
 
         <RelatedContent tools={article?.relatedTools} articles={relatedArticles} />
 
-        <p className="text-sm text-gray-400 pt-8 border-t">
-          Sist oppdatert: 2. august 2026. Rentene og vilkår er veiledende og kan endres. Sjekk bankens nettsider for oppdaterte betingelser. Kilder: bankenes egne sider, Finansportalen.
+        <p className="text-sm text-ink-subtle pt-8 border-t border-border">
+          Sist oppdatert: 2. august 2026. Rentene og vilkår er veiledende og kan endres. Sjekk bankenes nettsider for oppdaterte betingelser. Kilder: bankenes egne sider, Finansportalen.
         </p>
       </article>
     </>
