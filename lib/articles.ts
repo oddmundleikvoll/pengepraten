@@ -2,6 +2,16 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/artikler/skolestart-2026-familiens-okonomi',
+    title: 'Skolestart 2026: Hva koster det egentlig for familien?',
+    excerpt: 'Skolestart 2026/2027 er i uke 33 (17.–21. august). Her er hva skolen faktisk dekker, hva du må betale selv, og konkrete budsjetttips for familien — med SFO-priser, utstyrsstipend og foreldrefradrag.',
+    category: 'Budsjett',
+    date: '2026-08-11',
+    readTime: '9 min',
+    pillar: 'budsjett',
+    relatedArticles: ['/budsjett/kom-i-gang-med-budsjett', '/sparing/bsu-guide', '/sparing/hoyrentekonto'],
+  },
+  {
     slug: '/artikler/norges-bank-rentevedtak-august-2026',
     title: 'Norges Bank 13. august: Dette bør du gjøre med sparepengene',
     excerpt: 'Norges Bank holder rentemøte 13. august 2026. Styringsrenten er 4,25 %, og markedet priser ~50 % sjanse for heving. Konkrete råd for sparepengene dine.',
