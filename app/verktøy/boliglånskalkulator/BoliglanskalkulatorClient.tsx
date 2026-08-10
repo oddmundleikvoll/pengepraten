@@ -274,7 +274,7 @@ export default function BoliglanskalkulatorClient() {
                 <input
                   type="range"
                   min={500000}
-                  max={10000000}
+                  max={25000000}
                   step={50000}
                   value={housePrice}
                   onChange={(e) => setHousePrice(Number(e.target.value))}
@@ -282,7 +282,7 @@ export default function BoliglanskalkulatorClient() {
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>500.000 kr</span>
-                  <span>10.000.000 kr</span>
+                  <span>25.000.000 kr</span>
                 </div>
               </div>
 
