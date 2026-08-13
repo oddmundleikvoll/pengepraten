@@ -126,7 +126,7 @@ export default function Footer() {
             className="font-mono text-[11px] uppercase tracking-[0.10em]"
             style={{ color: 'var(--fg-muted)' }}
           >
-            Sist oppdatert 2. august 2026
+            Sist oppdatert 13. august 2026
           </span>
         </div>
       </div>

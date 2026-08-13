@@ -659,7 +659,8 @@ export default function NorgesBankRentevedtakAugust2026() {
           <h3 className="font-bold text-norsk-dark mb-2">Viktig å vite</h3>
           <p className="text-sm text-gray-700 leading-relaxed">
             Artikkelen er basert på offentlig informasjon fra Norges Bank og
-            bankenes nettsider per 2. august 2026. Rentene er veiledende og
+            bankenes nettsider per 13. august 2026 (oppdatert etter
+            rentevedtaket kl. 10:00). Rentene er veiledende og
             kan variere basert på din individuelle situasjon. Alltid sjekk
             den effektive renten hos banken før du signerer avtaler.{' '}
             Pengepraten.no er en uavhengig informasjonsside og ikke en bank
