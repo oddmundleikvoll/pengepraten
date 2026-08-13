@@ -13,10 +13,10 @@ export const articles: Article[] = [
   },
   {
     slug: '/artikler/norges-bank-rentevedtak-august-2026',
-    title: 'Norges Bank 13. august: Dette bør du gjøre med sparepengene',
-    excerpt: 'Norges Bank holder rentemøte 13. august 2026. Styringsrenten er 4,25 %, og markedet priser ~50 % sjanse for heving. Konkrete råd for sparepengene dine.',
+    title: 'Norges Bank holder styringsrenten uendret på 4,25 %: Hva nå?',
+    excerpt: 'Norges Bank holdt styringsrenten uendret på 4,25 % torsdag 13. august 2026, og rentebanen er nedjustert. Konkrete råd for sparing, boliglån og fastrente — og hva som skjer videre.',
     category: 'Sparing',
-    date: '2026-08-02',
+    date: '2026-08-13',
     readTime: '9 min',
     pillar: 'sparing',
     relatedArticles: ['/sparing/hoyrentekonto', '/sparing/bsu-guide', '/artikler/norges-bank-hever-renten-mai-2026'],
