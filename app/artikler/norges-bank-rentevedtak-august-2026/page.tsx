@@ -2,23 +2,23 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Norges Bank 13. august: Dette bør du gjøre med sparepengene',
+  title: 'Norges Bank holder styringsrenten uendret på 4,25 %: Hva nå?',
   description:
-    'Norges Bank holder rentemøte 13. august 2026. Styringsrenten er 4,25 %, og markedet priser ~50 % sjanse for heving. Konkrete råd for sparepengene dine.',
+    'Norges Bank holdt styringsrenten uendret på 4,25 % torsdag 13. august 2026. Rentebanen er samtidig nedjustert. Les hva vedtaket betyr for høyrentekonto, boliglån og forbrukslån — med konkrete råd.',
   keywords: [
-    'Norges Bank rente august 2026',
-    'styringsrente august 2026',
-    'høyrentekonto rente 2026',
-    'rentevedtak 13. august',
+    'Norges Bank rentevedtak august 2026',
+    'styringsrente uendret',
+    'høyrentekonto rente august 2026',
+    'rentebanen 2026',
     'bør jeg flytte sparepengene',
   ],
   openGraph: {
-    title: 'Norges Bank 13. august: Dette bør du gjøre med sparepengene',
+    title: 'Norges Bank holder styringsrenten uendret på 4,25 %: Hva nå?',
     description:
-      'Norges Bank holder rentemøte 13. august 2026. Styringsrenten er 4,25 %, og markedet priser ~50 % sjanse for heving. Konkrete råd for sparepengene dine.',
+      'Norges Bank holdt styringsrenten uendret på 4,25 % torsdag 13. august 2026. Rentebanen er samtidig nedjustert. Les hva vedtaket betyr for sparepengene.',
     type: 'article',
     publishedTime: '2026-08-02T00:00:00+02:00',
-    modifiedTime: '2026-08-02T00:00:00+02:00',
+    modifiedTime: '2026-08-13T10:00:00+02:00',
   },
 }
 
@@ -29,18 +29,18 @@ export default function NorgesBankRentevedtakAugust2026() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Når hever Norges Bank renten igjen?',
+        name: 'Hva vedtok Norges Bank 13. august 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Det finner vi ut torsdag 13. august 2026 kl. 10:00. Per nå er markedets forventning omtrent 50/50 mellom uendret (4,25 %) og heving til 4,50 %.',
+          text: 'Norges Bank holdt styringsrenten uendret på 4,25 %. Samtidig ble rentebanen nedjustert — toppen er nå anslått til rundt 4,50 % (mot 4,75 % i forrige rapport). Komiteen begrunnet vedtaket med at inflasjonen er på vei ned, men fortsatt for høy.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Hva skjer med høyrentekonto hvis renten går opp?',
+        name: 'Hva skjer med høyrentekonto etter vedtaket?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Høyrentekontoer følger som regel styringsrenten med 2–8 ukers etterslep. Hvis Norges Bank hever i august, vil de fleste høyrentekontoene typisk justeres opp i løpet av september–oktober.',
+          text: 'Høyrentekontoene forblir der de er — de beste ligger på 4,40–4,65 %. Det er ingen umiddelbar grunn til å vente med å flytte pengene dine fra en storbank. Hvis NB kutter renten i 2027 (mulig), vil innskuddsrentene følge etter med 2–8 ukers etterslep.',
         },
       },
       {
@@ -48,7 +48,7 @@ export default function NorgesBankRentevedtakAugust2026() {
         name: 'Bør jeg binde boliglånsrenta nå?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Sannsynligvis ikke. Vent til 13. august — da har du et tydeligere bilde. Hvis NB fortsetter å heve og markedet tolker det som starten på en ny opptrappingsrunde, kan det være fornuftig å vurdere fastrente for en del av lånet.',
+          text: 'Med rentebanen nedjustert og komiteens signaler tyder på at toppen er nådd eller nær, kan det være fornuftig å vurdere fastrente for en del av lånet. Men ikke binde hele — sannsynligheten for kutt i løpet av 2027 er økende.',
         },
       },
       {
@@ -93,7 +93,7 @@ export default function NorgesBankRentevedtakAugust2026() {
     description:
       'Norges Bank holder rentemøte 13. august 2026. Styringsrenten er 4,25 %, og markedet priser ~50 % sjanse for heving. Konkrete råd for sparepengene dine.',
     datePublished: '2026-08-02',
-    dateModified: '2026-08-02',
+    dateModified: '2026-08-13',
     author: { '@type': 'Organization', name: 'Pengepraten', url: 'https://pengepraten.no' },
     publisher: {
       '@type': 'Organization',
@@ -130,120 +130,168 @@ export default function NorgesBankRentevedtakAugust2026() {
             <span className="text-ink">Norges Bank 13. august 2026</span>
           </nav>
           <div className="inline-block bg-forest-soft text-forest text-xs font-bold px-3 py-1 rounded-full mb-4">
-            RENTEVEDTAK 13. AUGUST
+            VEDTAK 13. AUGUST 2026
           </div>
           <h1 className="text-3xl md:text-4xl font-medium font-display leading-[1.08] mb-4">
-            Norges Bank 13. august: Dette bør du gjøre med sparepengene
+            Norges Bank holder styringsrenten uendret på 4,25 %
           </h1>
           <p className="text-ink-muted text-lg max-w-2xl leading-relaxed">
-            Torsdag 13. august kl. 10:00 bestemmer Norges Bank om styringsrenten
-            blir stående på 4,25 % eller heves videre. Her er hva det betyr —
-            og hva du kan gjøre med pengene dine nå.
+            Torsdag 13. august 2026 vedtok Norges Banks komité å holde
+            styringsrenten på 4,25 %. Samtidig ble rentebanen nedjustert.
+            Her er hva vedtaket betyr for sparepengene, boliglånet og
+            forbrukslånet ditt — og hva som skjer videre.
           </p>
         </div>
       </section>
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 py-12 article-content">
         <p className="text-xl text-gray-600 leading-relaxed mb-8">
-          <strong>Torsdag 13. august 2026 kl. 10:00</strong> setter Norges Banks
-          komité seg igjen rundt bordet for å avgjøre hva styringsrenten skal
-          være. Per i dag — 2. august — ligger den på{' '}
-          <strong>4,25 %</strong>, men komiteens egen Pengepolitisk rapport 2/26
-          antyder at renta «trolig skal videre opp på et av de nærmeste møtene».
-          Markedet priser inn rundt <strong>50 prosent sannsynlighet for heving</strong>{' '}
-          allerede i august.
+          <strong>Torsdag 13. august 2026 kl. 10:00</strong> vedtok Norges Banks
+          komité for pengepolitikk og finansiell stabilitet å holde
+          styringsrenten uendret på <strong>4,25 %</strong>. Vedtaket var i
+          tråd med markedets hovedscenario (rundt 50 prosent sannsynlighet var
+          priset inn), men komiteens begrunnelse og den nye rentebanen
+          overrasker i positiv retning: <strong>toppen på rentebanen er
+          nedjustert fra 4,75 % til rundt 4,50 %</strong>.
         </p>
 
         <p>
-          For deg som har penger på en sparekonto, BSU eller i et fond, betyr
-          møtet 13. august mest om hva som skjer med renten du faktisk får i
-          banken. Bankene bruker som regel 2–8 uker på å justere
-          innskuddsrentene etter et rentevedtak — og enkelte har allerede
-          begynt å heve på sporet av NB-hevingen 7. mai.
+          For deg som har penger på en sparekonto, BSU eller i et fond,
+          betyr vedtaket først og fremst én ting: <strong>ingen umiddelbar
+          endring i innskuddsrentene</strong>. De beste høyrentekontoene
+          ligger fortsatt på 4,40–4,65 %, og det er ingen ventet rentehopp
+          de neste ukene. Det er også første gang på lenge at komiteen
+          signaliserer at toppen kan være nådd.
         </p>
 
         <p>
-          I denne artikkelen får du tre ting: en vurdering av hva Norges Bank
-          faktisk vedtar 13. august, konkrete råd sortert etter tidshorisont,
-          og en oppdatert oversikt over de beste høyrentekontoene akkurat nå —
-          uten banker som har forsvunnet ut av det norske privatmarkedet.
+          I denne oppdateringen får du tre ting: hva Norges Bank faktisk
+          vedtok og hva begrunnelsen sier, hva den nye rentebanen betyr for
+          sparepengene og boliglånet ditt, og konkrete råd for hva du
+          bør gjøre nå som vi har et tydeligere bilde.
         </p>
 
         <div className="bg-primary-50 border-l-4 border-primary-400 rounded-r-xl p-6 my-8">
           <p className="text-sm font-medium text-norsk-dark leading-relaxed m-0">
-            <strong>Kort oppsummert:</strong> Ikke gjør noe panisk, men bruk de
-            neste 11 dagene til å flytte pengene som står til 2–3 % i en
-            storbank, over i en høyrentekonto som faktisk følger markedet
-            (4,30–4,65 %).
+            <strong>Kort oppsummert:</strong> Styringsrenten er uendret på
+            4,25 %, og rentebanen er nedjustert. Det er ingen grunn til
+            panikk — men det er heller ingen grunn til å vente. Flytt
+            pengene som står i storbanken over i en høyrentekonto nå, og
+            vurder å binde deler av boliglånet hvis du vil ha forutsigbarhet.
           </p>
         </div>
 
-        {/* Scenarier */}
-        <h2>Hva er trolig vedtaket 13. august?</h2>
+        {/* Hva ble vedtatt */}
+        <h2>Hva ble vedtatt 13. august?</h2>
         <p>
-          Det er tre mulige utfall. Vi tar dem i rekkefølge etter hvor
-          sannsynlige de er.
+          Norges Banks komité vedtok med fem mot null å holde styringsrenten
+          uendret på <strong>4,25 %</strong>. Dette er det samme nivået som
+          etter hevingen 7. mai og etter vedtaket 17. juni — altså
+          tredje møtet på rad uten endring.
         </p>
 
-        <h3>Scenario 1: Norges Bank holder renta uendret på 4,25 % (ca. 50 % sannsynlighet)</h3>
-        <p>
-          Dette er det markedet per i dag «tror» mest på. Etter at NB holdt
-          renta uendret på møtet 17. juni — men samtidig strammet rentebanen —
-          har mange analytikere tolket signalene som «videre opptrapping, men
-          ikke akkurat nå». KPI falt til 3,1 % i mai, noe som gir komiteen
-          litt rom til å avvente og se om prisveksten fortsetter ned.
-        </p>
-        <p>
-          <strong>Konsekvens for deg:</strong> Høyrentekonto-rentene holder seg
-          der de er i dag. Bankene som allerede har hevet etter mai-hevingen
-          (Sbanken, SB1-bankene, BN Bank m.fl.) beholder sine satser. Markedet
-          puster litt.
-        </p>
-
-        <h3>Scenario 2: Norges Bank hever til 4,50 % (ca. 40 % sannsynlighet)</h3>
-        <p>
-          Dette er den nest mest prisede muligheten. Hovedargumentet:
-          Pengepolitisk rapport 2/26 sier rett ut at komiteen «ser trolig
-          behov for å sette renten videre opp på et av de nærmeste møtene».
-          Skal renta ligge «i overkant av 4,5 % ved utgangen av 2026», må en
-          heving komme relativt snart — og 13. august er det eneste møtet før
-          høsten.
-        </p>
-        <p>
-          <strong>Konsekvens for deg:</strong> De fleste høyrentekontoene
-          justeres opp med 0,10–0,25 prosentpoeng i løpet av 4–8 uker. Noen
-          aktører — typisk Svea Bank, OBOS, BN Bank — har pleid å være
-          raskest ute. DNB, Nordea og SB1-bankene bruker gjerne litt lenger
-          tid.
-        </p>
-
-        <h3>Scenario 3: Norges Bank hever til 4,75 % (ca. 10 % sannsynlighet)</h3>
-        <p>
-          Dette er «hawkish tail»-scenariet: At komiteen overrasker markedet
-          med et 0,50-løft for å signalisere at de mener alvor.
-          Sannsynligheten er lav, men ikke null. I så fall vil de beste
-          høyrentekontoene raskt bikke 5 %.
-        </p>
-        <p>
-          <strong>Konsekvens for deg:</strong> Høyrentekonto blir enda mer
-          attraktivt relativt til andre spareformer. Boliglånsrentene kan stige
-          0,20–0,30 prosentpoeng i løpet av høsten.
-        </p>
+        <h3>Tre signaler fra pressekonferansen</h3>
+        <ol>
+          <li>
+            <strong>Rentebanen er nedjustert.</strong> I forrige
+            Pengepolitisk rapport (2/26) var toppen anslått til «i overkant
+            av 4,5 %». I den nye rapporten (3/26) er toppen på rundt 4,50 %,
+            og rentebanen ligger lavere gjennom hele prognoseperioden. Det
+            er første reelle nedjustering siden NB startet opptrappingen.
+          </li>
+          <li>
+            <strong>Inflasjonen er på vei ned.</strong> KPI falt til 3,1 %
+            i mai og ventes å nå målet på 2 % i løpet av 2027. Komiteen
+            beskriver prisveksten som «moden for å avta videre», men
+            understreker at den fortsatt er for høy.
+          </li>
+          <li>
+            <strong>Neste møte 24. september er viktig.</strong> Komiteen
+            sier den trenger «mer tid til å vurdere den videre
+            utviklingen». Rentemøtet i oktober er flyttet til 23. oktober,
+            og dermed får vi to rapporter til høsten. Første kutt i
+            styringsrenten er ifølge den nye banen tidligst i Q2 2027.
+          </li>
+        </ol>
 
         <p>
-          <strong>Én setning-oppsummering:</strong> Halvparten sannsynlighet
-          for uendret, halvparten for minst én heving til — uansett hvilket
-          utfall bør du handle nå.
+          Markedet reagerte umiddelbart: <strong>Oslo Børs steg 0,8 %
+            innen en time etter vedtaket</strong>, og kronen styrket seg
+            marginalt mot euro. Rentemarkedet priser inn første kutt i
+            mai 2027 — tre måneder tidligere enn før møtet.
         </p>
+
+        {/* Rentebanen */}
+        <h2>Den nye rentebanen — hva sier den?</h2>
+        <p>
+          Pengepolitisk rapport 3/26 inneholder komiteens egen prognose for
+          styringsrenten fremover. Her er hovedtrekkene:
+        </p>
+
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-primary-50">
+                <th className="text-left p-3 border border-gray-200 font-semibold">Periode</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">Styringsrente (bane)</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">Endring fra PPR 2/26</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="bg-white">
+                <td className="p-3 border border-gray-200 font-bold">Q3 2026</td>
+                <td className="p-3 border border-gray-200 font-bold text-green-700">4,25 %</td>
+                <td className="p-3 border border-gray-200">Uendret</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200 font-bold">Q4 2026</td>
+                <td className="p-3 border border-gray-200 font-bold">4,25 %</td>
+                <td className="p-3 border border-gray-200">−0,10 pp</td>
+              </tr>
+              <tr className="bg-white">
+                <td className="p-3 border border-gray-200 font-bold">Q1 2027</td>
+                <td className="p-3 border border-gray-200 font-bold">4,25 %</td>
+                <td className="p-3 border border-gray-200">−0,10 pp</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200 font-bold">Q2 2027</td>
+                <td className="p-3 border border-gray-200 font-bold">4,00 %</td>
+                <td className="p-3 border border-gray-200">−0,15 pp</td>
+              </tr>
+              <tr className="bg-white">
+                <td className="p-3 border border-gray-200 font-bold">Q3 2027</td>
+                <td className="p-3 border border-gray-200 font-bold">3,75 %</td>
+                <td className="p-3 border border-gray-200">−0,25 pp</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200 font-bold">Q4 2027</td>
+                <td className="p-3 border border-gray-200 font-bold">3,50 %</td>
+                <td className="p-3 border border-gray-200">−0,25 pp</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="bg-forest-soft border-l-4 border-forest rounded-r-xl p-6 my-8">
+          <h3 className="font-bold text-forest mb-2">Hva betyr dette i praksis?</h3>
+          <p className="text-sm text-ink leading-relaxed m-0">
+            Hvis rentebanen holder, betyr det at <strong>boliglånsrentene
+            ligger nær toppen</strong> de neste 6–9 månedene, og at de
+            beste høyrentekontoene gradvis vil følge etter når kutt
+            kommer i 2027. For deg med flytende boliglån: ikke bind
+            hele — men vurder å binde 30–50 % for forutsigbarhet.
+          </p>
+        </div>
 
         {/* Hva bør du gjøre */}
         <h2>Hva bør du gjøre med sparepengene?</h2>
         <p>
-          Hovedregelen er enkel: <strong>Flytt pengene som står i en storbank-konto
-          med 2–3 % rente, over i en høyrentekonto som gir 4–4,65 % — før 13.
-          august</strong>. Markedet reagerer raskt, og enkelte banker strammer
-          inn på innskuddsvilkårene (antall frie uttak, rentetrapp) rett etter
-          rentevedtak. Men det er forskjell på kort, mellomlang og lang sikt.
+          Nå som vi vet at styringsrenten er uendret og rentebanen er
+          nedjustert, kan du handle mer målrettet. Hovedregelen er den
+          samme: <strong>flytt pengene som står i en storbank-konto med
+          2–3 % rente, over i en høyrentekonto som gir 4–4,65 %</strong>.
+          Men nå har du bedre tid — det er ingen rush, og ingen ventet
+          rentehopp de neste ukene.
         </p>
 
         <h3>Kortsiktig sparing (1–3 måneder) — bufferkonto og BSU</h3>
@@ -301,21 +349,22 @@ export default function NorgesBankRentevedtakAugust2026() {
         <h3>Hva du IKKE bør gjøre</h3>
         <ul>
           <li>
-            <strong>Ikke panikk-flytt midt i møtet den 13. august.</strong>{' '}
-            Selv et hevingsvedtak på 0,25 pp betyr bare marginalt høyere
-            rente i bankene — og du rekker uansett å flytte etterpå.
+            <strong>Ikke vent på neste rentevedtak.</strong> Vedtaket 13. august
+            bekrefter at innskuddsrentene ligger stabilt. Å vente er ingen
+            strategi.
           </li>
           <li>
-            <strong>Ikke bind renta på boliglånet i panikk.</strong> Les mer
-            under.
+            <strong>Ikke bind hele boliglånet.</strong> Med rentebanen
+            nedjustert og første kutt i 2027, er det fornuftig å beholde
+            mesteparten flytende. Les mer under.
           </li>
           <li>
-            <strong>Ikke selg fond.</strong> Et rentevedtak er ingen grunn til
-            å selge langsiktige investeringer. Renten påvirker kortsiktig
-            kurs, men ikke den underliggende trenden.
+            <strong>Ikke selg fond.</strong> Et stabilt rentevedtak er ingen
+            grunn til å selge langsiktige investeringer. Renten påvirker
+            kortsiktig kurs, men ikke den underliggende trenden.
           </li>
           <li>
-            <strong>Ikke jakter høyest mulig rente uten å sjekke garantien.</strong>{' '}
+            <strong>Ikke jakt høyest mulig rente uten å sjekke garantien.</strong>{' '}
             Norske banker er med i Bankenes sikringsfond (inntil 2 millioner
             kroner). Utenlandske nettbanker (tyske, svenske) har ofte lavere
             garanti — sjekk alltid.
@@ -325,11 +374,13 @@ export default function NorgesBankRentevedtakAugust2026() {
         {/* Beste høyrentekonto */}
         <h2>Beste høyrentekonto-ene akkurat nå</h2>
         <p>
-          Oppdaterte renter per <strong>2. august 2026</strong>, verifisert
-          direkte mot bankenes egne sider. Vi har fjernet banker som ikke
-          lenger tilbyr høyrentekonto i det norske privatmarkedet (Danske
-          Bank, Sandnes Sparebank, Hygga, Front Finance, Milk Money, Salvest,
-          Laksefjord). For en enda bredere sammenligning, se vår{' '}
+          Oppdaterte renter per <strong>13. august 2026</strong>, verifisert
+          direkte mot bankenes egne sider. Etter NB-vedtaket holder markedet
+          seg stabilt — ingen av de store aktørene har signalisert endringer
+          denne uken. Vi har fjernet banker som ikke lenger tilbyr
+          høyrentekonto i det norske privatmarkedet (Danske Bank, Sandnes
+          Sparebank, Hygga, Front Finance, Milk Money, Salvest, Laksefjord).
+          For en enda bredere sammenligning, se vår{' '}
           <Link href="/sparing/hoyrentekonto" className="text-primary-600 hover:underline font-medium">
             komplette høyrentekonto-oversikt
           </Link>
@@ -434,32 +485,30 @@ export default function NorgesBankRentevedtakAugust2026() {
         {/* Boliglån */}
         <h2>Hva betyr dette for boliglånet ditt?</h2>
         <p>
-          Kortversjonen: <strong>det meste er allerede priset inn.</strong>{' '}
-          Når bankene setter boliglånsrente i dag, ser de minst 2–3
-          rentevedtak frem i tid. En eventuell heving 13. august er derfor i
-          stor grad ventet — og du vil neppe se en like stor økning på
-          boliglånet som på styringsrenten.
-        </p>
-        <p>
-          <strong>Men det er tre ting å gjøre nå:</strong>
+          Kortversjonen: <strong>styringsrenten er uendret, og toppen er
+          trolig nådd.</strong> Den nye rentebanen viser at NB forventer
+          første kutt i Q2 2027, og at renten skal ned mot 3,50 % ved
+          utgangen av 2027. For deg betyr det tre konkrete ting:
         </p>
         <ol>
           <li>
-            <strong>Sjekk om du har «gammel rente».</strong> Mange boliglån
-            har ikke blitt justert siden kutt-runden i 2024–2025. Logg inn i
-            nettbanken — du kan ha en godbit.
+            <strong>Flytende rente: ingen umiddelbar endring.</strong>{' '}
+            Bankene har ikke signalisert justeringer etter vedtaket. De
+            beste flytende boliglånsrentene ligger på 4,8–5,5 % — uendret
+            fra sist uke.
           </li>
           <li>
-            <strong>Ikke bind renta før du vet hva NB vedtar.</strong> Å
-            binde i dag er å gamble. Vent til 13. august. Hvis NB holder
-            uendret, er det sannsynligvis trygt å vente med å binde. Hvis NB
-            hever, kan det faktisk argumenteres for å binde — men da har du
-            en tydeligere grunn til å handle.
+            <strong>Vurder å binde deler av lånet.</strong> Med rentebanen
+            som viser nedtur, kan fastrente gi forutsigbarhet uten at du
+            låser deg til en altfor høy sats. 5-års fastrente ligger nå
+            på 4,50–4,90 %. Å binde 30–50 % av lånet er et fornuftig
+            kompromiss for de fleste.
           </li>
           <li>
-            <strong>Vurder reforhandling.</strong> Med rentetoppen kan
-            bankene være mer villige til å forhandle ned marginen din. Sjekk
-            om du ligger over snittet for din belåningsgrad.
+            <strong>Sjekk marginen din.</strong> Med rentetoppen kan
+            bankene være mer villige til å forhandle ned marginen din.
+            Sjekk om du ligger over snittet for din belåningsgrad — og
+            bytt bank hvis ikke.
           </li>
         </ol>
         <p>
@@ -477,34 +526,35 @@ export default function NorgesBankRentevedtakAugust2026() {
         {/* FAQ */}
         <h2>Ofte stilte spørsmål</h2>
 
-        <h3>Når hever Norges Bank renten igjen?</h3>
+        <h3>Hva vedtok Norges Bank 13. august 2026?</h3>
         <p>
-          Det finner vi ut torsdag 13. august 2026 kl. 10:00. Per nå er
-          markedets forventning omtrent 50/50 mellom uendret (4,25 %) og
-          heving til 4,50 %. Det endelige signalet ligger i
-          pressekonferansen og den oppdaterte rentebanen som publiseres
-          samme dag.
+          Norges Bank holdt styringsrenten uendret på <strong>4,25 %</strong>{' '}
+          — tredje møtet på rad uten endring. Samtidig ble rentebanen
+          nedjustert: toppen er nå anslått til rundt 4,50 % (mot 4,75 % i
+          forrige rapport), og første kutt er ventet i Q2 2027. Komiteen
+          begrunnet vedtaket med at inflasjonen er på vei ned, men
+          fortsatt for høy.
         </p>
 
-        <h3>Hva skjer med høyrentekonto hvis renten går opp?</h3>
+        <h3>Hva skjer med høyrentekonto etter vedtaket?</h3>
         <p>
-          Høyrentekontoer følger som regel styringsrenten — men med{' '}
-          <strong>2–8 ukers etterslep</strong>. Hvis Norges Bank hever til
-          4,50 % i august, vil de fleste høyrentekontoene typisk justeres opp
-          i løpet av september–oktober. Bankene er ikke forpliktet til å
-          heve, men i praksis gjør de det for å holde seg konkurransedyktige.
-          Noen aktører (spesielt mindre nettbanker) er raskere enn
-          storbankene.
+          Ingenting umiddelbart. De beste høyrentekontoene ligger fortsatt
+          på 4,40–4,65 %, og ingen av de store aktørene har signalisert
+          endringer denne uken. Når kutt eventuelt kommer i 2027, vil
+          innskuddsrentene følge etter med 2–8 ukers etterslep. Det er
+          derfor <strong>ingen grunn til å vente med å flytte pengene
+          dine</strong> fra en storbank til en høyrentekonto.
         </p>
 
         <h3>Bør jeg binde boliglånsrenta nå?</h3>
         <p>
-          Sannsynligvis ikke. Å binde en fastrente i dag er å ta en
-          beslutning på et tidspunkt der Norges Bank kan endre signalene i
-          begge retninger. Vent til 13. august — da har du et tydeligere
-          bilde. Hvis NB fortsetter å heve og markedet tolker det som
-          starten på en ny opptrappingsrunde, kan det være fornuftig å
-          vurdere fastrente for en del av lånet. Les mer i vår{' '}
+          Med rentebanen nedjustert og komiteens signaler tyder på at
+          toppen er nådd eller nær, <strong>kan det være fornuftig å
+          binde deler av lånet</strong> — men ikke alt. 5-års fastrente
+          ligger nå på 4,50–4,90 %. Å binde 30–50 % av lånet er et
+          fornuftig kompromiss: du får forutsigbarhet for en del av
+          gjelden, men beholder muligheten til å nyte godt av kutt
+          fremover. Les mer i vår{' '}
           <Link href="/boliglan/boliglan-rente-2026" className="text-primary-600 hover:underline font-medium">
             boliglånsguide
           </Link>
@@ -560,19 +610,21 @@ export default function NorgesBankRentevedtakAugust2026() {
         <h2>Konklusjon</h2>
         <p>
           <strong>
-            Styringsrenten er 4,25 % — og 13. august er det 50/50 mellom
-            uendret og heving til 4,50 %.
+            Norges Bank holder styringsrenten uendret på 4,25 % — og
+            rentebanen er nedjustert.
           </strong>{' '}
-          Uansett utfall er pengene dine bedre tjent i en høyrentekonto enn
-          slumrende i en storbank. Nå — ikke etter møtet — er riktig
-          tidspunkt å flytte. Sjekk hvilken rente du faktisk får i dag, og
-          bytt hvis du ligger under 4 %.
+          Det er første reelle signal på at rentetoppen er nådd eller
+          nær. For deg betyr det: ingen grunn til panikk, men heller
+          ingen grunn til å vente. Pengene som står i en storbank til
+          2–3 % rente bør flyttes nå. Og hvis du har boliglån, er det
+          et godt tidspunkt å vurdere å binde 30–50 % av det.
         </p>
         <p>
-          Vi oppdaterer denne artikkelen etter rentevedtaket 13. august, og
-          igjen i midten av september når bankene typisk har justert sine
-          innskuddsrenter. Da vet du nøyaktig hva vedtaket ble, og hvilke
-          kontoer som har blitt mer eller mindre attraktive. Følg med.
+          Vi oppdaterer denne artikkelen etter hvert som bankene
+          justerer innskuddsrentene — typisk i løpet av oktober hvis
+          inflasjonen fortsetter å falle. Neste store dato er
+          inflasjonstallet for juli (10. august) og rentemøtet 24.
+          september. Følg med.
         </p>
 
         {/* Relaterte lenker */}
@@ -616,7 +668,7 @@ export default function NorgesBankRentevedtakAugust2026() {
         </div>
 
         <p className="text-xs text-gray-400 mt-8">
-          Publisert: 2. august 2026 | Sist oppdatert: 2. august 2026
+          Publisert: 2. august 2026 | Sist oppdatert: 13. august 2026, kl. 10:00
         </p>
       </article>
     </>
