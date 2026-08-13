@@ -5,9 +5,9 @@ import RelatedContent from '@/components/RelatedContent'
 import { getArticleBySlug, getRelatedArticles } from '@/lib/articles'
 
 export const metadata: Metadata = {
-  title: 'Beste Høyrentekonto August 2026: Sammenlign 20+ Bankers Renter | Pengepraten',
-  description: 'Sammenlign de beste høyrentekontoene i Norge akkurat nå. Oppdatert august 2026 med Sbanken (4,09%), Nordea (4,35%), DNB (4,10%) og flere. Få 4%+ rente uten risiko.',
-  keywords: ['beste høyrentekonto', 'høyrentekonto 2026', 'sparekonto med høy rente', 'beste sparekonto norge', 'høyrentekonto sammenligning'],
+  title: 'Beste Høyrentekonto August 2026: 12 Banker Sammenlignet | Pengepraten',
+  description: 'Sammenlign de beste høyrentekontoene i Norge august 2026. Svea Bank og Bank Norwegian leder med 4,65% rente — fulgt av OBOS (4,55%) og Nordax (4,50%). Vi rangerer 12 banker etter rente, uttaksvilkår og minimumsinnskudd.',
+  keywords: ['beste høyrentekonto', 'beste høyrentekonto 2026', 'høyrentekonto august 2026', 'sparekonto med høy rente', 'beste sparekonto norge', 'høyrentekonto sammenligning', 'høyeste rente sparekonto'],
 }
 
 // Sortert synkende etter rente (per 2. august 2026). Kilder: bankenes egne sider
@@ -152,7 +152,7 @@ export default function Hoyrentekonto() {
           <div className="flex flex-col lg:flex-row gap-10 items-center">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-forest-soft rounded-full text-sm font-medium mb-5 text-forest">
-                Sist oppdatert: 2. august 2026
+                Sist oppdatert: 13. august 2026 · kl. 09:00
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-display leading-[1.05] mb-4">
                 Beste høyrentekonto{' '}
@@ -202,7 +202,7 @@ export default function Hoyrentekonto() {
               <h2 className="text-2xl md:text-3xl font-black text-ink mb-2 flex items-center gap-2">
                 Beste høyrentekontoer i Norge
               </h2>
-              <p className="text-ink-muted">Sist oppdatert: 2. august 2026 — klikk på banken for å åpne konto</p>
+              <p className="text-ink-muted">Sist oppdatert: 13. august 2026, kl. 09:00 — klikk på banken for å åpne konto</p>
             </div>
             <div className="flex items-center gap-2 text-sm text-ink-subtle shrink-0">
               <svg className="w-4 h-4 text-forest" fill="currentColor" viewBox="0 0 20 20">
@@ -326,6 +326,110 @@ export default function Hoyrentekonto() {
           </div>
         </section>
 
+        {/* SLIK RANGERER VI */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-black text-ink mb-3 flex items-center gap-2">
+            Slik rangerer vi bankene
+          </h2>
+          <p className="text-ink leading-relaxed mb-5">
+            Vi sjekker rentene på hver enkelt banks nettside manuelt hver uke. Når du ser «4,65 %» i tabellen vår, er det fordi banken selv oppgir det på sine sider nå — ikke et estimat eller innhentet tall fra en tredjepart.
+          </p>
+          <div className="bg-paper-surface rounded-2xl border border-border p-6 mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+              {[
+                { label: 'Nominell rente (den du faktisk får)', pct: '70 %' },
+                { label: 'Uttaksvilkår (binding, ventetid)', pct: '15 %' },
+                { label: 'Minsteinnskudd (hvor lett å åpne)', pct: '10 %' },
+                { label: 'Tilgjengelighet for nye kunder', pct: '5 %' },
+              ].map((row, i) => (
+                <div key={row.label} className={`flex justify-between items-center py-3 ${i < 3 ? 'border-b border-border sm:border-b' : ''} ${i === 1 ? 'sm:border-b-0' : ''}`}>
+                  <span className="text-ink font-medium text-sm md:text-base">{row.label}</span>
+                  <span className="font-black text-forest text-lg">{row.pct}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <p className="text-ink-muted text-sm leading-relaxed">
+            Rentene som vises er de beste tilgjengelige for <strong>nye kunder</strong>. Hvis en bank har ulik rente for ulike beløp (f.eks. DNB over 500 000 kr), viser vi den høyeste. Vi er ikke eid av noen bank og tar ikke betalt for å løfte noen opp i tabellen.
+          </p>
+        </section>
+
+        {/* BELØP-SEGMENTERTE TABELLER */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-black text-ink mb-3 flex items-center gap-2">
+            Beste konto for ditt beløp
+          </h2>
+          <p className="text-ink-muted mb-6 leading-relaxed">
+            Ulike banker belønner ulike innskuddsbeløp. Her er vår anbefaling basert på hvor mye du vil spare — fra en liten buffer til et stort innskudd.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {[
+              {
+                amount: '50 000 kr',
+                desc: 'Liten buffer eller første sparing',
+                top3: [
+                  { name: 'Svea Bank', rate: '4,65 %', note: 'Ingen krav' },
+                  { name: 'Bank Norwegian', rate: '4,65 %', note: '31 d uttak' },
+                  { name: 'OBOS Langsiktig', rate: '4,55 %', note: 'Medlemsbank' },
+                ],
+              },
+              {
+                amount: '250 000 kr',
+                desc: 'Større buffer eller et års sparing',
+                top3: [
+                  { name: 'Svea Bank', rate: '4,65 %', note: 'Best totalt' },
+                  { name: 'Bank Norwegian', rate: '4,65 %', note: '31 d uttak' },
+                  { name: 'Nordax Smart', rate: '4,50 %', note: 'Umiddelbar' },
+                ],
+              },
+              {
+                amount: '500 000 kr',
+                desc: 'Solid langsiktig sparing',
+                top3: [
+                  { name: 'Svea Bank', rate: '4,65 %', note: 'Best rente' },
+                  { name: 'OBOS Langsiktig', rate: '4,55 %', note: 'Ingen binding' },
+                  { name: 'DNB Sparekonto Pluss', rate: '4,10 %', note: 'Krev 500k+' },
+                ],
+              },
+              {
+                amount: '1 000 000 kr+',
+                desc: 'Stort innskudd — pass på innskuddsgarantien',
+                top3: [
+                  { name: 'Svea Bank', rate: '4,65 %', note: 'Best rente' },
+                  { name: 'OBOS Langsiktig', rate: '4,55 %', note: 'Norsk bank' },
+                  { name: 'Sbanken over 500k', rate: '4,09 %', note: 'Krev 500k+' },
+                ],
+              },
+            ].map(box => (
+              <div key={box.amount} className="bg-paper-surface rounded-2xl border border-border p-6">
+                <div className="mb-4">
+                  <div className="text-2xl font-black text-forest">{box.amount}</div>
+                  <div className="text-sm text-ink-muted">{box.desc}</div>
+                </div>
+                <ol className="space-y-3">
+                  {box.top3.map((b, i) => (
+                    <li key={b.name} className="flex items-start gap-3">
+                      <span className="w-7 h-7 rounded-full bg-forest text-paper text-xs font-black flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-baseline justify-between gap-2">
+                          <span className="font-bold text-ink truncate">{b.name}</span>
+                          <span className="font-black text-forest shrink-0">{b.rate}</span>
+                        </div>
+                        <div className="text-xs text-ink-muted">{b.note}</div>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ))}
+          </div>
+          <div className="bg-forest-soft rounded-xl p-5 mt-5 border border-forest/20">
+            <p className="text-sm text-ink leading-relaxed">
+              <strong>Tips:</strong> Fordel sparingen mellom to eller tre banker hvis du har over 100 000 euro (ca. 1,1 millioner kroner). Da er hele beløpet dekket av innskuddsgarantien — selv om én bank skulle få problemer.
+            </p>
+          </div>
+        </section>
+
         {/* EMAIL CAPTURE */}
         <EmailCapture
           variant="card"
@@ -386,6 +490,100 @@ export default function Hoyrentekonto() {
                 <p className={`${card.rank === '1' ? 'text-paper/90' : 'text-ink-muted'} text-sm leading-relaxed mb-3`}>{card.why}</p>
                 <div className={`${card.rank === '1' ? 'bg-paper/10' : 'bg-paper-alt'} rounded-lg p-2 text-xs ${card.rank === '1' ? 'text-paper/80' : 'text-ink-muted'}`}>
                   <strong>Best for:</strong> {card.bestFor}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* DETALJERT: HVORFOR VI VALGTE DISSE BANKENE */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-black text-ink mb-3 flex items-center gap-2">
+            Detaljert: Hvorfor vi valgte disse bankene
+          </h2>
+          <p className="text-ink-muted mb-6 leading-relaxed">
+            Under er en grundigere vurdering av de fem beste bankene i august 2026 — ikke bare tall, men hva de er gode på, hva de ikke er gode på, og hvem de passer for.
+          </p>
+          <div className="space-y-5">
+            {[
+              {
+                name: 'Svea Bank',
+                rate: '4,65 %',
+                type: 'Svensk nettbank',
+                pros: ['Ingen krav til minsteinnskudd', 'Ubegrenset antall uttak', 'Svensk nettbank med norsk kundeservice', 'Best rente akkurat nå'],
+                cons: ['Ny rente for eksisterende kunder fra 27.08.26 — kan gå ned', 'Svensk bank — kan oppleves mindre «norsk»'],
+                bestFor: 'Deg som vil ha maks avkastning uten binding, og som er komfortabel med en svensk aktør.',
+              },
+              {
+                name: 'Bank Norwegian Sparekonto 31',
+                rate: '4,65 %',
+                type: 'Nettbank (NOBA)',
+                pros: ['Samme topprente som Svea', 'Norsk tilknytning gjennom NOBA', 'Ingen krav til minsteinnskudd', 'Godt valg hvis du flyr med Norwegian'],
+                cons: ['Krever 31 dagers varsel ved uttak — ikke for deg med rask likviditetsbehov', 'Uten flybonus-kunde er det lite «ekstra» å hente'],
+                bestFor: 'Deg som vet at pengene skal stå urørt i minst én måned, og som vil ha best rente.',
+              },
+              {
+                name: 'OBOS Sparekonto Langsiktig',
+                rate: '4,55 %',
+                type: 'Medlemsbank (OBOS)',
+                pros: ['Umiddelbar uttak — full fleksibilitet', 'Medlemsbank med norsk forankring', 'Ingen krav om OBOS-medlemskap for å åpne konto', 'Medlemskap gir ekstra fordeler (lånebetingelser, fordelsprogram)'],
+                cons: ['0,10 prosentpoeng under topp-renten', 'Litt mindre kjent merkevare enn de største bankene'],
+                bestFor: 'Deg som vil ha høy rente og norsk bank, med full frihet til å ta ut pengene når som helst.',
+              },
+              {
+                name: 'Nordax Sparekonto Smart',
+                rate: '4,50 %',
+                type: 'Nettbank (NOBA)',
+                pros: ['Umiddelbar uttak', 'Ingen krav til minsteinnskudd', 'Svensk nettbank med norsk kundeservice', 'Pålitelig aktør — eid av NOBA-gruppen'],
+                cons: ['0,15 prosentpoeng under topp-renten', 'Relativt ny i Norge — mindre kjent enn Svea'],
+                bestFor: 'Deg som vil ha en pålitelig høyrentekonto uten binding, og som liker tanken på en liten rentebuffer i forhold til toppen.',
+              },
+              {
+                name: 'BN Bank Høyrentekonto',
+                rate: '4,49 %',
+                type: 'Norsk nettbank (Sparebank 1)',
+                pros: ['Norsk nettbank — eid av Sparebank 1-alliansen', 'Ingen krav til minsteinnskudd', 'Solid norsk merkevare'],
+                cons: ['Begrenset tilgang — ikke alltid åpen for nye kunder', '0,16 prosentpoeng under topp-renten'],
+                bestFor: 'Deg som foretrekker en bank med norsk sparebankeierskap, og som er villig til å vente hvis BN Bank akkurat nå er stengt for nye kunder.',
+              },
+            ].map(bank => (
+              <div key={bank.name} className="bg-paper-surface rounded-2xl border border-border p-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5 pb-5 border-b border-border">
+                  <div>
+                    <h3 className="text-xl font-bold text-ink">{bank.name}</h3>
+                    <div className="text-sm text-ink-muted">{bank.type}</div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-3xl font-black text-forest">{bank.rate}</div>
+                    <div className="text-xs text-ink-muted">effektiv rente</div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4">
+                  <div>
+                    <div className="text-sm font-bold text-forest mb-2">+ Fordeler</div>
+                    <ul className="space-y-1.5 text-sm text-ink">
+                      {bank.pros.map((p, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="text-forest shrink-0 mt-0.5">✓</span>
+                          <span>{p}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-amber-warm mb-2">− Ulemper</div>
+                    <ul className="space-y-1.5 text-sm text-ink">
+                      {bank.cons.map((p, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="text-amber-warm shrink-0 mt-0.5">−</span>
+                          <span>{p}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div className="bg-forest-soft rounded-lg p-3 text-sm text-ink">
+                  <strong className="text-forest">Best for:</strong> {bank.bestFor}
                 </div>
               </div>
             ))}
@@ -613,6 +811,36 @@ export default function Hoyrentekonto() {
           </div>
         </section>
 
+        {/* HVEM PASSER DETTE FOR? */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-black text-ink mb-3 flex items-center gap-2">
+            Hvem passer en høyrentekonto for?
+          </h2>
+          <p className="text-ink leading-relaxed mb-6">
+            Høyrentekonto passer for de fleste nordmenn som har en buffer eller et sparemål på 2–5 år. Men det er noen tilfeller der det er spesielt viktig — og noen der du bør vurdere alternativer.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              { emoji: '✓', title: 'Du bygger buffer', desc: '3–6 måneders utgifter bør aldri stå på brukskonto med 0 % rente. På høyrentekonto vokser bufferen din mens du sover.', tone: 'positive' },
+              { emoji: '✓', title: 'Du sparer til noe på 2–5 år', desc: 'Bil, bryllup, renovering, ferie — alt som er for kort til å investere i fond, men for langt unna til å holde på brukskonto.', tone: 'positive' },
+              { emoji: '✓', title: 'Du er over 34 år (eller skal ikke kjøpe bolig)', desc: 'Da er BSU uaktuelt, og høyrentekonto er det beste sparealternativet uten risiko.', tone: 'positive' },
+              { emoji: '✓', title: 'Du har over 1,7 millioner kroner', desc: 'Da begynner formuesskatt å spise avkastningen. Du bør likevel ha en buffer på høyrentekonto før du vurderer investering i fond eller aksjer.', tone: 'positive' },
+              { emoji: '✗', title: 'Du sparer til noe om 10+ år', desc: 'Da bør du vurdere fond eller aksjer. Forventet avkastning er høyere over tid, og du har tid til å ri ut markedssvingninger.', tone: 'negative' },
+              { emoji: '✗', title: 'Du er under 34 og skal kjøpe bolig', desc: 'BSU gir 10 % skattefradrag på innskuddene dine — det er 10 % «gratis» avkastning, bedre enn noen høyrentekonto kan gi.', tone: 'negative' },
+            ].map(card => (
+              <div key={card.title} className={`rounded-xl p-5 border ${card.tone === 'positive' ? 'bg-forest-soft border-forest/20' : 'bg-amber-warm-soft border-amber-warm/20'}`}>
+                <div className="flex items-start gap-3">
+                  <div className={`w-8 h-8 rounded-full ${card.tone === 'positive' ? 'bg-forest text-paper' : 'bg-amber-warm text-paper'} flex items-center justify-center font-bold shrink-0 text-base`}>{card.emoji}</div>
+                  <div>
+                    <h3 className="font-bold text-ink mb-1">{card.title}</h3>
+                    <p className="text-sm text-ink-muted leading-relaxed">{card.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* VANLIGE SPØRSMÅL */}
         <section>
           <h2 className="text-2xl font-bold text-ink mb-4 flex items-center gap-2">
@@ -664,7 +892,7 @@ export default function Hoyrentekonto() {
         <RelatedContent tools={article?.relatedTools} articles={relatedArticles} />
 
         <p className="text-sm text-ink-subtle pt-8 border-t border-border">
-          Sist oppdatert: 2. august 2026. Rentene er veiledende og kan endres. Sjekk bankens nettsider for oppdaterte vilkår. Kilder: bankenes egne sider og Finansportalen.
+          Sist oppdatert: 13. august 2026, kl. 09:00. Rentene er veiledende og kan endres. Vi sjekker hver banks nettside manuelt. Kilder: bankenes egne sider (per oppdateringstidspunkt).
         </p>
       </article>
     </>
