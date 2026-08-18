@@ -4,9 +4,8 @@ import { ShieldCheck } from 'lucide-react'
 /**
  * Nordic Clarity footer (Server Component — uses CSS hover, no event handlers).
  *
- * Three-column layout above the fold (Verktøy / Seksjoner / Kontakt) plus an
- * editorial colophon at the bottom: copy, the "uavhengig / ikke bank"
- * reassurance badge, and last-updated stamp.
+ * Link columns above the fold (Verktøy / Seksjoner / Kontakt) plus an
+ * editorial colophon at the bottom and the "uavhengig / ikke bank" badge.
  */
 
 const footerLinks = {
@@ -122,12 +121,6 @@ export default function Footer() {
             style={{ color: 'var(--fg-muted)' }}
           >
             Annonselenker merkes tydelig · Redaksjonelle vurderinger gjøres uavhengig
-          </span>
-          <span
-            className="font-mono text-[11px] uppercase tracking-[0.10em]"
-            style={{ color: 'var(--fg-muted)' }}
-          >
-            Sist oppdatert 13. august 2026
           </span>
         </div>
       </div>
