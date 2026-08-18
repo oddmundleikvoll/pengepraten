@@ -21,10 +21,10 @@ const sparingDropdown = [
 ]
 
 const verktøyDropdown = [
-  { href: '/verktøy', label: 'Alle verktøy' },
-  { href: '/verktøy/lånekalkulator', label: 'Forbrukslånskalkulator' },
-  { href: '/verktøy/boliglånskalkulator', label: 'Boliglånskalkulator' },
-  { href: '/min-boliglån', label: 'Min boliglånsrente' },
+  { href: '/verktoy', label: 'Alle verktøy' },
+  { href: '/verktoy/lanekalkulator', label: 'Forbrukslånskalkulator' },
+  { href: '/verktoy/boliglanskalkulator', label: 'Boliglånskalkulator' },
+  { href: '/min-boliglan', label: 'Min boliglånsrente' },
 ]
 
 const lanDropdown = [
@@ -35,7 +35,7 @@ const lanDropdown = [
 const flatNav = [
   { href: '/kredittkort', label: 'Kredittkort' },
   { href: '/budsjett', label: 'Budsjett' },
-  { href: '/om-oss', label: 'Om oss' },
+  { href: '/artikler', label: 'Artikler' },
 ]
 
 export default function Header() {

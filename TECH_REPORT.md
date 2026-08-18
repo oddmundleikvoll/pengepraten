@@ -1,4 +1,6 @@
 # Teknisk Oppgraderingsrapport — Pengepraten.no
+
+> **Historisk leveranserapport (19. april 2026).** Filnavn, URL-er og status under er et punktbilde fra leveransen og skal ikke brukes som dagens driftsdokumentasjon. Se [`docs/README.md`](docs/README.md).
 **Dato:** 19. april 2026
 **Utført av:** Subagent (depth 1/1)
 

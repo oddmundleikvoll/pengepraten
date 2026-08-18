@@ -115,11 +115,11 @@ export default function SpareplanGuide() {
 
         <h3>Eksempel på SMART sparemål</h3>
         <p>
-          <strong>Dårlig mål:</strong> «Jeg skal spare til ferie."
+          <strong>Dårlig mål:</strong> «Jeg skal spare til ferie.»
         </p>
         <p>
           <strong>SMART mål:</strong> «Jeg skal spare 25.000 kroner til en ukes ferie 
-          i Spania i juli 2027. Det betyr 1.040 kroner i måneden de neste 24 månedene."
+          i Spania i juli 2027. Det betyr 1.040 kroner i måneden de neste 24 månedene.»
         </p>
 
         <h2>[VIZ: Flytskjema for spareplan — fra nødfond til langsiktig sparing]</h2>

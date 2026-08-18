@@ -116,7 +116,7 @@ export default function SparekalkulatorClient() {
   const timeProgress = Math.min(100, (results.actualMonths / results.months) * 100)
 
   return (
-    <div className="space-y-8">
+    <div data-tool-name="sparekalkulator" className="space-y-8">
       {/* Input section */}
       <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm">
         <h2 className="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">

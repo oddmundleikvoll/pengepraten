@@ -2,6 +2,20 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/artikler/prisvekst-juli-2026-hostbudsjett',
+    title: 'Prisveksten steg til 3,0 % i juli — slik beskytter du høstbudsjettet',
+    excerpt: 'Strøm og nettleie løftet prisveksten i juli. Se hva de ferske SSB-tallene betyr for din økonomi, med regneeksempler og fem konkrete grep før høsten.',
+    category: 'Budsjett',
+    date: '2026-08-18',
+    readTime: '7 min',
+    pillar: 'budsjett',
+    relatedTools: [
+      { title: 'Budsjettmal', href: '/budsjett', description: 'Få oversikt over inntekter og utgifter med vår gratis mal' },
+      { title: 'Boliglånskalkulator', href: '/verktoy/boliglanskalkulator', description: 'Se hvordan rente og løpetid påvirker månedskostnaden' },
+    ],
+    relatedArticles: ['/budsjett/kom-i-gang-med-budsjett', '/artikler/norges-bank-rentevedtak-august-2026'],
+  },
+  {
     slug: '/artikler/skolestart-2026-familiens-okonomi',
     title: 'Skolestart 2026: Hva koster det egentlig for familien?',
     excerpt: 'Skolestart 2026/2027 er i uke 33 (17.–21. august). Her er hva skolen faktisk dekker, hva du må betale selv, og konkrete budsjetttips for familien — med SFO-priser, utstyrsstipend og foreldrefradrag.',
@@ -49,7 +63,7 @@ export const articles: Article[] = [
     readTime: '8 min',
     pillar: 'boliglan',
     relatedTools: [
-      { title: 'Boliglånskalkulator', href: '/verktøy/boliglånskalkulator', description: 'Beregn månedlig kostnad for ditt boliglån' },
+      { title: 'Boliglånskalkulator', href: '/verktoy/boliglanskalkulator', description: 'Beregn månedlig kostnad for ditt boliglån' },
     ],
   },
   {
@@ -88,7 +102,7 @@ export const articles: Article[] = [
     readTime: '7 min',
     pillar: 'sparing',
     relatedTools: [
-      { title: 'Sparekalkulator', href: '/verktøy/sparekalkulator', description: 'Beregn hvor lenge det tar å nå sparemålet ditt' },
+      { title: 'Sparekalkulator', href: '/verktoy/sparekalkulator', description: 'Beregn hvor lenge det tar å nå sparemålet ditt' },
       { title: 'Høyrentekonto-sammenligning', href: '/sparing/hoyrentekonto-sammenligning', description: 'Sammenlign alle høyrentekontoer på én side' },
     ],
     relatedArticles: ['/sparing/bsu-guide', '/sparing/indeksfond-nybegynnere'],
@@ -157,15 +171,6 @@ export const articles: Article[] = [
     pillar: 'kredittkort',
   },
   {
-    slug: '/kredittkort/beste-kredittkort-norge-2026',
-    title: 'Beste kredittkort for norske forbrukere i 2026 — komplett guide',
-    excerpt: 'Vi har testet og sammenlignet de beste kredittkortene i Norge. Se hvilket kort som passer deg best — med cashback, reiseforsikring og uten årsavgift.',
-    category: 'Kredittkort',
-    date: '2026-04-09',
-    readTime: '12 min',
-    pillar: 'kredittkort',
-  },
-  {
     slug: '/lan/beste-forbrukslan-2026',
     title: 'Beste forbrukslån 2026 — slik finner du det billigste lånet',
     excerpt: 'Forbrukslån kan koste deg tusenvis av kroner mer avhengig av hvem du låner fra. Vi viser deg hvordan du sikrer deg den beste renten.',
@@ -192,7 +197,7 @@ export const articles: Article[] = [
     readTime: '10 min',
     pillar: 'lan',
     relatedTools: [
-      { title: 'Boliglånskalkulator', href: '/verktøy/boliglånskalkulator', description: 'Beregn månedlig kostnad for ditt boliglån' },
+      { title: 'Boliglånskalkulator', href: '/verktoy/boliglanskalkulator', description: 'Beregn månedlig kostnad for ditt boliglån' },
     ],
     relatedArticles: ['/lan/beste-forbrukslan-2026'],
   },

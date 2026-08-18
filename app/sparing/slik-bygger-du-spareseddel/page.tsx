@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Slik bygger du en spareseddel du faktisk følger | Pengepraten',
+  title: 'Slik bygger du en spareseddel du faktisk følger',
   description: 'Lær å lage en spareseddel som fungerer i praksis. Vi viser deg steg-for-steg hvordan du setter opp et sparemål, holder motivasjonen oppe, og faktisk når målet ditt.',
   keywords: ['spareseddel', 'spareplan', 'sparing', 'sparemål', 'buffer', 'BSU', 'fond', 'personlig økonomi'],
 }

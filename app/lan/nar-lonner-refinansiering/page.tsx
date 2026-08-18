@@ -350,7 +350,7 @@ export default function NarLonnerRefinansiering() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/verktøy/lånekalkulator"
+              href="/verktoy/lanekalkulator"
               className="inline-flex items-center gap-2 bg-forest text-paper font-medium py-2 px-4 rounded-md hover:bg-forest-mid transition-colors"
             >
               Prøv lånekalkulatoren →

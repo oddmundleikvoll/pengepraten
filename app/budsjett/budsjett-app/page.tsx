@@ -322,11 +322,11 @@ export default function BudsjettApp() {
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
-                <p className="text-gray-700"><strong>Sett et konkret månedsmål</strong> — for eksempel "ikke bruke mer enn 8.000 kr på mat denne måneden."</p>
+                <p className="text-gray-700"><strong>Sett et konkret månedsmål</strong> — for eksempel «ikke bruke mer enn 8.000 kr på mat denne måneden».</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
-                <p className="text-gray-700"><strong>Automatiser sparingen</strong> — sett opp fast månedlig overføring til høyrentekonto rett etter lønning. Du sparer lettere når du "ikke ser" pengene.</p>
+                <p className="text-gray-700"><strong>Automatiser sparingen</strong> — sett opp fast månedlig overføring til høyrentekonto rett etter lønning. Du sparer lettere når du «ikke ser» pengene.</p>
               </div>
             </div>
           </div>

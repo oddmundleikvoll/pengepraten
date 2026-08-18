@@ -1,5 +1,7 @@
 # SPEC.md — Min Boliglånsrente-widget
 
+> **Historisk spesifikasjon.** Dokumentet viser den opprinnelige målarkitekturen. Dagens widget lagrer data lokalt i nettleseren og har ikke databasen eller cron-flyten som beskrives her. Se [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) og [`STATUS.md`](STATUS.md) for implementert løsning.
+
 **Versjon:** 1.0  
 **Dato:** 2026-04-11  
 **Ansvarlig:** Neo (Tech Agent)  

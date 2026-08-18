@@ -244,7 +244,7 @@ export default function BoliglanskalkulatorClient() {
           <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
             <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
             <span className="mx-2 text-border-strong">/</span>
-            <Link href="/verktøy" className="hover:text-forest transition-colors">Verktøy</Link>
+            <Link href="/verktoy" className="hover:text-forest transition-colors">Verktøy</Link>
             <span className="mx-2 text-border-strong">/</span>
             <span className="text-ink">Boliglånskalkulator</span>
           </nav>
@@ -258,7 +258,7 @@ export default function BoliglanskalkulatorClient() {
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+      <section data-tool-name="boliglanskalkulator" className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Left: Inputs */}
           <div className="lg:col-span-3 bg-white rounded-xl border border-gray-100 shadow-sm p-6">

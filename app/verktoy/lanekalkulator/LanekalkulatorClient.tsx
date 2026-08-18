@@ -1,24 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useMemo, useState } from 'react'
 import Link from 'next/link'
 
 export default function LanekalkulatorClient() {
   const [belop, setBelop] = useState<number>(150000)
   const [rente, setRente] = useState<number>(12)
   const [ar, setAr] = useState<number>(5)
-  const [resultat, setResultat] = useState<{
-    manedligKostnad: number
-    totalKostnad: number
-    totalRente: number
-    effektivRente: number
-  } | null>(null)
-
-  useEffect(() => {
-    beregnLan()
-  }, [belop, rente, ar])
-
-  const beregnLan = () => {
+  const resultat = useMemo(() => {
     const maneder = ar * 12
     const manedligRente = rente / 100 / 12
     
@@ -32,13 +21,13 @@ export default function LanekalkulatorClient() {
     // Effektiv rente (forenklet - uten gebyrer)
     const effektivRente = rente
 
-    setResultat({
+    return {
       manedligKostnad,
       totalKostnad,
       totalRente,
       effektivRente,
-    })
-  }
+    }
+  }, [ar, belop, rente])
 
   const formatKr = (verdi: number) => {
     return new Intl.NumberFormat('nb-NO', {
@@ -56,7 +45,7 @@ export default function LanekalkulatorClient() {
           <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
             <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
             <span className="mx-2 text-border-strong">/</span>
-            <Link href="/verktøy" className="hover:text-forest transition-colors">Verktøy</Link>
+            <Link href="/verktoy" className="hover:text-forest transition-colors">Verktøy</Link>
             <span className="mx-2 text-border-strong">/</span>
             <span className="text-ink">Forbrukslånskalkulator</span>
           </nav>
@@ -70,7 +59,7 @@ export default function LanekalkulatorClient() {
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+      <section data-tool-name="forbrukslanskalkulator" className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Input section */}
           <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6">

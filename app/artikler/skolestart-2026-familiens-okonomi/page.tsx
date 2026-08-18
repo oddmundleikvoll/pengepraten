@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Skolestart 2026: Hva koster det egentlig for familien? | Pengepraten',
+  title: 'Skolestart 2026: Hva koster det egentlig for familien?',
   description:
     'Skolestart 2026/2027 er rett rundt hjørnet (uke 33). Her er hva skolen faktisk dekker, hva du må betale selv, og konkrete budsjetttips for familien — med SFO-priser, utstyrsstipend og foreldrefradrag.',
   keywords: [

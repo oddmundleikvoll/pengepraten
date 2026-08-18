@@ -1,5 +1,7 @@
 # Norsk Penger — Prosjektplan
 
+> **Historisk dokument (8. april 2026).** Teknologivalgene og oppgavestatusen her beskriver oppstartsfasen og er ikke dagens tekniske fasit. Se [`README.md`](README.md), [`STATUS.md`](STATUS.md) og [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for aktiv dokumentasjon.
+
 **Opprettet:** 2026-04-08  
 **Mål:** Bygge et lønnsomt, agentdrevet norsk personlig økonomi-nettsted  
 **Modell:** Gratis verktøy → E-postliste → Digitale produkter + Affiliate

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { getWeekAmount, getTotalUpTo } from '@/lib/spareutfordringStore'
+import { trackEvent } from '@/lib/analytics'
 
 function generatePDFHtml(): string {
   const rows = Array.from({ length: 52 }, (_, i) => {
@@ -67,7 +68,7 @@ function generatePDFHtml(): string {
   `
 }
 
-function downloadPdf() {
+function downloadPrintablePlan() {
   const html = generatePDFHtml()
   const blob = new Blob([html], { type: 'text/html' })
   const url = URL.createObjectURL(blob)
@@ -76,6 +77,7 @@ function downloadPdf() {
   a.download = '52-ukers-spareutfordring-pengepraten.html'
   a.click()
   URL.revokeObjectURL(url)
+  trackEvent('file_download', { file_type: 'html', content_name: '52_week_challenge' })
 }
 
 function downloadCsv() {
@@ -95,13 +97,10 @@ function downloadCsv() {
   a.download = '52-ukers-spareutfordring-pengepraten.csv'
   a.click()
   URL.revokeObjectURL(url)
+  trackEvent('file_download', { file_type: 'csv', content_name: '52_week_challenge' })
 }
 
-interface ChallengeDownloadProps {
-  onEmailSubmit?: (email: string) => Promise<void>
-}
-
-export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadProps) {
+export default function ChallengeDownload() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -116,12 +115,17 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
     setError('')
     setLoading(true)
     try {
-      if (onEmailSubmit) {
-        await onEmailSubmit(email)
-      }
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, kind: 'challenge' }),
+      })
+      const data = await response.json()
+      if (!response.ok) throw new Error(data.error || 'Noe gikk galt')
       setSubmitted(true)
-    } catch {
-      setError('Noe gikk galt. Prøv igjen.')
+      trackEvent('generate_lead', { lead_type: 'challenge_plan' })
+    } catch (error) {
+      setError(error instanceof Error ? error.message : 'Noe gikk galt. Prøv igjen.')
     } finally {
       setLoading(false)
     }
@@ -132,7 +136,7 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
       {/* Download buttons */}
       <div className="grid sm:grid-cols-2 gap-4">
         <button
-          onClick={downloadPdf}
+          onClick={downloadPrintablePlan}
           className="flex items-center gap-3 px-5 py-4 bg-paper-surface border-2 border-border rounded-xl hover:border-forest/40 hover:shadow-md transition-all group"
         >
           <div className="w-10 h-10 bg-forest-soft rounded-lg flex items-center justify-center text-lg shrink-0 group-hover:bg-forest/10 transition-colors">
@@ -141,8 +145,8 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
             </svg>
           </div>
           <div className="text-left">
-            <div className="font-semibold text-ink text-sm">Last ned HTML</div>
-            <div className="text-xs text-ink-muted">Kan skrives ut som PDF</div>
+            <div className="font-semibold text-ink text-sm">Utskriftsvennlig plan</div>
+            <div className="text-xs text-ink-muted">Åpne og velg «Skriv ut»</div>
           </div>
         </button>
 
@@ -172,8 +176,8 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
               </svg>
             </div>
             <div>
-              <h3 className="font-bold text-ink">Få PDF tilsendt på e-post</h3>
-              <p className="text-sm text-ink-muted mt-0.5">Vi sender deg en pen PDF med hele 52-ukers oversikten.</p>
+              <h3 className="font-bold text-ink">Få ukeplanen tilsendt</h3>
+              <p className="text-sm text-ink-muted mt-0.5">Vi sender deg en utskriftsvennlig plan med alle 52 ukene.</p>
             </div>
           </div>
           <form onSubmit={handleEmailSubmit} className="space-y-3">
@@ -197,7 +201,7 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  Send meg PDF-en
+                  Send meg ukeplanen
                 </>
               )}
             </button>
@@ -214,7 +218,7 @@ export default function ChallengeDownload({ onEmailSubmit }: ChallengeDownloadPr
             </svg>
           </div>
           <h3 className="font-bold text-forest text-lg mb-1">Sjekk innboksen din!</h3>
-          <p className="text-sm text-ink-muted">PDF-en med 52-ukers oversikten er på vei.</p>
+          <p className="text-sm text-ink-muted">Ukeplanen med hele 52-ukersoversikten er på vei.</p>
         </div>
       )}
     </div>

@@ -8,7 +8,7 @@ import { TOTAL_CHALLENGE, getWeekAmount, getTotalUpTo } from '@/lib/spareutfordr
 import { Flame, PartyPopper, PiggyBank, TrendingUp, Trophy } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: '52-ukers Spareutfordring — Spar 68 900 kr på ett år | Pengepraten',
+  title: '52-ukers Spareutfordring — Spar 68 900 kr på ett år',
   description: 'Bli med på 52-ukers spareutfordringen og spar 68 900 kr på ett år. Start på 50 kr i uka, øk med 50 kr hver uke. Du merker knapt at pengene forsvinner!',
 }
 
@@ -190,25 +190,14 @@ export default function SpareutfordringPage() {
         </div>
       </section>
 
-      {/* Social proof / testimonial */}
+      {/* Why the progression works */}
       <section className="bg-paper-alt py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="bg-paper rounded-3xl p-8 md:p-12 shadow-sm border border-border text-center">
-            <div className="text-5xl mb-6"></div>
-            <blockquote className="text-xl md:text-2xl font-medium text-ink leading-relaxed mb-8">
-              &ldquo;Jeg trodde det var umulig å spare så mye. Men med 52-ukers
-              utfordringen merket jeg knapt at pengene forsvant. Etter 6 måneder
-              hadde jeg spart mer enn jeg hadde gjort på 3 år på vanlig vis.&rdquo;
-            </blockquote>
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-14 h-14 bg-forest rounded-full flex items-center justify-center text-paper text-xl font-bold">
-                M
-              </div>
-              <div className="text-left">
-                <div className="font-bold text-ink">Mari</div>
-                <div className="text-ink-muted text-sm">34 år, Oslo</div>
-              </div>
-            </div>
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-ink mb-4">Gjør fremgangen synlig</h2>
+            <p className="text-lg md:text-xl text-ink-muted leading-relaxed max-w-2xl mx-auto">
+              Små, konkrete milepæler gjør det lettere å holde oversikten. Kryss av én uke om gangen og se både sparebeløpet og vanen vokse.
+            </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border">
@@ -231,11 +220,11 @@ export default function SpareutfordringPage() {
       <section id="start" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 scroll-mt-20">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-black text-ink mb-4">
-            Start utfordringen nå — <span className="text-forest">i din browser</span>
+            Start utfordringen nå — <span className="text-forest">i nettleseren din</span>
           </h2>
           <p className="text-ink-muted text-lg max-w-2xl mx-auto">
             Følg med på fremgangen din rett her. Klikk på ukene etter hvert som du
-            fullfører dem — alt lagres lokalt i din browser.
+            fullfører dem — alt lagres lokalt i nettleseren din.
           </p>
         </div>
 
@@ -250,7 +239,7 @@ export default function SpareutfordringPage() {
               Vil du ha oversikten offline?
             </h2>
             <p className="text-ink-muted">
-              Last ned en PDF du kan skrive ut, eller en CSV til Excel og Google Sheets.
+              Last ned en utskriftsvennlig ukeplan, eller en CSV til Excel og Google Sheets.
             </p>
           </div>
           <ChallengeDownload />
@@ -274,7 +263,7 @@ export default function SpareutfordringPage() {
         <div className="space-y-4">
           {[
             {
-              q: 'Hvorfor fungerer 52-ukers utfordringen så gode?',
+              q: 'Hvorfor fungerer 52-ukers utfordringen så godt?',
               a: 'Hemmeligheten er at du venner deg til å spare før du riktig merker at beløpene øker. Starten er så lav som 50 kr at du ikke kjenner det på budsjettet. Når du har kommet til uke 26 (der du sparer 1.300 kr i uka), har du allerede dannet vanen — og halvparten av jobben er gjort.',
             },
             {
@@ -316,7 +305,7 @@ export default function SpareutfordringPage() {
             Klar til å spare {totalDisplay} kr?
           </h2>
           <p className="text-paper/80 text-lg mb-8 max-w-2xl mx-auto">
-            Om 52 uker vil du se tilbake og tenke: "Hvorfor startet jeg ikke i dag?"
+            Om 52 uker vil du se tilbake og tenke: «Hvorfor startet jeg ikke i dag?»
             Start nå — det tar bare ett klikk.
           </p>
           <a

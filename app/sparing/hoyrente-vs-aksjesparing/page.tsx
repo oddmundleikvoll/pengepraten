@@ -38,7 +38,7 @@ export default function HoyrenteVsAksjesparing() {
 
         <h2>Høyrentekonto: Trygghet med moderat avkastning</h2>
         <p>
-          En høyrentekonto er det nærmeste du kommer en "sikker havn" for sparepenger 
+          En høyrentekonto er det nærmeste du kommer en «sikker havn» for sparepenger
           i Norge. Innskuddet er garantert av den norske innskuddsgarantien (opptil 
           2 millioner kroner), og du vet nøyaktig hva du får i rente.
         </p>
@@ -197,8 +197,8 @@ export default function HoyrenteVsAksjesparing() {
 
         <h2>Konklusjon</h2>
         <p>
-          Valget mellom høyrentekonto og aksjesparing handler ikke om "riktig eller 
-          galt" — det handler om tidshorisont og risikotoleranse.
+          Valget mellom høyrentekonto og aksjesparing handler ikke om «riktig eller
+          galt» — det handler om tidshorisont og risikotoleranse.
         </p>
         <p>
           <strong>Velg høyrentekonto</strong> for penger du kan trenge innen 3 år, 
@@ -229,7 +229,7 @@ export default function HoyrenteVsAksjesparing() {
               </Link>
             </li>
             <li>
-              <Link href="/verktøy/sparekalkulator" className="text-green-700 hover:underline">
+              <Link href="/verktoy/sparekalkulator" className="text-green-700 hover:underline">
                 Prøv vår sparekalkulator — se hvor mye du kan få i avkastning
               </Link>
             </li>

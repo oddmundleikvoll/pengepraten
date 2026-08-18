@@ -11,6 +11,7 @@ import {
   TOTAL_CHALLENGE,
 } from '@/lib/spareutfordringStore'
 import type { ChallengeProgress } from '@/lib/spareutfordringStore'
+import { trackEvent } from '@/lib/analytics'
 
 interface SpareutfordringAppProps {
   embedded?: boolean
@@ -27,10 +28,21 @@ export default function SpareutfordringApp({ embedded = false }: Spareutfordring
   }, [])
 
   const handleToggle = useCallback((week: number) => {
-    setProgress(prev => {
-      const next = toggleWeek(week)
-      return next
+    const previous = getChallengeProgress()
+    const wasCompleted = previous?.weeksCompleted.includes(week) ?? false
+    const next = toggleWeek(week)
+
+    setProgress(next)
+    trackEvent(wasCompleted ? 'challenge_week_unchecked' : 'challenge_week_completed', {
+      week,
+      completed_weeks: next.weeksCompleted.length,
     })
+    if (!wasCompleted && next.weeksCompleted.length === 1) {
+      trackEvent('tutorial_begin', { tutorial_name: '52_week_challenge' })
+    }
+    if (!wasCompleted && next.weeksCompleted.length === 52) {
+      trackEvent('tutorial_complete', { tutorial_name: '52_week_challenge' })
+    }
   }, [])
 
   const handleReset = useCallback(() => {
@@ -44,13 +56,8 @@ export default function SpareutfordringApp({ embedded = false }: Spareutfordring
   const totalSaved = getTotalSaved(weeksCompleted)
 
   // Next week to complete: first uncompleted week, or 52 if all done
-  const currentWeek = weeksCompleted.length === 0
-    ? 1
-    : weeksCompleted.length >= 52
-      ? 52
-      : weeksCompleted[weeksCompleted.length - 1] + 1
-
   const weeks = Array.from({ length: 52 }, (_, i) => i + 1)
+  const currentWeek = weeks.find(week => !weeksCompleted.includes(week)) ?? 52
 
   const filteredWeeks = weeks.filter(w => {
     if (filter === 'pending') return !weeksCompleted.includes(w)
@@ -86,7 +93,7 @@ export default function SpareutfordringApp({ embedded = false }: Spareutfordring
                 }
               `}
             >
-              {f === 'all' ? `Alle (${weeks.length})` : f === 'pending' ? `Gjennstår (${52 - weeksCompleted.length})` : `Ferdig (${weeksCompleted.length})`}
+              {f === 'all' ? `Alle (${weeks.length})` : f === 'pending' ? `Gjenstår (${52 - weeksCompleted.length})` : `Ferdig (${weeksCompleted.length})`}
             </button>
           ))}
         </div>

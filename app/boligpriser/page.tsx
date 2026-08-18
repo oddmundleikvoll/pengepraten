@@ -265,7 +265,7 @@ export default function BoligpriserPage() {
             låne og hva det vil koste deg per måned.
           </p>
           <Link
-            href="/verktøy/boliglånskalkulator"
+            href="/verktoy/boliglanskalkulator"
             className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -336,7 +336,7 @@ export default function BoligpriserPage() {
               </Link>
             </li>
             <li>
-              <Link href="/verktøy/boliglånskalkulator" className="text-primary-600 hover:underline font-medium">
+              <Link href="/verktoy/boliglanskalkulator" className="text-primary-600 hover:underline font-medium">
                 Boliglånskalkulator →
               </Link>
             </li>

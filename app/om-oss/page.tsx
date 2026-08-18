@@ -58,6 +58,19 @@ export default function OmOssPage() {
           <li>Tips for personlig økonomi</li>
         </ul>
 
+        <h2>Slik arbeider vi redaksjonelt</h2>
+        <p>
+          Artikler og sammenligninger bygger på offentlige kilder, bankenes egne
+          prislister og vilkår, samt beregninger vi beskriver på den aktuelle siden.
+          Renter og produktvilkår datostemples fordi de kan endre seg raskt.
+        </p>
+        <ul>
+          <li><strong>Kilder:</strong> Vi prioriterer primærkilder som banker, offentlige myndigheter og Finansportalen.</li>
+          <li><strong>Oppdateringer:</strong> Sider med renter og vilkår viser når tallene sist ble kontrollert.</li>
+          <li><strong>Annonselenker:</strong> Enkelte lenker kan gi oss provisjon. Det skal merkes tydelig og påvirker ikke rangeringen vår.</li>
+          <li><strong>Rettelser:</strong> Dokumenterte feil rettes så raskt som mulig og kan meldes til kontakt@pengepraten.no.</li>
+        </ul>
+
         <h2>Kontakt oss</h2>
         <p>
           Har du spørsmål, tilbakemeldinger eller forslag? Vi vil gjerne høre fra deg!

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 export default function LeadMagnet() {
   const [email, setEmail] = useState('')
@@ -17,7 +18,7 @@ export default function LeadMagnet() {
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, kind: 'budget' }),
       })
 
       const data = await res.json()
@@ -26,6 +27,7 @@ export default function LeadMagnet() {
         setError(data.error || 'Noe gikk galt. Prøv igjen.')
       } else {
         setSubmitted(true)
+        trackEvent('generate_lead', { lead_type: 'budget_template' })
       }
     } catch {
       setError('Noe gikk galt. Prøv igjen.')
@@ -64,8 +66,8 @@ export default function LeadMagnet() {
         </div>
       </div>
       <p className="text-paper/80 mb-6 leading-relaxed">
-        Få vår populære budsjettmal for Google Sheets — brukt av over 2.000 nordmenn.
-        Kategorisert, ferdigformatert, og klar til bruk med en gang.
+        Få budsjettmalen for Excel og Google Sheets. Den er kategorisert,
+        ferdigformatert og klar til bruk med en gang.
       </p>
       <form onSubmit={handleSubmit} className="space-y-3">
         <input

@@ -221,7 +221,7 @@ export default function NorgesBankHeverRentenMai2026() {
             for ditt lån. Justér renten fra 4,00 % til 4,25 % og se forskjellen.
           </p>
           <Link
-            href="/verktøy/boliglånskalkulator"
+            href="/verktoy/boliglanskalkulator"
             className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             Boliglånskalkulator →
@@ -313,7 +313,7 @@ export default function NorgesBankHeverRentenMai2026() {
               </Link>
             </li>
             <li>
-              <Link href="/verktøy/boliglånskalkulator" className="text-primary-600 hover:underline font-medium">
+              <Link href="/verktoy/boliglanskalkulator" className="text-primary-600 hover:underline font-medium">
                 Boliglånskalkulator →
               </Link>
             </li>

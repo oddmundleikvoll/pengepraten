@@ -4,7 +4,7 @@ import { getArticlesByPillar } from '@/lib/articles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Sparing August 2026 — Beste Sparekonto, Høyrente, BSU & Sparetips | Pengepraten',
+  title: 'Sparing August 2026 — Beste Sparekonto, Høyrente, BSU & Sparetips',
   description: 'Finn den beste sparekontoen og høyrentekontoen i Norge august 2026. Sammenlign BSU, IPS og høyrentekonto. Få opptil 4,65% rente og 10% skattefradrag med våre sparetips.',
   keywords: ['sparing', 'beste sparekonto', 'høyrentekonto', 'BSU', 'sparetips', 'sparekonto 2026', 'høyrente 2026'],
 }
@@ -216,7 +216,7 @@ export default function SparingPage() {
                 BSU er bundet til boligkjøp — du kan kun bruke pengene til egenkapital eller boliglån. Dette er en fordel for deg som uansett planlegger å kjøpe bolig. Maksimalt innskudd over tid er 300.000 kr, og du kan spare i BSU frem til du fyller 34 år.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Lær alt om BSU i vår <Link href="/sparing/bsu-guide" className="text-green-600 hover:text-green-700 font-medium">komplette BSU-guide</Link>. Prøv også <Link href="/verktøy/sparekalkulator" className="text-green-600 hover:text-green-700 font-medium">sparekalkulatoren</Link> for å se hvor mye du kan tjene med BSU over tid.
+                Lær alt om BSU i vår <Link href="/sparing/bsu-guide" className="text-green-600 hover:text-green-700 font-medium">komplette BSU-guide</Link>. Prøv også <Link href="/verktoy/sparekalkulator" className="text-green-600 hover:text-green-700 font-medium">sparekalkulatoren</Link> for å se hvor mye du kan tjene med BSU over tid.
               </p>
             </div>
 
@@ -275,7 +275,7 @@ export default function SparingPage() {
                 <div>
                   <h3 className="font-semibold text-norsk-dark mb-2">Hvor mye kan jeg tjene på sparing?</h3>
                   <p className="text-gray-600 leading-relaxed text-sm">
-                    Med 5% rente på 100.000 kr tjener du 5.000 kr i året. BSU gir opptil 14% effektiv avkastning. Bruk <Link href="/verktøy/sparekalkulator" className="text-green-600 hover:text-green-700 font-medium">sparekalkulatoren</Link> for å beregne din avkastning.
+                    Med 5% rente på 100.000 kr tjener du 5.000 kr i året. BSU gir opptil 14% effektiv avkastning. Bruk <Link href="/verktoy/sparekalkulator" className="text-green-600 hover:text-green-700 font-medium">sparekalkulatoren</Link> for å beregne din avkastning.
                   </p>
                 </div>
                 <div>
@@ -321,7 +321,7 @@ export default function SparingPage() {
                   </svg>
                 </Link>
                 <Link
-                  href="/verktøy/sparekalkulator"
+                  href="/verktoy/sparekalkulator"
                   className="inline-flex items-center gap-2 bg-forest text-paper font-bold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
                 >
                   Prøv sparekalkulator
@@ -384,10 +384,10 @@ export default function SparingPage() {
               <h3 className="font-bold text-norsk-dark mb-3">Relaterte verktøy</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/verktøy/sparekalkulator" className="text-green-600 hover:text-green-700 font-medium">→ Sparekalkulator</Link>
+                  <Link href="/verktoy/sparekalkulator" className="text-green-600 hover:text-green-700 font-medium">→ Sparekalkulator</Link>
                 </li>
                 <li>
-                  <Link href="/verktøy/boliglånskalkulator" className="text-green-600 hover:text-green-700 font-medium">→ Boliglånskalkulator</Link>
+                  <Link href="/verktoy/boliglanskalkulator" className="text-green-600 hover:text-green-700 font-medium">→ Boliglånskalkulator</Link>
                 </li>
                 <li>
                   <Link href="/budsjett/kom-i-gang-med-budsjett" className="text-green-600 hover:text-green-700 font-medium">→ Budsjettguide</Link>

@@ -216,7 +216,7 @@ export default function MortgageOnboardingModal({ isOpen, onClose, onSuccess }: 
           </button>
 
           <p className="text-center text-xs text-gray-400">
-            Vi lagrer dataene dine lokalt i din browser. Ingen pålogging kreves.
+            Vi lagrer dataene dine lokalt i nettleseren din. Ingen pålogging kreves.
           </p>
         </form>
       </div>
