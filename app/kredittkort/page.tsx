@@ -4,7 +4,7 @@ import { getArticlesByPillar } from '@/lib/articles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kredittkort 2026 — Sammenlign 10+ Kredittkort (Cashback, Reise, Gratis) | Pengepraten',
+  title: 'Kredittkort 2026 — Sammenlign 10+ Kredittkort (Cashback, Reise, Gratis)',
   description: 'Sammenlign de beste kredittkortene i Norge 2026. Finn kort med cashback, reiseforsikring og uten årsavgift. Bank Norwegian, Trumf Visa, Komplett Bank, SAS EuroBonus og flere.',
   keywords: ['kredittkort', 'beste kredittkort', 'kredittkort 2026', 'cashback kredittkort', 'kredittkort uten årsavgift', 'Bank Norwegian', 'Trumf Visa', 'Komplett Bank'],
 }

@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { getMortgageData, updateMortgageData, clearMortgageData } from '@/lib/mortgageStore'
 import { getMarketRates, calculateMortgageComparison } from '@/lib/marketRates'
 import MortgageOnboardingModal from '@/components/MortgageOnboardingModal'
-import type { Metadata } from 'next'
 import type { MortgageUser } from '@/lib/mortgageTypes'
 
 function formatNumber(n: number) {
@@ -13,6 +13,7 @@ function formatNumber(n: number) {
 }
 
 export default function MinBoliglanPage() {
+  const router = useRouter()
   const [data, setData] = useState<MortgageUser | null>(null)
   const [mounted, setMounted] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
@@ -76,7 +77,7 @@ export default function MinBoliglanPage() {
             </p>
             <MortgageOnboardingModal
               isOpen={true}
-              onClose={() => window.location.href = '/boliglan'}
+              onClose={() => router.push('/boliglan')}
               onSuccess={(saved) => { setData(saved) }}
             />
           </div>

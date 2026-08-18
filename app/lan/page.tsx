@@ -5,7 +5,7 @@ import { getArticlesByPillar } from '@/lib/articles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Forbrukslån 2026 — Sammenlign Renter, Søk Billigste Lån | Pengepraten',
+  title: 'Forbrukslån 2026 — Sammenlign Renter, Søk Billigste Lån',
   description: 'Finn det billigste forbrukslånet i Norge 2026. Sammenlign renter, gebyrer og betingelser. Lær om refinansiering, lån uten sikkerhet og hvordan du sparer penger på gjelden.',
   keywords: ['forbrukslån', 'beste forbrukslån', 'billigste lån', 'refinansiering', 'lån uten sikkerhet', 'lån 2026', 'sammenligne lån'],
 }
@@ -220,7 +220,7 @@ export default function LanPage() {
                 I tillegg krever bankene minst 15% egenkapital for boligkjøp. Skal du kjøpe en bolig til 4 millioner kroner, må du ha minst 600.000 kr i egenkapital. Resten kan du låne med pant i boligen.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Husk at denne beregningen gjelder boliglån, ikke forbrukslån. Forbrukslån er lån uten sikkerhet og påvirkes av din totale gjeldsgrad. Vil du beregne nøyaktig hva du kan få? Prøv vår <Link href="/verktøy/boliglånskalkulator" className="text-primary-600 hover:text-primary-700 font-medium">boliglånskalkulator</Link>. Les også <Link href="/lan/hvor-mye-boliglan-kan-jeg-fa" className="text-primary-600 hover:text-primary-700 font-medium">Hvor mye boliglån kan jeg få?</Link> for en dypere guide.
+                Husk at denne beregningen gjelder boliglån, ikke forbrukslån. Forbrukslån er lån uten sikkerhet og påvirkes av din totale gjeldsgrad. Vil du beregne nøyaktig hva du kan få? Prøv vår <Link href="/verktoy/boliglanskalkulator" className="text-primary-600 hover:text-primary-700 font-medium">boliglånskalkulator</Link>. Les også <Link href="/lan/hvor-mye-boliglan-kan-jeg-fa" className="text-primary-600 hover:text-primary-700 font-medium">Hvor mye boliglån kan jeg få?</Link> for en dypere guide.
               </p>
             </div>
 
@@ -327,7 +327,7 @@ export default function LanPage() {
                 Se nøyaktig hvor mye et forbrukslån vil koste deg — med alle renter og gebyrer.
               </p>
               <Link
-                href="/verktøy/lånekalkulator"
+                href="/verktoy/lanekalkulator"
                 className="inline-flex items-center gap-2 bg-primary-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

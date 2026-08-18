@@ -1,5 +1,7 @@
 # Rentescraping mai 2026 — Kilder og oppsummering
 
+> **Historisk research.** Tallene er et datert kildegrunnlag og må verifiseres mot primærkildene før de gjenbrukes. Aktiv vedlikeholdsflyt er beskrevet i [`docs/CONTENT_MAINTENANCE.md`](docs/CONTENT_MAINTENANCE.md).
+
 ## Norges Bank styringsrente
 - **Kilde:** https://www.norges-bank.no/tema/pengepolitikk/styringsrenten/
 - **Styringsrente:** 4,25% (hevet fra 4,00%)

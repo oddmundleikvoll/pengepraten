@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kredittscore i Norge 2026: Slik fungerer det og slik forbedrer du den | Pengepraten',
+  title: 'Kredittscore i Norge 2026: Slik fungerer det og slik forbedrer du den',
   description: 'Kredittscore påvirker hvilken rente du får på lån og kredittkort. Lær hvordan kredittscore beregnes i Norge, hvordan du får tak i din egen score, og 7 konkrete tiltak for å forbedre den.',
   keywords: ['kredittscore', 'kredittvurdering', 'kredittsjekk', 'gjeldsregisteret', 'lånesøknad', 'rente', 'personlig økonomi Norge'],
 }

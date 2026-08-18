@@ -391,7 +391,7 @@ export default function HoyrentekontoSammenligning() {
               </Link>
             </li>
             <li>
-              <Link href="/verktøy/boliglånskalkulator" className="text-green-600 hover:underline font-medium">
+              <Link href="/verktoy/boliglanskalkulator" className="text-green-600 hover:underline font-medium">
                 Boliglånskalkulator →
               </Link>
             </li>

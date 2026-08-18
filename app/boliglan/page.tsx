@@ -99,7 +99,7 @@ export default function BoliglanPage() {
                 Beregn hvor mye boliglån du kan få og hva det vil koste deg per måned.
               </p>
               <Link
-                href="/verktøy/boliglånskalkulator"
+                href="/verktoy/boliglanskalkulator"
                 className="inline-flex items-center gap-2 bg-forest text-paper font-medium py-2 px-4 rounded-md hover:bg-forest-mid transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

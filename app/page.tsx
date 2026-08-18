@@ -3,11 +3,12 @@ import Link from 'next/link'
 import LeadMagnet from '@/components/LeadMagnet'
 import ArticleCard from '@/components/ArticleCard'
 import { latestArticles } from '@/lib/articles'
+import HomeChallengeCTA from '@/components/HomeChallengeCTA'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Pengepraten — Få kontroll på pengene dine',
-  description: 'Norges beste nettside for personlig økonomi. Forbrukslånskalkulator, boliglånskalkulator, budsjettmal, guider om kredittkort, lån og sparing. Helt gratis.',
+  description: 'Norsk nettside for personlig økonomi med kalkulatorer, budsjettmal og guider om kredittkort, lån og sparing. Helt gratis.',
 }
 
 import { CreditCard, Landmark, PiggyBank, BarChart3 } from 'lucide-react'
@@ -79,7 +80,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-xl text-ink-muted mb-8 leading-relaxed max-w-2xl">
-              Pengepraten er Norges mest nyttige nettside for personlig økonomi. 
+              Pengepraten er en norsk nettside for praktisk personlig økonomi.
               Vi gir deg verktøyene, guidene og sammenligningene du trenger for å ta 
               smartere økonomiske beslutninger — helt gratis.
             </p>
@@ -95,16 +96,18 @@ export default function HomePage() {
                 Last ned gratis budsjettmal
               </a>
               <Link
-                href="/verktøy/lånekalkulator"
+                href="/verktoy/lanekalkulator"
                 className="inline-flex items-center justify-center gap-2 bg-white text-forest border border-forest font-semibold py-4 px-6 rounded-md hover:bg-forest-soft transition-colors text-sm"
               >
                 Forbrukslånskalkulator →
               </Link>
               <Link
-                href="/verktøy/boliglånskalkulator"
+                href="/spareutfordring"
+                data-analytics-event="challenge_start_click"
+                data-analytics-label="homepage_hero"
                 className="inline-flex items-center justify-center gap-2 border-2 border-ink/20 text-ink font-semibold py-4 px-6 rounded-md hover:bg-ink/5 transition-colors text-sm"
               >
-                Boliglånskalkulator →
+                52-ukersutfordringen →
               </Link>
             </div>
           </div>
@@ -117,7 +120,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: '50+', label: 'Artikler og guider' },
-              { value: '2.000+', label: 'Nedlastede maler' },
+              { value: 'Gratis', label: 'Budsjettmal' },
               { value: 'Gratis', label: 'Alle verktøy' },
               { value: '2026', label: 'Oppdatert for 2026' },
             ].map((stat) => (
@@ -129,6 +132,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <HomeChallengeCTA />
 
       {/* Lead Magnet */}
       <section id="last-ned" className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
@@ -150,7 +155,7 @@ export default function HomePage() {
                 'Ferdig kategorisert for norske forhold',
                 'Automatiske summer og prosenter',
                 'Ingen binding — last ned og bruk gratis',
-                'Brukt av over 2.000 nordmenn',
+                'Klar til bruk i Excel og Google Sheets',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-forest-soft flex items-center justify-center flex-shrink-0">
@@ -198,7 +203,7 @@ export default function HomePage() {
             <h2 className="text-2xl md:text-3xl font-bold text-ink">Siste artikler</h2>
           </div>
           <Link
-            href="/kredittkort"
+            href="/artikler"
             className="hidden md:inline-flex items-center gap-1 text-forest font-medium hover:text-forest-mid"
           >
             Se alle artikler
@@ -213,7 +218,7 @@ export default function HomePage() {
           ))}
         </div>
         <div className="mt-8 text-center md:hidden">
-          <Link href="/kredittkort" className="text-forest font-medium">
+          <Link href="/artikler" className="text-forest font-medium">
             Se alle artikler →
           </Link>
         </div>
@@ -232,7 +237,7 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/verktøy/lånekalkulator"
+                href="/verktoy/lanekalkulator"
                 className="flex-shrink-0 inline-flex items-center gap-2 bg-forest text-white font-bold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors shadow-sm text-sm"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -251,7 +256,7 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/verktøy/boliglånskalkulator"
+                href="/verktoy/boliglanskalkulator"
                 className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-forest border border-forest font-bold py-3 px-6 rounded-md hover:bg-forest-soft transition-colors shadow-sm text-sm"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

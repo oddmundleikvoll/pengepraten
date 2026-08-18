@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/next-script-for-ga -- custom inline initialization keeps Consent Mode denied before GA config */
 import type { Metadata } from 'next'
 import { Fraunces, DM_Sans, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import AnalyticsEvents from '@/components/AnalyticsEvents'
 
 /**
  * Nordic Clarity type system — loaded once at the root via next/font.
@@ -34,7 +36,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://pengepraten.no'),
   title: {
-    default: 'Pengepraten — Norges beste guide til personlig økonomi',
+    default: 'Pengepraten — norsk guide til personlig økonomi',
     template: '%s | Pengepraten',
   },
   description: 'Få kontroll på økonomien din med våre gratis verktøy, guider og sammenligninger. Forbrukslånskalkulator, boliglånskalkulator, budsjettmal og tips om kredittkort, lån og sparing.',
@@ -44,15 +46,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'nb_NO',
-    url: 'https://pengepraten.no',
     siteName: 'Pengepraten',
-    title: 'Pengepraten — Norges beste guide til personlig økonomi',
+    title: 'Pengepraten — norsk guide til personlig økonomi',
     description: 'Få kontroll på økonomien din med våre gratis verktøy, guider og sammenligninger.',
+    images: [
+      {
+        url: '/hero-control.png',
+        width: 1200,
+        height: 630,
+        alt: 'Pengepraten — få kontroll på økonomien din',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pengepraten',
-    description: 'Norges beste guide til personlig økonomi',
+    description: 'Norsk guide til personlig økonomi',
+    images: ['/hero-control.png'],
   },
   robots: {
     index: true,
@@ -65,9 +75,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: 'https://pengepraten.no',
-  },
 }
 
 export default function RootLayout({
@@ -78,7 +85,7 @@ export default function RootLayout({
   return (
     <html lang="nb" className={`${fraunces.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHXXSHTYRH" />
         <script
@@ -87,6 +94,12 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+              gtag('consent', 'default', {
+                analytics_storage: 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied'
+              });
               gtag('config', 'G-RHXXSHTYRH');
             `,
           }}
@@ -98,6 +111,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <AnalyticsEvents />
       </body>
     </html>
   )

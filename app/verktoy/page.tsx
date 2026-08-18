@@ -10,7 +10,7 @@ import { Home, TrendingUp, PiggyBank, Calculator, BarChart3 } from 'lucide-react
 
 const tools = [
   {
-    href: '/verktøy/boliglånskalkulator',
+    href: '/verktoy/boliglanskalkulator',
     title: 'Boliglånskalkulator',
     description: 'Beregn månedlig kostnad, total lånekostnad og effektiv rente for boliglån. Oppdatert med dagens renter fra norske banker.',
     icon: <Home className="w-6 h-6" />,
@@ -26,7 +26,7 @@ const tools = [
     textColor: 'text-yellow-600',
   },
   {
-    href: '/verktøy/sparekalkulator',
+    href: '/verktoy/sparekalkulator',
     title: 'Sparekalkulator',
     description: 'Beregn hvor lenge det tar å nå sparemålet ditt med en høyrentekonto. Sett inn sparemål, ønsket beløp og månedlig sparing.',
     icon: <PiggyBank className="w-6 h-6" />,
@@ -34,7 +34,7 @@ const tools = [
     textColor: 'text-blue-600',
   },
   {
-    href: '/verktøy/lånekalkulator',
+    href: '/verktoy/lanekalkulator',
     title: 'Forbrukslånskalkulator',
     description: 'Beregn månedlig kostnad, total rente og effektiv rente for forbrukslån.',
     icon: <Calculator className="w-6 h-6" />,

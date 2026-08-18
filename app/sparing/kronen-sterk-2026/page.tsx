@@ -96,7 +96,7 @@ export default function KronenSterk2026() {
         <ul>
           <li><strong>Sjekk totalprisen først.</strong> Levering, toll og mva kan spise opp gevinsten. 
           Netthandel under 3 500 kroner (tollgrensen) er tollfri inn i Norge, men sjekk EØS-regler nøye.</li>
-          <li><strong>Beste nettbutikker for norske kunder:</strong> Amazon.com (velg "ships from and sold by Amazon.com" 
+          <li><strong>Beste nettbutikker for norske kunder:</strong> Amazon.com (velg «ships from and sold by Amazon.com»
           for å unngå mellomledd), AliExpress (billigere generiske varer), Shein og Temu (rimelig mote og tilbehør), 
           eBay (brukt og samlerobjekter).</li>
           <li><strong>Betal med kredittkort uten valutagebyr</strong> — da får du bankens vekslingskurs, 

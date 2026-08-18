@@ -71,7 +71,7 @@ export default function MortgageWidgetCTA({ variant = 'sidebar' }: Props) {
               </p>
             )}
             <Link
-              href="/min-boliglån"
+              href="/min-boliglan"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
             >
               Se full oversikt
@@ -109,7 +109,7 @@ export default function MortgageWidgetCTA({ variant = 'sidebar' }: Props) {
               </p>
             )}
             <Link
-              href="/min-boliglån"
+              href="/min-boliglan"
               className="flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors w-full"
             >
               Se full oversikt

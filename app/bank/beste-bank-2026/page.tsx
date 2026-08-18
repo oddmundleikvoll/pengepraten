@@ -5,7 +5,7 @@ import RelatedContent from '@/components/RelatedContent'
 import { getArticleBySlug, getRelatedArticles } from '@/lib/articles'
 
 export const metadata: Metadata = {
-  title: 'Beste Bank i Norge August 2026: Test og Sammenligning | Pengepraten',
+  title: 'Beste Bank i Norge August 2026: Test og Sammenligning',
   description: 'Få oversikt over beste banker i Norge august 2026. Sammenlign sparing, lån, gebyrer og brukskonto. Se hvilken bank som passer deg best.',
   keywords: ['beste bank 2026', 'bank sammenligning', 'beste bank i norge', 'bank test', 'bank valg'],
 }

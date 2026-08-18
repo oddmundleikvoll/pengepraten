@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import SparekalkulatorClient from './SparekalkulatorClient'
 
 export const metadata: Metadata = {
-  title: 'Sparekalkulator med mål | Pengepraten',
+  title: 'Sparekalkulator med mål',
   description: 'Beregn hvor lenge det tar å nå sparemålet ditt med en høyrentekonto. Sett inn sparemål (ferie, bil, nødfond), ønsket beløp, tidshorisont og månedlig sparebeløp.',
   keywords: ['sparekalkulator', 'spare til mål', 'spareplan kalkulator', 'hvor mye bør jeg spare', 'sparekalkulator mål sparing'],
 }
@@ -14,9 +15,9 @@ export default function SparekalkulatorPage() {
       <section className="bg-paper text-ink py-16 md:py-20 border-b border-border">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <nav className="font-mono text-xs uppercase tracking-wider text-ink-muted mb-6">
-            <a href="/" className="hover:text-forest transition-colors">Hjem</a>
+            <Link href="/" className="hover:text-forest transition-colors">Hjem</Link>
             <span className="mx-2 text-border-strong">/</span>
-            <a href="/sparing" className="hover:text-forest transition-colors">Sparing</a>
+            <Link href="/sparing" className="hover:text-forest transition-colors">Sparing</Link>
             <span className="mx-2 text-border-strong">/</span>
             <span className="text-ink">Sparekalkulator</span>
           </nav>

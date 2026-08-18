@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste BSU rente 2026 — Sammenlign 15+ banker og få 10% skattefradrag | Pengepraten',
+  title: 'Beste BSU rente 2026 — Sammenlign 15+ banker og få 10% skattefradrag',
   description: 'Sammenlign beste BSU-rente 2026. Se hvilke banker som gir høyest rente på BSU-konto. Få 10% skattefradrag + opptil 4,15% rente. Sjekk din BSU-rente nå.',
   keywords: ['beste bsu rente 2026', 'beste bsu rente norge 2026', 'bsu rente', 'bsu skattefradrag', 'boligsparing for ungdom'],
 }
@@ -619,7 +619,7 @@ export default function BSUGuide() {
           <div className="space-y-4">
             <div className="bg-red-50 rounded-xl p-5 border-l-4 border-red-500">
               <h3 className="font-bold text-red-800 mb-1">FEIL #1: Å vent for lenge med å starte</h3>
-              <p className="text-gray-700 text-sm">Mange tenker "jeg har god tid" og utsetter BSU til 30-årsalderen. Da har du kun 4 år med full BSU-kvote. <strong>Start så tidlig som mulig!</strong></p>
+              <p className="text-gray-700 text-sm">Mange tenker «jeg har god tid» og utsetter BSU til 30-årsalderen. Da har du kun 4 år med full BSU-kvote. <strong>Start så tidlig som mulig!</strong></p>
             </div>
             <div className="bg-red-50 rounded-xl p-5 border-l-4 border-red-500">
               <h3 className="font-bold text-red-800 mb-1">FEIL #2: Å glemme at du må kjøpe bolig for å beholde fradraget</h3>
@@ -630,8 +630,8 @@ export default function BSUGuide() {
               <p className="text-gray-700 text-sm">Sett inn hele beløpet tidlig i januar for å få fullt skattefradrag. Hvis du venter til desember, risikerer du å ikke få fradraget.</p>
             </div>
             <div className="bg-red-50 rounded-xl p-5 border-l-4 border-red-500">
-              <h3 className="font-bold text-red-800 mb-1">FEIL #4: Å hoppe over BSU fordi renten er "lav"</h3>
-              <p className="text-gray-700 text-sm">Selv med 3-4% rente + 10% skattefradrag = ~13-14% effektiv avkastning. Det er aldri "for lavt" til at BSU lønner seg.</p>
+              <h3 className="font-bold text-red-800 mb-1">FEIL #4: Å hoppe over BSU fordi renten er «lav»</h3>
+              <p className="text-gray-700 text-sm">Selv med 3-4% rente + 10% skattefradrag = ~13-14% effektiv avkastning. Det er aldri «for lavt» til at BSU lønner seg.</p>
             </div>
           </div>
         </section>
@@ -693,7 +693,7 @@ export default function BSUGuide() {
             BSU er den beste spareformen for unge i Norge. Start i dag og la staten jobbe for deg.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/verktøy/boliglanskalkulator" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
+            <Link href="/verktoy/boliglanskalkulator" className="inline-block bg-paper text-ink font-bold px-6 py-3 rounded-md hover:bg-paper-alt transition-colors">
               Boliglånskalkulator
             </Link>
             <Link href="/sparing" className="inline-block bg-amber-warm text-paper font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">
@@ -723,7 +723,7 @@ export default function BSUGuide() {
                 </div>
               </div>
             </Link>
-            <Link href="/verktøy/boliglanskalkulator" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
+            <Link href="/verktoy/boliglanskalkulator" className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 transition-colors group">
               <div className="flex items-center gap-3">
                 <div>
                   <h3 className="font-bold text-gray-900 group-hover:text-green-700">Boliglånskalkulator</h3>

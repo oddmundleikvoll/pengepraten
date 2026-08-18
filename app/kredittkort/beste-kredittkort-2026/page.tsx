@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste Kredittkort 2026 — Sammenlign 10+ Kort (Cashback, Reise, Gratis) | Pengepraten',
+  title: 'Beste Kredittkort 2026 — Sammenlign 10+ Kort (Cashback, Reise, Gratis)',
   description: 'Sammenlign 10+ kredittkort i Norge 2026. Finn beste kredittkort med cashback, reiseforsikring og uten årsavgift. Bank Norwegian, Trumf Visa, SAS EuroBonus, Komplett Bank og flere.',
   keywords: ['beste kredittkort', 'kredittkort 2026', 'cashback', 'reiseforsikring', 'Bank Norwegian', 'Trumf Visa', 'Komplett Bank'],
   openGraph: {

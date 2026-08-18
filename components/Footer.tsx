@@ -11,10 +11,10 @@ import { ShieldCheck } from 'lucide-react'
 
 const footerLinks = {
   verktøy: [
-    { href: '/verktøy', label: 'Alle verktøy' },
-    { href: '/verktøy/lånekalkulator', label: 'Forbrukslånskalkulator' },
-    { href: '/verktøy/boliglånskalkulator', label: 'Boliglånskalkulator' },
-    { href: '/min-boliglån', label: 'Min boliglånsrente' },
+    { href: '/verktoy', label: 'Alle verktøy' },
+    { href: '/verktoy/lanekalkulator', label: 'Forbrukslånskalkulator' },
+    { href: '/verktoy/boliglanskalkulator', label: 'Boliglånskalkulator' },
+    { href: '/min-boliglan', label: 'Min boliglånsrente' },
     { href: '/budsjett', label: 'Budsjettmal 2026' },
     { href: '/spareutfordring', label: '52-ukers utfordring' },
   ],
@@ -30,6 +30,7 @@ const footerLinks = {
     { href: '/om-oss', label: 'Om Pengepraten' },
     { href: '/kontakt', label: 'Kontakt' },
     { href: '/personvern', label: 'Personvern' },
+    { href: '/avslutt', label: 'Avslutt e-post' },
   ],
 }
 
@@ -120,7 +121,7 @@ export default function Footer() {
             className="font-mono text-[11px] uppercase tracking-[0.10em]"
             style={{ color: 'var(--fg-muted)' }}
           >
-            Redaksjonen mottar ikke betaling fra banker eller kredittkortutstedere.
+            Annonselenker merkes tydelig · Redaksjonelle vurderinger gjøres uavhengig
           </span>
           <span
             className="font-mono text-[11px] uppercase tracking-[0.10em]"

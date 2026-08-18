@@ -5,7 +5,7 @@ import RelatedContent from '@/components/RelatedContent'
 import { getArticleBySlug, getRelatedArticles } from '@/lib/articles'
 
 export const metadata: Metadata = {
-  title: 'Beste Høyrentekonto August 2026: 12 Banker Sammenlignet | Pengepraten',
+  title: 'Beste Høyrentekonto August 2026: 12 Banker Sammenlignet',
   description: 'Sammenlign de beste høyrentekontoene i Norge august 2026. Svea Bank og Bank Norwegian leder med 4,65% rente — fulgt av OBOS (4,55%) og Nordax (4,50%). Vi rangerer 12 banker etter rente, uttaksvilkår og minimumsinnskudd.',
   keywords: ['beste høyrentekonto', 'beste høyrentekonto 2026', 'høyrentekonto august 2026', 'sparekonto med høy rente', 'beste sparekonto norge', 'høyrentekonto sammenligning', 'høyeste rente sparekonto'],
 }
@@ -879,7 +879,7 @@ export default function Hoyrentekonto() {
               En høyrentekonto tar 15 minutter å sette opp og kan gi deg tusenvis av kroner mer i året — helt uten risiko.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/verktøy/sparekalkulator" className="inline-flex items-center justify-center gap-2 bg-amber-warm hover:opacity-90 text-paper font-extrabold px-8 py-4 rounded-md text-lg shadow-lg transition-all">
+              <Link href="/verktoy/sparekalkulator" className="inline-flex items-center justify-center gap-2 bg-amber-warm hover:opacity-90 text-paper font-extrabold px-8 py-4 rounded-md text-lg shadow-lg transition-all">
                 Bruk sparekalkulatoren
               </Link>
               <Link href="/sparing/beste-sparekonto-2026" className="inline-flex items-center justify-center gap-2 bg-paper/10 hover:bg-paper/20 text-paper font-bold px-6 py-4 rounded-md transition-colors border border-paper/30">

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Personvern — Pengepraten',
+  title: 'Personvern',
   description: 'Personvernerklæring for Pengepraten. Les om hvordan vi håndterer dine data.',
 }
 
@@ -36,8 +36,8 @@ export default function PersonvernPage() {
           Vi samler kun inn informasjon som er nødvendig for å tilby våre tjenester:
         </p>
         <ul>
-          <li><strong>E-postadresse:</strong> Når du registrerer deg for å laste ned våre maler</li>
-          <li><strong>Anonymiserte bruksdata:</strong> For å forbedre nettsiden (via analytics)</li>
+          <li><strong>E-postadresse:</strong> Når du ber om en mal, ukeplan eller melder deg på rentevarsling</li>
+          <li><strong>Bruksdata:</strong> Dersom du samtykker til analyse, måler vi sidevisninger og bruk av verktøy</li>
         </ul>
 
         <h2>Hvordan bruker vi informasjonen?</h2>
@@ -63,14 +63,16 @@ export default function PersonvernPage() {
 
         <h2>Cookies</h2>
         <p>
-          Vi bruker cookies for å forbedre brukeropplevelsen og analysere trafikk. 
-          Du kan når som helst endre cookie-innstillingene i nettleseren din.
+          Analyse er avslått som standard. Google Analytics aktiveres først når du
+          velger «Tillat analyse» i samtykkebanneret. Valget lagres lokalt i nettleseren din.
+          Fremgang i spareutfordringen og opplysninger i enkelte kalkulatorer lagres også
+          lokalt på enheten din og sendes ikke til Pengepraten.
         </p>
 
         <h2>Tredjeparter</h2>
         <p>
-          Vi selger ikke din informasjon til tredjeparter. Vi kan dele anonymiserte 
-          data med våre analytics-leverandører for å forbedre nettsiden.
+          Vi selger ikke informasjonen din. Resend brukes til å registrere e-postadresser
+          og sende e-postene du ber om. Google Analytics brukes til samtykkebasert analyse.
         </p>
 
         <h2>Kontakt oss</h2>
@@ -78,9 +80,12 @@ export default function PersonvernPage() {
           Har du spørsmål om personvern? Kontakt oss på{' '}
           <a href="mailto:kontakt@pengepraten.no">kontakt@pengepraten.no</a>.
         </p>
+        <p>
+          Du kan også <Link href="/avslutt">avslutte e-postabonnementet her</Link>.
+        </p>
 
         <p className="text-sm text-gray-500 mt-8">
-          Sist oppdatert: 9. april 2026
+          Sist oppdatert: 18. august 2026
         </p>
       </section>
     </>

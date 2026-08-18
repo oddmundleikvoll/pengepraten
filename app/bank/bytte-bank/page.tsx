@@ -147,7 +147,7 @@ export default function BytteBank() {
               <div className="w-10 h-10 rounded-full bg-forest text-paper flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">Velg ny bank og åpne konto</h3>
-                <p className="text-gray-600 text-sm">Gå til nettsiden til banken (f.eks. Sbanken, Nordea, DNB) og velg "åpne konto". Du trenger BankID og en norsk folkeregistrert adresse. Prosessen tar 10-15 minutter.</p>
+                <p className="text-gray-600 text-sm">Gå til nettsiden til banken (f.eks. Sbanken, Nordea, DNB) og velg «åpne konto». Du trenger BankID og en norsk folkeregistrert adresse. Prosessen tar 10-15 minutter.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-gray-200 shadow-sm">

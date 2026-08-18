@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Refinansiering for folk flest: Når det lønner seg og når det ikke gjør det | Pengepraten',
+  title: 'Refinansiering for folk flest: Når det lønner seg og når det ikke gjør det',
   description: 'Refinansiering kan spare deg for titusenvis av kroner — men ikke alltid. Her får du en ærlig gjennomgang av når det lønner seg, og når du heller bør la være.',
   keywords: ['refinansiering', 'refinansiere', 'forbrukslån', 'gjeld', 'rente', 'nedbetaling', 'samle gjeld'],
 }

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Samle Lån: Slik Sparer Du Tusenvis i 2026 | Pengepraten',
+  title: 'Samle Lån: Slik Sparer Du Tusenvis i 2026',
   description: 'Har du flere lån? Se hvor mye du kan spare med samlelån. Eksempel: 200.000 kr i gjeld — spar 12.000 kr/år. Full guide til refinansiering i 2026.',
   keywords: ['samle lån', 'samlelån', 'refinansiering', 'samle gjeld', 'spare på lån'],
 }
@@ -278,7 +278,7 @@ export default function SamleLanPage() {
               Et samlelån tar 15 minutter å søke om, men kan spare deg for hundretusener over lånets levetid. Start i dag.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/verktøy/lånekalkulator" className="inline-flex items-center justify-center gap-2 bg-amber-warm hover:opacity-90 text-paper font-extrabold px-8 py-4 rounded-md text-lg shadow-lg transition-all">
+              <Link href="/verktoy/lanekalkulator" className="inline-flex items-center justify-center gap-2 bg-amber-warm hover:opacity-90 text-paper font-extrabold px-8 py-4 rounded-md text-lg shadow-lg transition-all">
                 Prøv lånekalkulatoren
               </Link>
               <Link href="/lan/refinansiering-spar-paa-gjelden" className="inline-flex items-center justify-center gap-2 bg-paper/10 hover:bg-paper/20 text-paper font-bold px-6 py-4 rounded-md transition-colors border border-paper/30">
@@ -297,7 +297,7 @@ export default function SamleLanPage() {
             {[
               { href: '', title: 'Refinansiering: Spar på gjelden', desc: 'Alt du trenger å vite om refinansiering i 2026' },
               { href: '/lan/nar-lonner-refinansiering', icon: 'Brain', title: 'Når lønner refinansiering seg?', desc: 'Finn ut om refinansiering er riktig for deg' },
-              { href: '/verktøy/lånekalkulator', icon: 'Calculator', title: 'Lånekalkulator', desc: 'Beregn månedskostnad og total rente for ditt lån' },
+              { href: '/verktoy/lanekalkulator', icon: 'Calculator', title: 'Lånekalkulator', desc: 'Beregn månedskostnad og total rente for ditt lån' },
               { href: '', title: 'Beste forbrukslån 2026', desc: 'Sammenlign renter og vilkår fra norske banker' },
             ].map(item => (
               <Link key={item.href} href={item.href} className="block bg-white rounded-xl p-5 border border-gray-200 hover:border-green-400 hover:shadow-md transition-all group">

@@ -1,17 +1,20 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 interface EmailCaptureProps {
   variant?: 'inline' | 'card'
   title?: string
   description?: string
+  kind?: 'rates' | 'challenge'
 }
 
 export default function EmailCapture({
   variant = 'card',
   title,
   description,
+  kind = 'rates',
 }: EmailCaptureProps) {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
@@ -27,7 +30,7 @@ export default function EmailCapture({
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, kind }),
       })
 
       const data = await res.json()
@@ -36,6 +39,7 @@ export default function EmailCapture({
         setError(data.error || 'Noe gikk galt. Prøv igjen.')
       } else {
         setSubmitted(true)
+        trackEvent('generate_lead', { lead_type: kind })
       }
     } catch {
       setError('Noe gikk galt. Prøv igjen.')

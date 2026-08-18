@@ -325,7 +325,7 @@ export default function Boliglansrente2026() {
         </p>
         <div className="my-6">
           <Link
-            href="/verktøy/boliglånskalkulator"
+            href="/verktoy/boliglanskalkulator"
             className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             Boliglånskalkulator →
@@ -431,7 +431,7 @@ export default function Boliglansrente2026() {
             ved å forhandle eller bytte bank.
           </p>
           <Link
-            href="/verktøy/boliglånskalkulator"
+            href="/verktoy/boliglanskalkulator"
             className="inline-flex items-center gap-2 bg-forest text-paper font-semibold py-3 px-6 rounded-md hover:bg-forest-mid transition-colors"
           >
             Beregn din beste rente →
@@ -442,7 +442,7 @@ export default function Boliglansrente2026() {
           <h3 className="font-bold text-norsk-dark mb-4">Relaterte artikler</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/verktøy/boliglånskalkulator" className="text-primary-600 hover:underline font-medium">
+              <Link href="/verktoy/boliglanskalkulator" className="text-primary-600 hover:underline font-medium">
                 Boliglånskalkulator →
               </Link>
             </li>

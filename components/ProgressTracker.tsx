@@ -1,6 +1,6 @@
 'use client'
 
-import { getTotalSaved, getTotalUpTo, TOTAL_CHALLENGE } from '@/lib/spareutfordringStore'
+import { getTotalSaved, getWeekAmount, TOTAL_CHALLENGE } from '@/lib/spareutfordringStore'
 
 interface ChallengeProgressProps {
   weeksCompleted: number[]
@@ -10,8 +10,9 @@ interface ChallengeProgressProps {
 export default function ChallengeProgress({ weeksCompleted, onReset }: ChallengeProgressProps) {
   const totalSaved = getTotalSaved(weeksCompleted)
   const percent = Math.round((weeksCompleted.length / 52) * 100)
-  const lastCompletedWeek = weeksCompleted.length > 0 ? weeksCompleted[weeksCompleted.length - 1] : 0
-  const nextAmount = lastCompletedWeek < 52 ? getTotalUpTo(lastCompletedWeek + 1) - totalSaved : 0
+  const nextWeek = Array.from({ length: 52 }, (_, index) => index + 1)
+    .find(week => !weeksCompleted.includes(week))
+  const nextAmount = nextWeek ? getWeekAmount(nextWeek) : 0
 
   return (
     <div className="bg-paper-surface rounded-2xl border border-border shadow-sm overflow-hidden">
@@ -66,7 +67,7 @@ export default function ChallengeProgress({ weeksCompleted, onReset }: Challenge
         )}
         {weeksCompleted.length > 0 && weeksCompleted.length < 52 && (
           <p className="mt-3 text-sm text-ink-muted text-center">
-            {nextAmount > 0 && `Neste: ${nextAmount.toLocaleString('nb-NO')} kr → fullfør uke ${lastCompletedWeek + 1}`}
+            {nextWeek && `Neste: ${nextAmount.toLocaleString('nb-NO')} kr → fullfør uke ${nextWeek}`}
           </p>
         )}
         {weeksCompleted.length === 52 && (

@@ -19,7 +19,7 @@ export function getTotalUpTo(week: number): number {
 }
 
 // Total for all 52 weeks
-export const TOTAL_CHALLENGE = getTotalUpTo(52) // 137,800 kr
+export const TOTAL_CHALLENGE = getTotalUpTo(52) // 68,900 kr
 
 export function getChallengeProgress(): ChallengeProgressData | null {
   if (typeof window === 'undefined') return null
