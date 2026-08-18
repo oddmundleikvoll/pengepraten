@@ -21,7 +21,7 @@ Dette dokumentet beskriver dagens løsning. Daterte trafikktall, tidlige prosjek
 
 ## Siste innholdsleveranse
 
-`/artikler/prisvekst-juli-2026-hostbudsjett` er publiseringsklar 18. august 2026. Artikkelen forklarer SSBs KPI-tall for juli 2026 og gir konkrete grep for høstbudsjettet. Den er registrert som nyeste sak og inkluderes automatisk på forsiden, i artikkelarkivet og i sitemap.
+`/artikler/prisvekst-juli-2026-hostbudsjett` ble publisert 18. august 2026. Artikkelen forklarer SSBs KPI-tall for juli 2026 og gir konkrete grep for høstbudsjettet. Den er registrert som nyeste sak og vises på forsiden, i artikkelarkivet og i sitemap.
 
 ## Integrasjoner
 
