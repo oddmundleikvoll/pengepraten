@@ -1,6 +1,6 @@
 # Dokumentasjon
 
-**Sist gjennomgått:** 18. august 2026
+**Sist gjennomgått:** 21. august 2026
 
 Dette er dokumentasjonskartet for Pengepraten. Start med de aktive dokumentene. Resten er daterte beslutnings-, research- eller produksjonsnotater og skal ikke behandles som beskrivelse av dagens løsning.
 
@@ -9,6 +9,7 @@ Dette er dokumentasjonskartet for Pengepraten. Start med de aktive dokumentene. 
 | Dokument | Formål | Oppdateres når |
 |---|---|---|
 | [`../README.md`](../README.md) | Oppstart og inngang til repoet | Kommandoer, struktur eller hovedflyt endres |
+| [`../CONTEXT.md`](../CONTEXT.md) | Stabil produkt-, språk- og trafikkontekst | Målgruppe, innholdsretning eller trafikkmodell endres |
 | [`../STATUS.md`](../STATUS.md) | Nåtilstand, kjente begrensninger og neste prioriteringer | En større leveranse går i produksjon |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | Teknisk arkitektur og dataflyt | Ruter, integrasjoner eller tekniske grenser endres |
 | [`CONTENT_MAINTENANCE.md`](CONTENT_MAINTENANCE.md) | Innholdsarbeid og løpende kvalitetskontroll | Redaksjonell flyt eller SEO-praksis endres |

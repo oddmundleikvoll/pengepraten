@@ -2,6 +2,20 @@ import { Article } from './types'
 
 export const articles: Article[] = [
   {
+    slug: '/artikler/studentbudsjett-2026-lanekassen',
+    title: 'Studentbudsjett 2026: Slik får du 15 488 kr til å vare',
+    excerpt: 'Lånekassen gir fulltidsstudenter 15 488 kr i måneden i studieåret 2026/2027. Se et realistisk studentbudsjett, viktige inntektsgrenser og grepene som gjør studiestøtten lettere å styre.',
+    category: 'Budsjett',
+    date: '2026-08-21',
+    readTime: '8 min',
+    pillar: 'budsjett',
+    relatedTools: [
+      { title: 'Gratis budsjettmal', href: '/budsjett', description: 'Sett opp studentbudsjettet i Excel eller Google Sheets' },
+      { title: 'Sparekalkulator', href: '/verktoy/sparekalkulator', description: 'Se hvor raskt små månedlige beløp kan bli en buffer' },
+    ],
+    relatedArticles: ['/budsjett/kom-i-gang-med-budsjett', '/artikler/skolestart-2026-familiens-okonomi', '/sparing/spareplan-guide'],
+  },
+  {
     slug: '/artikler/prisvekst-juli-2026-hostbudsjett',
     title: 'Prisveksten steg til 3,0 % i juli — slik beskytter du høstbudsjettet',
     excerpt: 'Strøm og nettleie løftet prisveksten i juli. Se hva de ferske SSB-tallene betyr for din økonomi, med regneeksempler og fem konkrete grep før høsten.',
@@ -23,7 +37,7 @@ export const articles: Article[] = [
     date: '2026-08-11',
     readTime: '9 min',
     pillar: 'budsjett',
-    relatedArticles: ['/budsjett/kom-i-gang-med-budsjett', '/sparing/bsu-guide', '/sparing/hoyrentekonto'],
+    relatedArticles: ['/artikler/studentbudsjett-2026-lanekassen', '/budsjett/kom-i-gang-med-budsjett', '/sparing/bsu-guide'],
   },
   {
     slug: '/artikler/norges-bank-rentevedtak-august-2026',
