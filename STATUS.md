@@ -1,6 +1,6 @@
 # Pengepraten.no — nåstatus
 
-**Sist oppdatert:** 18. august 2026<br>
+**Sist oppdatert:** 21. august 2026<br>
 **Produksjon:** [pengepraten.no](https://pengepraten.no) via Vercel<br>
 **Produksjonsgren:** `main`
 
@@ -21,7 +21,9 @@ Dette dokumentet beskriver dagens løsning. Daterte trafikktall, tidlige prosjek
 
 ## Siste innholdsleveranse
 
-`/artikler/prisvekst-juli-2026-hostbudsjett` ble publisert 18. august 2026. Artikkelen forklarer SSBs KPI-tall for juli 2026 og gir konkrete grep for høstbudsjettet. Den er registrert som nyeste sak og vises på forsiden, i artikkelarkivet og i sitemap.
+`/artikler/studentbudsjett-2026-lanekassen` ble publisert som nyeste sak 21. august 2026. Den forklarer studiestøtten for 2026/2027, viser to konkrete studentbudsjett og skiller mellom frikortgrensen og Lånekassens inntektsgrense. Satser og frister er kontrollert mot Lånekassen, Skatteetaten, SIFO og SSB.
+
+Artikkelen er registrert i `lib/articles.ts`, vises automatisk på forsiden og i artikkelarkivet, og tas med i sitemap. Den er internlenket fra skolestartguiden og den generelle budsjettguiden. Forsiden og `/artikler` bruker nå datoen til nyeste artikkel som `lastModified` i sitemap.
 
 ## Integrasjoner
 
@@ -35,17 +37,21 @@ Dette dokumentet beskriver dagens løsning. Daterte trafikktall, tidlige prosjek
 
 - Det finnes ingen database eller CMS; artikler og satser vedlikeholdes i kode.
 - Flere eldre artikler inneholder tidsfølsomme renter og sammenligninger som må kontrolleres manuelt hver måned.
+- Flere eldre, indekserbare guider har fortsatt synlige `[VIZ]`-plassholdere, og boliglånsinnholdet bruker flere steder 15 prosent egenkapital. Disse sidene må faktakontrolleres og ryddes samlet før de promoteres videre.
 - Det finnes ingen automatisert testpakke utover lint og produksjonsbygg.
 - Lokal fremdrift for verktøy synkroniseres ikke mellom nettlesere eller enheter.
 - Analyse- og e-postflyter avhenger av korrekt produksjonskonfigurasjon i GA4, Resend og Vercel.
 
 ## Neste vedlikeholdsprioriteringer
 
-1. Gjennomgå eldre rente- og produktsammenligninger mot primærkilder og merk tydelig kontrolldato.
-2. Legg til automatiserte tester for API-validering, artikkelregister og kritiske kalkulatorberegninger.
-3. Etabler månedlig rapportering fra Search Console og GA4 basert på faktiske data, ikke estimater.
-4. Samle gjentatt metadata og strukturert data i delte hjelpere for å redusere avvik mellom artikler.
-5. Vurder en kontrollert innholdsmodell eller CMS først når manuelt TSX-vedlikehold blir en reell flaskehals.
+1. Etter deploy: be om indeksering av den nye studentartikkelen i Search Console og følg søkeord, klikkrate og leads i 14 dager.
+2. Rydd alle synlige `[VIZ]`-plassholdere og faktakontroller egenkapitalreglene på tvers av boliglånssider og kalkulator.
+3. Gjenbruk studentartikkelens to regneeksempler i korte innlegg til TikTok/Reels og Reddit uten salgspreg.
+4. Bygg studentklyngen videre med én ny søkeintensjon, fortrinnsvis «kredittkort for studenter», og lenk begge veier.
+5. Gjennomgå eldre rente- og produktsammenligninger mot primærkilder og merk tydelig kontrolldato.
+6. Legg til automatiserte tester for API-validering, artikkelregister og kritiske kalkulatorberegninger.
+7. Etabler månedlig rapportering fra Search Console og GA4 basert på faktiske data, ikke estimater.
+8. Samle gjentatt metadata og strukturert data i delte hjelpere for å redusere avvik mellom artikler.
 
 ## Kvalitetsnivå før deploy
 

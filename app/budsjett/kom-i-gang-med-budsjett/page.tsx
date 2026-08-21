@@ -352,6 +352,16 @@ export default function KomIGangMedBudsjett() {
 
         <h2>Spesialtilfeller</h2>
 
+        <h3>Budsjett for studenter</h3>
+        <p>
+          Studenter får ujevne utbetalinger gjennom året og må skille mellom
+          studiestøtte, jobbinntekt og penger som senere kan bli stipend. Se vårt{' '}
+          <Link href="/artikler/studentbudsjett-2026-lanekassen" className="text-forest font-semibold hover:underline">
+            studentbudsjett for 2026/2027
+          </Link>{' '}
+          for oppdaterte satser, inntektsgrenser og to konkrete regneeksempler.
+        </p>
+
         <h3>Budsjett for familie</h3>
         <p>
           Med barn i husstanden øker kompleksiteten. I tillegg til de faste utgiftene 

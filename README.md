@@ -51,6 +51,7 @@ Nye offentlige URL-er bruker bare ASCII, for eksempel `/verktoy/boliglanskalkula
 - Forstå sider, dataflyt, SEO, e-post og analyse: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - Deploy, produksjonsgren og rollback: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
 - Se hva som faktisk er implementert nå: [STATUS.md](STATUS.md)
+- Forstå produktretning, språk og trafikkmodell: [CONTEXT.md](CONTEXT.md)
 - Finne aktiv og historisk dokumentasjon: [docs/README.md](docs/README.md)
 
 ## Deploy i korte trekk

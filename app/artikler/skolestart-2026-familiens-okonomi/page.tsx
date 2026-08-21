@@ -375,7 +375,11 @@ export default function Skolestart2026Article() {
           I tillegg til utstyrsstipend kan du søke om <strong>borteboerstipend</strong>
           {` `}og <strong>inntektsavhengig stipend</strong> fra Lånekassen. Du
           kan også låne mer gjennom studielånet hvis du trenger det for
-          dekning av boutgifter.
+          dekning av boutgifter. Skal du begynne på universitet eller høgskole,
+          finner du satser, inntektsgrenser og to konkrete regneeksempler i vårt{' '}
+          <Link href="/artikler/studentbudsjett-2026-lanekassen" className="text-forest font-semibold hover:underline">
+            studentbudsjett for 2026/2027
+          </Link>.
         </p>
 
         {/* Foreldrefradrag */}
